@@ -1,0 +1,298 @@
+\section{Exponential Functions} \label{S:0.2.Exponentials}
+
+
+\vspace*{-14 pt}
+\framebox{\hspace*{3 pt}
+\parbox{6.25 in}{\begin{goals}
+\item How can exponential functions be used to model growth and decay of populations,
+    investments, radioactive isotopes, and many other physical phenomena?
+\item How can we build exponential functions from data?
+\end{goals}} \hspace*{3 pt}}
+
+
+\begin{web}
+\item
+    \href{https://www.khanacademy.org/math/algebra2/exponential_and_logarithmic_func/exp_growth_decay/v/exponential-growth-functions}{Khan
+    Playlist: Exponential growth and decay}
+\item
+    \href{https://www.khanacademy.org/math/algebra2/exponential_and_logarithmic_func/exponential-modeling}{Khan
+    Playlist: Modeling with exponential functions}
+\item
+    \href{https://www.khanacademy.org/math/algebra2/exponential_and_logarithmic_func/continuous_compounding}{Khan
+    Playlist: Continuous compounding interest}
+\end{web}
+
+\nin \hrulefill
+
+
+\subsection*{Introduction}
+The exponential function is a powerful tool in the mathematician's arsenal for modeling
+growth and decay phenomena.  The situations range from population modeling, to tracking
+drug levels in the blood stream, to using carbon dating to estimate the age of an
+artifact.  The common mathematical fact about all of these situations is that the growth
+(or decay) rate is a constant multiple.  For example, if we are measuring exponential population
+growth then the ratio of two successive populations must be constant.  Linear functions
+have a similar behavior, except that in linear functions the {\it difference} between two
+successive values is constant (the slope).  
+
+
+% Your preview activity goes here
+\input{previews/0.2.PA1}
+
+\subsection*{Exponential Functions}
+Consider the example where the population of a bacteria colony is doubling every week.  If
+in the first week there are 100 bacteria, then there are 200 bacteria by the end of the
+second week, 400 by the end of the third and so on.  In Table \ref{tab:0.2.bacteria} and
+Equation \eqref{eqn:0.2.bacteria} we can see a simple way to model this type of growth. 
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        Week & Bacteria \\ \hline
+        0 &  $100$ \\
+        1 &  $100 \cdot 2=200$ \\
+        2 &  $200 \cdot 2 = 100 \cdot 2^2=400$ \\
+        3 &  $400 \cdot 2 = 100 \cdot 2^3=800$ \\
+        \vdots & \vdots \\ \hline
+    \end{tabular}
+    \caption{Bacteria population doubling}
+    \label{tab:0.2.bacteria}
+\end{table}
+\begin{flalign}
+    P(t) = 100 \cdot 2^t \quad \text{($t=$ number of weeks)}
+    \label{eqn:0.2.bacteria}
+\end{flalign}
+
+The time, $t$ in equation \eqref{eqn:0.2.bacteria} is measured in weeks.  It is easy to see that
+the ratio of the populations for each successive week is constant at $P(t+1)/P(t) = 2$.
+This is indicative of exponential growth.  Of course, this population growth could have
+been modeled using time measured in days instead.  The population still doubles every week
+so for this new model the value at $t=7$ should be double the value at $t=0$.  Equation
+\eqref{eqn:0.2.bacteria_days} shows this new model with only a slight modification
+adjusting for the new time measurement.
+\begin{flalign}
+    P(t) = 100 \cdot 2^{t/7} \quad \text{($t=$ number of days)} 
+    \label{eqn:0.2.bacteria_days}
+\end{flalign}
+
+This type of modeling and thought process can be used to describe most exponential growth
+and decay situations.  One
+general formula for an exponential function is 
+\begin{flalign}
+    f(x) = A \cdot r^{kx}.
+    \label{eqn:0.2.exponential}
+\end{flalign}
+where $A$ is some given initial value, $r$ is the common ratio, and $k$ is a constant
+given by the frequency in which the common ratio is applied.  In the previous population
+doubling example, $A=100$, $r=2$, and $k=1/7$.
+
+\begin{callout}
+    A few simple guidelines should make it clear when an exponential function is modeling
+growth or decay.  
+\begin{itemize}
+    \item If $r > 1$ then the function exhibits exponential growth.
+    \item If $0 < r < 1$ then the function exhibits exponential decay.
+    \item If a population is growing by $p\%$ per unit time, then $r = 1+p/100$.
+    \item If a population is decreasing by $p\%$ per unit time, then $r = 1-p/100$.
+\end{itemize}
+\end{callout}
+
+\input{activities/0.2.Act1}
+
+
+\bex
+One application to exponential decay is to calculate the intensity of radiation from
+radioactive isotopes.  Most isotopes emit particles and decay into stable forms.  We
+measure the rate of decay from the particles by the isotope's {\bf half-life}, which is
+how long it takes half of the isotope to decay.  The half-life for Sodium-25 ($Na^{25}$)
+is almost exactly one minute.  Write a function that models that amount of $Na^{25}$ over
+time.    
+\eex
+If you begin with 36 grams of $Na^{25}$ then the number of
+grams remaining after $t$ minutes, $S(t)$, can be represented by the function
+\[ S(t) = 36 \left( \frac{1}{2} \right)^{t}, \]
+where $t$ is measured in minutes. Figure \ref{F:0.2.Ex1} shows this exponential decay
+function with an initial value of 36 and a value of 18 after 1 day.
+\begin{figure}[ht!]
+    \begin{center}
+        \begin{tikzpicture}
+            \begin{axis}[axis lines=center, xlabel={$t$ (minutes)}, ylabel={$S(t)$
+                (grams)}, xmin=0, xmax=5,ymin=0, ymax=40, domain=0:5]
+                \addplot[blue, very thick, smooth] {36*(0.5)^x};
+                \addplot[mark=*,red,very thick] coordinates{(1,18)};
+                \addplot[mark=*,blue,very thick] coordinates{(0,36)};
+                \draw (axis cs:1,18) node[anchor=west]{$(1,18)$};
+            \end{axis}
+        \end{tikzpicture}
+    \end{center}
+    \caption{The grams of Sodium-25 remaining as a function of time. The blue point
+    represents the initial value $(0,36)$ and the red point represents the value after 1
+minute $(1,18)$.}
+    \label{F:0.2.Ex1}
+\end{figure}
+\afterex
+
+\bigskip
+\input{activities/0.2.Act2}
+
+\bigskip
+\input{activities/0.2.Act3}
+
+\subsection*{Investments}
+Interest bearing bank accounts and investments follow exponential growth and decay models.
+In the case of a savings account the interest is typically compounded several times per
+year.  This means that the investor is getting interest on their interest every time the
+bank computes the interest.    
+
+\begin{callout}If the money is gaining $p\%$ interest compounded $n$ times per year then the common ratio
+for the exponential function is $1 + p/n$.  The exponent needs to reflect the fact that
+the interest occurs at monthly intervals.  This means that the exponential function is
+\begin{flalign}
+    A(t) = A_0 \left( 1+\frac{p}{n} \right)^{nt} \quad \text{($t=$ number of years)}.
+    \label{eqn:0.2.compound_interest}
+\end{flalign}
+In Equation \eqref{eqn:0.2.compound_interest}, $A_0$ is the initial investment, $A(t)$ is
+the value of the investment over time, $p$ is the interest rate, and $n$ is the number of
+times the interest is compounded per year.
+\end{callout}
+
+\bex\label{0.2.Ex2}
+If \$100 are invested into a bank account earning 2\% interest compounded 12 times per
+year, how much does the investor have at the end of 1 year? 5 years? at retirement age?
+How does this change is we compound quarterly or daily instead of monthly?
+\eex
+In the present situation the function modeling the value of the investment is
+\[ A(t) = 100 \left( 1 + \frac{0.02}{12} \right)^{12t}. \]
+Table \ref{tab:0.2.ex2} shows the value of the investment over the first 5 years.  It is
+clear that this is very slow growth, but it is exponential none the less.  The common
+ratio in this case is $r = (1+0.02/12) \approx 1.0017$, and this means that you are really
+gaining 0.17\% interest per month.
+\begin{table}[ht!]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+        \hline
+        Year & 0 & 1 & 2 & 3 & 4 & 5 \\ \hline
+        Value & \$100 & \$102.02 & \$104.08 & \$106.18 & \$ 108.32 & \$ 110.51 \\ \hline
+    \end{tabular}
+    \caption{Value of \$100 investment for the first 5 years}
+    \label{tab:0.2.ex2}
+\end{table}
+
+Assume that our investor was an 18 year old and extrapolate this to retirement age,
+let's say 65 years old.  That is 47 years worth of interest, and the initial \$100
+investment becomes 
+\[ A(47) = 100 \left( 1 + \frac{0.02}{12} \right)^{12\cdot 47} \approx \$256. \]
+
+If the number of times the bank compounds the interest changes the function will still
+have essentially the same form: $A(t) = 100 (1+\frac{0.02}{n})^{nt}$. In Table
+\ref{tab:0.2.ex2_n} the same investment is considered for several values of $n$.  While
+more compoundings per year generally gives a higher rate of return on the investment, the
+impact is small for larger values of $n$.  
+\begin{table}[ht!]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+        \hline
+        Year & 0 & 1 & 2 & 3 & 4 & 5 & $\cdots$ & 47 \\ \hline
+        Value ($n=1$) & \$100 & \$102.00 & \$104.04 & \$106.12 & \$ 108.24 & \$ 110.41 &
+        $\cdots$ & \$253.63  \\ \hline
+        Value ($n=4$) & \$100 & \$102.02 & \$104.07 & \$106.17 & \$ 108.31 & \$ 110.49 &
+        $\cdots$ & \$255.40 \\ \hline
+        Value ($n=12$) & \$100 & \$102.02 & \$104.08 & \$106.18 & \$ 108.32 & \$ 110.51 &
+        $\cdots$ & \$255.80 \\ \hline
+        Value ($n=365$) & \$100 & \$102.02 & \$104.08 & \$106.18 & \$ 108.33 & \$ 110.52 &
+        $\cdots$ & \$255.99 \\ \hline
+    \end{tabular}
+    \caption{Value of \$100 investment for various values of $n$.}
+    \label{tab:0.2.ex2_n}
+\end{table}
+\afterex
+
+\subsection*{Exponential Functions with Base $e$}
+Exponential functions are commonly written with a base of $e \approx 2.718281828459045\dots$.
+This may seem like an arbitrary and bizarre choice at first glance, but we will see that this famous
+number (called Euler's Number \footnote{Euler's number is named after the famous $17^{th}$
+century mathematician Leonhard Euler. Euler was the first mathematician to introduce the
+notion of a function, and he is responsible for a large amount of the development of
+Calculus.}) plays a central role in Calculus.  
+
+Euler's number can be derived from Equation \eqref{eqn:0.2.compound_interest} if we assume
+that a fictitious bank gives $100\%$ interest compounded infinitely many times per year on
+a one dollar investment.  Mathematically this is written as
+\begin{flalign}
+    e = 1 \cdot \left( 1 + \frac{1}{n} \right)^n \text{ as } n \to \infty.
+    \label{eqn:0.2.euler}
+\end{flalign}
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|c|}
+        \hline
+        $n$ & $1$ & $10$ & $100$ & $1000$ & $\cdots$ & $10^{10}$& $\cdots$  \\ \hline
+        $(1+\frac{1}{n})^n$ & $2$ & $2.5935$ & $2.7048$ & $2.7169$ & $\cdots$ & $2.71828$& $\cdots$  \\
+        \hline
+    \end{tabular}
+    \caption{Approximations of Euler's number, $e$, using equation \eqref{eqn:0.2.euler} with various values of $n$}
+    \label{tab:0.2.euler}
+\end{table}
+
+Any exponential function can be rewritten in terms of Euler's number in the form
+\begin{flalign}
+    f(x) = A e^{kx}.
+    \label{eqn:0.2.exponential_e}
+\end{flalign}
+\begin{callout}
+In Equation \eqref{eqn:0.2.exponential_e}, $k$ is called the {\bf continuous
+rate}\index{continuous rate}.  
+\begin{itemize}
+    \item If $k>0$ then $f(x) = Ae^{kx}$ models exponential growth.
+    \item If $k<0$ then $f(x) = Ae^{kx}$ models exponential decay.
+\end{itemize}
+\end{callout}
+
+\bex
+A population of a city is 5000 people and is doubling in size every 5 years.  Use
+equations \eqref{eqn:0.2.exponential} and \eqref{eqn:0.2.exponential_e} to write two
+different functions modeling this population.
+\eex
+If the population is doubling every 5 years we can use equation
+\eqref{eqn:0.2.exponential} to write
+\[ P(t) = 5000 \cdot 2^{t/5}. \]
+In order to use equation \eqref{eqn:0.2.exponential_e} we need to find the value of
+``$k$''.  This is done by using the fact that at year 5 the population will be 10000 and
+solving the equation
+\[ 10000 = 5000 \cdot e^{5k}. \]
+Rearranging we see that $e^{5k} = 2$.  In order to solve this algebraic equation we need
+to use logarithms.  These important functions will be discussed in more detail in section
+\ref{S:0.4.Logarithms}.  In this case we see that $k = \ln(2) / 5 \approx 0.139.$
+Therefore,
+\[ P(t) = 5000 \cdot e^{0.139 t}. \]
+Since these two equations model the same population they must be identical.  Indeed,
+\[ 5000 \cdot 2^{t/5} = 5000 \cdot \left( 2^{1/5} \right)^t \approx 5000 \cdot (1.149)^t,
+\]
+and
+\[ 5000 \cdot e^{kt} = 5000 \cdot \left( e^k \right)^t \approx 5000 \cdot (1.149)^t. \]
+\afterex
+
+% \input{activities/0.2.Act4}
+
+% more activites
+
+\begin{summary}
+\item An exponential function can be written in the form $f(x) = A r^{kx}$ or $g(x) = A
+    e^{kx}$.  
+    \begin{itemize}
+        \item In $f(x)$, if $k>0$ and $r>1$ then $f(x)$ models exponential growth.
+        \item In $f(x)$, if $k>0$ and $0<r<1$ then $f(x)$ models exponential decay.
+        \item In $g(x)$, if $k>0$ then $g(x)$ models exponential growth.
+        \item In $g(x)$, if $k<0$ then $g(x)$ models exponential decay.
+    \end{itemize}
+\item Exponential functions have a constant common ratio for successive time values.
+\end{summary}
+
+\nin \hrulefill
+
+% exercises go here
+\input{exercises/0.2.Exponentials(Ex)}
+
+
+
+\clearpage

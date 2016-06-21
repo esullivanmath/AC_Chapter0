@@ -1,0 +1,238 @@
+\section{Powers, Polynomials, and Rational Functions} \label{S.0.6.PowersPolysRationals}
+
+
+\vspace*{-14 pt}
+\framebox{\hspace*{3 pt}
+\parbox{6.25 in}
+{\begin{goals}
+	\item What are power, polynomial, and rational functions?
+	\item How can be build polynomial functions from data?
+	\item What microscopic/macroscopic behavior can we expect from polynomial and rational functions?
+ \end{goals}} 
+\hspace*{3 pt}}
+
+
+\begin{web}
+\item \href{https://www.khanacademy.org/math/algebra2/polynomial_and_rational}{Khan
+    Playlist: Polynomial and rational functions}
+\item
+    \href{https://www.khanacademy.org/math/algebra2/polynomial_and_rational/rational_funcs_tutorial/v/adding-and-subtracting-rational-expressions}{Khan
+    Playlist: Rational functions}
+\end{web}
+
+\nin \hrulefill
+
+
+\subsection*{Introduction}
+
+Polynomial functions play an important role in mathematics.  They are generally simple to compute (requiring only computations that can be done by hand) and can be used to model many real-world phenomena.  In fact, scientists and mathematicians frequently simplify complex mathematical models by substituting a polynomial model that is "close enough" for their purposes.
+
+In this section, we will study the graphs of select polynomial and rational functions to identify their important features.  The goal of this section is to build a mathematical intuition about how a small class of 'convenient' functions behave so that later we can see how calculus can be used to determine the behavior of arbitrary functions.
+
+\input{previews/0.6.PA1}
+
+\subsection*{Power Functions}
+
+Power functions are fundamental building blocks for many very useful functions.  In their simplest form, power functions describe situations when the dependent variable is directly proportional to a power of the independent variable.
+
+\begin{definition}
+% Power Functions
+A {\bf power function} has the form
+	\[ 
+		f(x) = kx^{n}, \qquad \mbox{where } k \mbox{ and } n \mbox{ are constant.}
+	\]
+\end{definition}
+
+
+\begin{figure}[ht!]
+	\begin{center}
+		\begin{tikzpicture}%[scale=0.75]
+			\begin{axis}[axis lines=center, xlabel={$x$}, ylabel={$y$},
+				domain=-2.5:2.5,ymin=-15,ymax=15,xmin=-2.75,xmax=2.75]
+				\addplot[smooth, very thick, blue, samples=150] {x}
+					node[above]{$x$};
+				\addplot[smooth, very thick, red, samples=150] {x^3}
+					[below right] node[pos=0.9]{$x^3$};
+				\addplot[smooth, very thick, black, samples=150] {x^5}
+					[left] node[pos=0.57]{$x^5$};
+			\end{axis}
+		\end{tikzpicture}
+		\begin{tikzpicture}%[scale=0.75]
+			\begin{axis}[axis lines=center, xlabel={$x$}, ylabel={$y$},
+				domain=-2.5:2.5,ymin=-10,ymax=15,xmin=-2.75,xmax=2.75]
+				\addplot[smooth, very thick, blue, samples=150] {x^2}
+					node[above]{$x^2$};
+				\addplot[smooth, very thick, red, samples=150] {x^4} 
+					[below right] node[pos=0.67]{$x^4$}; 				
+				\addplot[smooth, very thick, black, samples=150] {x^6}
+ 					[above left] node[pos=0.525]{$x^6$};
+			\end{axis}
+		\end{tikzpicture}     
+	\end{center}     
+\caption{Positive odd powers of $x$ (left) and positive even powers of $x$ (right)}     
+\label{F:0.6.Ex1} 
+\end{figure}
+
+For odd values of $n$, the graphs of $x^{n}$ are always increasing.  For even values of
+$n$, the graphs of $x^{n}$ decrease until $x=0$ and then increase afterwards. See Figure
+\ref{F:0.6.Ex1} for several examples of power functions. We can classify the {\it end
+behavior} of the graphs by describing what happens as $x\to\infty$ and as $x\to-\infty$.
+For odd $n$, $x^{n}\to -\infty$ as $x\to-\infty$ and $x^{n}\to\infty$ as $x\to\infty$.
+Graphs of odd power functions go in opposite directions on the left and right.  For even
+$n$, $x^{n}\to \infty$ as $x\to-\infty$ and $x^{n}\to\infty$ as $x\to\infty$.  Graphs of
+even power functions go in the same direction on the left and right.
+
+\input{activities/0.6.Act1}
+
+\subsection*{Polynomial Functions} 
+
+\begin{definition}
+% Polynomial Functions
+A {\bf polynomial function} is a function of the form
+	\[
+		p(x)=a_{n}x^{n} + a_{n-1}x^{n-1}+\cdots + a_{1}x + a_{0}
+	\]
+where $n$ is a nonnegative integer and $a_{n}\ne 0$.  Here $n$ is the {\it degree} of the
+polynomial, and $a_{n}$, $a_{n-1}$, \ldots, $a_{1}$, $a_{0}$ are the {\it coefficients}.
+\end{definition}
+
+When we study the graphs of functions, there are several common features we're interested in.  
+\begin{itemize}
+	\item How does the graph behave as $x\to\infty$ and as $x\to-\infty$? (Does it grow without bound? Does it level off? Does it oscillate?) 
+	\item Where does the graph cross the $x$-axis? How many times? 
+	\item Where does the graph change directions? How many times?
+\end{itemize}
+
+For many functions, these questions can be difficult to answer and require specialized
+mathematics (like Calculus for example).  For polynomials, though, there are some
+relatively simple results.  First, the end behavior of a polynomial is determined by its
+degree and the sign of the lead coefficient.  Polynomials with even degree behave like
+power functions with even degree, and polynomials with odd degree behave like power
+functions like odd degree. Figures \ref{F:0.6.PolyEndBehavior} and
+\ref{F:0.6.PolyEndBehavior2} demonstrate this for two different fourth degree polynomials.
+
+\def\scl{0.75}
+\begin{figure}[ht!]
+	\begin{center}
+		\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45, x=0.5cm,
+            y=0.006cm, scale=\scl] 
+			\draw[<->,color=black] (-6,0.0) -- (7,0.0); 
+			\foreach \x in {-4,-2,2,4,6} 
+			\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$}; 
+			\draw[<->,color=black] (0.0,-100) -- (0.0,850); 
+			\foreach \y in {,800} 
+			\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$}; 
+			\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$}; 
+			\clip(-6,-200) rectangle (7,850); 
+            \draw[very thick, blue, smooth,samples=100,domain=-6:7] plot(\x,{(\x)^(4.0)}); 
+			\begin{scriptsize} 
+				\draw[color=black] (-0.5,-150) node {$y=x^{4}$}; 
+			\end{scriptsize} 
+		\end{tikzpicture}   
+		\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45, x=0.5cm, y=0.006cm, scale=\scl] 
+			\draw[<->,color=black] (-6,0.0) -- (7,0.0); 
+			\foreach \x in {-4,-2,2,4,6} 
+			\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$}; 
+			\draw[<->,color=black] (0.0,-100) -- (0.0,850); 
+			\foreach \y in {,800} 
+			\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$}; 
+			\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$}; 
+			\clip(-6,-200) rectangle (7,850); 
+			\draw[very thick, blue, smooth,samples=100,domain=-6:7] plot(\x,{(\x)^(4.0)-2.0*(\x)^(3.0)-12.0*(\x)^(2.0)+3.0*(\x)-4.0}); 
+			\begin{scriptsize} 
+				\draw[color=black] (-0.5,-150) node {$y=x^{4} - 2x^{3} - 12x^{2} + 3x - 4$}; 
+			\end{scriptsize} 
+		\end{tikzpicture}
+	\end{center}      
+\caption{Local behavior of two fourth-degree polynomials.  At this level, we can clearly see the differences between these two functions.}
+\label{F:0.6.PolyEndBehavior}
+\end{figure}
+
+\begin{figure}[ht!]
+	\begin{center}
+		\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45, x=1.5cm, y=0.35cm, scale=\scl] 
+			\draw[<->,color=black] (-2,0.0) -- (2,0.0); 
+			\foreach \x in {-20,-10,10,20} 
+			\draw[shift={(\x/10,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$}; 
+			\draw[->,color=black] (0.0,-2) -- (0.0,15); 
+			\draw[shift={(0,14)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $160,000$}; 
+			\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$}; 
+			\clip(-2,-4) rectangle (2,15); 
+			\draw[very thick, blue, smooth,samples=100,domain=-2:2] plot(\x,{(\x)^(4.0)}); 
+			\begin{scriptsize} 
+				\draw[color=black] (-0.5,-3) node {$y=x^{4}$}; 
+			\end{scriptsize} 
+		\end{tikzpicture}  
+		\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45, x=1.5cm, y=0.35cm, scale=\scl] 
+			\draw[<->,color=black] (-2,0.0) -- (2,0.0); 
+			\foreach \x in {-20,-10,10,20} 
+			\draw[shift={(\x/10,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$}; 
+			\draw[->,color=black] (0.0,-2) -- (0.0,15); 
+			\draw[shift={(0,14)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $160,000$}; 
+			\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$}; 
+			\clip(-2,-4) rectangle (2,15); 
+			\draw[very thick, blue, smooth,samples=100,domain=-2:2] plot(\x,{(\x)^(4.0)}); 
+			\begin{scriptsize} 
+				\draw[color=black] (-0.5,-3) node {$y=x^{4} - 2x^{3} - 12x^{2} + 3x - 4$}; 
+			\end{scriptsize} 
+		\end{tikzpicture}  
+	\end{center}      
+\caption{Long-term behavior of two fourth-degree polynomials.  At this scale, the two functions are nearly indistinguishable.}
+\label{F:0.6.PolyEndBehavior2}
+\end{figure}
+
+\begin{theorem}
+%Roots of polynomials
+	A polynomial of degree $n$ has at most $n$ real zeros and at most $n-1$ turning points.\label{T:0.6.1}
+\end{theorem}
+
+\begin{theorem}\label{T:0.6.2}
+%Polynomial roots and factors
+	Let $p(x)$ be a polynomial.  If $x = a$ is a zero of $p$ (i.e. $p(a)=0$), then $(x-a)$ is a factor of $p$.
+\end{theorem}
+
+Theorems \ref{T:0.6.1} and \ref{T:0.6.2} are each fairly simple to state but very powerful.  Theorem \ref{T:0.6.1} gives us a quick way to determine the degree of a polynomial from its graph and is frequently used to determine how many solutions to expect from certain types of equations.  
+Theorem \ref{T:0.6.2} provides us with a way to construct polynomials that pass through specific points.  
+
+\input{activities/0.6.Act2}
+
+\subsection*{Rational Functions}
+
+\begin{definition}
+	% Rational Functions
+	A {\bf rational function} is a ratio of two polynomial functions
+		\[ 
+			f(x) = P(x)/Q(x)
+		\]
+	where $P$ and $Q$ are polynomials.  The domain is the set of all real numbers for which $Q(x)\ne 0$
+\end{definition}
+
+\begin{definition}
+	%Horizontal and Vertical Asymptotes
+	A function $f$ has a {\bf horizontal asymptote} $y = a$ if the distance between the $f$ and the line $y=a$ becomes arbitrarily small when $x$ becomes sufficiently large.
+	Alternatively, a horizontal asymptote is a line that a function approaches as $x \to \infty$ or as $x \to -\infty$. 
+	A function $f$ has a {\bf vertical asymptote} at a point $x = b$ if the function becomes arbitrarily large as $x \to b$.
+\end{definition}
+
+The graphs of rational functions may have vertical asymptotes only where the denominator is zero.  However, there are many examples of rational functions that do not have a vertical asymptote even at a point where the denominator is zero. (For instance, try graphing the function $f(x)=\displaystyle{\frac{x^{2}-1}{x-1}}$).
+
+\input{activities/0.6.Act3}  % Vertical Asymptotes and 0/0
+
+\input{activities/0.6.Act4}  % Horizontal Asymptotes and infinity/infinity.
+
+\input{activities/0.6.Act5}  % Crossing Horizontal Asymptotes
+
+
+
+\begin{summary}
+	\item A polynomial of degree $n$ has at most $n$ real zeros and $n-1$ turning points.
+	\item The degree of a polynomial function determines the end behavior of its graph.  If the degree of a polynomial is even, then the end behavior is the same in both directions.  If the degree of a polynomial is odd, then the end behavior on the left is the opposite of the behavior on the right.
+	\item A rational function is a function of the form $f(x)=\frac{P(x)}{Q(x)}$, where $P(x)$ and $Q(x)$ are both polynomials.
+	\item A rational function $f(x)=\frac{P(x)}{Q(x)}$ may have a vertical asymptote whenever $Q(x)=0$.
+	\item The end behavior of the graph of a rational function is determined by the degrees of the polynomials in the numerator and denominator. (See Activity \ref{A:0.6.4}).
+\end{summary}
+
+% exercises go here
+\input{exercises/0.6.PowersPolynomialsRationals(Ex)}
+
+\clearpage
