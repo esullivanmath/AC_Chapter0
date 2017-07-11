@@ -1,4 +1,4 @@
-\section{Functions, Slope, and Lines} \label{S:0.1.Functions}
+\section{Lines, Slope, and Functions} \label{S:0.1.Functions}
 
 
 \vspace*{-14 pt}
@@ -7,7 +7,6 @@
 \item What is a function and what do we mean by its domain and range?
 \item What is the slope of a line? What are linear functions and families of linear
     functions?
-\item What are difference equations and the delta notation and why are these useful?
 \end{goals}} \hspace*{3 pt}}
 
 % \begin{web}
@@ -28,7 +27,7 @@
 
 
 \subsection*{Introduction}
-We begin the study of calculus by reminding the reader of several pre-requisite topics.
+We begin our study of calculus by reminding the reader of several pre-requisite topics.
 The study of calculus depends on a thorough understanding of these topics and it is
 imperative that the reader become as familiar as possible with these topics.  In the
 present section we remind the reader about the concepts of functions, slope, and lines,
@@ -38,14 +37,17 @@ text.
 \input{previews/0.1.PA1}
 
 \subsection*{Functions}
-\begin{definition}
-    A {\bf function} $f$ defined on a set $A$, is a rule that assigns to each element $x$ in $A$,
-exactly one element, denoted $f(x)$, from a set $B$. 
-
-\noindent The set $A$ is called the {\bf domain} of the function $f$. The {\bf range} of $f$ is the set
-of values of $f(x)$
-as $x$ takes on all the values of $A$.  Another way to state it is that the range of $f$ is the
-set of all $y$ such that $y=f(x)$ for some $x$ in $A$.
+Let's start with the fundamental mathematical idea of a function.  
+\begin{definition}[Function]
+    A function is a mathematical rule that assigns exactly one output for every
+    input.  
+%     A {\bf function} $f$ defined on a set $A$, is a rule that assigns to each element $x$
+%     in $A$, exactly one element, denoted $f(x)$, from a set $B$. 
+% 
+% \noindent The set $A$ is called the {\bf domain} of the function $f$. The {\bf range} of $f$ is the set
+% of values of $f(x)$
+% as $x$ takes on all the values of $A$.  Another way to state it is that the range of $f$ is the
+% set of all $y$ such that $y=f(x)$ for some $x$ in $A$.
 \end{definition}
 
 It is easy to give many common examples of functions:
@@ -53,23 +55,23 @@ It is easy to give many common examples of functions:
     \item The area of a circle $A$ is a function of the radius of the circle:  $A(r)= \pi r^2$.
     \item The amount $M$ in your savings account is a function of the rate of interest the
         bank pays.
-    \item Your miles per gallon in your car depends on many things, e.g. the speed at
-        which you drive.  
+    \item The fuel efficiency in your car is a function of many things, e.g. the speed at
+        which you drive, the number of cylinders in your engine, the type of driving
+        conditions, etc.
     \item The pressure on a diver is a function of the depth of the diver under water.
 \end{itemize}
 
-Probably the most common method for representing a function is with a graph.  If the
-domain of function $f$ is set $A$, then the graph of $f$ is the collection of all ordered
-pairs of the form $(x,f(x))$ where $x$ comes from the domain $A$.
+\begin{definition}[Domain of a Function]
+    The domain is the set of all possible inputs for a function.
+\end{definition}
 
-
-
-\input{activities/0.1.Act1}
+\begin{definition}[Range of a Function]
+    The range is the set of all possible outputs for a function.
+\end{definition}
 
 \bex
-Find the domain and range of the functions
-\[ f(x) = \sin(x), \quad g(x) = \sqrt{x}, \quad \text{and} \quad h(x) =
-    \frac{1}{x}. \]
+Find the domain and range of the functions $f(x) = \sin(x), g(x) = \sqrt{x},$ and $h(x) =
+    \frac{1}{x}$.
 \eex
 For $f(x)=\sin(x)$ we recall that the sine function is defined for every possible value of $x$ but
 the output is strictly between $y=-1$ and $y=1$.  Therefore, the domain for $f(x) =
@@ -89,41 +91,68 @@ A moment's reflection also reveals that it is impossible to get zero out of the 
 $h(x)$ but it is possible to get any other number.  Hence $-\infty < y < 0$ or $0 < y <
 \infty$. See the right plot in Figure \ref{f:0.1ex1}. 
 \afterex
-
 \begin{figure}
-    \begin{center}
-        \begin{tikzpicture}[scale=0.65]
-            \begin{axis}[axis lines=center, title={$f(x) = \sin(x)$}, domain=-6.28:6.28,
-                ymin=-1.1, ymax = 1.1, grid]
-                \addplot[smooth, very thick, blue] {sin(deg(x))};
-            \end{axis}
-        \end{tikzpicture}
-        \begin{tikzpicture}[scale=0.65]
-            \begin{axis}[axis lines=center, title={$g(x) = \sqrt{x}$}, domain=-1:4,
-                ymin=-0.5, ymax = 2.5, xmin=-1, grid]
-                \addplot[smooth, very thick, red, samples=100] {sqrt(x)};
-            \end{axis}
-        \end{tikzpicture}
-        \begin{tikzpicture}[scale=0.65]
-            \begin{axis}[axis lines=center, title={$h(x) = 1/x$},
-                ymin=-2, ymax = 2, grid]
-                \addplot[smooth, very thick, domain=-3:-0.1, black] {1/x};
-                \addplot[smooth, very thick, domain=0.1:3, black] {1/x};
-            \end{axis}
-        \end{tikzpicture}
-    \end{center}
+    \includegraphics[width=0.95\columnwidth]{figures/0-1-ex1.pdf}
     \caption{Graphs of the function $f(x) = \sin(x)$, $g(x) = \sqrt{x}$, and $h(x) =
     \frac{1}{x}$.}
     \label{f:0.1ex1}
 \end{figure}
 
+% It is often convenient to examine functions graphically instead of algebraically.  In our
+% previous example we 
+% 
+% Probably the most common method for representing a function is with a graph.  If the
+% domain of function $f$ is set $A$, then the graph of $f$ is the collection of all ordered
+% pairs of the form $(x,f(x))$ where $x$ comes from the domain $A$.
+
+It is also important to recall the notation for functions.  When we write $f(x) =
+\sqrt{x}$ we are saying several things.  First, the ``$f$'' is the name of the function
+that we're defining.  The naming convention gives us a convenient way to refer to
+functions without having to explicitly state their algebraic form.  Next, the ``$(x)$'' is
+an explicit statement to the reader that the variable ``$x$'' is the independent variable
+for the function $f$.  Lastly, the right-hand side of the definition tells us exactly what
+to do with the independent variable algebraically.  
+
+When we write $f(25)$ we are referring to the already defined function $f$ and explicitly
+saying to replace the independent variable with the number $25$.  In this instance, $f(25)
+= \sqrt{25} = 5$.  Similarly, if we write $f(\sin(x))$ we mean to find the independent
+variable $x$ in the function $f$ and replace it with the function $\sin(x)$.  In this
+case, $f(\sin(x)) = \sqrt{\sin(x)}$.  This is simply a new function.
+
+A function does not always need to be given algebraically.  The three primary
+representations of a function are the algebraic form, the graphical form, and the tabular
+form.  For example, for the function $f(x) = \sqrt{x}$ we are explicitly giving the
+algebraic form and the middle plot of Figure \ref{f:0.1ex1} shows the graphical form.
+Table \ref{t:0.1ex1} shows a portion of the table of values.  The distinct disadvantage
+for a table of values on many functions is that there are infinitely many possible input
+values and a table can naturally only show finitely many of them.
+
+\begin{table}[ht!]
+    \centering
+    \begin{tabular}{|c||c|c|c|c|c|c|}
+        \hline
+        $x$ & 0 & 1 & 2 & 3 & 4 & 5 \\ \hline
+        $f(x)$ & 0 & 1 & 1.414 & 1.732 & 2 & 2.236 \\ \hline
+    \end{tabular}
+    \caption{Tabular form of the function $f(x) = \sqrt{x}$.}
+    \label{t:0.1ex1}
+\end{table}
+
+
+\input{activities/0.1.Act1}
+
+
+
 \subsection*{Slope and Linear Functions}
-In Calculus we are often interested in writing the equation for a linear function.  As
-such, we should review the features of linear functions.  Every linear function is
-characterized by a constant rate of change; the slope.  The slope of a linear function is
-a measure of the ``steepness'' of the line.  We use the symbols $\Delta x$,
-$\Delta y$ which
-mean respectively the ``change in $x$'' and the ``change in $y$''.  
+One of the basic graphical ideas of calculus is that if we zoom in close enough to a
+curved function it will look approximately linear.  The words ``zoom'' and ``close
+enough'' will be made explicit later.  We now review the features of linear functions so
+that the idea of ``zoomed in linearity'' can flow naturally later in the course.  
+
+Every linear function is characterized by a constant rate of change; the slope.  The slope
+of a linear function is a measure of the ``steepness'' of the line.  We use the symbols
+$\Delta x$ and $\Delta y$ which mean respectively the ``change in $x$'' and the ``change in
+$y$''.  
 \begin{definition}
     The {\bf slope}, $m$ of a (non-vertical) linear function $f$ which passes through any
     two points $(x_1,y_1)$, $(x_2,y_2)$ can be found using the formula
@@ -131,35 +160,37 @@ mean respectively the ``change in $x$'' and the ``change in $y$''.
     \frac{f(x_2)-f(x_1)}{x_2-x_1} = \frac{\text{Rise}}{\text{Run}} \]
 \end{definition}
 
-\begin{minipage}{0.4\columnwidth}
-    Recall that
+As shown in Figure \ref{f:0.1slope}, the slope of a linear function has the following characteristics:
 \begin{itemize}
     \item if the line rises from left to right then the slope is positive,
     \item if the line falls from left to right then the slope is negative,
     \item if the line is horizontal then the slope is zero, and
     \item if the line is vertical then the slope is undefined.
 \end{itemize}
-\end{minipage}
-\begin{minipage}{0.5\columnwidth}
+\begin{figure}
     \begin{center}
-        \begin{tikzpicture}[scale=0.8]
-            \draw[<->, thick] (-4,0) -- (4,0) node[anchor=west]{$x$};
-            \draw[<->, thick] (0,-2) -- (0,4) node[anchor=south]{$y$};
-            \draw[<->, very thick, blue] (-4,3) -- (4,-1) node[anchor=west]{Negative
-            Slope};
-            \draw[<->, very thick, color=red, dashed] (-4,-2) -- (4,3)
-            node[anchor=west]{Positive Slope};
-            \draw[<->, very thick, color=black, dotted] (-4,2) -- (4,2)
-            node[anchor=west]{Zero Slope};
-        \end{tikzpicture}
+%         \begin{tikzpicture}[scale=0.8]
+%             \draw[<->, thick] (-4,0) -- (4,0) node[anchor=west]{$x$};
+%             \draw[<->, thick] (0,-2) -- (0,4) node[anchor=south]{$y$};
+%             \draw[<->, very thick, blue] (-4,3) -- (4,-1) node[anchor=west]{Negative
+%             Slope};
+%             \draw[<->, very thick, color=red, dashed] (-4,-2) -- (4,3)
+%             node[anchor=west]{Positive Slope};
+%             \draw[<->, very thick, color=black, dotted] (-4,2) -- (4,2)
+%             node[anchor=west]{Zero Slope};
+%         \end{tikzpicture}
+        \includegraphics[width=0.6\columnwidth]{figures/0-1-fig3.pdf}
     \end{center}
-\end{minipage}\bigskip
+    \caption{Characteristics of slope.}
+    \label{f:0.1slope}
+\end{figure}
 
 Depending on the information given there are several convenient forms of the equation of a
 line.  Given the definition of the slope
 \[ m = \frac{y_2 - y_1}{x_2 - x_1} \]
 and letting $(x,y) = (x_2,y_2)$ be any arbitrary point we get the point-slope form of a
-linear function.
+linear function by observing that $m = \frac{y - y_1}{x - x_1}$ which implies
+that $y - y_1 = m(x-x_1)$.
 \begin{definition}
 If the linear function $f$ has slope $m$ and passes through the
 point $(x_1,y_1)$, then the {\bf point-slope form of the equation of a line} is given by: 
@@ -173,27 +204,33 @@ If the linear function $f$ has slope $m$ and $y$-intercept $b$, then the
 {\bf slope-intercept form of the equation of a line} is given by: 
 \[ y=mx + b.  \]
 \end{definition}
-In a calculus class the point-slope form is often the most useful. The
+In a calculus class the point-slope form is often the most useful.  If you have a linear
+function written in the point-slope form you can always rearrange to get it into the
+slope-intercept form
+\[ y - y_1 = m(x-x_1) \quad \implies \quad y = mx - m x_1 + y_1. \]
+Hence we see that the $y$ intercept of a line can be given as $b = -mx_1 + y_1$.
+The
 symbols and geometry used in each of the above definitions are shown in Figure
 \ref{fig:0.1.linear_fn}.
 
 \begin{figure}[ht!]
     \centering
-    \begin{tikzpicture}
-        \draw[color=gray!50] (-4,-2) grid (4,4);
-        \draw[<->, thick] (-4,0) -- (4,0) node[anchor=west]{$x$};
-        \draw[<->, thick] (0,-2) -- (0,4) node[anchor=south]{$y$};
-        \draw[<->, very thick, blue] (-4,3) -- (4,-1);
-        \draw[color=black, fill=black] (-3.5,2.75) circle(0.075cm) node[anchor=south
-        west]{$(x_1,y_1)$};
-        \draw[color=black, fill=black] (-1,1.5) circle(0.075cm) node[anchor=south
-        west]{$(x_2,y_2)$};
-        \draw[color=black, fill=black] (0,1) circle(0.075cm) node[anchor=south
-        west]{$(0,b)$};
-        \draw[thick, dashed] (-3.5,2.75) -- (-3.5,1.5) -- (-1,1.5);
-        \draw (-3.5,2.25) node[anchor=east]{Rise$=\Delta y$};
-        \draw (-2,1.5) node[anchor=north]{Run$=\Delta x$};
-    \end{tikzpicture}
+%     \begin{tikzpicture}
+%         \draw[color=gray!50] (-4,-2) grid (4,4);
+%         \draw[<->, thick] (-4,0) -- (4,0) node[anchor=west]{$x$};
+%         \draw[<->, thick] (0,-2) -- (0,4) node[anchor=south]{$y$};
+%         \draw[<->, very thick, blue] (-4,3) -- (4,-1);
+%         \draw[color=black, fill=black] (-3.5,2.75) circle(0.075cm) node[anchor=south
+%         west]{$(x_1,y_1)$};
+%         \draw[color=black, fill=black] (-1,1.5) circle(0.075cm) node[anchor=south
+%         west]{$(x_2,y_2)$};
+%         \draw[color=black, fill=black] (0,1) circle(0.075cm) node[anchor=south
+%         west]{$(0,b)$};
+%         \draw[thick, dashed] (-3.5,2.75) -- (-3.5,1.5) -- (-1,1.5);
+%         \draw (-3.5,2.25) node[anchor=east]{Rise$=\Delta y$};
+%         \draw (-2,1.5) node[anchor=north]{Run$=\Delta x$};
+%     \end{tikzpicture}
+    \includegraphics[width=0.6\columnwidth]{figures/0-1-fig4.pdf}
     \caption{Anatomy of a linear function.}
     \label{fig:0.1.linear_fn}
 \end{figure}
@@ -282,7 +319,7 @@ where $C$ is the number of chirps/minute and $T$ is in $^\circ F$.
 
 
 \subsection*{Families of Linear Functions}
-We noted above that a linear function has the form  $y=f(x)=mx+b$, where $m$ is the slope of
+We noted above that a linear function has the form  $f(x)=mx+b$, where $m$ is the slope of
 the line, and $b$ is the $y$-intercept.  Since $m$ and $b$ can take on various values, taken
 together, they represent a family of functions.  For example, we could fix $b = 2$, and then
 draw the graphs of $f(x)=mx+2$ for various values of $m$; for example, $m = -1, -2, 2, 1$.
@@ -311,32 +348,33 @@ If line $\ell_1$ has slope $m_1$ and line $\ell_2$ has slope $m_2$, then
 \def\scl{0.8}
 \begin{figure}[ht]
     \centering
-    \begin{tikzpicture}[scale=\scl]
-        \begin{axis}[axis lines=center, xmin=-5, xmax=5, ymin=-10, ymax=10,
-            legend style={ at={(axis cs:4.03,5)}, anchor=west }]
-            \addplot[smooth, very thick, color=blue] {-1*x+2};
-            \addlegendentry{$y=-x+2$};
-            \addplot[smooth, very thick, color=red, dashed] {-2*x+2};
-            \addlegendentry{$y=-2x+2$};
-            \addplot[smooth, very thick, color=cyan, dotted] {1*x+2};
-            \addlegendentry{$y=x+2$};
-            \addplot[smooth, very thick, color=black] {2*x+2};
-            \addlegendentry{$y=2x+2$};
-        \end{axis}
-    \end{tikzpicture}
-    \begin{tikzpicture}[scale=\scl]
-        \begin{axis}[axis lines=center, xmin=-5, xmax=5, ymin=-10, ymax=10,
-            legend style={ at={(axis cs:4.03,5)}, anchor=west }]
-            \addplot[smooth, very thick, color=blue] {2*x-1};
-            \addlegendentry{$y=2x-1$};
-            \addplot[smooth, very thick, color=red, dashed] {2*x+1};
-            \addlegendentry{$y=2x+1$};
-            \addplot[smooth, very thick, color=cyan, dotted] {2*x+4};
-            \addlegendentry{$y=2x+4$};
-            \addplot[smooth, very thick, color=black] {2*x-6};
-            \addlegendentry{$y=2x-6$};
-        \end{axis}
-    \end{tikzpicture}
+%     \begin{tikzpicture}[scale=\scl]
+%         \begin{axis}[axis lines=center, xmin=-5, xmax=5, ymin=-10, ymax=10,
+%             legend style={ at={(axis cs:4.03,5)}, anchor=west }]
+%             \addplot[smooth, very thick, color=blue] {-1*x+2};
+%             \addlegendentry{$y=-x+2$};
+%             \addplot[smooth, very thick, color=red, dashed] {-2*x+2};
+%             \addlegendentry{$y=-2x+2$};
+%             \addplot[smooth, very thick, color=cyan, dotted] {1*x+2};
+%             \addlegendentry{$y=x+2$};
+%             \addplot[smooth, very thick, color=black] {2*x+2};
+%             \addlegendentry{$y=2x+2$};
+%         \end{axis}
+%     \end{tikzpicture}
+%     \begin{tikzpicture}[scale=\scl]
+%         \begin{axis}[axis lines=center, xmin=-5, xmax=5, ymin=-10, ymax=10,
+%             legend style={ at={(axis cs:4.03,5)}, anchor=west }]
+%             \addplot[smooth, very thick, color=blue] {2*x-1};
+%             \addlegendentry{$y=2x-1$};
+%             \addplot[smooth, very thick, color=red, dashed] {2*x+1};
+%             \addlegendentry{$y=2x+1$};
+%             \addplot[smooth, very thick, color=cyan, dotted] {2*x+4};
+%             \addlegendentry{$y=2x+4$};
+%             \addplot[smooth, very thick, color=black] {2*x-6};
+%             \addlegendentry{$y=2x-6$};
+%         \end{axis}
+%     \end{tikzpicture}
+    \includegraphics[width=0.9\columnwidth]{figures/0-1-fig5.pdf}
     \caption{Several members of the family of linear functions $f(x) = mx+2$ (left) and
     the family $f(x) = 2x+b$ (right).}
     \label{fig:0.1.fam1}
@@ -345,54 +383,6 @@ If line $\ell_1$ has slope $m_1$ and line $\ell_2$ has slope $m_2$, then
 \input{activities/0.1.Act4}
 
 
-% \subsection*{Equations, Functions, and Expressions}
-% To conclude this first section we define three commonly misused mathematical terms.
-% \begin{definition}
-%     A {\bf mathematical expression} is a combination of numbers, variables, and operations
-%     (addition, subtraction, multiplication, roots, etc).  Several examples are:
-%     \begin{itemize}
-%         \item $2x+3$
-%         \item $\sqrt{a^2 + b^2}$
-%         \item $\pi r^2$
-%     \end{itemize}
-% \end{definition}
-% 
-% \begin{definition}
-%     An {\bf equation} is a mathematical statement containing an equal sign where the left
-%     and right-hand sides of the equal sign are expressions in the same variable.  Examples
-%     are:
-%     \begin{itemize}
-%         \item $3=5x-2$
-%         \item $x^2-2x+5=9$
-%         \item $\sqrt{3x-2} = 19$
-%     \end{itemize}
-% \end{definition}
-% 
-% \begin{definition}
-%     A {\bf function} (as defined before) is a rule that associates a value $x$ in the
-%     domain to a value $y$ in the range.  Examples include:
-%     \begin{itemize}
-%         \item $y=x^2+3$
-%         \item $f(x) = 3x-4$
-%         \item $f(y) = \sqrt{3y-2}$
-%     \end{itemize}
-% \end{definition}
-% 
-% It is easy for students to confuse the meanings of these three definitions, so here are
-% some helpful tips:
-% \begin{itemize}
-%     \item If there is no equal sign then it is an expression.
-%     \item It makes sense to substitute a value into an expression, but saying that you're
-%         going to ``solve'' an expression is meaningless.
-%     \item If it is an equation then it is meaningful to ``solve'' the equation.  It is NOT
-%         meaningful to say that you are going to ``solve'' a function or expression.
-%     \item A function defines a rule that associates two variables.
-%     \item A function has an associated graph whereas expressions and equations do not.
-% \end{itemize}
-% 
-% \input{activities/0.1.Act5}
-% 
-% % more activites
 
 \begin{summary}
 \item A function assigns one $y$ value to each $x$ value.
@@ -406,7 +396,6 @@ If line $\ell_1$ has slope $m_1$ and line $\ell_2$ has slope $m_2$, then
 
 \nin \hrulefill
 
-% exercises go here
 \input{exercises/0.1.FunctionsLinesSlope(Ex)}
 
 
