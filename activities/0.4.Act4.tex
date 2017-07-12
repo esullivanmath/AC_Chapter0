@@ -1,5 +1,43 @@
 \begin{activity}\label{A:0.4.4}
+\ba
+\item In the presence of sufficient resources the population of a colony of bacteria exhibits exponential growth, doubling once every three hours. What is the corresponding continuous (percentage) growth rate?
+\item A hot bowl of soup is served at a dinner party.  It starts to cool according to
+    Newton's Law of Cooling so its temperature, $T$ (measured in degrees Fahrenheit) after
+    $t$ minutes is given by
+    \[ T(t) = 65 + 186 e^{-0.06t}. \]
+    How long will it take from the time the food is served until the temperature is
+    $120^\circ$F?
+\item The velocity (in ft/sec) of a sky diver $t$ seconds after jumping is given by 
+    \[ v(t) = 80\left( 1-e^{-0.2t} \right). \]
+    After how many seconds is the velocity 75 ft/sec?
+\ea
+\end{activity}
+\begin{smallhint}
+    Use the properties of logarithms.
+\end{smallhint}
+\begin{bighint}
+    Use the properties of logarithms.
+\end{bighint}
+\begin{activitySolution}
+    \ba
+        \item If the population doubles every three hours then the exponential function
+            describing the growth is $P(t) = P_0 2^{t/3}$.  We want to find the continuous
+            growth rate so we want to write the function as $P(t) = P_0 e^{kt}$.
+            Therefore we need to solve the equation $2^{t/3} = e^{kt}$ for $k$.  Taking
+            the natural logarithm of both sides gives
+            $\ln \left( 2^{t/3} \right) = kt$, and using the rules of exponents we see
+            that $\frac{t}{3} \ln(2) = kt$.  Subtracting $kt$ from both sides and
+            factoring the $t$ gives $t\left( \frac{\ln(2)}{3} - k \right) = 0$ so we
+            immediately see that $k = \ln(2)/3$.
+        \item We need to solve the equation $65+186e^{-0.06t} = 120$.  Subtracting 65 and
+            dividing by 186 gives $e^{-0.06t} = \frac{55}{186}$.  Taking the natural
+            logarithm of both sides and then dividing by -0.06 gives $t =
+            -\frac{1}{0.06} \ln \left( \frac{55}{186} \right)$.
+        \item We need to solve the equation $80\left( 1-e^{-0.2t} \right) = 75$.  Dividing
+            by 80 gives $1-e^{-0.2t} = \frac{15}{16}$.  Hence, $e^{-0.2t} =
+            \frac{1}{16}$ and taking the natural logarithm of both sides gives $-0.2t =
+            \ln(1/16)$.  Therefore, $t = -\frac{1}{0.2} \ln\left( \frac{1}{16} \right)$.
+    \ea
+\end{activitySolution}
 
-	In the presence of sufficient resources the population of a colony of bacteria exhibits exponential growth, doubling once every three hours. What is the corresponding continuous (percentage) growth rate?
-
-\end{activity}\aftera
+\aftera

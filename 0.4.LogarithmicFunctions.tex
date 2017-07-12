@@ -5,24 +5,25 @@
 \framebox{\hspace*{3 pt}
 \parbox{6.25 in}{\begin{goals}
 \item How can we ``undo'' the effects of exponentiation?
-\item How can we solve equations involving exponential expressions?
+\item How can we solve equations involving exponential and logarithmic expressions?
+\item What are the properties of logarithmic functions?
 \end{goals}} \hspace*{3 pt}}
 
 
-\begin{web}
-\item
-    \href{https://www.khanacademy.org/math/algebra2/logarithms-tutorial/logarithm_basics/v/logarithms}{Khan
-    Playlist: Logarithm basics}
-\item
-    \href{https://www.khanacademy.org/math/algebra2/logarithms-tutorial/logarithm_properties}{Khan
-    Playlist: Properties of logarithms}
-\item
-    \href{https://www.khanacademy.org/math/algebra2/logarithms-tutorial/natural_logarithm}{Khan
-    Playlist: Natural logarithms}
-\item
-    \href{https://www.khanacademy.org/math/algebra2/exponential_and_logarithmic_func/logarithmic-equations/v/solving-logarithmic-equations_dup_1}{Khan
-    Playlist: Solving logarithmic equations}
-\end{web}
+% \begin{web}
+% \item
+%     \href{https://www.khanacademy.org/math/algebra2/logarithms-tutorial/logarithm_basics/v/logarithms}{Khan
+%     Playlist: Logarithm basics}
+% \item
+%     \href{https://www.khanacademy.org/math/algebra2/logarithms-tutorial/logarithm_properties}{Khan
+%     Playlist: Properties of logarithms}
+% \item
+%     \href{https://www.khanacademy.org/math/algebra2/logarithms-tutorial/natural_logarithm}{Khan
+%     Playlist: Natural logarithms}
+% \item
+%     \href{https://www.khanacademy.org/math/algebra2/exponential_and_logarithmic_func/logarithmic-equations/v/solving-logarithmic-equations_dup_1}{Khan
+%     Playlist: Solving logarithmic equations}
+% \end{web}
 
 \nin \hrulefill
 
@@ -36,7 +37,6 @@ exponential function passes the ``horizontal line test'' described in section
 corresponding inverse functions.  In this section we will define the \emph{logarithm} to
 be the inverse function for an exponential.
 
-% Your preview activity goes here
 \input{previews/0.4.PA1}
 
 \subsection*{Logarithms}
@@ -60,29 +60,34 @@ equations involving variables in an exponent.
 Since logarithms and exponentials are inverse functions, many of the properties of
 logarithmic functions can be deduced directly from the properties of exponential
 functions.  For example, the domain of all logarithmic functions is $(0,\infty)$ and the
-range of all logarithmic functions is $(-\infty,\infty)$ because those are the range and domain, respectively, of exponential functions.  Similarly, logarithmic functions have a vertical asymptote at $x = 0$ because exponential functions have a horizontal asymptote at $y = 0$.  
+range of all logarithmic functions is $(-\infty,\infty)$ because those are the range and
+domain, respectively, of exponential functions.  Similarly, logarithmic functions have a
+vertical asymptote at $x = 0$ because exponential functions have a horizontal asymptote at
+$y = 0$. These features can be seen in Figure \ref{F:0.4.Ex1}. 
 
 \begin{figure}[ht!]     
 	\begin{center}         
-		\begin{tikzpicture}[scale=1]             
-			\begin{axis}[axis lines=center, xlabel={$x$}, ylabel={$y$}, domain=-2:4,
-							ymin=-3, ymax=3,xmin=-2,xmax=4]
-				\addplot[smooth, thick, blue, samples=150] {ln(x)}
-						[below right] node[pos=0.75] {\color{blue}$y=\ln{x}$};
-				\addplot[smooth, thick, red, samples=150] {exp(x)}
-						[above left] node[pos=0.02] {\color{red}$y=e^{x}$};
-				\addplot[smooth, black, dotted, thick] {x}
-						[below right] node[pos=0.7] {\color{black}$y=x$};
-			\end{axis}
-		\end{tikzpicture}     
+% 		\begin{tikzpicture}[scale=1]             
+% 			\begin{axis}[axis lines=center, xlabel={$x$}, ylabel={$y$}, domain=-2:4,
+% 							ymin=-3, ymax=3,xmin=-2,xmax=4]
+% 				\addplot[smooth, thick, blue, samples=150] {ln(x)}
+% 						[below right] node[pos=0.75] {\color{blue}$y=\ln{x}$};
+% 				\addplot[smooth, thick, red, samples=150] {exp(x)}
+% 						[above left] node[pos=0.02] {\color{red}$y=e^{x}$};
+% 				\addplot[smooth, black, dotted, thick] {x}
+% 						[below right] node[pos=0.7] {\color{black}$y=x$};
+% 			\end{axis}
+% 		\end{tikzpicture}     
+        \includegraphics[width=0.5\columnwidth]{figures/0-4-fig1.pdf}
 	\end{center}     
 \caption{Graphs of the functions $y=e^{x}$ and $y=\ln{x}$.}     
 \label{F:0.4.Ex1} 
 \end{figure}
 
 The following properties of logarithms can be deduced from the properties of exponential functions and the definition of the logarithm.  These properties are especially useful in simplifying or solving logarithmic and exponential equations.
-\begin{callout}
-    {\bf Properties of logarithms:} For $b>0$, $b \ne 1$, and $x,y>0$:
+% \begin{callout}
+
+\noindent {\bf Properties of logarithms:} For $b>0$, $b \ne 1$, and $x,y>0$:
 \begin{enumerate}
 \item $\log_{b}1=0$
 \item $\log_{b}b=1$
@@ -92,8 +97,16 @@ The following properties of logarithms can be deduced from the properties of exp
 \item $\log_{b}b^{x}=x$
 \item $b^{\log_{b}x}=x$
 \item $\log_{b}x=\log_{b}y$ if and only if $x=y$
+\item $\log_a b = \frac{\log_c a}{\log_c b}$ (this is called the change of base formula)
 \end{enumerate}
-\end{callout}
+% \end{callout}
+
+Euler's number, $e$, shows up so often that we give a special name to the associated
+logarithm.  The logarithm $\log_e (x)$ is called the natural logarithm and is written as
+$\ln(x)$.  We will see later in this course that the exponential function $f(x) = e^x$ has
+very special calculus properties and as such the natural logarithm has very special
+properties as well.  With this in mind, most mathematicians and scientists use $e^x$ and
+$\ln(x)$ as their preferred exponential and logarithmic functions.
 
 
 \input{activities/0.4.Act1}
@@ -102,29 +115,34 @@ The following properties of logarithms can be deduced from the properties of exp
 \bex
 Find a value of $x$ for which $3^{x}=13$.
 \eex
-To isolate the variable $x$, we should take the logarithm of both sides. For convenience, let's choose to use the logarithm base 10.
+To isolate the variable $x$, we should take the logarithm of both sides. For convenience,
+let's choose to use the natural logarithm.
 	\[
-		\log(3^{x})=\log(13).
+		\ln(3^{x})=\ln(13).
 	\]
 Applying logarithm property (5), we find
 	\[
-		x\,\log3=\log13.
+		x\,\ln 3=\ln 13.
 	\]
 Solving algebraically for $x$ yields
 	\[
-		x=\frac{\log13}{\log3}\approx2.3347.
+		x=\frac{\ln 13}{\ln 3}\approx2.3347.
 	\]
-NOTE: Our choice to use the logarithm base 10 was arbitrary. We could have chosen any base for our logarithm to solve this equation.
+NOTE: Our choice to use the natural logarithm was arbitrary. We could have chosen any base
+for our logarithm to solve this equation.
 % \afterex
 
 \bex
-In 1970, the population of the United States was approximately 205.1 million people. Since that time, the population has grown at an annual rate of approximately 1.05\%. Assuming that this growth rate continues, when would we expect the population of the United States to reach 350 million?
+In 1970, the population of the United States was approximately 205.1 million people. Since
+that time, the population has grown at a continuous growth rate of approximately 1.05\%. Assuming that this growth rate continues, when would we expect the population of the United States to reach 350 million?
 \eex
 Since the rate of growth of the population is proportional to the size of the population, we should use an exponential model for this problem. That is, we want
 	\[
 		P(t)=P_{0}e^{rt}
 	\]
-where $t$ is the number of years after 1970, $P(t)$ is the population (in millions) of the United States at time $t$, $P_{0}$ is the population (in millions) of the United States in 1970 (i.e. $t=0$) and $r$ is the rate of growth of the population. To determine when the population will reach 350 million, we must solve the equation 
+where $t$ is the number of years after 1970, $P(t)$ is the population (in millions) of the
+United States at time $t$, $P_{0}$ is the population (in millions) of the United States in
+1970 (i.e. $t=0$) and $r$ is the continuous rate of growth of the population. To determine when the population will reach 350 million, we must solve the equation 
 	\[
 		350=205.1e^{0.0105t}.
 	\]
