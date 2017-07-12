@@ -1,43 +1,99 @@
 \begin{activity}\label{A:0.3.2}
     \ba
-        \item Based on symmetry alone, is $f(x) = x^2$ an even or an odd function?
-        \item Based on symmetry alone, is $g(x) = x^3$ an even or an odd function?
-        \item Find $f(-x)$ and $g(-x)$ and make conjectures to complete these sentences:
-            \begin{itemize}
-                \item If a function $f(x)$ is \underline{even} then $f(-x) =
-                    $\underline{\hspace{1in}}.
-                \item If a function $f(x)$ is \underline{odd} then $f(-x) =
-                    $\underline{\hspace{1in}}.
-            \end{itemize}
-            Explain why the composition $f(-x)$ is a good test for symmetry of a function.
-        \item Classify each of the following functions as even, odd, or neither.
-            \[ h(x) = \frac{1}{x}, \quad j(x) = e^x, \quad k(x) = x^2-x^4, \quad n(x) =
-            x^3+x^2. \]
-        \item For the figure below shows only half of the function $f(x)$.  Draw the left
-            half so $f(x)$ is even.  Draw the left half so $f(x)$ is odd. Draw the left
-            half so $f(x)$ is neither even nor odd.
+        \item Let $f(x) = x^2$ and $g(x) = x+8$.  Find the following:
+            \[ f(g(3)) = \underline{\hspace{1in}}, \quad g(f(3)) =
+                \underline{\hspace{1in}}, \quad f(g(x)) = \underline{\hspace{1in}},\]
+            \[ g(f(x)) = \underline{\hspace{1in}}, \quad f(x)g(x) = \underline{\hspace{1in}}
+                \]
+        \item Now let $f(x)$ and $g(x)$ be defined as in the table below.  Use the data in
+            the table to find the following compositions.
             \begin{center}
-                \begin{tikzpicture}[scale=0.65]
-                    \draw[color=gray] (-3,-3) grid (3,3);
-                    \draw[thick, black, <->] (-3,0) -- (3,0) node[anchor=west]{$x$};
-                    \draw[thick, black, <->] (0,-3) -- (0,3) node[anchor=west]{$x$};
-                    \draw[very thick, blue] (0,0) -- (1,1) -- (2,1) -- (3,-1)
-                    node[anchor=north]{$f(x)$}; 
-                \end{tikzpicture}
-                \begin{tikzpicture}[scale=0.65]
-                    \draw[color=gray] (-3,-3) grid (3,3);
-                    \draw[thick, black, <->] (-3,0) -- (3,0) node[anchor=west]{$x$};
-                    \draw[thick, black, <->] (0,-3) -- (0,3) node[anchor=west]{$x$};
-                    \draw[very thick, blue] (0,0) -- (1,1) -- (2,1) -- (3,-1)
-                    node[anchor=north]{$f(x)$}; 
-                \end{tikzpicture}
-                \begin{tikzpicture}[scale=0.65]
-                    \draw[color=gray] (-3,-3) grid (3,3);
-                    \draw[thick, black, <->] (-3,0) -- (3,0) node[anchor=west]{$x$};
-                    \draw[thick, black, <->] (0,-3) -- (0,3) node[anchor=west]{$x$};
-                    \draw[very thick, blue] (0,0) -- (1,1) -- (2,1) -- (3,-1)
-                    node[anchor=north]{$f(x)$}; 
-                \end{tikzpicture}
+                \begin{tabular}{|c||c|c|c|c|c|c|c|}
+                    \hline
+                    $x$ & $-3$ & $-2$ & $-1$ & $0$ & $1$ & $2$ & $3$ \\ \hline \hline
+                    $f(x)$ & 3 & 1 & $-1$ & $-3$ & $-1$ & 1 & 3 \\ \hline
+                    $g(x)$ & $-2$ & $-1$ & 0 & 1 & 0 & 1 & 2 \\ \hline
+                \end{tabular}
             \end{center}
+            \[ 
+                f(-3) = \underline{\hspace{1in}}, \quad
+                g(3) = \underline{\hspace{1in}}, \]
+            \[  f(g(-3)) = \underline{\hspace{1in}}, \quad
+                f(g(f(-3))) = \underline{\hspace{1in}} \quad
+                \]
+        \item Now let $f(x)$ and $g(x)$ be defined as in the plots below.  Use the plots
+            to find the following compositions.
+%             \begin{figure}
+%                 \begin{center}
+%                     \includegraphics[width=0.6\columnwidth]{figures/0-3-fig3.pdf}
+%                 \end{center}
+%                 \caption{The functions $f(x)$ and $g(x)$ for Activity \ref{A:0.3.2}.}
+%                 \label{f:A:0.3.2}
+%             \end{figure}
+
+            \begin{minipage}{0.5\columnwidth}
+                \begin{center}
+                    \includegraphics[width=0.9\columnwidth]{figures/0-3-fig3.pdf}
+                \end{center}
+            \end{minipage}
+            \begin{minipage}{0.4\columnwidth}
+                \begin{flalign*}
+                    f(1) &= \underline{\hspace{1in}} \\
+                    g(2) &= \underline{\hspace{1in}} \\
+                    g(f(1)) &= \underline{\hspace{1in}} \\
+                    f(g(1)) &= \underline{\hspace{1in}} \\
+                    g(f(f(0))) &= \underline{\hspace{1in}}
+                \end{flalign*}
+                
+            \end{minipage}
     \ea
-\end{activity}\aftera
+
+\end{activity}
+\begin{smallhint}
+    \ba
+        \item Start from the inside and work your way out.  The first two answers will be
+            numbers and the next three will be functions.
+        \item The numbers on the inside of the table are the $y$ values for the functions
+            $f$ and $g$.  
+        \item You're looking for the $y$ values that come out of these functions.
+    \ea
+\end{smallhint}
+\begin{bighint}
+    \ba
+        \item On the function compositions, first evaluate the expression inside the
+            parenthesis.  Then evaluate the outside.
+        \item For an expression such as $f(g(-3))$, first evaluate $g(-3)$ and then
+            substitute the answer into $f$.
+        \item The same hints apply to the graphical version of the problem.
+    \ea
+\end{bighint}
+\begin{activitySolution}
+    \ba
+        \item For $f(x) = x^2$ and $g(x) = x+8$
+            \begin{flalign*}
+                f(g(3)) &= f(11) = 121 \\
+                g(f(3)) &= g(9) = 17 \\
+                f(g(x)) &= f(x+8) = (x+8)^2 \\
+                g(f(x)) &= g(x^2) = x^2 + 8 \\
+                f(x)g(x) &=(x^2)(x+8) = x^3 + 8x^2 
+            \end{flalign*}
+        \item
+            \begin{flalign*}
+                f(-3) &= 3 \\
+                g(3) &= 2 \\
+                f(g(-3)) &= f(-2) = 1 \\
+                f(g(f(-3))) &= f(g(3)) = f(2) = 1
+            \end{flalign*}
+        \item 
+            \begin{flalign*}
+                f(1) &= 1 \\
+                g(2) &= 1 \\
+                g(f(1)) &= g(1) = -1 \\
+                f(g(1)) &= f(-1) = -2 \\
+                g(f(f(0))) &= g(f(-2)) = g(1) = 1
+            \end{flalign*}
+    \ea
+\end{activitySolution}
+
+
+\aftera

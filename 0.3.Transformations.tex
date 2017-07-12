@@ -1,4 +1,4 @@
-\section{Transformations of Functions} \label{S:0.3.Transformations}
+\section{Transformations, Compositions, and Inverses} \label{S:0.3.Transformations}
 
 
 \vspace*{-14 pt}
@@ -35,7 +35,6 @@ blocks.
 
 \input{previews/0.3.PA1}
 
-% Your preview activity goes here
 
 \subsection*{Function Transformations}
 In Preview Activity \ref{PA:0.3} we experimented with the four main types of function
@@ -60,38 +59,39 @@ then the actions of each parameter are described in Table \ref{tab:0.3.trans}.
 
 
 \bex
-Consider the function $f(x)$ in the left-hand plot of Figure \ref{F:0.3.Ex1}.  Plot $2f(x)$, $f(x)+1$,
-$f(x-1)$, and $f(2x)$.
+Consider the function $f(x)$ in the left-hand plot of Figure \ref{F:0.3.Ex1}.  Plot the
+functions $g(x) = 2f(x)$, $j(x) = f(2x)$, $h(x) = f(x)+1$, and $k(x) = f(x-1)$.
 \eex
-\def\scl{0.75}
+% \def\scl{0.75}
 \begin{figure}[ht!]
     \begin{center}
-        \begin{tikzpicture}[scale=\scl]
-            \draw[color=gray] (-3,-3) grid (3,3);
-            \draw[thick, black, <->] (-3,0) -- (3,0) node[anchor=west]{$x$};
-            \draw[thick, black, <->] (0,-3) -- (0,3) node[anchor=west]{$x$};
-            \draw[very thick, blue] (-2,-1) -- (-1,-1) -- (0,1) -- (1,0) -- (2,1)
-            node[anchor=south]{$f(x)$}; 
-        \end{tikzpicture} 
-        \begin{tikzpicture}[scale=\scl]
-            \draw[color=gray] (-3,-3) grid (3,3);
-            \draw[thick, black, <->] (-3,0) -- (3,0) node[anchor=west]{$x$};
-            \draw[thick, black, <->] (0,-3) -- (0,3) node[anchor=west]{$x$};
-            \draw[very thick, red] (-2,-2) -- (-1,-2) -- (0,2) -- (1,0) -- (2,2)
-            node[anchor=south west]{$2f(x)$}; 
-            \draw[very thick, black, dashed] (-1,-1) -- (-0.5,-1) --
-            (0,1) -- (0.5,0) -- (1,1); 
-            \draw[black] (0.6,0) node[anchor=north]{$f(2x)$};
-        \end{tikzpicture}
-        \begin{tikzpicture}[scale=\scl]
-            \draw[color=gray] (-3,-3) grid (3,3);
-            \draw[thick, black, <->] (-3,0) -- (3,0) node[anchor=west]{$x$};
-            \draw[thick, black, <->] (0,-3) -- (0,3) node[anchor=west]{$x$};
-            \draw[very thick, green!50!black] (-2,0) -- (-1,0) -- (0,2) -- (1,1) -- (2,2)
-            node[anchor=south]{$f(x)+1$}; 
-            \draw[very thick, magenta, dashed] (-1,-1) -- (0,-1) -- (1,1) -- (2,0) -- (3,1)
-            node[anchor=south]{$f(x-1)$}; 
-        \end{tikzpicture}
+%         \begin{tikzpicture}[scale=\scl]
+%             \draw[color=gray] (-3,-3) grid (3,3);
+%             \draw[thick, black, <->] (-3,0) -- (3,0) node[anchor=west]{$x$};
+%             \draw[thick, black, <->] (0,-3) -- (0,3) node[anchor=west]{$x$};
+%             \draw[very thick, blue] (-2,-1) -- (-1,-1) -- (0,1) -- (1,0) -- (2,1)
+%             node[anchor=south]{$f(x)$}; 
+%         \end{tikzpicture} 
+%         \begin{tikzpicture}[scale=\scl]
+%             \draw[color=gray] (-3,-3) grid (3,3);
+%             \draw[thick, black, <->] (-3,0) -- (3,0) node[anchor=west]{$x$};
+%             \draw[thick, black, <->] (0,-3) -- (0,3) node[anchor=west]{$x$};
+%             \draw[very thick, red] (-2,-2) -- (-1,-2) -- (0,2) -- (1,0) -- (2,2)
+%             node[anchor=south west]{$2f(x)$}; 
+%             \draw[very thick, black, dashed] (-1,-1) -- (-0.5,-1) --
+%             (0,1) -- (0.5,0) -- (1,1); 
+%             \draw[black] (0.6,0) node[anchor=north]{$f(2x)$};
+%         \end{tikzpicture}
+%         \begin{tikzpicture}[scale=\scl]
+%             \draw[color=gray] (-3,-3) grid (3,3);
+%             \draw[thick, black, <->] (-3,0) -- (3,0) node[anchor=west]{$x$};
+%             \draw[thick, black, <->] (0,-3) -- (0,3) node[anchor=west]{$x$};
+%             \draw[very thick, green!50!black] (-2,0) -- (-1,0) -- (0,2) -- (1,1) -- (2,2)
+%             node[anchor=south]{$f(x)+1$}; 
+%             \draw[very thick, magenta, dashed] (-1,-1) -- (0,-1) -- (1,1) -- (2,0) -- (3,1)
+%             node[anchor=south]{$f(x-1)$}; 
+%         \end{tikzpicture}
+        \includegraphics[width=0.95\columnwidth]{figures/0-3-fig1.pdf}
     \end{center}
     \caption{A function with transformations.}
     \label{F:0.3.Ex1}
@@ -102,9 +102,9 @@ You should notice the following features of these solutions:
     \item In $j(x)=f(2x)$, the ``2'' actually cut all of the $x$-values in half from $f(x)$.
         This is potentially contrary to what you might expect. Verify this by substituting
         values in for $x$.
-    \item In $h(x)=f(x)+1$, the ``+1'' simply adds 1 unit to all of the $y$-values from
+    \item In $h(x)=f(x)+1$, the ``$+1$'' simply adds 1 unit to all of the $y$-values from
         $f(x)$.
-    \item In $k(x)=f(x-1)$, the ``-1'' actually moves the graph of $f(x)$ to the right.
+    \item In $k(x)=f(x-1)$, the ``$-1$'' actually moves the graph of $f(x)$ to the right.
         This is potentially contrary to what you might expect. Verify this by substituting
         values in for $x$.
 \end{itemize}
@@ -135,15 +135,17 @@ $f(g(x)) = (x-1)^2$ and $g(f(x))=x^2 - 1$.  Notice the difference between these 
 functions; the order that the composition takes places matters!
 \afterex
 
+\input{activities/0.3.Act2}
+
 \subsection*{Symmetry}
 There are many ways that a function can be symmetric, but two important symmetries are (1)
 reflective symmetry over the $y$-axis, and (2) $180^\circ$ rotational symmetry about the
 origin.  A function that has reflective symmetry over the $y$-axis is called an {\bf even
 function} and a function with rotational symmetry about the origin is called an {\bf odd
 function}.  The reasoning for these names will be evident after completing Activity
-\ref{A:0.3.2}.
+\ref{A:0.3.3}.
 
-\input{activities/0.3.Act2}
+\input{activities/0.3.Act3}
 
 \subsection*{Inverse Functions}
 We conclude this section by discussing an important question:  If we know the action of a
@@ -165,26 +167,27 @@ switching the role of the $x$ and the $y$ in the function is the same as reflect
 the line $y=x$.
 \begin{figure}[h!]
     \begin{center}
-        \begin{tikzpicture}
-            \begin{axis}[axis lines=center, xlabel={$x$}, ylabel={$y$}, domain=-4:4,
-                ymin=-4, ymax=4, xmin=-4, xmax=4, grid]
-                \addplot[smooth, very thick, red, samples=150] {x^3};
-                \addplot[smooth, very thick, blue, samples=150] {(x/abs(x))*abs(x)^(1/3)};
-                \draw[dashed, thick, fill=black] (axis cs:1.26,2) circle(0.05cm) -- (axis
-                cs:2,1.26) circle(0.05cm);
-                \draw[dashed, thick, fill=black] (axis cs:-1.26,-2) circle(0.05cm) -- (axis
-                cs:-2,-1.26) circle(0.05cm);
-                \draw[dashed, thick, fill=black] (axis cs:-0.125,-.5) circle(0.05cm) -- (axis
-                cs:-0.5,-0.125) circle(0.05cm);
-                \draw[dashed, thick, fill=black] (axis cs:0.125,.5) circle(0.05cm) -- (axis
-                cs:0.5,0.125) circle(0.05cm);
-                \draw[dashed, thick, fill=black] (axis cs:1.44,3) circle(0.05cm) -- (axis
-                cs:3,1.44) circle(0.05cm);
-                \draw[dashed, thick, fill=black] (axis cs:-1.44,-3) circle(0.05cm) -- (axis
-                cs:-3,-1.44) circle(0.05cm);
-                \addplot[smooth, black, dotted, thick] {x};
-            \end{axis}
-        \end{tikzpicture}
+%         \begin{tikzpicture}
+%             \begin{axis}[axis lines=center, xlabel={$x$}, ylabel={$y$}, domain=-4:4,
+%                 ymin=-4, ymax=4, xmin=-4, xmax=4, grid]
+%                 \addplot[smooth, very thick, red, samples=150] {x^3};
+%                 \addplot[smooth, very thick, blue, samples=150] {(x/abs(x))*abs(x)^(1/3)};
+%                 \draw[dashed, thick, fill=black] (axis cs:1.26,2) circle(0.05cm) -- (axis
+%                 cs:2,1.26) circle(0.05cm);
+%                 \draw[dashed, thick, fill=black] (axis cs:-1.26,-2) circle(0.05cm) -- (axis
+%                 cs:-2,-1.26) circle(0.05cm);
+%                 \draw[dashed, thick, fill=black] (axis cs:-0.125,-.5) circle(0.05cm) -- (axis
+%                 cs:-0.5,-0.125) circle(0.05cm);
+%                 \draw[dashed, thick, fill=black] (axis cs:0.125,.5) circle(0.05cm) -- (axis
+%                 cs:0.5,0.125) circle(0.05cm);
+%                 \draw[dashed, thick, fill=black] (axis cs:1.44,3) circle(0.05cm) -- (axis
+%                 cs:3,1.44) circle(0.05cm);
+%                 \draw[dashed, thick, fill=black] (axis cs:-1.44,-3) circle(0.05cm) -- (axis
+%                 cs:-3,-1.44) circle(0.05cm);
+%                 \addplot[smooth, black, dotted, thick] {x};
+%             \end{axis}
+%         \end{tikzpicture}
+            \includegraphics[width=0.5\columnwidth]{figures/0-3-fig5.pdf}
     \end{center}
     \caption{Inverse functions. If $(x,y)$ is on one end of one of the dashed segments,
     then $(y,x)$ is on the other side.}
@@ -193,7 +196,7 @@ the line $y=x$.
 
 The question that remains is when an inverse function actually exists.  This is the same
 as asking: ``if I reflect over $y=x$ is the end result a function?''  The answer to this
-question is certain ``no'' if the function is $f(x) = x^2$ (as seen in the left-hand plot
+question is certainly ``no'' if the function is $f(x) = x^2$ (as seen in the left-hand plot
 of Figure \ref{fig:0.3.inv2}), but if we restrict the domain on $f(x) = x^2$ to $0 \le x < \infty$ then
 the result is a function (as seen in the right-hand plot of Figure \ref{fig:0.3.inv2}).
 This leads us to the following results:
@@ -205,26 +208,27 @@ This leads us to the following results:
 \end{itemize}
 \begin{figure}[ht!]
     \begin{center}
-        \begin{tikzpicture}
-            \begin{axis}[axis lines=center, xlabel={$x$}, ylabel={$y$}, domain=-2:2,
-                ymin=-2, ymax=2, xmin=-2, xmax=2, grid]
-                \addplot[smooth, very thick, red, samples=150] {x^2};
-                \addplot[smooth, very thick, blue, samples=150] {sqrt(x)};
-                \addplot[smooth, very thick, blue, samples=150] {-sqrt(x)};
-                \addplot[smooth, black, dotted, thick] {x};
-                \draw[black, dashed, thick] (axis cs:1.5,-2) -- (axis cs:1.5,2);
-                \draw[fill=black] (axis cs:1.5,1.22) circle(0.07cm);
-                \draw[fill=black] (axis cs:1.5,-1.22) circle(0.07cm);
-            \end{axis}
-        \end{tikzpicture}
-        \begin{tikzpicture}
-            \begin{axis}[axis lines=center, xlabel={$x$}, ylabel={$y$}, domain=0:2,
-                ymin=-2, ymax=2, xmin=-2, xmax=2, grid]
-                \addplot[smooth, very thick, red, samples=200] {x^2};
-                \addplot[smooth, very thick, blue, samples=200] {sqrt(x)};
-                \addplot[smooth, black, dotted, thick] {x};
-            \end{axis}
-        \end{tikzpicture}
+%         \begin{tikzpicture}
+%             \begin{axis}[axis lines=center, xlabel={$x$}, ylabel={$y$}, domain=-2:2,
+%                 ymin=-2, ymax=2, xmin=-2, xmax=2, grid]
+%                 \addplot[smooth, very thick, red, samples=150] {x^2};
+%                 \addplot[smooth, very thick, blue, samples=150] {sqrt(x)};
+%                 \addplot[smooth, very thick, blue, samples=150] {-sqrt(x)};
+%                 \addplot[smooth, black, dotted, thick] {x};
+%                 \draw[black, dashed, thick] (axis cs:1.5,-2) -- (axis cs:1.5,2);
+%                 \draw[fill=black] (axis cs:1.5,1.22) circle(0.07cm);
+%                 \draw[fill=black] (axis cs:1.5,-1.22) circle(0.07cm);
+%             \end{axis}
+%         \end{tikzpicture}
+%         \begin{tikzpicture}
+%             \begin{axis}[axis lines=center, xlabel={$x$}, ylabel={$y$}, domain=0:2,
+%                 ymin=-2, ymax=2, xmin=-2, xmax=2, grid]
+%                 \addplot[smooth, very thick, red, samples=200] {x^2};
+%                 \addplot[smooth, very thick, blue, samples=200] {sqrt(x)};
+%                 \addplot[smooth, black, dotted, thick] {x};
+%             \end{axis}
+%         \end{tikzpicture}
+        \includegraphics[width=0.9\columnwidth]{figures/0-3-fig6.pdf}
     \end{center}
     \caption{The left-hand plot shows that after reflecting $f(x)=x^2$ across $y=x$ the
     result is not a function.  The right-hand plot shows that under a restriction of the
@@ -264,7 +268,7 @@ function so that the inverse exists.
 \ea
 \afterex
 
-Finally, to tie the ideas of composition and inverses togehter we observe that if the
+Finally, to tie the ideas of composition and inverses together we observe that if the
 inverse of a function switches the roles of $x$ and $y$ then the composition
 $f^{-1}(f(x))$ should simply give $x$ back.  The logical argument is as follows: 
 \[ f \text{ maps } x \text{ to } y \quad \text{ then } \quad f^{-1} \text{ maps } y \text{ to }
@@ -278,6 +282,7 @@ which is written more compactly as
 \[ f(f^{-1}(x)) = x. \]
 These two equations provide a nice algebraic check when finding inverses.
 
+\input{activities/0.3.Act4}
 
 
 \begin{summary}
@@ -296,7 +301,7 @@ These two equations provide a nice algebraic check when finding inverses.
 
 \nin \hrulefill
 
-\input{exercises/0.3.NewFromOld(Ex)}
+\input{exercises/0.3.Transformations(Ex)}
 
 
 \clearpage
