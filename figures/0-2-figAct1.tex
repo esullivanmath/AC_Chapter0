@@ -1,0 +1,20 @@
+\documentclass{standalone}
+
+\usepackage{pgfplots,tikz,amsmath}
+\begin{document}
+            \begin{tikzpicture}
+                \begin{axis}[axis lines=center, xlabel={$x$}, ylabel={$y$}, xmin=-3, xmax=3,
+                    ymin=-1, ymax=5, domain=-3:3,legend pos=outer north east]
+                    \addplot[smooth, blue, very thick] {2^x};
+                    \addlegendentry{$f(x)$};
+                    \addplot[smooth, red, very thick, dashed] {3^x};
+                    \addlegendentry{$g(x)$};
+                    \addplot[smooth, green!50!black, very thick, dotted] {1.5^x};
+                    \addlegendentry{$h(x)$};
+                    \addplot[smooth, black, very thick, dashdotted] {(0.5)^x};
+                    \addlegendentry{$k(x)$};
+                    \addplot[smooth, cyan, very thick, densely dotted] {(0.9)^x};
+                    \addlegendentry{$m(x)$};
+                \end{axis}
+            \end{tikzpicture}
+\end{document}

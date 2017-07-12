@@ -1,4 +1,4 @@
-\begin{activity}\label{A:0.2.3}\cite[p.9]{nonlinear}
+\begin{activity}\label{A:0.2.3}%\cite[p.9]{nonlinear}
     Uncontrolled geometric growth of the bacterium {\it Escherichia coli (E. Coli)} is the
     theme of the following quote taken from the best-selling author Michael Crichton's
     science fiction thriller, {\it The Andromeda Strain:}
@@ -20,4 +20,34 @@
             accurate?  Approximate the number of hours we should have allowed for this
             statement to be correct?
     \ea
-\end{activity}\aftera
+\end{activity}
+\begin{smallhint}
+   \ba
+    \item What is the common ratio?
+    \item Be sure to get your units correct.
+    \item You might want to tackle this problem graphically.
+   \ea
+\end{smallhint}
+\begin{bighint}
+   \ba
+    \item The common ratio is 2.
+    \item If you have the units correct you should be substituting 1,440 minutes.
+    \item You can do some algebra on your equation from part (a) to make your work easier.
+   \ea
+\end{bighint}
+\begin{activitySolution}
+   \ba
+    \item $P(t) = P_0 \cdot 2^{t/20}$ where $t$ is measured in minutes.
+    \item Assuming that $P_0 = 1$, $P(1440) = 2^{1440/20} \approx 4.72 \times 10^{21}$.
+    \item 
+        \begin{flalign*}
+            6.0 \times 10^{27} &= 1.7 \times 10^{-12} \cdot 1 \cdot 2^{t/20} \\
+            3.529 \times 10^{39} &= 2^{t/20} \\
+            \log_2\left( 3.529 \times 10^{39} \right) &= \frac{t}{20} \\
+            20 \log_2\left( 3.529 \times 10^{39} \right) &= t \\
+            &\approx 2627.5 \text{ minutes}
+        \end{flalign*}<++>
+   \ea
+\end{activitySolution}
+
+\aftera
