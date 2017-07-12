@@ -9,26 +9,26 @@
 \end{goals}} \hspace*{3 pt}}
 
 
-\begin{web}
-\item
-    \href{https://www.khanacademy.org/math/trigonometry/unit-circle-trig-func/radians_tutorial/v/introduction-to-radians}{Khan
-    Playlist: Radian measure and arc length}
-\item
-    \href{https://www.khanacademy.org/math/trigonometry/unit-circle-trig-func/Trig-unit-circle}{Khan
-    Playlist: Trig on the unit circle}
-\item
-    \href{https://www.khanacademy.org/math/trigonometry/unit-circle-trig-func/trig-functions-special-angles}{Khan
-    Playlist: Trig functions of special angles}
-\item
-    \href{https://www.khanacademy.org/math/trigonometry/unit-circle-trig-func/inverse_trig_functions}{Khan
-    Playlist: Inverse trig functions}
-\item
-    \href{https://www.khanacademy.org/math/trigonometry/trig-function-graphs/trig_graphs_tutorial/v/midline-amplitude-period}{Khan
-    Playlist: Graphs of trig functions}
-\item
-    \href{https://www.khanacademy.org/math/trigonometry/trig-function-graphs/modeling-periodic-functions}{Khan
-    Playlist: Modeling with periodic functions}
-\end{web}
+% \begin{web}
+% \item
+%     \href{https://www.khanacademy.org/math/trigonometry/unit-circle-trig-func/radians_tutorial/v/introduction-to-radians}{Khan
+%     Playlist: Radian measure and arc length}
+% \item
+%     \href{https://www.khanacademy.org/math/trigonometry/unit-circle-trig-func/Trig-unit-circle}{Khan
+%     Playlist: Trig on the unit circle}
+% \item
+%     \href{https://www.khanacademy.org/math/trigonometry/unit-circle-trig-func/trig-functions-special-angles}{Khan
+%     Playlist: Trig functions of special angles}
+% \item
+%     \href{https://www.khanacademy.org/math/trigonometry/unit-circle-trig-func/inverse_trig_functions}{Khan
+%     Playlist: Inverse trig functions}
+% \item
+%     \href{https://www.khanacademy.org/math/trigonometry/trig-function-graphs/trig_graphs_tutorial/v/midline-amplitude-period}{Khan
+%     Playlist: Graphs of trig functions}
+% \item
+%     \href{https://www.khanacademy.org/math/trigonometry/trig-function-graphs/modeling-periodic-functions}{Khan
+%     Playlist: Modeling with periodic functions}
+% \end{web}
 
 \nin \hrulefill
 
@@ -89,51 +89,56 @@ So, what is a radian?
 
 \begin{figure}[h!]
     \centering
-    \begin{tikzpicture}[scale=1.5]
-        \draw[<->, very thick] (-1.5,0) -- (1.5,0) node[anchor=west]{$x$}; 
-        \draw[<->, very thick] (0,-1.5) -- (0,1.5) node[anchor=south]{$y$}; 
-        \draw (0.5,0) node[anchor=north]{$1$};
-        \draw[thick, color=blue] (0,0) circle(1cm);
-        \draw[color=black, fill=black] (1,0) circle(0.035cm) node[anchor=south west]{0 radians
-        $=0^\circ$};
-        \draw[color=black, fill=black] (1,0) circle(0.035cm) node[anchor=north west]{$2 \pi$ radians
-        $=360^\circ$};
-        \draw[color=black, fill=black] (0,1) circle(0.035cm) node[anchor=south
-        west]{$\pi/2$ radians $=90^\circ$};
-        \draw[color=black, fill=black] (-1,0) circle(0.035cm) node[anchor=south
-        east]{$\pi$ radians $=180^\circ$};
-        \draw[color=black, fill=black] (0,-1) circle(0.035cm) node[anchor=north
-        east]{$3\pi/2$ radians $=270^\circ$};
-    \end{tikzpicture}
-    \begin{tikzpicture}[scale=1.5]
-        \draw[<->, very thick] (-1.5,0) -- (1.5,0) node[anchor=west]{$x$}; 
-        \draw[<->, very thick] (0,-1.5) -- (0,1.5) node[anchor=south]{$y$}; 
-        \draw (0.5,0) node[anchor=north]{$1$};
-        \draw[thick, color=blue] (0,0) circle(1cm);
-        \draw[color=black, very thick] (0,0) -- (0.54,0.84);
-        \draw[color=black, fill=black] (0.54,0.84) circle(0.035cm) node[anchor=south
-        west]{1 radian $\approx 57.3^\circ$};
-        \draw[color=black, very thick] (1,0) arc(0:57.3:1cm);
-        \draw[black] (0.92,0.4) node[anchor=west]{Arc Length = 1};
-    \end{tikzpicture}
+%     \begin{tikzpicture}[scale=1.5]
+%         \draw[<->, very thick] (-1.5,0) -- (1.5,0) node[anchor=west]{$x$}; 
+%         \draw[<->, very thick] (0,-1.5) -- (0,1.5) node[anchor=south]{$y$}; 
+%         \draw (0.5,0) node[anchor=north]{$1$};
+%         \draw[thick, color=blue] (0,0) circle(1cm);
+%         \draw[color=black, fill=black] (1,0) circle(0.035cm) node[anchor=south west]{0 radians
+%         $=0^\circ$};
+%         \draw[color=black, fill=black] (1,0) circle(0.035cm) node[anchor=north west]{$2 \pi$ radians
+%         $=360^\circ$};
+%         \draw[color=black, fill=black] (0,1) circle(0.035cm) node[anchor=south
+%         west]{$\pi/2$ radians $=90^\circ$};
+%         \draw[color=black, fill=black] (-1,0) circle(0.035cm) node[anchor=south
+%         east]{$\pi$ radians $=180^\circ$};
+%         \draw[color=black, fill=black] (0,-1) circle(0.035cm) node[anchor=north
+%         east]{$3\pi/2$ radians $=270^\circ$};
+%     \end{tikzpicture}
+%     \begin{tikzpicture}[scale=1.5]
+%         \draw[<->, very thick] (-1.5,0) -- (1.5,0) node[anchor=west]{$x$}; 
+%         \draw[<->, very thick] (0,-1.5) -- (0,1.5) node[anchor=south]{$y$}; 
+%         \draw (0.5,0) node[anchor=north]{$1$};
+%         \draw[thick, color=blue] (0,0) circle(1cm);
+%         \draw[color=black, very thick] (0,0) -- (0.54,0.84);
+%         \draw[color=black, fill=black] (0.54,0.84) circle(0.035cm) node[anchor=south
+%         west]{1 radian $\approx 57.3^\circ$};
+%         \draw[color=black, very thick] (1,0) arc(0:57.3:1cm);
+%         \draw[black] (0.92,0.4) node[anchor=west]{Arc Length = 1};
+%     \end{tikzpicture}
+    \includegraphics[width=0.9\columnwidth]{figures/0-5-fig2.pdf}
     \caption{Common radian measures.}
     \label{fig:0.5.radian}
 \end{figure}
 
 Because we define the radian in this way, this means that the arc length $s$ along the
-circumference of a circle with radius $r$ over angle $\theta$ can be calculated as
-\[ s = r \theta \]
-as long as the angle $\theta$ is measured in radians.
+circumference of a circle with radius $r$ over angle $\theta$ can be calculated as $s = r
+\theta$ as long as the angle $\theta$ is measured in radians.
 
-\begin{center}
-    \begin{tikzpicture}[scale=1]
-        \draw[thick, color=blue] (0,0) circle(1.5cm);
-        \draw[color=black, very thick] (0,0) -- (0.61,1.37) arc(66:-23:1.5cm) -- (0,0);
-        \draw (0,0.1) node[anchor=west]{$\theta$};
-        \draw (1.4,0.2) node[anchor=south west]{$s$};
-        \draw (0.8,-0.3) node[anchor=north]{$r$};
-    \end{tikzpicture}
-\end{center}
+\begin{figure}
+    \begin{center}
+%     \begin{tikzpicture}[scale=1]
+%         \draw[thick, color=blue] (0,0) circle(1.5cm);
+%         \draw[color=black, very thick] (0,0) -- (0.61,1.37) arc(66:-23:1.5cm) -- (0,0);
+%         \draw (0,0.1) node[anchor=west]{$\theta$};
+%         \draw (1.4,0.2) node[anchor=south west]{$s$};
+%         \draw (0.8,-0.3) node[anchor=north]{$r$};
+%     \end{tikzpicture}
+        \includegraphics[width=0.3\columnwidth]{figures/0-5-fig3.pdf}
+    \end{center}
+    \caption{Arc length, angle, and radius on a circle.}
+    \label{fig:0.5.arc}
+\end{figure}
 
 
 \subsection*{Sine and Cosine on the Unit Circle}
@@ -142,22 +147,27 @@ Let's draw a unit circle with its center at the origin and think about a point m
 \[ x = \cos \theta \quad \text{and} \quad y = \sin \theta \]
 
 
-\begin{center}
-    \begin{tikzpicture}[scale=1.5]
-        \draw[<->, very thick] (-1.5,0) -- (1.5,0) node[anchor=west]{$x$}; 
-        \draw[<->, very thick] (0,-1.5) -- (0,1.5) node[anchor=south]{$y$}; 
-        \draw[thick, color=blue] (0,0) circle(1cm);
-        \draw[color=black, very thick] (0,0) -- (0.54,0.84);
-        \draw[color=black,fill=black] (0.54,0.84) circle(0.04cm)
-        node[anchor=south west]{$(x,y)=(\cos\theta,\,\sin\theta)$};
-        \draw[->, thick] (0,0) -- (0.54,0);
-        \draw[->, thick] (0.54,0) -- (0.54,0.84);
-        \draw (0.26,0) node[anchor=north]{$x$};
-        \draw (0.54,0.42) node[anchor=west]{$y$};
-        \draw[color=black, fill=black] (1,0) circle(0.035cm) node[anchor=south
-        west]{$(1,0)$};
-    \end{tikzpicture}
-\end{center}
+\begin{figure}
+    \begin{center}
+%     \begin{tikzpicture}[scale=1.5]
+%         \draw[<->, very thick] (-1.5,0) -- (1.5,0) node[anchor=west]{$x$}; 
+%         \draw[<->, very thick] (0,-1.5) -- (0,1.5) node[anchor=south]{$y$}; 
+%         \draw[thick, color=blue] (0,0) circle(1cm);
+%         \draw[color=black, very thick] (0,0) -- (0.54,0.84);
+%         \draw[color=black,fill=black] (0.54,0.84) circle(0.04cm)
+%         node[anchor=south west]{$(x,y)=(\cos\theta,\,\sin\theta)$};
+%         \draw[->, thick] (0,0) -- (0.54,0);
+%         \draw[->, thick] (0.54,0) -- (0.54,0.84);
+%         \draw (0.26,0) node[anchor=north]{$x$};
+%         \draw (0.54,0.42) node[anchor=west]{$y$};
+%         \draw[color=black, fill=black] (1,0) circle(0.035cm) node[anchor=south
+%         west]{$(1,0)$};
+%     \end{tikzpicture}
+        \includegraphics[width=0.4\columnwidth]{figures/0-5-fig4.pdf}
+    \end{center}
+    \caption{Sine and cosine on a unit circle.}
+    \label{fig:0.5.unit}
+\end{figure}
 
 % \resizebox{4in}{!}{
 % \begin{picture}(200,100)(0,0)
@@ -196,16 +206,17 @@ To get beyond trigonometry, rather than using the angle $\theta$ as the input to
 and cosine functions, instead we will put our function input on the $x$ axis.  Then we can
 plot the output of on the $y$ axis.  This produces the following graph:
 \begin{center}
-    \begin{tikzpicture}
-        \begin{axis}[axis lines=center, xlabel={$x$}, xmin=-7, xmax=7,
-                ymin=-1.5, ymax=1.5, ytick={-1,1}, xtick={-6.28, -4.71, -3.14, -1.57,
-                1.57, 3.14, 4.71, 6.28},
-            xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$},
-        grid, xscale=2]
-            \addplot[smooth, very thick, color=blue, domain=-6.5:6.5, samples=100] {sin(deg(x))};
-            \draw (axis cs:0,1) node[anchor=south west]{$y = \sin(x)$};
-        \end{axis}
-    \end{tikzpicture}
+%     \begin{tikzpicture}
+%         \begin{axis}[axis lines=center, xlabel={$x$}, xmin=-7, xmax=7,
+%                 ymin=-1.5, ymax=1.5, ytick={-1,1}, xtick={-6.28, -4.71, -3.14, -1.57,
+%                 1.57, 3.14, 4.71, 6.28},
+%             xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$},
+%         grid, xscale=2]
+%             \addplot[smooth, very thick, color=blue, domain=-6.5:6.5, samples=100] {sin(deg(x))};
+%             \draw (axis cs:0,1) node[anchor=south west]{$y = \sin(x)$};
+%         \end{axis}
+%     \end{tikzpicture}
+    \includegraphics[width=0.85\columnwidth]{figures/0-5-fig5.pdf}
 \end{center}
 
 % \resizebox{4in}{!}{\includegraphics{0-5-TrigonometricFunctions2.jpg}}
@@ -222,21 +233,22 @@ The following terms will be very important when we describe functions like this:
 The function $f(x) = \sin x$ has a period of $2 \pi$ and an amplitude of $1$.  If we plot
 both the sine and the cosine functions together we see the following graph:
 \begin{center}
-    \begin{tikzpicture}
-        \begin{axis}[axis lines=center, xlabel={$x$}, ylabel={$y$}, xmin=0, xmax=7,
-                ymin=-1.25, ymax=1.25, ytick={-1,-0.5,0.5,1}, xtick={0.785,
-                1.57, 2.356, 3.14, 3.927, 4.71, 5.498, 6.28},
-                xticklabels={$\frac{1}{4}\pi$,$\frac{1}{2}\pi$, $\frac{3}{4}\pi$,$\pi$,
-                $\frac{5}{4}\pi$,$\frac{3}{2}\pi$,$\frac{7}{4}\pi$,$2\pi$},
-                yticklabels={$-1$,$-\frac{1}{2}$,$\frac{1}{2}$,$1$},
-        grid, xscale=2]
-            \addplot[smooth, very thick, color=blue, domain=0:6.5, samples=100] {sin(deg(x))};
-            \addplot[smooth, dashed, very thick, color=red, domain=0:6.5, samples=100]
-            {cos(deg(x))};
-            \draw (axis cs:2.4,0.7) node[anchor=south west]{$y = \sin(x)$};
-            \draw (axis cs:5.5,0.7) node[anchor=south east]{$y = \cos(x)$};
-        \end{axis}
-    \end{tikzpicture}
+%     \begin{tikzpicture}
+%         \begin{axis}[axis lines=center, xlabel={$x$}, ylabel={$y$}, xmin=0, xmax=7,
+%                 ymin=-1.25, ymax=1.25, ytick={-1,-0.5,0.5,1}, xtick={0.785,
+%                 1.57, 2.356, 3.14, 3.927, 4.71, 5.498, 6.28},
+%                 xticklabels={$\frac{1}{4}\pi$,$\frac{1}{2}\pi$, $\frac{3}{4}\pi$,$\pi$,
+%                 $\frac{5}{4}\pi$,$\frac{3}{2}\pi$,$\frac{7}{4}\pi$,$2\pi$},
+%                 yticklabels={$-1$,$-\frac{1}{2}$,$\frac{1}{2}$,$1$},
+%         grid, xscale=2]
+%             \addplot[smooth, very thick, color=blue, domain=0:6.5, samples=100] {sin(deg(x))};
+%             \addplot[smooth, dashed, very thick, color=red, domain=0:6.5, samples=100]
+%             {cos(deg(x))};
+%             \draw (axis cs:2.4,0.7) node[anchor=south west]{$y = \sin(x)$};
+%             \draw (axis cs:5.5,0.7) node[anchor=south east]{$y = \cos(x)$};
+%         \end{axis}
+%     \end{tikzpicture}
+    \includegraphics[width=0.85\columnwidth]{figures/0-5-fig6.pdf}
 \end{center}
 % \resizebox{4in}{!}{\includegraphics{0-5-TrigonometricFunctions1.jpg}}
 From this we see that the function $g(x) = \cos x$ also has a period of $2 \pi$ and an
@@ -254,7 +266,7 @@ To model real data with the sine function, we must be able to change the amplitu
 period, and the average value of our wave, to get what we call a \emph{sinusoidal}
 function.  Every sinusoidal function can be written either of these two forms:
 
-\begin{callout}
+% \begin{callout}
     \[ f(t) = A \sin( B ( t - t_0) ) + C \mbox{ or } f(t) = A \sin( B t + \phi) + C \]
 
 \begin{itemize}
@@ -264,49 +276,51 @@ function.  Every sinusoidal function can be written either of these two forms:
 \item $t_0$ is the shift along the $t$ axis, a time when $f$ is at an average value and increasing
 \item $\phi$ is the shift in radians, the angle at which the oscillations begin
 \end{itemize}
-\end{callout}
+% \end{callout}
 
 The parameter $B$ can be a little surprising.  Because $B$ is inversely related to the
 period, this means that larger values of $B$ result in a shorter period, and smaller
 values of $B$ result in a longer period, as we see in the graphs below:
-\def\scl{0.89}
+% \def\scl{0.89}
 \begin{center}
-    \begin{tikzpicture}[scale=\scl]
-        \begin{axis}[axis lines=center, xmin=0, xmax=6.28, ymin=-1.25, ymax=1.25,
-            domain=0:6.28, xlabel={$t$}, title={$\sin(t)$}, grid, xtick={0.785,
-                1.57, 2.356, 3.14, 3.927, 4.71, 5.498, 6.28},
-                xticklabels={$\frac{1}{4}\pi$,$\frac{1}{2}\pi$, $\frac{3}{4}\pi$,$\pi$,
-                $\frac{5}{4}\pi$,$\frac{3}{2}\pi$,$\frac{7}{4}\pi$,$2\pi$}]
-            \addplot[smooth, color=blue, very thick, samples=100] {sin(1*deg(x))};
-        \end{axis}
-    \end{tikzpicture}
-    \begin{tikzpicture}[scale=\scl]
-        \begin{axis}[axis lines=center, xmin=0, xmax=6.28, ymin=-1.25, ymax=1.25,
-            domain=0:6.28, xlabel={$t$}, title={$\sin(2t)$}, grid, xtick={0.785,
-                1.57, 2.356, 3.14, 3.927, 4.71, 5.498, 6.28},
-                xticklabels={$\frac{1}{4}\pi$,$\frac{1}{2}\pi$, $\frac{3}{4}\pi$,$\pi$,
-                $\frac{5}{4}\pi$,$\frac{3}{2}\pi$,$\frac{7}{4}\pi$,$2\pi$}]
-            \addplot[smooth, color=blue, very thick, samples=100] {sin(2*deg(x))};
-        \end{axis}
-    \end{tikzpicture}
-    \begin{tikzpicture}[scale=\scl]
-        \begin{axis}[axis lines=center, xmin=0, xmax=6.28, ymin=-1.25, ymax=1.25,
-            domain=0:6.28, xlabel={$t$}, title={$\sin(3t)$}, grid, xtick={0.785,
-                1.57, 2.356, 3.14, 3.927, 4.71, 5.498, 6.28},
-                xticklabels={$\frac{1}{4}\pi$,$\frac{1}{2}\pi$, $\frac{3}{4}\pi$,$\pi$,
-                $\frac{5}{4}\pi$,$\frac{3}{2}\pi$,$\frac{7}{4}\pi$,$2\pi$}]
-            \addplot[smooth, color=blue, very thick, samples=100] {sin(3*deg(x))};
-        \end{axis}
-    \end{tikzpicture}
-    \begin{tikzpicture}[scale=\scl]
-        \begin{axis}[axis lines=center, xmin=0, xmax=6.28, ymin=-1.25, ymax=1.25,
-            domain=0:6.28, xlabel={$t$}, title={$\sin(4t)$}, grid, xtick={0.785,
-                1.57, 2.356, 3.14, 3.927, 4.71, 5.498, 6.28},
-                xticklabels={$\frac{1}{4}\pi$,$\frac{1}{2}\pi$, $\frac{3}{4}\pi$,$\pi$,
-                $\frac{5}{4}\pi$,$\frac{3}{2}\pi$,$\frac{7}{4}\pi$,$2\pi$}]
-            \addplot[smooth, color=blue, very thick, samples=100] {sin(4*deg(x))};
-        \end{axis}
-    \end{tikzpicture}
+%     \begin{tikzpicture}[scale=\scl]
+%         \begin{axis}[axis lines=center, xmin=0, xmax=6.28, ymin=-1.25, ymax=1.25,
+%             domain=0:6.28, xlabel={$t$}, title={$\sin(t)$}, grid, xtick={0.785,
+%                 1.57, 2.356, 3.14, 3.927, 4.71, 5.498, 6.28},
+%                 xticklabels={$\frac{1}{4}\pi$,$\frac{1}{2}\pi$, $\frac{3}{4}\pi$,$\pi$,
+%                 $\frac{5}{4}\pi$,$\frac{3}{2}\pi$,$\frac{7}{4}\pi$,$2\pi$}]
+%             \addplot[smooth, color=blue, very thick, samples=100] {sin(1*deg(x))};
+%         \end{axis}
+%     \end{tikzpicture}
+%     \begin{tikzpicture}[scale=\scl]
+%         \begin{axis}[axis lines=center, xmin=0, xmax=6.28, ymin=-1.25, ymax=1.25,
+%             domain=0:6.28, xlabel={$t$}, title={$\sin(2t)$}, grid, xtick={0.785,
+%                 1.57, 2.356, 3.14, 3.927, 4.71, 5.498, 6.28},
+%                 xticklabels={$\frac{1}{4}\pi$,$\frac{1}{2}\pi$, $\frac{3}{4}\pi$,$\pi$,
+%                 $\frac{5}{4}\pi$,$\frac{3}{2}\pi$,$\frac{7}{4}\pi$,$2\pi$}]
+%             \addplot[smooth, color=blue, very thick, samples=100] {sin(2*deg(x))};
+%         \end{axis}
+%     \end{tikzpicture}
+%     \begin{tikzpicture}[scale=\scl]
+%         \begin{axis}[axis lines=center, xmin=0, xmax=6.28, ymin=-1.25, ymax=1.25,
+%             domain=0:6.28, xlabel={$t$}, title={$\sin(3t)$}, grid, xtick={0.785,
+%                 1.57, 2.356, 3.14, 3.927, 4.71, 5.498, 6.28},
+%                 xticklabels={$\frac{1}{4}\pi$,$\frac{1}{2}\pi$, $\frac{3}{4}\pi$,$\pi$,
+%                 $\frac{5}{4}\pi$,$\frac{3}{2}\pi$,$\frac{7}{4}\pi$,$2\pi$}]
+%             \addplot[smooth, color=blue, very thick, samples=100] {sin(3*deg(x))};
+%         \end{axis}
+%     \end{tikzpicture}
+%     \begin{tikzpicture}[scale=\scl]
+%         \begin{axis}[axis lines=center, xmin=0, xmax=6.28, ymin=-1.25, ymax=1.25,
+%             domain=0:6.28, xlabel={$t$}, title={$\sin(4t)$}, grid, xtick={0.785,
+%                 1.57, 2.356, 3.14, 3.927, 4.71, 5.498, 6.28},
+%                 xticklabels={$\frac{1}{4}\pi$,$\frac{1}{2}\pi$, $\frac{3}{4}\pi$,$\pi$,
+%                 $\frac{5}{4}\pi$,$\frac{3}{2}\pi$,$\frac{7}{4}\pi$,$2\pi$}]
+%             \addplot[smooth, color=blue, very thick, samples=100] {sin(4*deg(x))};
+%         \end{axis}
+%     \end{tikzpicture}
+    \includegraphics[width=0.99\columnwidth]{figures/0-5-fig7.pdf}
+    \includegraphics[width=0.99\columnwidth]{figures/0-5-fig7b.pdf}
 \end{center}
 
 
@@ -328,14 +342,15 @@ Given the information above we could model these temperatures with the following
 \[ T(t) = 20 \sin \left( \frac{2 \pi}{24} (t - 10) \right) + 60. \]
 A graph of the function looks like this:
 \begin{center}
-    \begin{tikzpicture}
-        \begin{axis}[xmin=0, xmax=50, ymin=0, ymax=100, grid,
-            domain=0:50, xlabel={time (hours)}, ylabel={Temperature ($^\circ$F)},
-        xtick={5,10,15,20,25,30,35,40,45,50}]
-            \addplot[smooth, very thick, blue, samples=100] {20*sin(deg(2*pi/24 *
-            (x-10)))+60};
-        \end{axis}
-    \end{tikzpicture}
+%     \begin{tikzpicture}
+%         \begin{axis}[xmin=0, xmax=50, ymin=0, ymax=100, grid,
+%             domain=0:50, xlabel={time (hours)}, ylabel={Temperature ($^\circ$F)},
+%         xtick={5,10,15,20,25,30,35,40,45,50}]
+%             \addplot[smooth, very thick, blue, samples=100] {20*sin(deg(2*pi/24 *
+%             (x-10)))+60};
+%         \end{axis}
+%     \end{tikzpicture}
+    \includegraphics[width=0.5\columnwidth]{figures/0-5-fig8.pdf}
 \end{center}
 % \resizebox{5in}{!}{\includegraphics{0-5-TrigonometricFunctions3.jpg}}
 % 
@@ -368,7 +383,7 @@ Feet?  Meters?  Yards?).  In this case $t$ is in hours since midnight, and $w$ i
 Now, we can evaluate the function at noon to find that the water level is $w(12) = 13.3$
 feet.
 
-\begin{callout}
+% \begin{callout}
     Here's how units work in equations:  
     \begin{itemize}
         \item If two numbers are equal, or if we add or subtract
@@ -376,7 +391,7 @@ feet.
         \item If we multiply or divide two numbers, both units go into the result:  6 meters divided by
             2 seconds equals a speed of 3 meters per second. 
     \end{itemize}
-\end{callout}
+% \end{callout}
 
 The parameters in our water level function ($A = 4.3$, $B = 0.51$, $\phi = 0.82$, $C =
 10.6$) all have units, which help us interpret their meaning.   The sine, cosine, and

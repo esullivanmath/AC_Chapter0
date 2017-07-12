@@ -1,0 +1,13 @@
+\documentclass{standalone}
+
+\usepackage{pgfplots,tikz,amsmath}
+\begin{document}
+        \begin{tikzpicture}
+            \begin{axis}[ymin=0, ymax=20, xmin=0, xmax=24, domain=0:24,
+                grid, xtick={2,4,6,8,10,12,14,16,18,20,22,24},
+            ytick={0,2,4,6,8,10,12,14,16,18,20}, xlabel={time (hours)}, ylabel={water level
+            (ft)}, xscale=1.25]
+                \addplot[smooth] {0*x};
+            \end{axis}
+        \end{tikzpicture}
+\end{document}

@@ -1,0 +1,13 @@
+\documentclass{standalone}
+
+\usepackage{pgfplots,tikz,amsmath}
+\begin{document}
+    \begin{tikzpicture}
+        \begin{axis}[xmin=0, xmax=50, ymin=0, ymax=100, grid,
+            domain=0:50, xlabel={time (hours)}, ylabel={Temperature ($^\circ$F)},
+        xtick={5,10,15,20,25,30,35,40,45,50}]
+            \addplot[smooth, very thick, blue, samples=100] {20*sin(deg(2*pi/24 *
+            (x-10)))+60};
+        \end{axis}
+    \end{tikzpicture}
+\end{document}

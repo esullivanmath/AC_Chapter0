@@ -1,0 +1,12 @@
+\documentclass{standalone}
+
+\usepackage{pgfplots,tikz,amsmath}
+\begin{document}
+    \begin{tikzpicture}[scale=1]
+        \draw[thick, color=blue] (0,0) circle(1.5cm);
+        \draw[color=black, very thick] (0,0) -- (0.61,1.37) arc(66:-23:1.5cm) -- (0,0);
+        \draw (0,0.1) node[anchor=west]{$\theta$};
+        \draw (1.4,0.2) node[anchor=south west]{$s$};
+        \draw (0.8,-0.3) node[anchor=north]{$r$};
+    \end{tikzpicture}
+\end{document}

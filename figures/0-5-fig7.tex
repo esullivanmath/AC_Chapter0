@@ -1,0 +1,43 @@
+\documentclass{standalone}
+
+\usepackage{pgfplots,tikz,amsmath}
+\begin{document}
+\def\scl{1}
+    \begin{tikzpicture}[scale=\scl]
+        \begin{axis}[axis lines=center, xmin=0, xmax=6.28, ymin=-1.25, ymax=1.25,
+            domain=0:6.28, xlabel={$t$}, title={$\sin(t)$}, grid, xtick={0.785,
+                1.57, 2.356, 3.14, 3.927, 4.71, 5.498, 6.28},
+                xticklabels={$\frac{1}{4}\pi$,$\frac{1}{2}\pi$, $\frac{3}{4}\pi$,$\pi$,
+                $\frac{5}{4}\pi$,$\frac{3}{2}\pi$,$\frac{7}{4}\pi$,$2\pi$}]
+            \addplot[smooth, color=blue, very thick, samples=100] {sin(1*deg(x))};
+        \end{axis}
+    \end{tikzpicture}
+    \begin{tikzpicture}[scale=\scl]
+        \begin{axis}[axis lines=center, xmin=0, xmax=6.28, ymin=-1.25, ymax=1.25,
+            domain=0:6.28, xlabel={$t$}, title={$\sin(2t)$}, grid, xtick={0.785,
+                1.57, 2.356, 3.14, 3.927, 4.71, 5.498, 6.28},
+                xticklabels={$\frac{1}{4}\pi$,$\frac{1}{2}\pi$, $\frac{3}{4}\pi$,$\pi$,
+                $\frac{5}{4}\pi$,$\frac{3}{2}\pi$,$\frac{7}{4}\pi$,$2\pi$}]
+            \addplot[smooth, color=blue, very thick, samples=100] {sin(2*deg(x))};
+        \end{axis}
+    \end{tikzpicture}
+% 
+%     \begin{tikzpicture}[scale=\scl]
+%         \begin{axis}[axis lines=center, xmin=0, xmax=6.28, ymin=-1.25, ymax=1.25,
+%             domain=0:6.28, xlabel={$t$}, title={$\sin(3t)$}, grid, xtick={0.785,
+%                 1.57, 2.356, 3.14, 3.927, 4.71, 5.498, 6.28},
+%                 xticklabels={$\frac{1}{4}\pi$,$\frac{1}{2}\pi$, $\frac{3}{4}\pi$,$\pi$,
+%                 $\frac{5}{4}\pi$,$\frac{3}{2}\pi$,$\frac{7}{4}\pi$,$2\pi$}]
+%             \addplot[smooth, color=blue, very thick, samples=100] {sin(3*deg(x))};
+%         \end{axis}
+%     \end{tikzpicture}
+%     \begin{tikzpicture}[scale=\scl]
+%         \begin{axis}[axis lines=center, xmin=0, xmax=6.28, ymin=-1.25, ymax=1.25,
+%             domain=0:6.28, xlabel={$t$}, title={$\sin(4t)$}, grid, xtick={0.785,
+%                 1.57, 2.356, 3.14, 3.927, 4.71, 5.498, 6.28},
+%                 xticklabels={$\frac{1}{4}\pi$,$\frac{1}{2}\pi$, $\frac{3}{4}\pi$,$\pi$,
+%                 $\frac{5}{4}\pi$,$\frac{3}{2}\pi$,$\frac{7}{4}\pi$,$2\pi$}]
+%             \addplot[smooth, color=blue, very thick, samples=100] {sin(4*deg(x))};
+%         \end{axis}
+%     \end{tikzpicture}
+\end{document}
