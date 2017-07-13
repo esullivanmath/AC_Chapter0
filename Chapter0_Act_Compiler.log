@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  13 JUL 2017 09:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  13 JUL 2017 09:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1148,7 +1148,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip133
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 48.
+Package hyperref Info: Option `colorlinks' set `true' on input line 50.
 
 
 Package hyperref Warning: Option `pagecolor' is not available anymore.
@@ -1698,53 +1698,53 @@ File: tikzlibrarymatrix.code.tex 2013/07/12 v3.0.0 (rcs-revision 1.4)
 ) (./Chapter0_Act_Compiler.aux (./0.chap.act.aux))
 \openout1 = `Chapter0_Act_Compiler.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 298.
-LaTeX Font Info:    ... okay on input line 298.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 298.
-LaTeX Font Info:    ... okay on input line 298.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 298.
-LaTeX Font Info:    ... okay on input line 298.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 298.
-LaTeX Font Info:    ... okay on input line 298.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 298.
-LaTeX Font Info:    ... okay on input line 298.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 298.
-LaTeX Font Info:    ... okay on input line 298.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 298.
-LaTeX Font Info:    ... okay on input line 298.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 298.
-LaTeX Font Info:    Try loading font information for FML+futm on input line 298
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 300.
+LaTeX Font Info:    ... okay on input line 300.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 300.
+LaTeX Font Info:    ... okay on input line 300.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 300.
+LaTeX Font Info:    ... okay on input line 300.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 300.
+LaTeX Font Info:    ... okay on input line 300.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 300.
+LaTeX Font Info:    ... okay on input line 300.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 300.
+LaTeX Font Info:    ... okay on input line 300.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 300.
+LaTeX Font Info:    ... okay on input line 300.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 300.
+LaTeX Font Info:    Try loading font information for FML+futm on input line 300
 .
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 298.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 298.
-LaTeX Font Info:    Try loading font information for FMS+futm on input line 298
+LaTeX Font Info:    ... okay on input line 300.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 300.
+LaTeX Font Info:    Try loading font information for FMS+futm on input line 300
 .
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 298.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 298.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 298
+LaTeX Font Info:    ... okay on input line 300.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 300.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 300
 .
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 298.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 298.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 298.
+LaTeX Font Info:    ... okay on input line 300.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 300.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 300.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 298.
-LaTeX Font Info:    Try loading font information for T1+futs on input line 298.
+LaTeX Font Info:    ... okay on input line 300.
+LaTeX Font Info:    Try loading font information for T1+futs on input line 300.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fourier/t1futs.fd
@@ -1769,10 +1769,10 @@ ABD: EveryShipout initializing macros
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.12} into 
 your preamble.
- on input line 298.
+ on input line 300.
 
 \AtBeginShipoutBox=\box108
-Package hyperref Info: Link coloring ON on input line 298.
+Package hyperref Info: Link coloring ON on input line 300.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -1781,9 +1781,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count217
 )
-LaTeX Info: Redefining \ref on input line 298.
-LaTeX Info: Redefining \pageref on input line 298.
-LaTeX Info: Redefining \nameref on input line 298.
+LaTeX Info: Redefining \ref on input line 300.
+LaTeX Info: Redefining \pageref on input line 300.
+LaTeX Info: Redefining \nameref on input line 300.
 
 (./Chapter0_Act_Compiler.out) (./Chapter0_Act_Compiler.out)
 \@outlinefile=\write5
@@ -1797,7 +1797,7 @@ Package epstopdf Info: Source file: <figures/CClicense.eps>
 (epstopdf)                    size: 8295 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
 erted-to.pdf figures/CClicense.eps>
-(epstopdf)             \includegraphics on input line 302.
+(epstopdf)             \includegraphics on input line 304.
 Package epstopdf Info: Output file is already uptodate.
 
 <figures/CClicense-eps-converted-to.pdf, id=35, 121.45375pt x 43.16125pt>
@@ -1805,37 +1805,37 @@ File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/CClicense-eps-converted-to.pdf>
 Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
-ine 302.
+ine 304.
 (pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 302.
+(Font)              scaled to size 11.03998pt on input line 304.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 302.
+(Font)              scaled to size 8.27998pt on input line 304.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 302.
-LaTeX Font Info:    Try loading font information for U+msa on input line 302.
+(Font)              scaled to size 6.43999pt on input line 304.
+LaTeX Font Info:    Try loading font information for U+msa on input line 304.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 302.
+LaTeX Font Info:    Try loading font information for U+msb on input line 304.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for FML+futmi on input line 30
-2.
+4.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 302.
+(Font)              scaled to size 11.03998pt on input line 304.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 302.
+(Font)              scaled to size 8.27998pt on input line 304.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 302.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 302.
+(Font)              scaled to size 6.43999pt on input line 304.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 304.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
@@ -1858,18 +1858,18 @@ Package epstopdf Info: Source file: <figures/CClicense.eps>
 (epstopdf)                    size: 8295 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
 erted-to.pdf figures/CClicense.eps>
-(epstopdf)             \includegraphics on input line 302.
+(epstopdf)             \includegraphics on input line 304.
 Package epstopdf Info: Output file is already uptodate.
 File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/CClicense-eps-converted-to.pdf>
 Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
-ine 302.
+ine 304.
 (pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
  [2
 
 ]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 302.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 304.
  (./Chapter0_Act_Compiler.toc
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 1.
@@ -1899,12 +1899,12 @@ Package epstopdf Info: Source file: <figures/CClicense.eps>
 (epstopdf)                    size: 8295 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
 erted-to.pdf figures/CClicense.eps>
-(epstopdf)             \includegraphics on input line 309.
+(epstopdf)             \includegraphics on input line 311.
 Package epstopdf Info: Output file is already uptodate.
 File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
  <use figures/CClicense-eps-converted-to.pdf>
 Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
-ine 309.
+ine 311.
 (pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
  [4
 
@@ -1912,13 +1912,9 @@ ine 309.
 \openout2 = `0.chap.act.aux'.
 
  (./0.chap.act.tex
-Chapter 1.
+Chapter 0.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 1.
-! Undefined control sequence.
-l.1 ...liminaries: A Library of Functions}\minitoc
-                                                   \label{C:0}
-? 
 (./0.1.FunctionsAndChange.act.tex
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 1.
@@ -1994,14 +1990,30 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.10 \newpage
-              [4] (./activities/0.1.Act4.tex) [5]
+              [4] (./activities/0.1.Act4.tex) [5] (./0.1.clicker.tex
+(./clicker/SVC.01.01.001.tex) (./clicker/SVC.01.01.002.tex)
+(./clicker/SVC.01.01.003.tex) (./clicker/SVC.01.01.004.tex)
+(./clicker/SVC.01.01.005.tex
+Package epstopdf Info: Source file: <figures/CClicense.eps>
+(epstopdf)                    date: 2017-06-23 14:39:35
+(epstopdf)                    size: 71022 bytes
+(epstopdf)             Output file: <figures/CClicense-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-23 14:39:46
+(epstopdf)                    size: 8295 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
+erted-to.pdf figures/CClicense.eps>
+(epstopdf)             \includegraphics on input line 7.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
+ <use figures/CClicense-eps-converted-to.pdf>
+Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
+ine 7.
+(pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
 
-! LaTeX Error: File `0.1.clicker' not found.
-
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: 1.clicker)
-
-Enter file name: 
+[6]) (./clicker/SVC.01.01.010.tex) (./clicker/SVC.01.01.011.tex)
+(./clicker/SVC.01.01.012.tex) (./clicker/SVC.01.01.013.tex [7])
+(./clicker/SVC.01.01.014.tex) (./clicker/SVC.01.01.015.tex)
+(./clicker/SVC.01.01.020.tex) (./clicker/SVC.01.01.030.tex
 Package epstopdf Info: Source file: <figures/CClicense.eps>
 (epstopdf)                    date: 2017-06-23 14:39:35
 (epstopdf)                    size: 71022 bytes
@@ -2013,14 +2025,79 @@ erted-to.pdf figures/CClicense.eps>
 (epstopdf)             \includegraphics on input line 17.
 Package epstopdf Info: Output file is already uptodate.
 File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
+
 <use figures/CClicense-eps-converted-to.pdf>
 Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
 ine 17.
 (pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
- [6])
-(./0.2.ExponentialFunctions.act.tex (./previews/0.2.PA1.tex) [7]
+ [8]) (./clicker/SVC.01.01.040.tex) (./clicker/SVC.01.01.050.tex) (./clicker/SV
+C.01.01.051.tex)
+(./clicker/SVC.01.01.052.tex) (./clicker/SVC.01.01.060.tex [9])
+(./clicker/SVC.01.01.070.tex) (./clicker/SVC.01.01.080.tex)
+(./clicker/SVC.01.01.090.tex
+Overfull \hbox (29.09418pt too wide) in paragraph at lines 6--24
+[]$[]$ $[]$ 
+ []
+
+) (./clicker/SVC.01.01.100.tex) (./clicker/SVC.01.01.110.tex
+Package epstopdf Info: Source file: <figures/CClicense.eps>
+(epstopdf)                    date: 2017-06-23 14:39:35
+(epstopdf)                    size: 71022 bytes
+(epstopdf)             Output file: <figures/CClicense-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-23 14:39:46
+(epstopdf)                    size: 8295 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
+erted-to.pdf figures/CClicense.eps>
+(epstopdf)             \includegraphics on input line 3.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/CClicense-eps-converted-to.pdf>
+Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
+ine 3.
+(pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
+ [10]) (./clicker/SVC.01.01.120.tex) (./clicker/SVC.01.01.130.tex [11]) (./clic
+ker/SVC.01.01.140.tex)
+(./clicker/SVC.01.01.150.tex
+Package epstopdf Info: Source file: <figures/CClicense.eps>
+(epstopdf)                    date: 2017-06-23 14:39:35
+(epstopdf)                    size: 71022 bytes
+(epstopdf)             Output file: <figures/CClicense-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-23 14:39:46
+(epstopdf)                    size: 8295 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
+erted-to.pdf figures/CClicense.eps>
+(epstopdf)             \includegraphics on input line 26.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
+ <use figures/CClicense-eps-converted-to.pdf>
+Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
+ine 26.
+(pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
+
+[12]) (./clicker/SVC.01.01.160.tex) (./clicker/SVC.01.01.170.tex)
+(./clicker/SVC.01.01.180.tex) (./clicker/SVC.01.01.190.tex)
+(./clicker/SVC.01.01.200.tex [13]) (./clicker/SVC.01.01.210.tex))
+Package epstopdf Info: Source file: <figures/CClicense.eps>
+(epstopdf)                    date: 2017-06-23 14:39:35
+(epstopdf)                    size: 71022 bytes
+(epstopdf)             Output file: <figures/CClicense-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-23 14:39:46
+(epstopdf)                    size: 8295 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
+erted-to.pdf figures/CClicense.eps>
+(epstopdf)             \includegraphics on input line 17.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/CClicense-eps-converted-to.pdf>
+Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
+ine 17.
+(pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
+ [14])
+(./0.2.ExponentialFunctions.act.tex (./previews/0.2.PA1.tex) [15]
 (./activities/0.2.Act1.tex
-<figures/0-2-figAct1.pdf, id=149, 261.51501pt x 162.39972pt>
+<figures/0-2-figAct1.pdf, id=347, 261.51501pt x 162.39972pt>
 File: figures/0-2-figAct1.pdf Graphic file (type pdf)
 
 <use figures/0-2-figAct1.pdf>
@@ -2043,7 +2120,7 @@ Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
 ine 6.
 (pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
 
-[8 <./figures/0-2-figAct1.pdf>] (./activities/0.2.Act2.tex) [9]
+[16 <./figures/0-2-figAct1.pdf>] (./activities/0.2.Act2.tex) [17]
 (./activities/0.2.Act3.tex)
 Package epstopdf Info: Source file: <figures/CClicense.eps>
 (epstopdf)                    date: 2017-06-23 14:39:35
@@ -2061,15 +2138,10 @@ Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
 ine 10.
 (pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
 
-[10]
-
-! LaTeX Error: File `0.2.clicker' not found.
-
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: 2.clicker)
-
-Enter file name: 
-[11]) (./0.3.Transformations.act.tex (./previews/0.3.PA1.tex)
+[18] (./0.2.clicker.tex (./clicker/SVC.01.02.103.tex)
+(./clicker/SVC.01.02.104.tex) (./clicker/SVC.01.02.105.tex)
+(./clicker/SVC.01.02.106.tex)) [19]) (./0.3.Transformations.act.tex
+(./previews/0.3.PA1.tex)
 Package epstopdf Info: Source file: <figures/CClicense.eps>
 (epstopdf)                    date: 2017-06-23 14:39:35
 (epstopdf)                    size: 71022 bytes
@@ -2081,28 +2153,28 @@ erted-to.pdf figures/CClicense.eps>
 (epstopdf)             \includegraphics on input line 4.
 Package epstopdf Info: Output file is already uptodate.
 File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
-
-<use figures/CClicense-eps-converted-to.pdf>
+ <use figures/CClicense-eps-converted-to.pdf>
 Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
 ine 4.
 (pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
- [12] (./activities/0.3.Act1.tex
-<figures/0-3-fig2.pdf, id=204, 285.77065pt x 134.89497pt>
+ [20]
+(./activities/0.3.Act1.tex
+<figures/0-3-fig2.pdf, id=422, 285.77065pt x 134.89497pt>
 File: figures/0-3-fig2.pdf Graphic file (type pdf)
 
 <use figures/0-3-fig2.pdf>
 Package pdftex.def Info: figures/0-3-fig2.pdf used on input line 24.
 (pdftex.def)             Requested size: 305.33788pt x 144.14063pt.
 
-<figures/0-3-fig2soln.pdf, id=206, 285.77065pt x 135.09572pt>
+<figures/0-3-fig2soln.pdf, id=424, 285.77065pt x 135.09572pt>
 File: figures/0-3-fig2soln.pdf Graphic file (type pdf)
 
 <use figures/0-3-fig2soln.pdf>
 Package pdftex.def Info: figures/0-3-fig2soln.pdf used on input line 53.
 (pdftex.def)             Requested size: 305.33788pt x 144.35515pt.
-) [13 <./figures/0-3-fig2.pdf>]
+) [21 <./figures/0-3-fig2.pdf>]
 (./activities/0.3.Act2.tex
-<figures/0-3-fig3.pdf, id=223, 183.89804pt x 177.57442pt>
+<figures/0-3-fig3.pdf, id=441, 183.89804pt x 177.57442pt>
 File: figures/0-3-fig3.pdf Graphic file (type pdf)
 
 <use figures/0-3-fig3.pdf>
@@ -2129,14 +2201,14 @@ File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
 ine 8.
 (pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
- [14 <./figures/0-3-fig3.pdf>]
+ [22 <./figures/0-3-fig3.pdf>]
 (./activities/0.3.Act3.tex
 LaTeX Font Info:    Try loading font information for TS1+futs on input line 7.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fourier/ts1futs.fd
 File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
 )
-<figures/0-3-fig4.pdf, id=238, 379.56805pt x 116.85056pt>
+<figures/0-3-fig4.pdf, id=457, 379.56805pt x 116.85056pt>
 File: figures/0-3-fig4.pdf Graphic file (type pdf)
 
 <use figures/0-3-fig4.pdf>
@@ -2147,13 +2219,13 @@ Overfull \hbox (3.38298pt too wide) in paragraph at lines 41--42
  [] 
  []
 
-<figures/0-3-fig4soln.pdf, id=239, 379.96756pt x 116.85056pt>
+<figures/0-3-fig4soln.pdf, id=458, 379.96756pt x 116.85056pt>
 File: figures/0-3-fig4soln.pdf Graphic file (type pdf)
 
 <use figures/0-3-fig4soln.pdf>
 Package pdftex.def Info: figures/0-3-fig4soln.pdf used on input line 89.
 (pdftex.def)             Requested size: 422.77661pt x 130.02478pt.
-) [15 <./figures/0-3-fig4.pdf>]
+) [23 <./figures/0-3-fig4.pdf>]
 (./activities/0.3.Act4.tex)
 Package epstopdf Info: Source file: <figures/CClicense.eps>
 (epstopdf)                    date: 2017-06-23 14:39:35
@@ -2171,15 +2243,237 @@ Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
 ine 12.
 (pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
 
-[16]
+[24] (./0.3.clicker.tex (./clicker/SVC.01.03.010.tex)
+(./clicker/SVC.01.03.020.tex) (./clicker/SVC.01.03.030.tex
+Overfull \hbox (29.09418pt too wide) in paragraph at lines 7--27
+[]$[]$ $[]$ 
+ []
 
-! LaTeX Error: File `0.3.clicker' not found.
+) (./clicker/SVC.01.03.040.tex
+Overfull \hbox (29.09418pt too wide) in paragraph at lines 7--27
+[]$[]$ $[]$ 
+ []
 
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: 3.clicker)
+) (./clicker/SVC.01.03.050.tex [25]) (./clicker/SVC.01.03.051.tex
+Package epstopdf Info: Source file: <figures/CClicense.eps>
+(epstopdf)                    date: 2017-06-23 14:39:35
+(epstopdf)                    size: 71022 bytes
+(epstopdf)             Output file: <figures/CClicense-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-23 14:39:46
+(epstopdf)                    size: 8295 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
+erted-to.pdf figures/CClicense.eps>
+(epstopdf)             \includegraphics on input line 39.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
 
-Enter file name: 
-[17]) (./0.4.LogarithmicFunctions.act.tex (./previews/0.4.PA1.tex)
+<use figures/CClicense-eps-converted-to.pdf>
+Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
+ine 39.
+(pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
+ [26]) (./clicker/SVC.01.03.052.tex
+NOTE: coordinate (2Y3.0e0],3Y0.0e0]) has been dropped because it is unbounded (
+in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.9393951e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.8787903e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.8181854e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.7575806e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.6969757e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.6363708e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.575766e0],3Y0.0e0]) has been dropped because it is unboun
+ded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.5151611e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.4545563e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.3939514e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.3333466e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.2727417e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.2121368e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.151532e0],3Y0.0e0]) has been dropped because it is unboun
+ded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.0909271e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.0303223e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.9697174e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.9091125e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.8485077e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.7879028e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.727298e0],3Y0.0e0]) has been dropped because it is unboun
+ded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.6666931e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.6060883e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.5454834e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.4848785e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.4242737e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.3636688e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.303064e0],3Y0.0e0]) has been dropped because it is unboun
+ded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.2424591e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.1818542e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.1212494e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.0606445e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.0000397e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y9.394348e-1],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y8.7882991e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y8.1822502e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y7.5762013e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y6.9701524e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y6.3641035e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y5.7580547e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y5.1520058e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y4.5459569e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y3.939908e-1],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y3.3338591e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.7278102e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.1217613e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.5157124e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y9.096635e-2],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y3.036145e-2],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y3.0e0],3Y0.0e0]) has been dropped because it is unbounded (
+in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.9393951e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.8787903e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.8181854e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.7575806e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.6969757e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.6363708e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.575766e0],3Y0.0e0]) has been dropped because it is unboun
+ded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.5151611e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.4545563e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.3939514e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.3333466e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.2727417e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.2121368e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.151532e0],3Y0.0e0]) has been dropped because it is unboun
+ded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.0909271e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.0303223e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.9697174e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.9091125e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.8485077e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.7879028e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.727298e0],3Y0.0e0]) has been dropped because it is unboun
+ded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.6666931e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.6060883e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.5454834e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.4848785e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.4242737e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.3636688e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.303064e0],3Y0.0e0]) has been dropped because it is unboun
+ded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.2424591e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.1818542e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.1212494e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.0606445e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.0000397e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y9.394348e-1],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y8.7882991e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y8.1822502e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y7.5762013e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y6.9701524e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y6.3641035e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y5.7580547e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y5.1520058e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y4.5459569e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y3.939908e-1],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y3.3338591e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.7278102e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.1217613e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.5157124e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y9.096635e-2],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y3.036145e-2],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+[27]) (./clicker/SVC.01.03.053.tex) (./clicker/SVC.01.03.054.tex)
+(./clicker/SVC.01.03.055.tex
 Package epstopdf Info: Source file: <figures/CClicense.eps>
 (epstopdf)                    date: 2017-06-23 14:39:35
 (epstopdf)                    size: 71022 bytes
@@ -2191,13 +2485,82 @@ erted-to.pdf figures/CClicense.eps>
 (epstopdf)             \includegraphics on input line 4.
 Package epstopdf Info: Output file is already uptodate.
 File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
-
-<use figures/CClicense-eps-converted-to.pdf>
+ <use figures/CClicense-eps-converted-to.pdf>
 Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
 ine 4.
 (pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
- [18] (./activities/0.4.Act1.tex)
-[19] (./activities/0.4.Act2.tex)
+
+[28]) (./clicker/SVC.01.03.056.tex) (./clicker/SVC.01.03.060.tex [29])
+(./clicker/SVC.01.03.065.tex) (./clicker/SVC.01.03.070.tex
+Package epstopdf Info: Source file: <figures/CClicense.eps>
+(epstopdf)                    date: 2017-06-23 14:39:35
+(epstopdf)                    size: 71022 bytes
+(epstopdf)             Output file: <figures/CClicense-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-23 14:39:46
+(epstopdf)                    size: 8295 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
+erted-to.pdf figures/CClicense.eps>
+(epstopdf)             \includegraphics on input line 11.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/CClicense-eps-converted-to.pdf>
+Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
+ine 11.
+(pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
+ [30]) (./clicker/SVC.01.03.071.tex) (./clicker/SVC.01.03.072.tex) (./clicker/S
+VC.01.03.075.tex)
+(./clicker/SVC.01.03.076.tex) (./clicker/SVC.01.03.080.tex [31])
+(./clicker/SVC.01.03.090.tex) (./clicker/SVC.01.03.100.tex
+Overfull \hbox (27.53369pt too wide) in paragraph at lines 3--4
+[]\T1/futs/m/n/10.95 Write $\FML/futm/m/it/10.95 h\T1/futs/m/n/10.95 (\FML/futm
+/m/it/10.95 x\T1/futs/m/n/10.95 ) \FMS/futm/m/n/10.95 Å \FML/futm/m/it/10.95 e[
+]$ \T1/futs/m/n/10.95 as a com-po-si-tion of func-tions: $\FML/futm/m/it/10.95 
+f\T1/futs/m/n/10.95 (\FML/futm/m/it/10.95 g\T1/futs/m/n/10.95 (\FML/futm/m/it/1
+0.95 x\T1/futs/m/n/10.95 ))$. $\FML/futm/m/it/10.95 f\T1/futs/m/n/10.95 (\FML/f
+utm/m/it/10.95 x\T1/futs/m/n/10.95 ) \FMS/futm/m/n/10.95 Å$ $[]$\T1/futs/m/n/10
+.95 , $\FML/futm/m/it/10.95 g\T1/futs/m/n/10.95 (\FML/futm/m/it/10.95 x\T1/futs
+/m/n/10.95 ) \FMS/futm/m/n/10.95 Å$ $[]$\T1/futs/m/n/10.95 . 
+ []
+
+) (./clicker/SVC.01.03.102.tex) (./clicker/SVC.01.03.110.tex)
+(./clicker/SVC.01.03.120.tex
+Package epstopdf Info: Source file: <figures/CClicense.eps>
+(epstopdf)                    date: 2017-06-23 14:39:35
+(epstopdf)                    size: 71022 bytes
+(epstopdf)             Output file: <figures/CClicense-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-23 14:39:46
+(epstopdf)                    size: 8295 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
+erted-to.pdf figures/CClicense.eps>
+(epstopdf)             \includegraphics on input line 6.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
+ <use figures/CClicense-eps-converted-to.pdf>
+Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
+ine 6.
+(pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
+
+[32]) (./clicker/SVC.01.03.130.tex) (./clicker/SVC.01.03.140.tex)
+(./clicker/SVC.01.03.150.tex)) [33]) (./0.4.LogarithmicFunctions.act.tex
+(./previews/0.4.PA1.tex)
+Package epstopdf Info: Source file: <figures/CClicense.eps>
+(epstopdf)                    date: 2017-06-23 14:39:35
+(epstopdf)                    size: 71022 bytes
+(epstopdf)             Output file: <figures/CClicense-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-23 14:39:46
+(epstopdf)                    size: 8295 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
+erted-to.pdf figures/CClicense.eps>
+(epstopdf)             \includegraphics on input line 4.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
+ <use figures/CClicense-eps-converted-to.pdf>
+Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
+ine 4.
+(pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
+ [34]
+(./activities/0.4.Act1.tex) [35] (./activities/0.4.Act2.tex)
 Package epstopdf Info: Source file: <figures/CClicense.eps>
 (epstopdf)                    date: 2017-06-23 14:39:35
 (epstopdf)                    size: 71022 bytes
@@ -2209,12 +2572,13 @@ erted-to.pdf figures/CClicense.eps>
 (epstopdf)             \includegraphics on input line 8.
 Package epstopdf Info: Output file is already uptodate.
 File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
- <use figures/CClicense-eps-converted-to.pdf>
+
+<use figures/CClicense-eps-converted-to.pdf>
 Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
 ine 8.
 (pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
-
-[20] (./activities/0.4.Act3.tex) [21] (./activities/0.4.Act4.tex)
+ [36] (./activities/0.4.Act3.tex)
+[37] (./activities/0.4.Act4.tex)
 Package epstopdf Info: Source file: <figures/CClicense.eps>
 (epstopdf)                    date: 2017-06-23 14:39:35
 (epstopdf)                    size: 71022 bytes
@@ -2226,58 +2590,596 @@ erted-to.pdf figures/CClicense.eps>
 (epstopdf)             \includegraphics on input line 12.
 Package epstopdf Info: Output file is already uptodate.
 File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
-
-<use figures/CClicense-eps-converted-to.pdf>
+ <use figures/CClicense-eps-converted-to.pdf>
 Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
 ine 12.
 (pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
- [22]
 
-! LaTeX Error: File `0.4.clicker' not found.
+[38] (./0.4.clicker.tex (./clicker/SVC.01.04.005.tex)
+(./clicker/SVC.01.04.010.tex
+NOTE: coordinate (0Y0.0e0],3Y0.0e0]) has been dropped because it is unbounded (
+in y). (see also unbounded coords=jump). 
+NOTE: coordinate (0Y0.0e0],3Y0.0e0]) has been dropped because it is unbounded (
+in y). (see also unbounded coords=jump). 
+) (./clicker/SVC.01.04.020.tex
+NOTE: coordinate (2Y1.0e0],3Y0.0e0]) has been dropped because it is unbounded (
+in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y9.69698e-1],3Y0.0e0]) has been dropped because it is unboun
+ded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y9.393959e-1],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y9.0909381e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y8.7879172e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y8.4848962e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y8.1818753e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y7.8788544e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y7.5758334e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y7.2728125e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y6.9697916e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y6.6667706e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y6.3637497e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y6.0607288e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y5.7577078e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y5.4546869e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y5.151666e-1],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
 
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: 4.clicker)
+Overfull \hbox (29.09418pt too wide) in paragraph at lines 7--25
+[]$[]$ $[]$ 
+ []
 
-Enter file name: 
-[23]) (./0.5.TrigonometricFunctions.act.tex (./previews/0.5.PA1.tex
-<figures/0-5-fig1.pdf, id=329, 217.57587pt x 183.99942pt>
+) (./clicker/SVC.01.04.024.tex [39]
+NOTE: coordinate (2Y1.0e0],3Y0.0e0]) has been dropped because it is unbounded (
+in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y9.393951e-1],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y8.787901e-1],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y8.181851e-1],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y7.5758011e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y6.9697511e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y6.3637012e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y5.7576512e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y5.1516013e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y4.5455513e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y3.9395013e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y3.3334514e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.7274014e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.1213515e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.5153015e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y9.092516e-2],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y3.032016e-2],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+
+Overfull \hbox (29.09418pt too wide) in paragraph at lines 8--26
+[]$[]$ $[]$ 
+ []
+
+) (./clicker/SVC.01.04.025.tex
+Overfull \hbox (29.09418pt too wide) in paragraph at lines 7--25
+[]$[]$ $[]$ 
+ []
+
+) (./clicker/SVC.01.04.026.tex
+NOTE: coordinate (2Y3.0e0],3Y0.0e0]) has been dropped because it is unbounded (
+in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.9393951e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.8787903e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.8181854e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.7575806e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.6969757e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.6363708e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.575766e0],3Y0.0e0]) has been dropped because it is unboun
+ded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.5151611e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.4545563e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.3939514e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.3333466e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.2727417e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.2121368e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.151532e0],3Y0.0e0]) has been dropped because it is unboun
+ded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.0909271e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.0303223e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.9697174e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.9091125e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.8485077e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.7879028e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.727298e0],3Y0.0e0]) has been dropped because it is unboun
+ded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.6666931e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.6060883e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.5454834e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.4848785e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.4242737e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.3636688e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.303064e0],3Y0.0e0]) has been dropped because it is unboun
+ded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.2424591e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.1818542e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.1212494e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.0606445e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.0000397e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y9.394348e-1],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y8.7882991e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y8.1822502e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y7.5762013e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y6.9701524e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y6.3641035e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y5.7580547e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y5.1520058e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y4.5459569e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y3.939908e-1],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y3.3338591e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.7278102e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.1217613e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.5157124e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y9.096635e-2],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y3.036145e-2],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y3.0e0],3Y0.0e0]) has been dropped because it is unbounded (
+in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.9393951e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.8787903e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.8181854e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.7575806e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.6969757e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.6363708e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.575766e0],3Y0.0e0]) has been dropped because it is unboun
+ded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.5151611e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.4545563e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.3939514e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.3333466e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.2727417e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.2121368e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.151532e0],3Y0.0e0]) has been dropped because it is unboun
+ded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.0909271e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.0303223e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.9697174e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.9091125e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.8485077e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.7879028e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.727298e0],3Y0.0e0]) has been dropped because it is unboun
+ded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.6666931e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.6060883e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.5454834e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.4848785e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.4242737e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.3636688e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.303064e0],3Y0.0e0]) has been dropped because it is unboun
+ded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.2424591e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.1818542e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.1212494e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.0606445e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.0000397e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y9.394348e-1],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y8.7882991e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y8.1822502e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y7.5762013e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y6.9701524e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y6.3641035e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y5.7580547e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y5.1520058e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y4.5459569e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y3.939908e-1],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y3.3338591e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.7278102e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.1217613e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.5157124e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y9.096635e-2],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y3.036145e-2],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+Package epstopdf Info: Source file: <figures/CClicense.eps>
+(epstopdf)                    date: 2017-06-23 14:39:35
+(epstopdf)                    size: 71022 bytes
+(epstopdf)             Output file: <figures/CClicense-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-23 14:39:46
+(epstopdf)                    size: 8295 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
+erted-to.pdf figures/CClicense.eps>
+(epstopdf)             \includegraphics on input line 39.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/CClicense-eps-converted-to.pdf>
+Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
+ine 39.
+(pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
+ [40]) (./clicker/SVC.01.04.027.tex
+NOTE: coordinate (2Y3.0e0],3Y0.0e0]) has been dropped because it is unbounded (
+in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.9393951e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.8787903e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.8181854e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.7575806e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.6969757e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.6363708e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.575766e0],3Y0.0e0]) has been dropped because it is unboun
+ded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.5151611e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.4545563e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.3939514e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.3333466e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.2727417e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.2121368e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.151532e0],3Y0.0e0]) has been dropped because it is unboun
+ded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.0909271e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.0303223e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.9697174e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.9091125e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.8485077e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.7879028e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.727298e0],3Y0.0e0]) has been dropped because it is unboun
+ded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.6666931e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.6060883e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.5454834e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.4848785e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.4242737e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.3636688e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.303064e0],3Y0.0e0]) has been dropped because it is unboun
+ded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.2424591e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.1818542e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.1212494e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.0606445e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.0000397e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y9.394348e-1],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y8.7882991e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y8.1822502e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y7.5762013e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y6.9701524e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y6.3641035e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y5.7580547e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y5.1520058e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y4.5459569e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y3.939908e-1],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y3.3338591e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.7278102e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.1217613e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.5157124e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y9.096635e-2],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y3.036145e-2],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y3.0e0],3Y0.0e0]) has been dropped because it is unbounded (
+in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.9393951e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.8787903e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.8181854e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.7575806e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.6969757e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.6363708e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.575766e0],3Y0.0e0]) has been dropped because it is unboun
+ded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.5151611e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.4545563e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.3939514e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.3333466e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.2727417e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.2121368e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.151532e0],3Y0.0e0]) has been dropped because it is unboun
+ded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.0909271e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.0303223e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.9697174e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.9091125e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.8485077e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.7879028e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.727298e0],3Y0.0e0]) has been dropped because it is unboun
+ded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.6666931e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.6060883e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.5454834e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.4848785e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.4242737e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.3636688e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.303064e0],3Y0.0e0]) has been dropped because it is unboun
+ded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.2424591e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.1818542e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.1212494e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.0606445e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.0000397e0],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y9.394348e-1],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y8.7882991e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y8.1822502e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y7.5762013e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y6.9701524e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y6.3641035e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y5.7580547e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y5.1520058e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y4.5459569e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y3.939908e-1],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y3.3338591e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.7278102e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y2.1217613e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y1.5157124e-1],3Y0.0e0]) has been dropped because it is unbo
+unded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y9.096635e-2],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2Y3.036145e-2],3Y0.0e0]) has been dropped because it is unbou
+nded (in y). (see also unbounded coords=jump). 
+) (./clicker/SVC.01.04.030.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [41])
+(./clicker/SVC.01.04.040.tex) (./clicker/SVC.01.04.050.tex
+Package epstopdf Info: Source file: <figures/CClicense.eps>
+(epstopdf)                    date: 2017-06-23 14:39:35
+(epstopdf)                    size: 71022 bytes
+(epstopdf)             Output file: <figures/CClicense-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-23 14:39:46
+(epstopdf)                    size: 8295 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
+erted-to.pdf figures/CClicense.eps>
+(epstopdf)             \includegraphics on input line 6.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/CClicense-eps-converted-to.pdf>
+Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
+ine 6.
+(pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
+ [42]) (./clicker/SVC.01.04.051.tex) (./clicker/SVC.01.04.052.tex) (./clicker/S
+VC.01.04.053.tex)
+(./clicker/SVC.01.04.054.tex) (./clicker/SVC.01.04.055.tex [43])
+(./clicker/SVC.01.04.056.tex) (./clicker/SVC.01.04.057.tex)
+(./clicker/SVC.01.04.060.tex) (./clicker/SVC.01.04.070.tex
+Package epstopdf Info: Source file: <figures/CClicense.eps>
+(epstopdf)                    date: 2017-06-23 14:39:35
+(epstopdf)                    size: 71022 bytes
+(epstopdf)             Output file: <figures/CClicense-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-23 14:39:46
+(epstopdf)                    size: 8295 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
+erted-to.pdf figures/CClicense.eps>
+(epstopdf)             \includegraphics on input line 10.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/CClicense-eps-converted-to.pdf>
+Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
+ine 10.
+(pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
+ [44]) (./clicker/SVC.01.04.080.tex) (./clicker/SVC.01.04.085.tex) (./clicker/S
+VC.01.04.090.tex)
+(./clicker/SVC.01.04.095.tex) (./clicker/SVC.01.04.100.tex [45])
+(./clicker/SVC.01.04.110.tex))
+Package epstopdf Info: Source file: <figures/CClicense.eps>
+(epstopdf)                    date: 2017-06-23 14:39:35
+(epstopdf)                    size: 71022 bytes
+(epstopdf)             Output file: <figures/CClicense-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-23 14:39:46
+(epstopdf)                    size: 8295 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
+erted-to.pdf figures/CClicense.eps>
+(epstopdf)             \includegraphics on input line 15.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
+ <use figures/CClicense-eps-converted-to.pdf>
+Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
+ine 15.
+(pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
+
+[46]) (./0.5.TrigonometricFunctions.act.tex (./previews/0.5.PA1.tex
+<figures/0-5-fig1.pdf, id=871, 217.57587pt x 183.99942pt>
 File: figures/0-5-fig1.pdf Graphic file (type pdf)
 
 <use figures/0-5-fig1.pdf>
 Package pdftex.def Info: figures/0-5-fig1.pdf used on input line 27.
 (pdftex.def)             Requested size: 234.87749pt x 198.6406pt.
-)
-Package epstopdf Info: Source file: <figures/CClicense.eps>
-(epstopdf)                    date: 2017-06-23 14:39:35
-(epstopdf)                    size: 71022 bytes
-(epstopdf)             Output file: <figures/CClicense-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-06-23 14:39:46
-(epstopdf)                    size: 8295 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
-erted-to.pdf figures/CClicense.eps>
-(epstopdf)             \includegraphics on input line 4.
-Package epstopdf Info: Output file is already uptodate.
-File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
- <use figures/CClicense-eps-converted-to.pdf>
-Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
-ine 4.
-(pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
-
-[24 <./figures/0-5-fig1.pdf>] (./activities/0.5.Act1.tex
-<figures/0-5-fig9.pdf, id=346, 808.71036pt x 186.26086pt>
+) [47 <./figures/0-5-fig1.pdf>]
+(./activities/0.5.Act1.tex
+<figures/0-5-fig9.pdf, id=888, 808.71036pt x 186.26086pt>
 File: figures/0-5-fig9.pdf Graphic file (type pdf)
 
 <use figures/0-5-fig9.pdf>
 Package pdftex.def Info: figures/0-5-fig9.pdf used on input line 15.
 (pdftex.def)             Requested size: 422.77661pt x 168.53133pt.
-) [25 <./figures/0-5-fig9.pdf>]
-(./activities/0.5.Act2.tex
-<figures/0-5-fig10.pdf, id=377, 295.41568pt x 200.42076pt>
-File: figures/0-5-fig10.pdf Graphic file (type pdf)
-
-<use figures/0-5-fig10.pdf>
-Package pdftex.def Info: figures/0-5-fig10.pdf used on input line 25.
-(pdftex.def)             Requested size: 281.85585pt x 191.22433pt.
 )
 Package epstopdf Info: Source file: <figures/CClicense.eps>
 (epstopdf)                    date: 2017-06-23 14:39:35
@@ -2287,23 +3189,125 @@ Package epstopdf Info: Source file: <figures/CClicense.eps>
 (epstopdf)                    size: 8295 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
 erted-to.pdf figures/CClicense.eps>
-(epstopdf)             \includegraphics on input line 8.
+(epstopdf)             \includegraphics on input line 6.
 Package epstopdf Info: Output file is already uptodate.
 File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
  <use figures/CClicense-eps-converted-to.pdf>
 Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
-ine 8.
+ine 6.
 (pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
 
-[26 <./figures/0-5-fig10.pdf>]
+[48 <./figures/0-5-fig9.pdf>] (./activities/0.5.Act2.tex
+<figures/0-5-fig10.pdf, id=920, 295.41568pt x 200.42076pt>
+File: figures/0-5-fig10.pdf Graphic file (type pdf)
 
-! LaTeX Error: File `0.5.clicker' not found.
+<use figures/0-5-fig10.pdf>
+Package pdftex.def Info: figures/0-5-fig10.pdf used on input line 25.
+(pdftex.def)             Requested size: 281.85585pt x 191.22433pt.
+) [49 <./figures/0-5-fig10.pdf>] (./0.5.clicker.tex
+(./clicker/SVC.01.05.005.tex) (./clicker/SVC.01.05.010.tex
+Overfull \hbox (29.09418pt too wide) in paragraph at lines 7--25
+[]$[]$ $[]$ 
+ []
 
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: 5.clicker)
+) (./clicker/SVC.01.05.015.tex
+Overfull \hbox (29.09418pt too wide) in paragraph at lines 5--24
+[]$[]$ $[]$ 
+ []
 
-Enter file name: 
-[27]) (./0.6.PowersPolynomialsRations.act.tex (./previews/0.6.PA1.tex
+) (./clicker/SVC.01.05.020.tex
+Package epstopdf Info: Source file: <figures/CClicense.eps>
+(epstopdf)                    date: 2017-06-23 14:39:35
+(epstopdf)                    size: 71022 bytes
+(epstopdf)             Output file: <figures/CClicense-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-23 14:39:46
+(epstopdf)                    size: 8295 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
+erted-to.pdf figures/CClicense.eps>
+(epstopdf)             \includegraphics on input line 2.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
+ <use figures/CClicense-eps-converted-to.pdf>
+Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
+ine 2.
+(pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
+
+[50]
+Overfull \hbox (29.09418pt too wide) in paragraph at lines 7--25
+[]$[]$ $[]$ 
+ []
+
+) (./clicker/SVC.01.05.030.tex
+Overfull \hbox (29.09418pt too wide) in paragraph at lines 7--24
+[]$[]$ $[]$ 
+ []
+
+) (./clicker/SVC.01.05.040.tex [51]) (./clicker/SVC.01.05.050.tex
+Overfull \hbox (29.09418pt too wide) in paragraph at lines 7--26
+[]$[]$ $[]$ 
+ []
+
+) (./clicker/SVC.01.05.055.tex
+Overfull \hbox (29.09418pt too wide) in paragraph at lines 6--43
+[]$[]$ $[]$ 
+ []
+
+) (./clicker/SVC.01.05.060.tex
+Overfull \hbox (29.09418pt too wide) in paragraph at lines 7--27
+[]$[]$ $[]$ 
+ []
+
+) (./clicker/SVC.01.05.070.tex
+Package epstopdf Info: Source file: <figures/CClicense.eps>
+(epstopdf)                    date: 2017-06-23 14:39:35
+(epstopdf)                    size: 71022 bytes
+(epstopdf)             Output file: <figures/CClicense-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-23 14:39:46
+(epstopdf)                    size: 8295 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
+erted-to.pdf figures/CClicense.eps>
+(epstopdf)             \includegraphics on input line 2.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
+ <use figures/CClicense-eps-converted-to.pdf>
+Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
+ine 2.
+(pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
+
+[52]
+Overfull \hbox (9.14908pt too wide) in paragraph at lines 11--30
+[][] [] 
+ []
+
+
+Overfull \hbox (9.14908pt too wide) in paragraph at lines 11--30
+[] [] 
+ []
+
+) (./clicker/SVC.01.05.075.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [53])
+(./clicker/SVC.01.05.080.tex) (./clicker/SVC.01.05.085.tex)
+(./clicker/SVC.01.05.090.tex
+Package epstopdf Info: Source file: <figures/CClicense.eps>
+(epstopdf)                    date: 2017-06-23 14:39:35
+(epstopdf)                    size: 71022 bytes
+(epstopdf)             Output file: <figures/CClicense-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-23 14:39:46
+(epstopdf)                    size: 8295 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
+erted-to.pdf figures/CClicense.eps>
+(epstopdf)             \includegraphics on input line 6.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
+ <use figures/CClicense-eps-converted-to.pdf>
+Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
+ine 6.
+(pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
+
+[54]) (./clicker/SVC.01.05.095.tex) (./clicker/SVC.01.05.100.tex)) [55])
+(./0.6.PowersPolynomialsRations.act.tex (./previews/0.6.PA1.tex
 Missing character: There is no [ in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no i in font nullfont!
@@ -2447,8 +3451,8 @@ File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
 ine 4.
 (pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
- [28] (./activities/0.6.Act1.tex)
-[29] (./activities/0.6.Act2.tex)
+ [56] (./activities/0.6.Act1.tex)
+[57] (./activities/0.6.Act2.tex)
 Package epstopdf Info: Source file: <figures/CClicense.eps>
 (epstopdf)                    date: 2017-06-23 14:39:35
 (epstopdf)                    size: 71022 bytes
@@ -2465,7 +3469,7 @@ Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
 ine 8.
 (pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
 
-[30] (./activities/0.6.Act3.tex) [31] (./activities/0.6.Act4.tex)
+[58] (./activities/0.6.Act3.tex) [59] (./activities/0.6.Act4.tex)
 Package epstopdf Info: Source file: <figures/CClicense.eps>
 (epstopdf)                    date: 2017-06-23 14:39:35
 (epstopdf)                    size: 71022 bytes
@@ -2482,15 +3486,12 @@ File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
 ine 12.
 (pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
- [32] (./activities/0.6.Act5.tex)
-[33]
-
-! LaTeX Error: File `0.6.clicker' not found.
-
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: 6.clicker)
-
-Enter file name: 
+ [60] (./activities/0.6.Act5.tex)
+[61] (./0.6.clicker.tex (./clicker/SVC.01.06.005.tex)
+(./clicker/SVC.01.06.010.tex) (./clicker/SVC.01.06.020.tex)
+(./clicker/SVC.01.06.030.tex) (./clicker/SVC.01.06.035.tex)
+(./clicker/SVC.01.06.040.tex) (./clicker/SVC.01.06.050.tex)
+(./clicker/SVC.01.06.060.tex
 Package epstopdf Info: Source file: <figures/CClicense.eps>
 (epstopdf)                    date: 2017-06-23 14:39:35
 (epstopdf)                    size: 71022 bytes
@@ -2499,53 +3500,100 @@ Package epstopdf Info: Source file: <figures/CClicense.eps>
 (epstopdf)                    size: 8295 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
 erted-to.pdf figures/CClicense.eps>
-(epstopdf)             \includegraphics on input line 17.
+(epstopdf)             \includegraphics on input line 7.
 Package epstopdf Info: Output file is already uptodate.
 File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
+ <use figures/CClicense-eps-converted-to.pdf>
+Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
+ine 7.
+(pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
+
+[62]) (./clicker/SVC.01.06.065.tex) (./clicker/SVC.01.06.066.tex)
+(./clicker/SVC.01.06.070.tex
+Overfull \hbox (29.09418pt too wide) in paragraph at lines 7--25
+[]$[]$ $[]$ 
+ []
+
+) (./clicker/SVC.01.06.075.tex [63]) (./clicker/SVC.01.06.080.tex)
+(./clicker/SVC.01.06.090.tex
+Package epstopdf Info: Source file: <figures/CClicense.eps>
+(epstopdf)                    date: 2017-06-23 14:39:35
+(epstopdf)                    size: 71022 bytes
+(epstopdf)             Output file: <figures/CClicense-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-23 14:39:46
+(epstopdf)                    size: 8295 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
+erted-to.pdf figures/CClicense.eps>
+(epstopdf)             \includegraphics on input line 2.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
+ <use figures/CClicense-eps-converted-to.pdf>
+Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
+ine 2.
+(pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
+
+[64]
+Overfull \hbox (29.09418pt too wide) in paragraph at lines 7--25
+[]$[]$ $[]$ 
+ []
+
+) (./clicker/SVC.01.06.100.tex) (./clicker/SVC.01.06.110.tex [65])
+(./clicker/SVC.01.06.120.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package epstopdf Info: Source file: <figures/CClicense.eps>
+(epstopdf)                    date: 2017-06-23 14:39:35
+(epstopdf)                    size: 71022 bytes
+(epstopdf)             Output file: <figures/CClicense-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-23 14:39:46
+(epstopdf)                    size: 8295 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
+erted-to.pdf figures/CClicense.eps>
+(epstopdf)             \includegraphics on input line 38.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
+
 <use figures/CClicense-eps-converted-to.pdf>
 Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
-ine 17.
+ine 38.
 (pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
- [34]))
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 344.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 344.
+ [66])) [67]))
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 346.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 346.
 
 (./Chapter0_Act_Compiler.aux (./0.chap.act.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 344.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 344.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 346.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 346.
 Package rerunfilecheck Info: File `Chapter0_Act_Compiler.out' has not changed.
-(rerunfilecheck)             Checksum: 0B742E8510EDFC88DAF27F9386C52A15;511.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+(rerunfilecheck)             Checksum: 22D519F2A6CEDF1EBEE95EB8FFD7746A;487.
  ) 
 Here is how much of TeX's memory you used:
- 38159 strings out of 493089
- 874999 string characters out of 6134842
- 1097153 words of memory out of 5000000
- 40628 multiletter control sequences out of 15000+600000
+ 39942 strings out of 493089
+ 904455 string characters out of 6134842
+ 1145611 words of memory out of 5000000
+ 41396 multiletter control sequences out of 15000+600000
  116460 words of font info for 129 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 77i,15n,102p,10432b,1974s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 79i,15n,102p,10432b,2285s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
 ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
 /2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
 2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/texlive/201
-5/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/2015/te
-xmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2015/texmf-dis
-t/fonts/type1/adobe/utopia/putri8a.pfb></usr/local/texlive/2015/texmf-dist/font
-s/type1/urw/courier/ucrr8a.pfb>
-Output written on Chapter0_Act_Compiler.pdf (38 pages, 217127 bytes).
+15/texmf-dist/fonts/type1/public/fourier/fourier-bb.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2015/texmf-dist
+/fonts/type1/adobe/utopia/putri8a.pfb></usr/local/texlive/2015/texmf-dist/fonts
+/type1/urw/courier/ucrr8a.pfb>
+Output written on Chapter0_Act_Compiler.pdf (71 pages, 382614 bytes).
 PDF statistics:
- 553 PDF objects out of 1000 (max. 8388607)
- 483 compressed objects within 5 object streams
- 209 named destinations out of 1000 (max. 500000)
+ 1427 PDF objects out of 1440 (max. 8388607)
+ 1314 compressed objects within 14 object streams
+ 839 named destinations out of 1000 (max. 500000)
  130 words of extra memory for PDF output out of 10000 (max. 10000000)
 

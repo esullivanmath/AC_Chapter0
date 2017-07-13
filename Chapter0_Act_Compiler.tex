@@ -8,6 +8,8 @@
 % \newcommand{\IntroMathModeling}[1]{\ifnum\class=141 #1 \fi}
 % 
 
+\def\TeacherEdition{0}
+\newcommand{\teacher}[1]{\ifnum\TeacherEdition=1 #1 \fi}
 
 \setlength{\oddsidemargin}{0.1in}
 \setlength{\evensidemargin}{0.1in}
@@ -303,7 +305,7 @@ Carroll College: Eric Sullivan, Contributing Author and Editor \\ \texttt{esulli
 
 
 
-% \setcounter{chapter}{-1} % this sets the counter back so that the prelims are ``chapter 0''
+\setcounter{chapter}{-1} % this sets the counter back so that the prelims are ``chapter 0''
 % \input{0.preface}
 % 
 \mainmatter

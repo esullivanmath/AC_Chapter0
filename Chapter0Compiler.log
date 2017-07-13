@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  13 JUL 2017 09:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  13 JUL 2017 09:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1912,7 +1912,7 @@ ine 309.
 \openout2 = `0.chap.aux'.
 
  (./0.chap.tex
-Chapter 1.
+Chapter 0.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 1.
 (./0.1.FunctionsAndChange.tex
@@ -2711,12 +2711,12 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 344.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 344.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 344.
 Package rerunfilecheck Info: File `Chapter0Compiler.out' has not changed.
-(rerunfilecheck)             Checksum: EAF1FD8E1C8EFC2D6FAEA89C829CF3C5;432.
+(rerunfilecheck)             Checksum: 3FAC2438DBA1124B38803332811DAC2B;413.
  ) 
 Here is how much of TeX's memory you used:
  38162 strings out of 493089
  874234 string characters out of 6134842
- 1114860 words of memory out of 5000000
+ 1114747 words of memory out of 5000000
  40517 multiletter control sequences out of 15000+600000
  125927 words of font info for 143 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2737,7 +2737,7 @@ xmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/201
 -dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2015/texmf-dist/f
 onts/type1/adobe/utopia/putri8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
 ype1/urw/courier/ucrr8a.pfb>
-Output written on Chapter0Compiler.pdf (52 pages, 429763 bytes).
+Output written on Chapter0Compiler.pdf (52 pages, 429578 bytes).
 PDF statistics:
  958 PDF objects out of 1000 (max. 8388607)
  849 compressed objects within 9 object streams
