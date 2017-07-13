@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  13 JUL 2017 09:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  13 JUL 2017 10:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2557,19 +2557,30 @@ ine 199.
 (pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
 
 [38 <./figures/0-5-fig2.pdf> <./figures/0-5-fig3.pdf>]
-<figures/0-5-fig5.pdf, id=691, 390.3905pt x 162.39772pt>
-File: figures/0-5-fig5.pdf Graphic file (type pdf)
+(./activities/0.5.Act1.tex [39 <./figures/0-5-fig4.pdf>]
+<figures/0-5-fig_specialright.pdf, id=709, 196.99297pt x 68.38548pt>
+File: figures/0-5-fig_specialright.pdf Graphic file (type pdf)
 
-<use figures/0-5-fig5.pdf>
-Package pdftex.def Info: figures/0-5-fig5.pdf used on input line 219.
-(pdftex.def)             Requested size: 399.2946pt x 166.10684pt.
- [39 <./figures/0-5-fig4.pdf> <./figures/0-5-fig5.pdf>] <figures/0-5-fig6.pdf, 
-id=720, 415.48827pt x 162.39873pt>
-File: figures/0-5-fig6.pdf Graphic file (type pdf)
+<use figures/0-5-fig_specialright.pdf>
+Package pdftex.def Info: figures/0-5-fig_specialright.pdf used on input line 51
+.
+(pdftex.def)             Requested size: 234.87749pt x 81.53937pt.
 
-<use figures/0-5-fig6.pdf>
-Package pdftex.def Info: figures/0-5-fig6.pdf used on input line 251.
-(pdftex.def)             Requested size: 399.2946pt x 156.07445pt.
+<figures/0-5-UnitCircle.pdf, id=710, 354.21432pt x 354.74934pt>
+File: figures/0-5-UnitCircle.pdf Graphic file (type pdf)
+
+<use figures/0-5-UnitCircle.pdf>
+Package pdftex.def Info: figures/0-5-UnitCircle.pdf used on input line 56.
+(pdftex.def)             Requested size: 328.82706pt x 329.34511pt.
+
+<figures/0-5-UnitCircle_FilledIn.pdf, id=711, 354.21432pt x 354.74934pt>
+File: figures/0-5-UnitCircle_FilledIn.pdf Graphic file (type pdf)
+
+<use figures/0-5-UnitCircle_FilledIn.pdf>
+Package pdftex.def Info: figures/0-5-UnitCircle_FilledIn.pdf used on input line
+ 67.
+(pdftex.def)             Requested size: 281.85585pt x 282.30045pt.
+)
 Package epstopdf Info: Source file: <figures/CClicense.eps>
 (epstopdf)                    date: 2017-06-23 14:39:35
 (epstopdf)                    size: 71022 bytes
@@ -2578,42 +2589,74 @@ Package epstopdf Info: Source file: <figures/CClicense.eps>
 (epstopdf)                    size: 8295 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
 erted-to.pdf figures/CClicense.eps>
-(epstopdf)             \includegraphics on input line 285.
+(epstopdf)             \includegraphics on input line 209.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/CClicense-eps-converted-to.pdf>
+Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
+ine 209.
+(pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
+ [40 <./figures/0-5-fig_specialright.pdf> <./figures/0-5-UnitCircle.pdf>]
+<figures/0-5-fig5.pdf, id=741, 390.3905pt x 162.39772pt>
+File: figures/0-5-fig5.pdf Graphic file (type pdf)
+
+<use figures/0-5-fig5.pdf>
+Package pdftex.def Info: figures/0-5-fig5.pdf used on input line 220.
+(pdftex.def)             Requested size: 399.2946pt x 166.10684pt.
+
+<figures/0-5-fig6.pdf, id=742, 415.48827pt x 162.39873pt>
+File: figures/0-5-fig6.pdf Graphic file (type pdf)
+
+<use figures/0-5-fig6.pdf>
+Package pdftex.def Info: figures/0-5-fig6.pdf used on input line 256.
+(pdftex.def)             Requested size: 399.2946pt x 156.07445pt.
+ [41 <./figures/0-5-fig5.pdf> <./figures/0-5-fig6.pdf>] <figures/0-5-fig7.pdf, 
+id=774, 473.49196pt x 185.0644pt>
+File: figures/0-5-fig7.pdf Graphic file (type pdf)
+
+<use figures/0-5-fig7.pdf>
+Package pdftex.def Info: figures/0-5-fig7.pdf used on input line 327.
+(pdftex.def)             Requested size: 465.06001pt x 181.77698pt.
+
+<figures/0-5-fig7b.pdf, id=775, 473.49196pt x 185.0644pt>
+File: figures/0-5-fig7b.pdf Graphic file (type pdf)
+
+<use figures/0-5-fig7b.pdf>
+Package pdftex.def Info: figures/0-5-fig7b.pdf used on input line 328.
+(pdftex.def)             Requested size: 465.06001pt x 181.77698pt.
+Package epstopdf Info: Source file: <figures/CClicense.eps>
+(epstopdf)                    date: 2017-06-23 14:39:35
+(epstopdf)                    size: 71022 bytes
+(epstopdf)             Output file: <figures/CClicense-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-23 14:39:46
+(epstopdf)                    size: 8295 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
+erted-to.pdf figures/CClicense.eps>
+(epstopdf)             \includegraphics on input line 329.
 Package epstopdf Info: Output file is already uptodate.
 File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
  <use figures/CClicense-eps-converted-to.pdf>
 Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
-ine 285.
+ine 329.
 (pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
 
-[40 <./figures/0-5-fig6.pdf>]
-<figures/0-5-fig7.pdf, id=739, 473.49196pt x 185.0644pt>
-File: figures/0-5-fig7.pdf Graphic file (type pdf)
-
-<use figures/0-5-fig7.pdf>
-Package pdftex.def Info: figures/0-5-fig7.pdf used on input line 322.
-(pdftex.def)             Requested size: 465.06001pt x 181.77698pt.
-
-<figures/0-5-fig7b.pdf, id=740, 473.49196pt x 185.0644pt>
-File: figures/0-5-fig7b.pdf Graphic file (type pdf)
-
-<use figures/0-5-fig7b.pdf>
-Package pdftex.def Info: figures/0-5-fig7b.pdf used on input line 323.
-(pdftex.def)             Requested size: 465.06001pt x 181.77698pt.
- [41 <./figures/0-5-fig7.pdf> <./figures/0-5-fig7b.pdf>] <figures/0-5-fig8.pdf,
- id=772, 246.66554pt x 200.42076pt>
+[42 <./figures/0-5-fig7.pdf>]
+<figures/0-5-fig8.pdf, id=794, 246.66554pt x 200.42076pt>
 File: figures/0-5-fig8.pdf Graphic file (type pdf)
 
 <use figures/0-5-fig8.pdf>
-Package pdftex.def Info: figures/0-5-fig8.pdf used on input line 353.
+Package pdftex.def Info: figures/0-5-fig8.pdf used on input line 358.
 (pdftex.def)             Requested size: 234.87749pt x 190.84818pt.
- (./activities/0.5.Act1.tex
-<figures/0-5-fig9.pdf, id=774, 808.71036pt x 186.26086pt>
+ [43 <./figures/0-5-fig7b.pdf> <./figures/0-5-fig8.pdf>] (./activities/0.5.Act2
+.tex
+<figures/0-5-fig9.pdf, id=821, 808.71036pt x 186.26086pt>
 File: figures/0-5-fig9.pdf Graphic file (type pdf)
 
 <use figures/0-5-fig9.pdf>
 Package pdftex.def Info: figures/0-5-fig9.pdf used on input line 15.
 (pdftex.def)             Requested size: 422.77661pt x 168.53133pt.
+) (./activities/0.5.Act3.tex
 Package epstopdf Info: Source file: <figures/CClicense.eps>
 (epstopdf)                    date: 2017-06-23 14:39:35
 (epstopdf)                    size: 71022 bytes
@@ -2622,43 +2665,38 @@ Package epstopdf Info: Source file: <figures/CClicense.eps>
 (epstopdf)                    size: 8295 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
 erted-to.pdf figures/CClicense.eps>
-(epstopdf)             \includegraphics on input line 26.
+(epstopdf)             \includegraphics on input line 14.
 Package epstopdf Info: Output file is already uptodate.
 File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
- <use figures/CClicense-eps-converted-to.pdf>
-Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
-ine 26.
-(pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
 
-[42 <./figures/0-5-fig9.pdf> <./figures/0-5-fig8.pdf>])
-(./activities/0.5.Act2.tex [43]
-<figures/0-5-fig10.pdf, id=814, 295.41568pt x 200.42076pt>
+<use figures/CClicense-eps-converted-to.pdf>
+Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
+ine 14.
+(pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
+ [44 <./figures/0-5-fig9.pdf>]
+<figures/0-5-fig10.pdf, id=850, 295.41568pt x 200.42076pt>
 File: figures/0-5-fig10.pdf Graphic file (type pdf)
 
 <use figures/0-5-fig10.pdf>
 Package pdftex.def Info: figures/0-5-fig10.pdf used on input line 25.
 (pdftex.def)             Requested size: 281.85585pt x 191.22433pt.
 )
+<figures/0-5-fig11.pdf, id=851, 390.3905pt x 162.39772pt>
+File: figures/0-5-fig11.pdf Graphic file (type pdf)
+
+<use figures/0-5-fig11.pdf>
+Package pdftex.def Info: figures/0-5-fig11.pdf used on input line 444.
+(pdftex.def)             Requested size: 375.80542pt x 156.33615pt.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Package epstopdf Info: Source file: <figures/CClicense.eps>
-(epstopdf)                    date: 2017-06-23 14:39:35
-(epstopdf)                    size: 71022 bytes
-(epstopdf)             Output file: <figures/CClicense-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-06-23 14:39:46
-(epstopdf)                    size: 8295 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
-erted-to.pdf figures/CClicense.eps>
-(epstopdf)             \includegraphics on input line 439.
-Package epstopdf Info: Output file is already uptodate.
-File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
+ [45 <./figures/0-5-fig10.pdf>]
+<figures/0-5-fig12.pdf, id=867, 583.94461pt x 175.61308pt>
+File: figures/0-5-fig12.pdf Graphic file (type pdf)
 
-<use figures/CClicense-eps-converted-to.pdf>
-Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
-ine 439.
-(pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
- [44 <./figures/0-5-fig10.pdf>]
-[45]
+<use figures/0-5-fig12.pdf>
+Package pdftex.def Info: figures/0-5-fig12.pdf used on input line 533.
+(pdftex.def)             Requested size: 469.75499pt x 141.2731pt.
 Package epstopdf Info: Source file: <figures/CClicense.eps>
 (epstopdf)                    date: 2017-06-23 14:39:35
 (epstopdf)                    size: 71022 bytes
@@ -2667,26 +2705,25 @@ Package epstopdf Info: Source file: <figures/CClicense.eps>
 (epstopdf)                    size: 8295 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
 erted-to.pdf figures/CClicense.eps>
-(epstopdf)             \includegraphics on input line 526.
+(epstopdf)             \includegraphics on input line 540.
 Package epstopdf Info: Output file is already uptodate.
 File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
  <use figures/CClicense-eps-converted-to.pdf>
 Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
-ine 526.
+ine 540.
 (pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
- [46]
-Underfull \hbox (badness 10000) in paragraph at lines 529--529
+
+[46 <./figures/0-5-fig11.pdf>] [47 <./figures/0-5-fig12.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 543--543
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 529--529
+Underfull \hbox (badness 10000) in paragraph at lines 543--543
 
  []
 
-(./exercises/0.5.TrigonometricFunctions(Ex).tex [47
-
-]
+(./exercises/0.5.TrigonometricFunctions(Ex).tex
 Package epstopdf Info: Source file: <figures/CClicense.eps>
 (epstopdf)                    date: 2017-06-23 14:39:35
 (epstopdf)                    size: 71022 bytes
@@ -2695,32 +2732,34 @@ Package epstopdf Info: Source file: <figures/CClicense.eps>
 (epstopdf)                    size: 8295 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
 erted-to.pdf figures/CClicense.eps>
-(epstopdf)             \includegraphics on input line 68.
+(epstopdf)             \includegraphics on input line 40.
 Package epstopdf Info: Output file is already uptodate.
 File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/CClicense-eps-converted-to.pdf>
 Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
-ine 68.
+ine 40.
 (pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
- [48])))
+ [48
+
+] [49])))
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 344.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 344.
- (./Chapter0Compiler.aux
-(./0.chap.aux))
+
+(./Chapter0Compiler.aux (./0.chap.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 344.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 344.
 Package rerunfilecheck Info: File `Chapter0Compiler.out' has not changed.
 (rerunfilecheck)             Checksum: 3FAC2438DBA1124B38803332811DAC2B;413.
  ) 
 Here is how much of TeX's memory you used:
- 38162 strings out of 493089
- 874234 string characters out of 6134842
- 1114747 words of memory out of 5000000
- 40517 multiletter control sequences out of 15000+600000
+ 37991 strings out of 493089
+ 870874 string characters out of 6134842
+ 1114795 words of memory out of 5000000
+ 40333 multiletter control sequences out of 15000+600000
  125927 words of font info for 143 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 77i,16n,102p,10423b,1969s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 77i,16n,102p,10423b,1998s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texl
@@ -2728,19 +2767,19 @@ ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texliv
 e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2
 015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/20
 15/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/public/fourier/fourier-bb.pfb></usr/local/texlive/2015/
-texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/texlive/2015/
-texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/texlive/2015/t
-exmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texlive/2015/te
-xmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/201
-5/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2015/texmf-dist/f
-onts/type1/adobe/utopia/putri8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
-ype1/urw/courier/ucrr8a.pfb>
-Output written on Chapter0Compiler.pdf (52 pages, 429578 bytes).
+/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texlive/2015/t
+exmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/20
+15/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2015/texmf-d
+ist/fonts/type1/adobe/utopia/putri8a.pfb></usr/local/texlive/2015/texmf-dist/fo
+nts/type1/urw/courier/ucrr8a.pfb>
+Output written on Chapter0Compiler.pdf (53 pages, 440175 bytes).
 PDF statistics:
- 958 PDF objects out of 1000 (max. 8388607)
- 849 compressed objects within 9 object streams
- 301 named destinations out of 1000 (max. 500000)
- 217 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1027 PDF objects out of 1200 (max. 8388607)
+ 911 compressed objects within 10 object streams
+ 306 named destinations out of 1000 (max. 500000)
+ 242 words of extra memory for PDF output out of 10000 (max. 10000000)
 

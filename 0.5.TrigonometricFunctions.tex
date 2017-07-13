@@ -199,6 +199,7 @@ Next we can use the Pythagorean Theorem, and remember that our hypotenuse is equ
 \[ \sin^2 \theta + \cos^2 \theta = 1 \]
 This is a very useful relationship!
 
+\input{activities/0.5.Act1}
 
 \subsection*{Sine and Cosine as Functions} 
 
@@ -222,7 +223,11 @@ plot the output of on the $y$ axis.  This produces the following graph:
 % \resizebox{4in}{!}{\includegraphics{0-5-TrigonometricFunctions2.jpg}}
 
 \noindent
-Here we can see that the range (output) of the sine function is the interval from $-1$ to $+1$.  ($\sin x$ can never equal 2!)  The domain (input) of the sine function is extends from $-\infty$ to $+\infty$, but the cycle repeats every $2 \pi$ along the $x$ axis.  (Do you understand how the definition of sine on the unit circle makes both of these facts true?)
+Here we can see that the range (output) of the sine function is the interval from $-1$ to
+$+1$.  ($\sin x$ can never equal 2!)  The domain (input) of the sine function is extends
+from $-\infty$ to $+\infty$, but the cycle repeats every $2 \pi$ along the $x$ axis.  (Do
+you understand how the definition of sine on the unit circle makes both of these facts
+true?)
 
 The following terms will be very important when we describe functions like this:
 
@@ -362,52 +367,52 @@ subtract from 60 is 20, to get a minimum temperature of 40.
 
 \afterex
 
-\input{activities/0.5.Act1}
-
-
-
-
-
-
-\subsection*{Units}
-
-Whenever we use mathematics in the real world, most numbers have units, like meters,
-minutes, dollars, pounds, or degrees.  Units are a very useful tool that helps us
-understand the meaning of the numbers that we are using.  For example, suppose we use the
-following sinusoidal function to model the water level on a pier in the ocean as it
-changes due to the tides during a certain day.
-\[ w(t) = 4.3 \sin \left( 0.51 t + 0.82 \right) + 10.6 \]
-This function isn't very useful to us unless we know what units the input $t$ must have
-(Minutes?  Seconds?  Hours?  Days?) and what units the output $w$ will have (Centimeters?
-Feet?  Meters?  Yards?).  In this case $t$ is in hours since midnight, and $w$ is in feet.
-Now, we can evaluate the function at noon to find that the water level is $w(12) = 13.3$
-feet.
-
-% \begin{callout}
-    Here's how units work in equations:  
-    \begin{itemize}
-        \item If two numbers are equal, or if we add or subtract
-            two numbers, they must have the same units:  3 seconds plus 5 feet doesn't make any sense.
-        \item If we multiply or divide two numbers, both units go into the result:  6 meters divided by
-            2 seconds equals a speed of 3 meters per second. 
-    \end{itemize}
-% \end{callout}
-
-The parameters in our water level function ($A = 4.3$, $B = 0.51$, $\phi = 0.82$, $C =
-10.6$) all have units, which help us interpret their meaning.   The sine, cosine, and
-tangent functions all take angles in radians as their input, and return numbers with no
-units as output.  $C = 10.6$ must be in feet, because we add it to something else, and
-then it equals the output, which is in feet.  Similarly $A = 4.3$ must also be in feet,
-because the sine function does not have any units on its output.  $\phi = 0.82$ must be in
-radians, because we add it to something else and use it as input to the sine function.
-Similarly $0.51 t$ must be in radians.  However, we know that $t$ is in hours, so $B =
-0.51$ must have units of radians per second.  
-
-
-
-
-
 \input{activities/0.5.Act2}
+
+
+
+
+
+
+% \subsection*{Units}
+% 
+% Whenever we use mathematics in the real world, most numbers have units, like meters,
+% minutes, dollars, pounds, or degrees.  Units are a very useful tool that helps us
+% understand the meaning of the numbers that we are using.  For example, suppose we use the
+% following sinusoidal function to model the water level on a pier in the ocean as it
+% changes due to the tides during a certain day.
+% \[ w(t) = 4.3 \sin \left( 0.51 t + 0.82 \right) + 10.6 \]
+% This function isn't very useful to us unless we know what units the input $t$ must have
+% (Minutes?  Seconds?  Hours?  Days?) and what units the output $w$ will have (Centimeters?
+% Feet?  Meters?  Yards?).  In this case $t$ is in hours since midnight, and $w$ is in feet.
+% Now, we can evaluate the function at noon to find that the water level is $w(12) = 13.3$
+% feet.
+% 
+% % \begin{callout}
+%     Here's how units work in equations:  
+%     \begin{itemize}
+%         \item If two numbers are equal, or if we add or subtract
+%             two numbers, they must have the same units:  3 seconds plus 5 feet doesn't make any sense.
+%         \item If we multiply or divide two numbers, both units go into the result:  6 meters divided by
+%             2 seconds equals a speed of 3 meters per second. 
+%     \end{itemize}
+% % \end{callout}
+% 
+% The parameters in our water level function ($A = 4.3$, $B = 0.51$, $\phi = 0.82$, $C =
+% 10.6$) all have units, which help us interpret their meaning.   The sine, cosine, and
+% tangent functions all take angles in radians as their input, and return numbers with no
+% units as output.  $C = 10.6$ must be in feet, because we add it to something else, and
+% then it equals the output, which is in feet.  Similarly $A = 4.3$ must also be in feet,
+% because the sine function does not have any units on its output.  $\phi = 0.82$ must be in
+% radians, because we add it to something else and use it as input to the sine function.
+% Similarly $0.51 t$ must be in radians.  However, we know that $t$ is in hours, so $B =
+% 0.51$ must have units of radians per second.  
+% 
+% 
+% 
+
+
+\input{activities/0.5.Act3}
 
 
 
@@ -422,25 +427,26 @@ as long as $\cos \theta \neq 0$, so that we don't have a divide-by-zero problem.
 means that the tangent function is undefined at $\pm \pi/2, \pm 3 \pi/2, \cdots$, and the
 function has vertical asymptotes at these points.
 \begin{center}
-    \begin{tikzpicture}
-        \begin{axis}[axis lines=center, xlabel={$x$}, xmin=-7, xmax=7,
-                ymin=-1.5, ymax=1.5, ytick={-1,1}, xtick={-6.28, -4.71, -3.14, -1.57,
-                1.57, 3.14, 4.71, 6.28},
-            xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$},
-        grid, xscale=2, restrict y to domain=-3:3]
-            \addplot[smooth, very thick, color=blue, domain=-6.5:6.5, samples=100] {tan(deg(x))};
-            \draw (axis cs:1.7,1) node[anchor=south west]{$y = \tan(x)$};
-            \draw[thick, dashed] (axis cs:-4.71,-1.5) -- (axis cs:-4.71,1.5);
-            \draw[thick, dashed] (axis cs:4.71,-1.5) -- (axis cs:4.71,1.5);
-            \draw[thick, dashed] (axis cs:-1.57,-1.5) -- (axis cs:-1.57,1.5);
-            \draw[thick, dashed] (axis cs:1.57,-1.5) -- (axis cs:1.57,1.5);
-        \end{axis}
-    \end{tikzpicture}
+%     \begin{tikzpicture}
+%         \begin{axis}[axis lines=center, xlabel={$x$}, xmin=-7, xmax=7,
+%                 ymin=-1.5, ymax=1.5, ytick={-1,1}, xtick={-6.28, -4.71, -3.14, -1.57,
+%                 1.57, 3.14, 4.71, 6.28},
+%             xticklabels={$-2\pi$,$-\frac{3}{2}\pi$,$-\pi$,$-\frac{1}{2}\pi$,$\frac{1}{2}\pi$,$\pi$,$\frac{3}{2}\pi$,$2\pi$},
+%         grid, xscale=2, restrict y to domain=-3:3]
+%             \addplot[smooth, very thick, color=blue, domain=-6.5:6.5, samples=100] {tan(deg(x))};
+%             \draw (axis cs:1.7,1) node[anchor=south west]{$y = \tan(x)$};
+%             \draw[thick, dashed] (axis cs:-4.71,-1.5) -- (axis cs:-4.71,1.5);
+%             \draw[thick, dashed] (axis cs:4.71,-1.5) -- (axis cs:4.71,1.5);
+%             \draw[thick, dashed] (axis cs:-1.57,-1.5) -- (axis cs:-1.57,1.5);
+%             \draw[thick, dashed] (axis cs:1.57,-1.5) -- (axis cs:1.57,1.5);
+%         \end{axis}
+%     \end{tikzpicture}
+    \includegraphics[width=0.8\columnwidth]{figures/0-5-fig11.pdf}
 \end{center}
 % \resizebox{3in}{!}{\includegraphics{0-5-TrigonometricFunctions9.jpg}}
 Because the tangent function blows up to infinity, we don't often fit tangent functions to real world data.
 
-\subsection*{Inverse Sine Function}
+\subsection*{Inverse Sine, Cosine, and Tangent Functions}
 
 Suppose we want to find the value of $x$ so that $\sin x = 0.75$.  To find this, we use an
 inverse sine function, written as either $\arcsin$ or $\sin^{-1}$.  In this case
@@ -457,70 +463,78 @@ $x = 0.848 - 2 \pi \approx -5.44$.  As a result, we have the $\arcsin$ function 
 value between $-\pi/2$ and $+\pi/2$.  This means that the arcsine function has a very
 limited domain and range, only existing for $ -1 \leq x \leq 1$ and $-\pi/2 \leq y \leq
 \pi/2$.
-\begin{center}
-    \begin{tikzpicture}
-        \draw[thick, <->] (-2,0) -- (2,0) node[anchor=west]{$x$};
-        \draw[thick, <->] (0,-2.25) -- (0,2.25) node[anchor=south]{$y=\sin^{-1}(x)$};
-        \draw[color=blue, very thick, domain=-1.57:1.57] plot ({sin(deg(\x))},{\x});
-        \draw (1,0) node[anchor=north]{$1$};
-        \draw (-1,0) node[anchor=south]{$-1$};
-        \draw (0,1.57) node[anchor=east]{$\pi/2$};
-        \draw (0,-1.57) node[anchor=west]{$-\pi/2$};
-        \draw[thick, dashed] (1,0) -- (1,1.57) -- (0,1.57);
-        \draw[thick, dashed] (-1,0) -- (-1,-1.57) -- (0,-1.57);
-        \draw (0,-2.25) node[anchor=north]{Domain: $-1\le x \le 1$, Range: $-\pi/2 \le y
-        \le \pi/2$};
-    \end{tikzpicture}
-\end{center}
+% \begin{center}
+%     \begin{tikzpicture}
+%         \draw[thick, <->] (-2,0) -- (2,0) node[anchor=west]{$x$};
+%         \draw[thick, <->] (0,-2.25) -- (0,2.25) node[anchor=south]{$y=\sin^{-1}(x)$};
+%         \draw[color=blue, very thick, domain=-1.57:1.57] plot ({sin(deg(\x))},{\x});
+%         \draw (1,0) node[anchor=north]{$1$};
+%         \draw (-1,0) node[anchor=south]{$-1$};
+%         \draw (0,1.57) node[anchor=east]{$\pi/2$};
+%         \draw (0,-1.57) node[anchor=west]{$-\pi/2$};
+%         \draw[thick, dashed] (1,0) -- (1,1.57) -- (0,1.57);
+%         \draw[thick, dashed] (-1,0) -- (-1,-1.57) -- (0,-1.57);
+%         \draw (0,-2.25) node[anchor=north]{Domain: $-1\le x \le 1$, Range: $-\pi/2 \le y
+%         \le \pi/2$};
+%     \end{tikzpicture}
+% \end{center}
 
 % \resizebox{2in}{!}{\includegraphics{0-5-TrigonometricFunctions10.jpg}}
 Warning:  Even though we write the inverse sine function as $\sin^{-1} x$, it is a completely different thing than $1 / \sin x$.
 \[ \sin^{-1}x \neq \frac{1}{\sin x} \]
 
-\subsection*{Inverse Cosine Function}
+% \subsection*{Inverse Cosine Function}
 
 We can define a similar inverse function for the cosine, which we call $\arccos$ or
 $\cos^{-1}$.  The domain of this function is $-1 \leq x \leq 1$, and we choose the range
 to be $0 \leq y \leq \pi$.
-\begin{center}
-    \begin{tikzpicture}
-        \draw[thick, <->] (-2,0) -- (2,0) node[anchor=west]{$x$};
-        \draw[thick, <->] (0,-1) -- (0,4) node[anchor=south]{$y=\cos^{-1}(x)$};
-        \draw[color=blue, very thick, domain=0:3.14] plot ({cos(deg(\x))},{\x});
-        \draw (1,0) node[anchor=north]{$1$};
-        \draw (-1,0) node[anchor=north]{$-1$};
-        \draw (0,3.14) node[anchor=west]{$\pi$};
-        \draw[thick, dashed] (-1,0) -- (-1,3.14) -- (0,3.14);
-        \draw (0,-1) node[anchor=north]{Domain: $-1\le x \le 1$, Range: $0 \le y
-        \le \pi$};
-    \end{tikzpicture}
-\end{center}
+% \begin{center}
+%     \begin{tikzpicture}
+%         \draw[thick, <->] (-2,0) -- (2,0) node[anchor=west]{$x$};
+%         \draw[thick, <->] (0,-1) -- (0,4) node[anchor=south]{$y=\cos^{-1}(x)$};
+%         \draw[color=blue, very thick, domain=0:3.14] plot ({cos(deg(\x))},{\x});
+%         \draw (1,0) node[anchor=north]{$1$};
+%         \draw (-1,0) node[anchor=north]{$-1$};
+%         \draw (0,3.14) node[anchor=west]{$\pi$};
+%         \draw[thick, dashed] (-1,0) -- (-1,3.14) -- (0,3.14);
+%         \draw (0,-1) node[anchor=north]{Domain: $-1\le x \le 1$, Range: $0 \le y
+%         \le \pi$};
+%     \end{tikzpicture}
+% \end{center}
 
 % \resizebox{2in}{!}{\includegraphics{0-5-TrigonometricFunctions11.jpg}}
 
-\subsection*{Inverse Tangent Function}
+% \subsection*{Inverse Tangent Function}
 
 Recall that the tangent function has a range going all the way from negative infinity to
 positive infinity, as $x$ goes from $-\pi/2$ to $+\pi/2$.  As a result, the inverse
 tangent function has a domain of $-\infty < x < \infty$, and a range of $-\pi/2 \leq y
-\leq \pi/2$.
+\leq \pi/2$.  The three primary inverse trigonometric functions are shown in Figure
+\ref{F:0.5.inverse_trig}.
 
-\begin{center}
-    \begin{tikzpicture}
-        \draw[thick, <->] (-3,0) -- (3,0) node[anchor=west]{$x$};
-        \draw[thick, <->] (0,-2.25) -- (0,2.25) node[anchor=south]{$y=\tan^{-1}(x)$};
-        \draw[color=blue, very thick, domain=-1.25:1.25] plot ({tan(deg(\x))},{\x});
-        \draw (0,1.57) node[anchor=south east]{$\pi/2$};
-        \draw (0,-1.57) node[anchor=north west]{$-\pi/2$};
-        \draw[thick, dashed] (-3,1.57) -- (3,1.57);
-        \draw[thick, dashed] (-3,-1.57) -- (3,-1.57);
-        \draw (0,-2.25) node[anchor=north]{Domain: $\mathbb{R}$, Range: $-\pi/2 < y
-        < \pi/2$};
-    \end{tikzpicture}
-\end{center}
+% \begin{center}
+%     \begin{tikzpicture}
+%         \draw[thick, <->] (-3,0) -- (3,0) node[anchor=west]{$x$};
+%         \draw[thick, <->] (0,-2.25) -- (0,2.25) node[anchor=south]{$y=\tan^{-1}(x)$};
+%         \draw[color=blue, very thick, domain=-1.25:1.25] plot ({tan(deg(\x))},{\x});
+%         \draw (0,1.57) node[anchor=south east]{$\pi/2$};
+%         \draw (0,-1.57) node[anchor=north west]{$-\pi/2$};
+%         \draw[thick, dashed] (-3,1.57) -- (3,1.57);
+%         \draw[thick, dashed] (-3,-1.57) -- (3,-1.57);
+%         \draw (0,-2.25) node[anchor=north]{Domain: $\mathbb{R}$, Range: $-\pi/2 < y
+%         < \pi/2$};
+%     \end{tikzpicture}
+% \end{center}
 % \resizebox{2in}{!}{\includegraphics{0-5-TrigonometricFunctions12.jpg}}
 % 
 % 
+\begin{figure}[ht!]
+    \begin{center}
+        \includegraphics[width=1\columnwidth]{figures/0-5-fig12.pdf}
+    \end{center}
+    \caption{The inverse trigonometric functions}
+    \label{F:0.5.inverse_trig}
+\end{figure}
 
 
 \clearpage
