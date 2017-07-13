@@ -1,0 +1,39 @@
+\bigskip
+
+\item Which of the graphs represents $y = \frac{2x}{x-2}$?
+
+% \resizebox{5in}{!}{\includegraphics{SVC.01.06.120.ps}}
+\begin{tikzpicture}
+        \begin{axis}[axis lines=center, xlabel={$x$}, ylabel={$y$}, xmin=-4, xmax=4,
+                ymin=-8, ymax=8, title={Plot (a)}]
+                \addplot[color=blue, very thick, domain=-4:1.9, samples=100] {1/(x-2)};
+                \addplot[color=blue, very thick, domain=2.1:4, samples=100] {1/(x-2)};
+                \draw[dashed] (axis cs:2,-20) -- (axis cs:2,20);
+            \end{axis}
+        \end{tikzpicture}
+    \begin{tikzpicture}
+        \begin{axis}[axis lines=center, xlabel={$x$}, ylabel={$y$}, xmin=-4, xmax=4,
+                ymin=-8, ymax=8, title={Plot (b)}]
+                \addplot[color=blue, very thick, domain=-4:1.9, samples=100] {2*x/(x-2)};
+                \addplot[color=blue, very thick, domain=2.1:4, samples=100] {2*x/(x-2)};
+                \draw[dashed] (axis cs:2,-20) -- (axis cs:2,20);
+            \end{axis}
+        \end{tikzpicture}\\
+    \begin{tikzpicture}
+        \begin{axis}[axis lines=center, xlabel={$x$}, ylabel={$y$}, xmin=-4, xmax=4,
+                ymin=-8, ymax=8, title={Plot (c)}]
+                \addplot[color=blue, very thick, domain=-4:1.9, samples=100] {-2*x/(x-2)};
+                \addplot[color=blue, very thick, domain=2.1:4, samples=100] {-2*x/(x-2)};
+                \draw[dashed] (axis cs:2,-20) -- (axis cs:2,20);
+            \end{axis}
+        \end{tikzpicture}
+    \begin{tikzpicture}
+        \begin{axis}[axis lines=center, xlabel={$x$}, ylabel={$y$}, xmin=-4, xmax=4,
+                ymin=-8, ymax=8, title={Plot (d)}]
+                \addplot[color=blue, very thick, domain=-4:-0.1, samples=100] {1/x+2};
+                \addplot[color=blue, very thick, domain=0.1:4, samples=100] {1/x+2};
+                \draw[dashed] (axis cs:-4,2) -- (axis cs:4,2);
+            \end{axis}
+        \end{tikzpicture}
+
+% ConcepTests - to accompany Calculus 4th Edition, Hughes-Hallet et al. John Wiley \& Sons.

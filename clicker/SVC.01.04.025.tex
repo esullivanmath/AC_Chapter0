@@ -1,0 +1,27 @@
+\bigskip
+
+\item Which equation matches this graph?
+
+% \begin{center}\includegraphics[height=120pt]{SVC.01.04.025.eps}\end{center}
+
+    \begin{minipage}{0.4\columnwidth}
+    \begin{enumerate}
+    \item $y=b^x$ with $b>1$
+    \item $y=b^x$ with $0<b<1$
+    \item $y=\log_b x$ with $b>1$
+    \item $y=\log_b x$ with $0<b<1$
+    \end{enumerate}
+    \end{minipage}
+    \begin{minipage}{0.6\columnwidth}
+    \begin{center}
+        \begin{tikzpicture}
+            \begin{axis}[axis lines=center, xlabel={$x$}, ylabel={$y$}, xmin=-1, xmax=5,
+                ymin=-3, ymax=3, xtick=\empty, ytick=\empty]
+                \addplot[color=blue, very thick,domain=-1:5, samples=100] {(1/2)^x};
+            \end{axis}
+        \end{tikzpicture}
+    \end{center}
+    \end{minipage}
+
+
+%by Project MathVote

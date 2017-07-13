@@ -1,0 +1,26 @@
+\bigskip
+
+\item What is the degree of the graph of the polynomial in the figure below?
+
+% \resizebox{3in}{!}{\includegraphics{SVC.01.06.070.ps}}
+
+    \begin{minipage}{0.4\columnwidth}
+        \begin{enumerate}
+            \item 3
+            \item 5
+            \item Either (a) or (b)
+            \item Neither (a) nor (b)
+            \item Any polynomial of degree greater than 2
+        \end{enumerate}
+    \end{minipage}
+    \begin{minipage}{0.6\columnwidth}
+        \begin{tikzpicture}
+            \begin{axis}[axis lines=center, xlabel={$x$}, ylabel={$y$}, xmin=0, xmax=5,
+                ymin=-5, ymax=10]
+                \addplot[color=blue, very thick,domain=0:5, samples=100]
+                {2*(x-2)^3-0.5*(x-2)^2-2*(x-2)+2};
+            \end{axis}
+        \end{tikzpicture}
+    \end{minipage}
+
+% ConcepTests - to accompany Calculus 4th Edition, Hughes-Hallet et al. John Wiley \& Sons.

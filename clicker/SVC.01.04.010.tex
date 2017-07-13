@@ -1,0 +1,32 @@
+\bigskip
+
+\item Which is a graph of $y = \ln x$?
+
+% \resizebox{5in}{!}{\includegraphics{SVC.01.04.010.ps}}
+
+\begin{tikzpicture}
+        \begin{axis}[axis lines=center, xlabel={$x$}, ylabel={$y$}, xmin=0, xmax=10,
+                ymin=0, ymax=110, title={Plot (a)}]
+                \addplot[color=blue, very thick, domain=0:10] {x^2};
+            \end{axis}
+        \end{tikzpicture}
+    \begin{tikzpicture}
+        \begin{axis}[axis lines=center, xlabel={$x$}, ylabel={$y$}, xmin=-3, xmax=3,
+                ymin=0, ymax=3, title={Plot (b)}]
+                \addplot[color=blue, very thick,domain=-3:3] {exp(x)};
+            \end{axis}
+        \end{tikzpicture}\\
+    \begin{tikzpicture}
+        \begin{axis}[axis lines=center, xlabel={$x$}, ylabel={$y$}, xmin=0, xmax=9,
+                ymin=-3, ymax=3, title={Plot (c)}]
+                \addplot[color=blue, very thick,domain=0:9,samples=100] {ln(x)};
+            \end{axis}
+        \end{tikzpicture}
+    \begin{tikzpicture}
+        \begin{axis}[axis lines=center, xlabel={$x$}, ylabel={$y$}, xmin=0, xmax=9,
+                ymin=-3, ymax=3, title={Plot (d)}]
+                \addplot[color=blue, very thick,domain=0:9, samples=100] {-1*ln(x)};
+            \end{axis}
+        \end{tikzpicture}
+
+% ConcepTests - to accompany Calculus 4th Edition, Hughes-Hallet et al. John Wiley \& Sons.

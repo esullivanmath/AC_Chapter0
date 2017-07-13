@@ -1,0 +1,7 @@
+\contentsline {chapter}{\numberline {1}Preliminaries: A Library of Functions}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Functions, Slope, and Lines}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Exponential Functions}{7}{section.1.2}
+\contentsline {section}{\numberline {1.3}Transformations of Functions}{12}{section.1.3}
+\contentsline {section}{\numberline {1.4}Logarithmic Functions}{18}{section.1.4}
+\contentsline {section}{\numberline {1.5}Trigonometric Functions}{24}{section.1.5}
+\contentsline {section}{\numberline {1.6}Powers, Polynomials, and Rational Functions}{28}{section.1.6}
