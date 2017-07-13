@@ -1,24 +1,51 @@
 \begin{activity}\label{A:0.6.3}
-
-%The purpose of this activity is to prompt students to start thinking about vertical asymptotes (and division by 0) in terms of limits.  
-	
+% The purpose of this activity is to prompt students to start thinking about vertical asymptotes (and division by 0) in terms of limits.  
 \ba
 		\item Suppose $f(x) = x^{2}+ 3x + 2$ and $g(x) = x - 3$.  
 			\begin{enumerate}
-				\item What is the behavior of the function $h(x) = \displaystyle{\frac {f(x)}{g(x)}}$ near $x = -1$? (i.e. what happens to $h(x)$ as $x\to -1$?) near $x = -2$? near $x = 3$?
-				\item What is the behavior of the function $h(x) = \displaystyle{\frac {g(x)}{f(x)}}$ near $x = -1$? near $x = -2$? near $x = 3$?
+                \item[(i)] What is the behavior of the function $h(x) = \displaystyle{\frac {f(x)}{g(x)}}$ near $x = -1$? (i.e. what happens to $h(x)$ as $x\to -1$?) near $x = -2$? near $x = 3$?
+                \item[(ii)] What is the behavior of the function $k(x) = \displaystyle{\frac {g(x)}{f(x)}}$ near $x = -1$? near $x = -2$? near $x = 3$?
 			\end{enumerate}
 		\item Suppose $f(x) = x^{2} - 9$ and $g(x) = x - 3$.  
 			\begin{enumerate}
-				\item What is the behavior of the function $h(x) = \displaystyle{\frac {f(x)}{g(x)}}$ near $x = -3$? (i.e. what happens to $h(x)$ as $x\to -3$?) near $x = 3$?
-				\item What is the behavior of the function $h(x) = \displaystyle{\frac {g(x)}{f(x)}}$ near $x = -3$? near $x = 3$?
+                \item[(i)] What is the behavior of the function $h(x) = \displaystyle{\frac {f(x)}{g(x)}}$ near $x = -3$? (i.e. what happens to $h(x)$ as $x\to -3$?) near $x = 3$?
+                \item[(ii)] What is the behavior of the function $k(x) = \displaystyle{\frac {g(x)}{f(x)}}$ near $x = -3$? near $x = 3$?
 			\end{enumerate}
-		\item Suppose $f(x) = \sin{x}$ and $g(x) = x$.
-			\begin{enumerate}
-				\item What is $f(0)$? What is $g(0)$?
-				\item What is the behavior of the function $h(x) = \displaystyle{\frac {f(x)}{g(x)}}$ near $x = 0$? (i.e. what happens to $h(x)$ as $x\to 0$?)
-				\item What is the behavior of the function $h(x) = \displaystyle{\frac {g(x)}{f(x)}}$ near $x = 0$?
-			\end{enumerate}
+% 		\item Suppose $f(x) = \sin{x}$ and $g(x) = x$.
+% 			\begin{enumerate}
+%                 \item[(i)] What is $f(0)$? What is $g(0)$?
+%                 \item[(ii)] What is the behavior of the function $h(x) = \displaystyle{\frac {f(x)}{g(x)}}$ near $x = 0$? (i.e. what happens to $h(x)$ as $x\to 0$?)
+%                 \item[(iii)] What is the behavior of the function $k(x) = \displaystyle{\frac {g(x)}{f(x)}}$ near $x = 0$?
+% 			\end{enumerate}
 \ea
 
-\end{activity}\aftera
+\end{activity}
+\begin{smallhint}
+    Watch carefully for division by zero.  That is where a vertical asymptote is possible.
+\end{smallhint}
+\begin{bighint}
+    Watch carefully for division by zero.  That is where a vertical asymptote is possible.
+\end{bighint}
+\begin{activitySolution}
+   \ba
+        \item For $f(x) = x^2+3x+2$ and $g(x) = x-3$ when we form the function $h(x) =
+            f(x)/g(x)$ we get $h(x) = \frac{x^2+3x+2}{x-3}$.  Notice that $h(-1) = 0$ and
+            $h(-2) = 0$ since $f(-1) = f(-2) = 0$ and $g(-2) \neq 0$.  At $x=3$, on the
+            other hand, $g(x) = 0$ and there is a vertical asymptote on the function
+            $h(x)$.
+
+            For $k(x) = g(x) / f(x)$.  The vertical asymptotes occur at $x=-2$ and $x=-1$
+            and a zero occurs at $x=3$.
+        \item For $f(x) = x^2-9$ and $g(x) = x-3$ we see immediately that $f(x)$ can be
+            factored to $f(x) = (x-3)(x+3)$ and hence the function $h(x) = f(x)/g(x)$
+            simplifies to $h(x) = x+3$ when $x$ is not $3$.  When $x=3$ there is a
+            discontinuity in the graph but this is not a vertical asymptote since the
+            discontinuity can be removed algebraically.
+
+            For $k(x) = g(x)/f(x)$ we simplify to $k(x) = 1/(x+3)$ when $x$ is not $3$.
+            Therefore there is a vertical asymptote at $x=-3$ and a removable
+            discontinuity at $x=3$.
+   \ea
+\end{activitySolution}
+
+\aftera

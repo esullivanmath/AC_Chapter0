@@ -1,0 +1,35 @@
+\documentclass{standalone}
+
+\usepackage{pgfplots,tikz,amsmath}
+\begin{document}
+\def\scl{0.75}
+		\begin{tikzpicture}[line cap=round,line join=round, x=0.5cm,
+            y=0.006cm, scale=\scl] 
+			\draw[<->,color=black] (-6,0.0) -- (7,0.0); 
+			\foreach \x in {-4,-2,2,4,6} 
+			\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$}; 
+			\draw[<->,color=black] (0.0,-100) -- (0.0,850); 
+			\foreach \y in {,800} 
+			\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$}; 
+			\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$}; 
+			\clip(-6,-200) rectangle (7,850); 
+            \draw[very thick, blue, smooth,samples=100,domain=-6:7] plot(\x,{(\x)^(4.0)}); 
+			\begin{scriptsize} 
+				\draw[color=black] (-0.5,-150) node {$y=x^{4}$}; 
+			\end{scriptsize} 
+		\end{tikzpicture}   
+		\begin{tikzpicture}[line cap=round,line join=round, x=0.5cm, y=0.006cm, scale=\scl] 
+			\draw[<->,color=black] (-6,0.0) -- (7,0.0); 
+			\foreach \x in {-4,-2,2,4,6} 
+			\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$}; 
+			\draw[<->,color=black] (0.0,-100) -- (0.0,850); 
+			\foreach \y in {,800} 
+			\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$}; 
+			\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$}; 
+			\clip(-6,-200) rectangle (7,850); 
+			\draw[very thick, blue, smooth,samples=100,domain=-6:7] plot(\x,{(\x)^(4.0)-2.0*(\x)^(3.0)-12.0*(\x)^(2.0)+3.0*(\x)-4.0}); 
+			\begin{scriptsize} 
+				\draw[color=black] (-0.5,-150) node {$y=x^{4} - 2x^{3} - 12x^{2} + 3x - 4$}; 
+			\end{scriptsize} 
+		\end{tikzpicture}
+\end{document}

@@ -4,3 +4,4 @@
 \contentsline {section}{\numberline {0.3}Transformations, Compositions, and Inverses}{20}{section.0.3}
 \contentsline {section}{\numberline {0.4}Logarithmic Functions}{30}{section.0.4}
 \contentsline {section}{\numberline {0.5}Trigonometric Functions}{36}{section.0.5}
+\contentsline {section}{\numberline {0.6}Powers, Polynomials, and Rational Functions}{50}{section.0.6}

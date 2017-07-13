@@ -12,13 +12,13 @@
 \hspace*{3 pt}}
 
 
-\begin{web}
-\item \href{https://www.khanacademy.org/math/algebra2/polynomial_and_rational}{Khan
-    Playlist: Polynomial and rational functions}
-\item
-    \href{https://www.khanacademy.org/math/algebra2/polynomial_and_rational/rational_funcs_tutorial/v/adding-and-subtracting-rational-expressions}{Khan
-    Playlist: Rational functions}
-\end{web}
+% \begin{web}
+% \item \href{https://www.khanacademy.org/math/algebra2/polynomial_and_rational}{Khan
+%     Playlist: Polynomial and rational functions}
+% \item
+%     \href{https://www.khanacademy.org/math/algebra2/polynomial_and_rational/rational_funcs_tutorial/v/adding-and-subtracting-rational-expressions}{Khan
+%     Playlist: Rational functions}
+% \end{web}
 
 \nin \hrulefill
 
@@ -46,28 +46,29 @@ A {\bf power function} has the form
 
 \begin{figure}[ht!]
 	\begin{center}
-		\begin{tikzpicture}%[scale=0.75]
-			\begin{axis}[axis lines=center, xlabel={$x$}, ylabel={$y$},
-				domain=-2.5:2.5,ymin=-15,ymax=15,xmin=-2.75,xmax=2.75]
-				\addplot[smooth, very thick, blue, samples=150] {x}
-					node[above]{$x$};
-				\addplot[smooth, very thick, red, samples=150] {x^3}
-					[below right] node[pos=0.9]{$x^3$};
-				\addplot[smooth, very thick, black, samples=150] {x^5}
-					[left] node[pos=0.57]{$x^5$};
-			\end{axis}
-		\end{tikzpicture}
-		\begin{tikzpicture}%[scale=0.75]
-			\begin{axis}[axis lines=center, xlabel={$x$}, ylabel={$y$},
-				domain=-2.5:2.5,ymin=-10,ymax=15,xmin=-2.75,xmax=2.75]
-				\addplot[smooth, very thick, blue, samples=150] {x^2}
-					node[above]{$x^2$};
-				\addplot[smooth, very thick, red, samples=150] {x^4} 
-					[below right] node[pos=0.67]{$x^4$}; 				
-				\addplot[smooth, very thick, black, samples=150] {x^6}
- 					[above left] node[pos=0.525]{$x^6$};
-			\end{axis}
-		\end{tikzpicture}     
+% 		\begin{tikzpicture}%[scale=0.75]
+% 			\begin{axis}[axis lines=center, xlabel={$x$}, ylabel={$y$},
+% 				domain=-2.5:2.5,ymin=-15,ymax=15,xmin=-2.75,xmax=2.75]
+% 				\addplot[smooth, very thick, blue, samples=150] {x}
+% 					node[above]{$x$};
+% 				\addplot[smooth, very thick, red, samples=150] {x^3}
+% 					[below right] node[pos=0.9]{$x^3$};
+% 				\addplot[smooth, very thick, black, samples=150] {x^5}
+% 					[left] node[pos=0.57]{$x^5$};
+% 			\end{axis}
+% 		\end{tikzpicture}
+% 		\begin{tikzpicture}%[scale=0.75]
+% 			\begin{axis}[axis lines=center, xlabel={$x$}, ylabel={$y$},
+% 				domain=-2.5:2.5,ymin=-10,ymax=15,xmin=-2.75,xmax=2.75]
+% 				\addplot[smooth, very thick, blue, samples=150] {x^2}
+% 					node[above]{$x^2$};
+% 				\addplot[smooth, very thick, red, samples=150] {x^4} 
+% 					[below right] node[pos=0.67]{$x^4$}; 				
+% 				\addplot[smooth, very thick, black, samples=150] {x^6}
+%  					[above left] node[pos=0.525]{$x^6$};
+% 			\end{axis}
+% 		\end{tikzpicture}     
+        \includegraphics[width=0.9\columnwidth]{figures/0-6-fig2.pdf}
 	\end{center}     
 \caption{Positive odd powers of $x$ (left) and positive even powers of $x$ (right)}     
 \label{F:0.6.Ex1} 
@@ -111,38 +112,39 @@ power functions with even degree, and polynomials with odd degree behave like po
 functions like odd degree. Figures \ref{F:0.6.PolyEndBehavior} and
 \ref{F:0.6.PolyEndBehavior2} demonstrate this for two different fourth degree polynomials.
 
-\def\scl{0.75}
+% \def\scl{0.75}
 \begin{figure}[ht!]
 	\begin{center}
-		\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45, x=0.5cm,
-            y=0.006cm, scale=\scl] 
-			\draw[<->,color=black] (-6,0.0) -- (7,0.0); 
-			\foreach \x in {-4,-2,2,4,6} 
-			\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$}; 
-			\draw[<->,color=black] (0.0,-100) -- (0.0,850); 
-			\foreach \y in {,800} 
-			\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$}; 
-			\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$}; 
-			\clip(-6,-200) rectangle (7,850); 
-            \draw[very thick, blue, smooth,samples=100,domain=-6:7] plot(\x,{(\x)^(4.0)}); 
-			\begin{scriptsize} 
-				\draw[color=black] (-0.5,-150) node {$y=x^{4}$}; 
-			\end{scriptsize} 
-		\end{tikzpicture}   
-		\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45, x=0.5cm, y=0.006cm, scale=\scl] 
-			\draw[<->,color=black] (-6,0.0) -- (7,0.0); 
-			\foreach \x in {-4,-2,2,4,6} 
-			\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$}; 
-			\draw[<->,color=black] (0.0,-100) -- (0.0,850); 
-			\foreach \y in {,800} 
-			\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$}; 
-			\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$}; 
-			\clip(-6,-200) rectangle (7,850); 
-			\draw[very thick, blue, smooth,samples=100,domain=-6:7] plot(\x,{(\x)^(4.0)-2.0*(\x)^(3.0)-12.0*(\x)^(2.0)+3.0*(\x)-4.0}); 
-			\begin{scriptsize} 
-				\draw[color=black] (-0.5,-150) node {$y=x^{4} - 2x^{3} - 12x^{2} + 3x - 4$}; 
-			\end{scriptsize} 
-		\end{tikzpicture}
+% 		\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45, x=0.5cm,
+%             y=0.006cm, scale=\scl] 
+% 			\draw[<->,color=black] (-6,0.0) -- (7,0.0); 
+% 			\foreach \x in {-4,-2,2,4,6} 
+% 			\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$}; 
+% 			\draw[<->,color=black] (0.0,-100) -- (0.0,850); 
+% 			\foreach \y in {,800} 
+% 			\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$}; 
+% 			\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$}; 
+% 			\clip(-6,-200) rectangle (7,850); 
+%             \draw[very thick, blue, smooth,samples=100,domain=-6:7] plot(\x,{(\x)^(4.0)}); 
+% 			\begin{scriptsize} 
+% 				\draw[color=black] (-0.5,-150) node {$y=x^{4}$}; 
+% 			\end{scriptsize} 
+% 		\end{tikzpicture}   
+% 		\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45, x=0.5cm, y=0.006cm, scale=\scl] 
+% 			\draw[<->,color=black] (-6,0.0) -- (7,0.0); 
+% 			\foreach \x in {-4,-2,2,4,6} 
+% 			\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$}; 
+% 			\draw[<->,color=black] (0.0,-100) -- (0.0,850); 
+% 			\foreach \y in {,800} 
+% 			\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$}; 
+% 			\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$}; 
+% 			\clip(-6,-200) rectangle (7,850); 
+% 			\draw[very thick, blue, smooth,samples=100,domain=-6:7] plot(\x,{(\x)^(4.0)-2.0*(\x)^(3.0)-12.0*(\x)^(2.0)+3.0*(\x)-4.0}); 
+% 			\begin{scriptsize} 
+% 				\draw[color=black] (-0.5,-150) node {$y=x^{4} - 2x^{3} - 12x^{2} + 3x - 4$}; 
+% 			\end{scriptsize} 
+% 		\end{tikzpicture}
+        \includegraphics[width=0.8\columnwidth]{figures/0-6-fig3.pdf}
 	\end{center}      
 \caption{Local behavior of two fourth-degree polynomials.  At this level, we can clearly see the differences between these two functions.}
 \label{F:0.6.PolyEndBehavior}
@@ -150,32 +152,33 @@ functions like odd degree. Figures \ref{F:0.6.PolyEndBehavior} and
 
 \begin{figure}[ht!]
 	\begin{center}
-		\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45, x=1.5cm, y=0.35cm, scale=\scl] 
-			\draw[<->,color=black] (-2,0.0) -- (2,0.0); 
-			\foreach \x in {-20,-10,10,20} 
-			\draw[shift={(\x/10,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$}; 
-			\draw[->,color=black] (0.0,-2) -- (0.0,15); 
-			\draw[shift={(0,14)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $160,000$}; 
-			\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$}; 
-			\clip(-2,-4) rectangle (2,15); 
-			\draw[very thick, blue, smooth,samples=100,domain=-2:2] plot(\x,{(\x)^(4.0)}); 
-			\begin{scriptsize} 
-				\draw[color=black] (-0.5,-3) node {$y=x^{4}$}; 
-			\end{scriptsize} 
-		\end{tikzpicture}  
-		\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45, x=1.5cm, y=0.35cm, scale=\scl] 
-			\draw[<->,color=black] (-2,0.0) -- (2,0.0); 
-			\foreach \x in {-20,-10,10,20} 
-			\draw[shift={(\x/10,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$}; 
-			\draw[->,color=black] (0.0,-2) -- (0.0,15); 
-			\draw[shift={(0,14)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $160,000$}; 
-			\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$}; 
-			\clip(-2,-4) rectangle (2,15); 
-			\draw[very thick, blue, smooth,samples=100,domain=-2:2] plot(\x,{(\x)^(4.0)}); 
-			\begin{scriptsize} 
-				\draw[color=black] (-0.5,-3) node {$y=x^{4} - 2x^{3} - 12x^{2} + 3x - 4$}; 
-			\end{scriptsize} 
-		\end{tikzpicture}  
+% 		\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45, x=1.5cm, y=0.35cm, scale=\scl] 
+% 			\draw[<->,color=black] (-2,0.0) -- (2,0.0); 
+% 			\foreach \x in {-20,-10,10,20} 
+% 			\draw[shift={(\x/10,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$}; 
+% 			\draw[->,color=black] (0.0,-2) -- (0.0,15); 
+% 			\draw[shift={(0,14)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $160,000$}; 
+% 			\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$}; 
+% 			\clip(-2,-4) rectangle (2,15); 
+% 			\draw[very thick, blue, smooth,samples=100,domain=-2:2] plot(\x,{(\x)^(4.0)}); 
+% 			\begin{scriptsize} 
+% 				\draw[color=black] (-0.5,-3) node {$y=x^{4}$}; 
+% 			\end{scriptsize} 
+% 		\end{tikzpicture}  
+% 		\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45, x=1.5cm, y=0.35cm, scale=\scl] 
+% 			\draw[<->,color=black] (-2,0.0) -- (2,0.0); 
+% 			\foreach \x in {-20,-10,10,20} 
+% 			\draw[shift={(\x/10,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$}; 
+% 			\draw[->,color=black] (0.0,-2) -- (0.0,15); 
+% 			\draw[shift={(0,14)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $160,000$}; 
+% 			\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$}; 
+% 			\clip(-2,-4) rectangle (2,15); 
+% 			\draw[very thick, blue, smooth,samples=100,domain=-2:2] plot(\x,{(\x)^(4.0)}); 
+% 			\begin{scriptsize} 
+% 				\draw[color=black] (-0.5,-3) node {$y=x^{4} - 2x^{3} - 12x^{2} + 3x - 4$}; 
+% 			\end{scriptsize} 
+% 		\end{tikzpicture}  
+        \includegraphics[width=0.8\columnwidth]{figures/0-6-fig4.pdf}
 	\end{center}      
 \caption{Long-term behavior of two fourth-degree polynomials.  At this scale, the two functions are nearly indistinguishable.}
 \label{F:0.6.PolyEndBehavior2}
@@ -211,7 +214,10 @@ Theorem \ref{T:0.6.2} provides us with a way to construct polynomials that pass 
 	%Horizontal and Vertical Asymptotes
 	A function $f$ has a {\bf horizontal asymptote} $y = a$ if the distance between the $f$ and the line $y=a$ becomes arbitrarily small when $x$ becomes sufficiently large.
 	Alternatively, a horizontal asymptote is a line that a function approaches as $x \to \infty$ or as $x \to -\infty$. 
-	A function $f$ has a {\bf vertical asymptote} at a point $x = b$ if the function becomes arbitrarily large as $x \to b$.
+\end{definition}
+
+\begin{definition}
+    A function $f$ has a {\bf vertical asymptote} at a point $x = b$ if the function becomes arbitrarily large as $x \to b$.
 \end{definition}
 
 The graphs of rational functions may have vertical asymptotes only where the denominator is zero.  However, there are many examples of rational functions that do not have a vertical asymptote even at a point where the denominator is zero. (For instance, try graphing the function $f(x)=\displaystyle{\frac{x^{2}-1}{x-1}}$).
