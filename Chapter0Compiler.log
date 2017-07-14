@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  13 JUL 2017 15:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  14 JUL 2017 10:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**Chapter0Compiler
+**Chapter0Compiler.tex
 (./Chapter0Compiler.tex
 LaTeX2e <2015/01/01>
 Babel <3.9l> and hyphenation patterns for 79 languages loaded.
@@ -1952,23 +1952,23 @@ Package epstopdf Info: Source file: <figures/CClicense.eps>
 (epstopdf)                    size: 8295 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
 erted-to.pdf figures/CClicense.eps>
-(epstopdf)             \includegraphics on input line 93.
+(epstopdf)             \includegraphics on input line 86.
 Package epstopdf Info: Output file is already uptodate.
 File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
  <use figures/CClicense-eps-converted-to.pdf>
 Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
-ine 93.
+ine 86.
 (pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.93 \afterex
+l.86 \afterex
               [2] <figures/0-1-ex1.pdf, id=96, 411.59473pt x 124.69286pt>
 File: figures/0-1-ex1.pdf Graphic file (type pdf)
 
 <use figures/0-1-ex1.pdf>
-Package pdftex.def Info: figures/0-1-ex1.pdf used on input line 95.
+Package pdftex.def Info: figures/0-1-ex1.pdf used on input line 88.
 (pdftex.def)             Requested size: 446.2658pt x 135.2066pt.
  (./activities/0.1.Act1.tex
 <figures/0-1-act1.pdf, id=99, 210.55263pt x 185.05437pt>
@@ -1999,35 +1999,35 @@ Package epstopdf Info: Source file: <figures/CClicense.eps>
 (epstopdf)                    size: 8295 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
 erted-to.pdf figures/CClicense.eps>
-(epstopdf)             \includegraphics on input line 167.
+(epstopdf)             \includegraphics on input line 160.
 Package epstopdf Info: Output file is already uptodate.
 File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/CClicense-eps-converted-to.pdf>
 Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
-ine 167.
+ine 160.
 (pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.167     \item i
+l.160     \item i
                  f the line is horizontal then the slope is zero, and [4 <./fig
 ures/0-1-act1.pdf>] <figures/0-1-fig3.pdf, id=143, 254.96454pt x 150.48923pt>
 File: figures/0-1-fig3.pdf Graphic file (type pdf)
 
 <use figures/0-1-fig3.pdf>
-Package pdftex.def Info: figures/0-1-fig3.pdf used on input line 182.
+Package pdftex.def Info: figures/0-1-fig3.pdf used on input line 175.
 (pdftex.def)             Requested size: 281.85585pt x 166.37679pt.
 
-Underfull \vbox (badness 1264) has occurred while \output is active []
+Underfull \vbox (badness 1199) has occurred while \output is active []
 
  [5 <./figures/0-1-fig3.pdf>] <figures/0-1-fig4.pdf, id=159, 275.7211pt x 184.4
 3204pt>
 File: figures/0-1-fig4.pdf Graphic file (type pdf)
 
 <use figures/0-1-fig4.pdf>
-Package pdftex.def Info: figures/0-1-fig4.pdf used on input line 233.
+Package pdftex.def Info: figures/0-1-fig4.pdf used on input line 226.
 (pdftex.def)             Requested size: 281.85585pt x 188.53468pt.
  (./activities/0.1.Act2.tex)
 Package epstopdf Info: Source file: <figures/CClicense.eps>
@@ -2038,13 +2038,13 @@ Package epstopdf Info: Source file: <figures/CClicense.eps>
 (epstopdf)                    size: 8295 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
 erted-to.pdf figures/CClicense.eps>
-(epstopdf)             \includegraphics on input line 245.
+(epstopdf)             \includegraphics on input line 238.
 Package epstopdf Info: Output file is already uptodate.
 File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/CClicense-eps-converted-to.pdf>
 Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
-ine 245.
+ine 238.
 (pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
  [6 <./figures/0-1-fig4.pdf>]
 (./activities/0.1.Act3.tex [7])
@@ -2056,27 +2056,27 @@ Package epstopdf Info: Source file: <figures/CClicense.eps>
 (epstopdf)                    size: 8295 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
 erted-to.pdf figures/CClicense.eps>
-(epstopdf)             \includegraphics on input line 328.
+(epstopdf)             \includegraphics on input line 321.
 Package epstopdf Info: Output file is already uptodate.
 File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
  <use figures/CClicense-eps-converted-to.pdf>
 Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
-ine 328.
+ine 321.
 (pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
 
 [8] <figures/0-1-fig5.pdf, id=205, 415.2614pt x 140.42162pt>
 File: figures/0-1-fig5.pdf Graphic file (type pdf)
 
 <use figures/0-1-fig5.pdf>
-Package pdftex.def Info: figures/0-1-fig5.pdf used on input line 377.
+Package pdftex.def Info: figures/0-1-fig5.pdf used on input line 370.
 (pdftex.def)             Requested size: 422.77661pt x 142.9646pt.
  (./activities/0.1.Act4.tex [9 <./figures/0-1-fig5.pdf>])
-Underfull \hbox (badness 10000) in paragraph at lines 387--387
+Underfull \hbox (badness 10000) in paragraph at lines 380--380
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 387--387
+Underfull \hbox (badness 10000) in paragraph at lines 380--380
 
  []
 
@@ -2324,20 +2324,19 @@ ine 162.
 (pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
 
 [24 <./figures/0-3-fig4.pdf>]
-<figures/0-3-fig5.pdf, id=468, 210.5496pt x 175.52676pt>
+<figures/0-3-fig5.pdf, id=469, 210.5496pt x 175.52676pt>
 File: figures/0-3-fig5.pdf Graphic file (type pdf)
 
 <use figures/0-3-fig5.pdf>
-Package pdftex.def Info: figures/0-3-fig5.pdf used on input line 190.
+Package pdftex.def Info: figures/0-3-fig5.pdf used on input line 197.
 (pdftex.def)             Requested size: 234.87749pt x 195.80922pt.
-
-<figures/0-3-fig6.pdf, id=471, 424.43367pt x 175.52676pt>
+ [25 <./figures/0-3-fig5.pdf>]
+<figures/0-3-fig6.pdf, id=490, 424.43367pt x 175.52676pt>
 File: figures/0-3-fig6.pdf Graphic file (type pdf)
 
 <use figures/0-3-fig6.pdf>
-Package pdftex.def Info: figures/0-3-fig6.pdf used on input line 231.
+Package pdftex.def Info: figures/0-3-fig6.pdf used on input line 238.
 (pdftex.def)             Requested size: 422.77661pt x 174.85138pt.
- [25 <./figures/0-3-fig5.pdf>]
 Package epstopdf Info: Source file: <figures/CClicense.eps>
 (epstopdf)                    date: 2017-07-13 13:18:30
 (epstopdf)                    size: 71022 bytes
@@ -2346,39 +2345,31 @@ Package epstopdf Info: Source file: <figures/CClicense.eps>
 (epstopdf)                    size: 8295 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
 erted-to.pdf figures/CClicense.eps>
-(epstopdf)             \includegraphics on input line 264.
+(epstopdf)             \includegraphics on input line 269.
 Package epstopdf Info: Output file is already uptodate.
 File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
-
-<use figures/CClicense-eps-converted-to.pdf>
+ <use figures/CClicense-eps-converted-to.pdf>
 Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
-ine 264.
+ine 269.
 (pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
- [26 <./figures/0-3-fig6.pdf>]
-(./activities/0.3.Act4.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 288--288
+
+[26 <./figures/0-3-fig6.pdf>] (./activities/0.3.Act4.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 288--288
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
 
  []
 
 [27] (./exercises/0.3.Transformations(Ex).tex
-<figures/0-3-fig7.pdf, id=518, 255.15826pt x 116.85056pt>
+<figures/0-3-fig7.pdf, id=520, 255.15826pt x 116.85056pt>
 File: figures/0-3-fig7.pdf Graphic file (type pdf)
 
 <use figures/0-3-fig7.pdf>
 Package pdftex.def Info: figures/0-3-fig7.pdf used on input line 49.
 (pdftex.def)             Requested size: 328.82706pt x 150.58804pt.
-
-<figures/0-3-fig8.pdf, id=519, 255.44234pt x 116.85056pt>
-File: figures/0-3-fig8.pdf Graphic file (type pdf)
-
-<use figures/0-3-fig8.pdf>
-Package pdftex.def Info: figures/0-3-fig8.pdf used on input line 70.
-(pdftex.def)             Requested size: 328.82706pt x 150.42223pt.
 Package epstopdf Info: Source file: <figures/CClicense.eps>
 (epstopdf)                    date: 2017-07-13 13:18:30
 (epstopdf)                    size: 71022 bytes
@@ -2387,16 +2378,22 @@ Package epstopdf Info: Source file: <figures/CClicense.eps>
 (epstopdf)                    size: 8295 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
 erted-to.pdf figures/CClicense.eps>
-(epstopdf)             \includegraphics on input line 71.
+(epstopdf)             \includegraphics on input line 50.
 Package epstopdf Info: Output file is already uptodate.
 File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
  <use figures/CClicense-eps-converted-to.pdf>
 Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
-ine 71.
+ine 50.
 (pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
 
-[28 <./figures/0-3-fig7.pdf>] [29 <./figures/0-3-fig8.pdf>]))
-(./0.4.LogarithmicFunctions.tex
+[28] <figures/0-3-fig8.pdf, id=530, 255.44234pt x 116.85056pt>
+File: figures/0-3-fig8.pdf Graphic file (type pdf)
+
+<use figures/0-3-fig8.pdf>
+Package pdftex.def Info: figures/0-3-fig8.pdf used on input line 70.
+(pdftex.def)             Requested size: 328.82706pt x 150.42223pt.
+ [29 <./figures/0-3-fig7.pdf> <./figures/0-3-fig8.pdf>])) (./0.4.LogarithmicFun
+ctions.tex
 Underfull \hbox (badness 10000) in paragraph at lines 10--10
 
  []
@@ -2428,14 +2425,14 @@ ine 52.
  [30
 
 ]
-<figures/0-4-fig1.pdf, id=560, 210.55263pt x 162.39972pt>
+<figures/0-4-fig1.pdf, id=562, 210.55263pt x 162.39972pt>
 File: figures/0-4-fig1.pdf Graphic file (type pdf)
 
 <use figures/0-4-fig1.pdf>
 Package pdftex.def Info: figures/0-4-fig1.pdf used on input line 81.
 (pdftex.def)             Requested size: 234.87749pt x 181.16534pt.
  [31 <./figures/0-4-fig1.pdf>]
-(./activities/0.4.Act1.tex)
+(./activities/0.4.Act1.tex
 Package epstopdf Info: Source file: <figures/CClicense.eps>
 (epstopdf)                    date: 2017-07-13 13:18:30
 (epstopdf)                    size: 71022 bytes
@@ -2444,15 +2441,15 @@ Package epstopdf Info: Source file: <figures/CClicense.eps>
 (epstopdf)                    size: 8295 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
 erted-to.pdf figures/CClicense.eps>
-(epstopdf)             \includegraphics on input line 117.
+(epstopdf)             \includegraphics on input line 16.
 Package epstopdf Info: Output file is already uptodate.
 File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
  <use figures/CClicense-eps-converted-to.pdf>
 Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
-ine 117.
+ine 16.
 (pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
 
-[32] [33] (./activities/0.4.Act2.tex) (./activities/0.4.Act3.tex)
+[32]) [33] (./activities/0.4.Act2.tex) (./activities/0.4.Act3.tex)
 (./activities/0.4.Act4.tex
 Package epstopdf Info: Source file: <figures/CClicense.eps>
 (epstopdf)                    date: 2017-07-13 13:18:30
@@ -2462,21 +2459,21 @@ Package epstopdf Info: Source file: <figures/CClicense.eps>
 (epstopdf)                    size: 8295 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
 erted-to.pdf figures/CClicense.eps>
-(epstopdf)             \includegraphics on input line 7.
+(epstopdf)             \includegraphics on input line 4.
 Package epstopdf Info: Output file is already uptodate.
 File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
  <use figures/CClicense-eps-converted-to.pdf>
 Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
-ine 7.
+ine 4.
 (pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
 
 [34])
-Underfull \hbox (badness 10000) in paragraph at lines 172--172
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--172
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
 
  []
 
@@ -2492,7 +2489,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--9
  []
 
 (./previews/0.5.PA1.tex
-<figures/0-5-fig1.pdf, id=643, 217.57587pt x 183.99942pt>
+<figures/0-5-fig1.pdf, id=646, 217.57587pt x 183.99942pt>
 File: figures/0-5-fig1.pdf Graphic file (type pdf)
 
 <use figures/0-5-fig1.pdf>
@@ -2517,7 +2514,7 @@ ine 30.
 [36
 
  <./figures/0-5-fig1.pdf>])
-<figures/0-5-fig2.pdf, id=656, 436.76373pt x 142.15308pt>
+<figures/0-5-fig2.pdf, id=659, 436.76373pt x 142.15308pt>
 File: figures/0-5-fig2.pdf Graphic file (type pdf)
 
 <use figures/0-5-fig2.pdf>
@@ -2527,14 +2524,14 @@ Package pdftex.def Info: figures/0-5-fig2.pdf used on input line 119.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[37] <figures/0-5-fig3.pdf, id=669, 94.46593pt x 86.15788pt>
+[37] <figures/0-5-fig3.pdf, id=672, 94.46593pt x 86.15788pt>
 File: figures/0-5-fig3.pdf Graphic file (type pdf)
 
 <use figures/0-5-fig3.pdf>
 Package pdftex.def Info: figures/0-5-fig3.pdf used on input line 137.
 (pdftex.def)             Requested size: 140.92792pt x 128.55025pt.
 
-<figures/0-5-fig4.pdf, id=670, 183.89705pt x 142.15308pt>
+<figures/0-5-fig4.pdf, id=673, 183.89705pt x 142.15308pt>
 File: figures/0-5-fig4.pdf Graphic file (type pdf)
 
 <use figures/0-5-fig4.pdf>
@@ -2558,7 +2555,7 @@ ine 199.
 
 [38 <./figures/0-5-fig2.pdf> <./figures/0-5-fig3.pdf>]
 (./activities/0.5.Act1.tex [39 <./figures/0-5-fig4.pdf>]
-<figures/0-5-fig_specialright.pdf, id=715, 196.99297pt x 68.38548pt>
+<figures/0-5-fig_specialright.pdf, id=718, 196.99297pt x 68.38548pt>
 File: figures/0-5-fig_specialright.pdf Graphic file (type pdf)
 
 <use figures/0-5-fig_specialright.pdf>
@@ -2566,14 +2563,14 @@ Package pdftex.def Info: figures/0-5-fig_specialright.pdf used on input line 51
 .
 (pdftex.def)             Requested size: 234.87749pt x 81.53937pt.
 
-<figures/0-5-UnitCircle.pdf, id=716, 354.21432pt x 354.74934pt>
+<figures/0-5-UnitCircle.pdf, id=719, 354.21432pt x 354.74934pt>
 File: figures/0-5-UnitCircle.pdf Graphic file (type pdf)
 
 <use figures/0-5-UnitCircle.pdf>
 Package pdftex.def Info: figures/0-5-UnitCircle.pdf used on input line 58.
 (pdftex.def)             Requested size: 328.82706pt x 329.34511pt.
 
-<figures/0-5-UnitCircle_FilledIn.pdf, id=717, 354.21432pt x 354.74934pt>
+<figures/0-5-UnitCircle_FilledIn.pdf, id=720, 354.21432pt x 354.74934pt>
 File: figures/0-5-UnitCircle_FilledIn.pdf Graphic file (type pdf)
 
 <use figures/0-5-UnitCircle_FilledIn.pdf>
@@ -2598,28 +2595,28 @@ Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
 ine 209.
 (pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
  [40 <./figures/0-5-fig_specialright.pdf> <./figures/0-5-UnitCircle.pdf>]
-<figures/0-5-fig5.pdf, id=746, 390.3905pt x 162.39772pt>
+<figures/0-5-fig5.pdf, id=749, 390.3905pt x 162.39772pt>
 File: figures/0-5-fig5.pdf Graphic file (type pdf)
 
 <use figures/0-5-fig5.pdf>
 Package pdftex.def Info: figures/0-5-fig5.pdf used on input line 220.
 (pdftex.def)             Requested size: 399.2946pt x 166.10684pt.
 
-<figures/0-5-fig6.pdf, id=747, 415.48827pt x 162.39873pt>
+<figures/0-5-fig6.pdf, id=750, 415.48827pt x 162.39873pt>
 File: figures/0-5-fig6.pdf Graphic file (type pdf)
 
 <use figures/0-5-fig6.pdf>
 Package pdftex.def Info: figures/0-5-fig6.pdf used on input line 256.
 (pdftex.def)             Requested size: 399.2946pt x 156.07445pt.
  [41 <./figures/0-5-fig5.pdf> <./figures/0-5-fig6.pdf>] <figures/0-5-fig7.pdf, 
-id=779, 473.49196pt x 185.0644pt>
+id=782, 473.49196pt x 185.0644pt>
 File: figures/0-5-fig7.pdf Graphic file (type pdf)
 
 <use figures/0-5-fig7.pdf>
 Package pdftex.def Info: figures/0-5-fig7.pdf used on input line 327.
 (pdftex.def)             Requested size: 465.06001pt x 181.77698pt.
 
-<figures/0-5-fig7b.pdf, id=780, 473.49196pt x 185.0644pt>
+<figures/0-5-fig7b.pdf, id=783, 473.49196pt x 185.0644pt>
 File: figures/0-5-fig7b.pdf Graphic file (type pdf)
 
 <use figures/0-5-fig7b.pdf>
@@ -2642,7 +2639,7 @@ ine 329.
 (pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
 
 [42 <./figures/0-5-fig7.pdf>]
-<figures/0-5-fig8.pdf, id=799, 246.66554pt x 200.42076pt>
+<figures/0-5-fig8.pdf, id=802, 246.66554pt x 200.42076pt>
 File: figures/0-5-fig8.pdf Graphic file (type pdf)
 
 <use figures/0-5-fig8.pdf>
@@ -2650,7 +2647,7 @@ Package pdftex.def Info: figures/0-5-fig8.pdf used on input line 358.
 (pdftex.def)             Requested size: 234.87749pt x 190.84818pt.
  [43 <./figures/0-5-fig7b.pdf> <./figures/0-5-fig8.pdf>] (./activities/0.5.Act2
 .tex
-<figures/0-5-fig9.pdf, id=826, 808.71036pt x 186.26086pt>
+<figures/0-5-fig9.pdf, id=830, 808.71036pt x 186.26086pt>
 File: figures/0-5-fig9.pdf Graphic file (type pdf)
 
 <use figures/0-5-fig9.pdf>
@@ -2674,14 +2671,14 @@ Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
 ine 14.
 (pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
  [44 <./figures/0-5-fig9.pdf>]
-<figures/0-5-fig10.pdf, id=855, 295.41568pt x 200.42076pt>
+<figures/0-5-fig10.pdf, id=858, 295.41568pt x 200.42076pt>
 File: figures/0-5-fig10.pdf Graphic file (type pdf)
 
 <use figures/0-5-fig10.pdf>
 Package pdftex.def Info: figures/0-5-fig10.pdf used on input line 25.
 (pdftex.def)             Requested size: 281.85585pt x 191.22433pt.
 )
-<figures/0-5-fig11.pdf, id=856, 390.3905pt x 162.39772pt>
+<figures/0-5-fig11.pdf, id=859, 390.3905pt x 162.39772pt>
 File: figures/0-5-fig11.pdf Graphic file (type pdf)
 
 <use figures/0-5-fig11.pdf>
@@ -2691,7 +2688,7 @@ Package pdftex.def Info: figures/0-5-fig11.pdf used on input line 444.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [45 <./figures/0-5-fig10.pdf>]
-<figures/0-5-fig12.pdf, id=872, 583.94461pt x 175.61308pt>
+<figures/0-5-fig12.pdf, id=875, 583.94461pt x 175.61308pt>
 File: figures/0-5-fig12.pdf Graphic file (type pdf)
 
 <use figures/0-5-fig12.pdf>
@@ -2724,7 +2721,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 543--543
  []
 
 (./exercises/0.5.TrigonometricFunctions(Ex).tex
-<figures/0-5-fig13.pdf, id=917, 655.05832pt x 191.8377pt>
+<figures/0-5-fig13.pdf, id=920, 655.05832pt x 191.8377pt>
 File: figures/0-5-fig13.pdf Graphic file (type pdf)
 
 <use figures/0-5-fig13.pdf>
@@ -2764,7 +2761,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--12
  []
 
 (./previews/0.6.PA1.tex
-<figures/0-6-fig1.pdf, id=942, 427.61055pt x 162.1799pt>
+<figures/0-6-fig1.pdf, id=946, 427.61055pt x 162.1799pt>
 File: figures/0-6-fig1.pdf Graphic file (type pdf)
 
 <use figures/0-6-fig1.pdf>
@@ -2779,21 +2776,21 @@ Package epstopdf Info: Source file: <figures/CClicense.eps>
 (epstopdf)                    size: 8295 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
 erted-to.pdf figures/CClicense.eps>
-(epstopdf)             \includegraphics on input line 44.
+(epstopdf)             \includegraphics on input line 43.
 Package epstopdf Info: Output file is already uptodate.
 File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
  <use figures/CClicense-eps-converted-to.pdf>
 Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
-ine 44.
+ine 43.
 (pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
 
 [50
 
-] <figures/0-6-fig2.pdf, id=957, 394.12546pt x 175.52676pt>
+] <figures/0-6-fig2.pdf, id=960, 394.12546pt x 175.52676pt>
 File: figures/0-6-fig2.pdf Graphic file (type pdf)
 
 <use figures/0-6-fig2.pdf>
-Package pdftex.def Info: figures/0-6-fig2.pdf used on input line 71.
+Package pdftex.def Info: figures/0-6-fig2.pdf used on input line 70.
 (pdftex.def)             Requested size: 422.77661pt x 188.29922pt.
  (./activities/0.6.Act1.tex [51 <./figures/0-6-fig1.pdf>])
 Package epstopdf Info: Source file: <figures/CClicense.eps>
@@ -2804,29 +2801,29 @@ Package epstopdf Info: Source file: <figures/CClicense.eps>
 (epstopdf)                    size: 8295 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
 erted-to.pdf figures/CClicense.eps>
-(epstopdf)             \includegraphics on input line 105.
+(epstopdf)             \includegraphics on input line 103.
 Package epstopdf Info: Output file is already uptodate.
 File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
  <use figures/CClicense-eps-converted-to.pdf>
 Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
-ine 105.
+ine 103.
 (pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
- [52 <./figures/0-6-fig2.pdf>] <figures/0-6-fig3.pdf, id=999, 284.88033pt x 134
-.5547pt>
+ [52 <./figures/0-6-fig2.pdf>] <figures/0-6-fig3.pdf, id=1002, 284.88033pt x 13
+4.5547pt>
 File: figures/0-6-fig3.pdf Graphic file (type pdf)
 
 <use figures/0-6-fig3.pdf>
-Package pdftex.def Info: figures/0-6-fig3.pdf used on input line 147.
+Package pdftex.def Info: figures/0-6-fig3.pdf used on input line 145.
 (pdftex.def)             Requested size: 375.80542pt x 177.50188pt.
 
-<figures/0-6-fig4.pdf, id=1000, 299.68462pt x 142.11093pt>
+<figures/0-6-fig4.pdf, id=1003, 299.68462pt x 142.11093pt>
 File: figures/0-6-fig4.pdf Graphic file (type pdf)
 
 <use figures/0-6-fig4.pdf>
-Package pdftex.def Info: figures/0-6-fig4.pdf used on input line 181.
+Package pdftex.def Info: figures/0-6-fig4.pdf used on input line 179.
 (pdftex.def)             Requested size: 375.80542pt x 178.22368pt.
  (./activities/0.6.Act2.tex [53 <./figures/0-6-fig3.pdf>] <figures/0-6-fig5.pdf
-, id=1039, 448.21352pt x 134.28569pt>
+, id=1042, 448.21352pt x 134.28569pt>
 File: figures/0-6-fig5.pdf Graphic file (type pdf)
 
 <use figures/0-6-fig5.pdf>
@@ -2848,23 +2845,23 @@ Package epstopdf Info: Source file: <figures/CClicense.eps>
 (epstopdf)                    size: 8295 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
 erted-to.pdf figures/CClicense.eps>
-(epstopdf)             \includegraphics on input line 211.
+(epstopdf)             \includegraphics on input line 208.
 Package epstopdf Info: Output file is already uptodate.
 File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/CClicense-eps-converted-to.pdf>
 Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
-ine 211.
+ine 208.
 (pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
  [54 <./figures/0-6-fig4.pdf> <./figures/0-6-fig5.pdf>] (./activities/0.6.Act3.
 tex) (./activities/0.6.Act4.tex
 [55]) (./activities/0.6.Act5.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 233--233
+Underfull \hbox (badness 10000) in paragraph at lines 229--229
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 233--233
+Underfull \hbox (badness 10000) in paragraph at lines 229--229
 
  []
 
@@ -2876,16 +2873,16 @@ Package epstopdf Info: Source file: <figures/CClicense.eps>
 (epstopdf)                    size: 8295 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/CClicense-eps-conv
 erted-to.pdf figures/CClicense.eps>
-(epstopdf)             \includegraphics on input line 239.
+(epstopdf)             \includegraphics on input line 234.
 Package epstopdf Info: Output file is already uptodate.
 File: figures/CClicense-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/CClicense-eps-converted-to.pdf>
 Package pdftex.def Info: figures/CClicense-eps-converted-to.pdf used on input l
-ine 239.
+ine 234.
 (pdftex.def)             Requested size: 121.45343pt x 43.16113pt.
  [56]
 (./exercises/0.6.PowersPolynomialsRationals(Ex).tex
-<figures/0-6-fig6.pdf, id=1102, 499.4369pt x 162.39972pt>
+<figures/0-6-fig6.pdf, id=1105, 499.4369pt x 162.39972pt>
 File: figures/0-6-fig6.pdf Graphic file (type pdf)
 
 <use figures/0-6-fig6.pdf>
@@ -2923,13 +2920,13 @@ Package rerunfilecheck Info: File `Chapter0Compiler.out' has not changed.
 (rerunfilecheck)             Checksum: BDD55DFA9D07ED3EE05A328B0366E5D3;502.
  ) 
 Here is how much of TeX's memory you used:
- 38135 strings out of 493089
- 873047 string characters out of 6134842
- 1114012 words of memory out of 5000000
+ 38138 strings out of 493089
+ 873082 string characters out of 6134842
+ 1113980 words of memory out of 5000000
  40376 multiletter control sequences out of 15000+600000
  125927 words of font info for 143 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 77i,16n,102p,10423b,2000s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 77i,16n,102p,10427b,2000s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texl
@@ -2950,10 +2947,10 @@ mf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/2015/texmf-dist
 /fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/
 type1/adobe/utopia/putri8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
 urw/courier/ucrr8a.pfb>
-Output written on Chapter0Compiler.pdf (62 pages, 566346 bytes).
+Output written on Chapter0Compiler.pdf (62 pages, 567244 bytes).
 PDF statistics:
- 1259 PDF objects out of 1440 (max. 8388607)
- 1119 compressed objects within 12 object streams
- 372 named destinations out of 1000 (max. 500000)
+ 1263 PDF objects out of 1440 (max. 8388607)
+ 1123 compressed objects within 12 object streams
+ 375 named destinations out of 1000 (max. 500000)
  285 words of extra memory for PDF output out of 10000 (max. 10000000)
 

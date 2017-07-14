@@ -1,7 +1,7 @@
 \contentsline {chapter}{\numberline {0}Preliminaries}{1}{chapter.0}
 \contentsline {section}{\numberline {0.1}Functions, Slope, and Lines}{1}{section.0.1}
-\contentsline {section}{\numberline {0.2}Exponential Functions}{24}{section.0.2}
-\contentsline {section}{\numberline {0.3}Transformations of Functions}{30}{section.0.3}
-\contentsline {section}{\numberline {0.4}Logarithmic Functions}{51}{section.0.4}
-\contentsline {section}{\numberline {0.5}Trigonometric Functions}{70}{section.0.5}
-\contentsline {section}{\numberline {0.6}Powers, Polynomials, and Rational Functions}{85}{section.0.6}
+\contentsline {section}{\numberline {0.2}Exponential Functions}{15}{section.0.2}
+\contentsline {section}{\numberline {0.3}Transformations of Functions}{20}{section.0.3}
+\contentsline {section}{\numberline {0.4}Logarithmic Functions}{34}{section.0.4}
+\contentsline {section}{\numberline {0.5}Trigonometric Functions}{47}{section.0.5}
+\contentsline {section}{\numberline {0.6}Powers, Polynomials, and Rational Functions}{58}{section.0.6}

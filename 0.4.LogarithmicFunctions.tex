@@ -41,8 +41,8 @@ be the inverse function for an exponential.
 
 \subsection*{Logarithms}
 
-\begin{definition}
-Let $b>0$ with $b\neq1$. The \textbf{logarithm of }$x$ \textbf{with base }$b$ is defined by
+\begin{definition}[logarithm]
+Let $b>0$ with $b\neq1$. The logarithm of $x$ with base $b$ is defined by
 	\[
 		\log_{b}x=y\qquad\mbox{if and only if}\qquad x=b^{y}.
 	\]
@@ -85,21 +85,23 @@ $y = 0$. These features can be seen in Figure \ref{F:0.4.Ex1}.
 \end{figure}
 
 The following properties of logarithms can be deduced from the properties of exponential functions and the definition of the logarithm.  These properties are especially useful in simplifying or solving logarithmic and exponential equations.
-% \begin{callout}
-
-\noindent {\bf Properties of logarithms:} For $b>0$, $b \ne 1$, and $x,y>0$:
+\begin{theorem}[Properties of Logarithms]
+For $b>0$, $b \ne 1$, and $x,y>0$:
 \begin{enumerate}
-\item $\log_{b}1=0$
-\item $\log_{b}b=1$
-\item $\log_{b}\left(xy\right)=\log_{b}x+\log_{b}y$
-\item $\log_{b}\left(\dfrac{x}{y}\right)=\log_{b}x-\log_{b}y$
-\item $\log_{b}x^{r}=r\,\log_{b}x$
+\item $\log_{b}1=0$ \quad (which is the same as the exponent rule $b^0 = 1$)
+\item $\log_{b}b=1$ \quad (which is the same as the exponent rule $b^1 = b$)
+\item $\log_{b}\left(xy\right)=\log_{b}x+\log_{b}y$ \quad (which is the same as the
+    exponent rule $b^{m+n} = b^mb^n$)
+\item $\log_{b}\left(\dfrac{x}{y}\right)=\log_{b}x-\log_{b}y$ \quad (which is the same as the
+    exponent rule $b^{m-n} = \frac{b^m}{b^n}$)
+\item $\log_{b}x^{r}=r\,\log_{b}x$ \quad (which is the same as the exponent rule $(b^m)^n
+    = b^{mn}$)
 \item $\log_{b}b^{x}=x$
 \item $b^{\log_{b}x}=x$
 \item $\log_{b}x=\log_{b}y$ if and only if $x=y$
-\item $\log_a b = \frac{\log_c a}{\log_c b}$ (this is called the change of base formula)
+\item $\log_a b = \frac{\log_c a}{\log_c b}$ \quad (this is called the change of base formula)
 \end{enumerate}
-% \end{callout}
+\end{theorem}
 
 Euler's number, $e$, shows up so often that we give a special name to the associated
 logarithm.  The logarithm $\log_e (x)$ is called the natural logarithm and is written as
