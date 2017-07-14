@@ -1,0 +1,97 @@
+# DESCRIPTION
+# Preview Activity from _Active Calculus_ by Matthew Boelkins
+# ENDDESCRIPTION
+
+## DBsubject(Calculus)
+## DBchapter(Exponential Functions)
+## DBsection(Applications and models)
+## Institution(Carroll College)
+## Author(Eric Sullivan)
+## Level(2)
+## MO(1)
+## TitleText1('Active Calculus')
+## AuthorText1('Matthew Boelkins')
+## EditionText1('2015')
+## Section1('0.4')
+## Problem1('1 1')
+## KEYWORDS('exponential growth', 'linear growth')
+
+DOCUMENT();
+loadMacros(
+"PGstandard.pl",
+"MathObjects.pl",
+"PGgraphmacros.pl",
+"niceTables.pl",
+);
+
+
+$C = Formula("0.02*(1/2)**(x/5730)");
+$C1 = ($C->eval(x=>1));
+$C5 = ($C->eval(x=>5));
+$C10 = ($C->eval(x=>10));
+$C100 = ($C->eval(x=>100));
+$C1000 = ($C->eval(x=>1000));
+$C2000 = ($C->eval(x=>2000));
+$C5730 = ($C->eval(x=>5730));
+
+$ansc = 5730*log(0.014/0.02) / log(0.5);
+
+# make sure we're in the context we want
+Context("Numeric");
+
+TEXT(beginproblem());
+Context()->texStrings;
+BEGIN_TEXT
+$PAR
+$BBOLD
+Please read section 0.4 from the Active Calculus textbook and watch the videos linked from that section.
+$EBOLD
+$PAR
+
+Carbon-14 is a radioactive isotope of carbon that occurs naturally in the
+Earth’s atmosphere. During photosynthesis, plants take in Carbon-14 along with other carbon isotopes, and the levels of Carbon-14 in living plants are roughly the same as atmospheric levels. Once a plant dies, it no longer takes in any additional Carbon-14. Since Carbon-14 in the dead plant decays at a predictable rate (the half-life of Carbon-14 is approximately 5,730 years), we can measure Carbon-14 levels in dead plant matter to get an estimate on how long ago the plant died.
+Suppose that a plant has 0.02 milligrams of Carbon-14 when it dies.
+$PAR
+(a) Write a function that represents the amount of Carbon-14 remaining in the plant after \(x\) years. $BR
+\(C(x) = \) \{ans_rule(15)\} $BR
+(b) Complete the table for the amount of Carbon-14 remaining \(x\) years after the death of the plant.
+\{
+    DataTable(
+    [
+     ['\(x\)' , '0' , '1' , '5' , '10' , '100' , '1000' , '2000' , '5730'],
+      ['Carbon 14' , '0.02' , ans_rule(5) , ans_rule(5) , ans_rule(5) , ans_rule(5) , ans_rule(5) , ans_rule(5) , ans_rule(5)], 
+      ],
+      caption=>'Table of Carbon-14 levels over time.',
+      );
+    \}
+    $BR
+    (c) Suppose a plant died sometime in the past. If we find that there are 0.014 milligrams of Carbon-14 present in the plant now, estimate the age of the plant to within 50 years. (you can complete this problem graphically) \{ ans_rule(10)\}
+
+
+
+
+    END_TEXT
+    Context()->normalStrings;
+
+    ANS(function_cmp($C,"x",0,10));
+    ANS(num_cmp($C1,tol=>0.0001));
+    ANS(num_cmp($C5,tol=>0.0001));
+    ANS(num_cmp($C10,tol=>0.0001));
+    ANS(num_cmp($C100,tol=>0.0001));
+    ANS(num_cmp($C1000,tol=>0.0001));
+    ANS(num_cmp($C2000,tol=>0.0001));
+    ANS(num_cmp($C5730,tol=>0.0001));
+
+    ANS(num_cmp($ansc,tol=>50));
+
+
+    Context()->texStrings;
+    SOLUTION(EV3(<<'END_SOLUTION'));
+    $PAR SOLUTION $PAR
+    The function for the Carbon-14 is \( C(x) = 0.02 * (1/2)^{x/5730}\)
+    END_SOLUTION
+    Context()->normalStrings;
+
+    ENDDOCUMENT();
+
+

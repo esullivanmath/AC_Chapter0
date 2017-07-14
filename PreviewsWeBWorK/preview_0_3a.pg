@@ -1,0 +1,137 @@
+# DESCRIPTION
+# Preview Activity from _Active Calculus_ by Matthew Boelkins
+# ENDDESCRIPTION
+
+## DBsubject(Calculus)
+## DBchapter(Exponential Functions)
+## DBsection(Applications and models)
+## Institution(Carroll College)
+## Author(Eric Sullivan)
+## Level(2)
+## MO(1)
+## TitleText1('Active Calculus')
+## AuthorText1('Matthew Boelkins')
+## EditionText1('2015')
+## Section1('0.3')
+## Problem1('1 1')
+## KEYWORDS('transformations', 'GeoGebra')
+
+DOCUMENT();
+loadMacros(
+"PGstandard.pl",
+"MathObjects.pl",
+"PGgraphmacros.pl",
+"niceTables.pl",
+"PGchoicemacros.pl",
+);
+
+$mca = new_multiple_choice();
+$mca->qa(
+"Fix \(B=1, C=0\) and \(D=0\).  Experiment with the applet to determine which of the following best describes the action of changing \(A\) on the function \(F(x)\)?","Changing the value of \(A\) stretches the graph of \(f(x)\) vertically."
+);
+$mca->extra(
+"Changing the value of \(A\) stretches the graph of \(f(x)\) horizontally.",
+"Changing the value of \(A\) translates the graph of \(f(x)\) vertically.",
+"Changing the value of \(A\) translates the graph of \(f(x)\) horizontally."
+);
+$mca->makeLast("none of the above");
+
+
+$mcb = new_multiple_choice();
+$mcb->qa(
+"Fix \(A=1, C=0\) and \(D=0\).  Experiment with the applet to determine which of the following best describes the action of changing \(B\) on the function \(F(x)\)?","Changing the value of \(B\) stretches the graph of \(f(x)\) horizontally."
+);
+$mcb->extra(
+"Changing the value of \(B\) stretches the graph of \(f(x)\) vertically.",
+"Changing the value of \(B\) translates the graph of \(f(x)\) vertically.",
+"Changing the value of \(B\) translates the graph of \(f(x)\) horizontally."
+);
+$mcb->makeLast("none of the above");
+
+
+$mcc = new_multiple_choice();
+$mcc->qa(
+"Fix \(A=1, B=1\) and \(D=0\).  Experiment with the applet to determine which of the following best describes the action of changing \(C\) on the function \(F(x)\)?","Changing the value of \(C\) translates the graph of \(f(x)\) horizontally."
+);
+$mcc->extra(
+"Changing the value of \(C\) stretches the graph of \(f(x)\) vertically.",
+"Changing the value of \(C\) translates the graph of \(f(x)\) vertically.",
+"Changing the value of \(C\) stretches the graph of \(f(x)\) horizontally."
+);
+$mcc->makeLast("none of the above");
+
+
+$mcd = new_multiple_choice();
+$mcd->qa(
+"Fix \(A=1, B=1\) and \(C=0\).  Experiment with the applet to determine which of the following best describes the action of changing \(D\) on the function \(F(x)\)?","Changing the value of \(D\) translates the graph of \(f(x)\) vertically."
+);
+$mcd->extra(
+"Changing the value of \(D\) stretches the graph of \(f(x)\) vertically.",
+"Changing the value of \(D\) translates the graph of \(f(x)\) horizontally.",
+"Changing the value of \(D\) stretches the graph of \(f(x)\) horizontally."
+);
+$mcd->makeLast("none of the above");
+
+
+
+
+$Lineola = "2000+100*(x-2014)";
+$Exponentia = "2000*(1.02)**(x-2014)";
+
+$isect = 2098;
+
+# make sure we're in the context we want
+Context("Numeric");
+
+TEXT(beginproblem());
+Context()->texStrings;
+BEGIN_TEXT
+$PAR
+$BBOLD
+Please read section 0.3 from the Active Calculus textbook and watch the videos linked from that section.
+$EBOLD
+$PAR
+
+The goal of this activity is to explore and experiment with the function
+$BR \( F(x) = A \cdot f(B(x-C)) + D. \) $BR
+The values of \(A, B, C\) and \(D\) are constants and the function \(f(x)\) will be called the parent function.  To facilitate this exploration, use the GeoGebra applet located at: $BR
+\{ htmlLink( "https://www.geogebra.org/student/mjuXYTN6d", "https://www.geogebra.org/student/mjuXYTN6d" ) \} $BR (open the link to the GeoGebra applet in a new tab in your browser)
+$PAR
+Set the parent function to \(f(x) = x^2\). $BR
+(1) \{ $mca -> print_q() \} $BR
+\{ $mca -> print_a() \}
+$BR
+(2) \{ $mcb -> print_q() \} $BR
+\{ $mcb -> print_a() \}
+$BR
+(3) \{ $mcc -> print_q() \} $BR
+\{ $mcc -> print_a() \}
+$BR
+(4) \{ $mcd -> print_q() \} $BR
+\{ $mcd -> print_a() \}
+
+
+END_TEXT
+Context()->normalStrings;
+
+ANS( radio_cmp( $mca->correct_ans() ) );
+ANS( radio_cmp( $mcb->correct_ans() ) );
+ANS( radio_cmp( $mcc->correct_ans() ) );
+ANS( radio_cmp( $mcd->correct_ans() ) );
+
+
+
+Context()->texStrings;
+SOLUTION(EV3(<<'END_SOLUTION'));
+$PAR SOLUTION $PAR
+
+* The value of \(A\) stretches the graph of \(F(x)\) vertically.
+* The value of \(B\) stretches the graph of \(F(x)\) horizontally.
+* The value of \(C\) translates the graph of \(F(x)\) horizontally.
+* The value of \(D\) translates the graph of \(F(x)\) vertically.
+END_SOLUTION
+Context()->normalStrings;
+
+ENDDOCUMENT();
+
+

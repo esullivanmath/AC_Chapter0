@@ -1,0 +1,109 @@
+# DESCRIPTION
+# Preview Activity from _Active Calculus_ by Matthew Boelkins
+# ENDDESCRIPTION
+
+## DBsubject(Calculus)
+## DBchapter(Exponential Functions)
+## DBsection(Applications and models)
+## Institution(Carroll College)
+## Author(Eric Sullivan)
+## Level(2)
+## MO(1)
+## TitleText1('Active Calculus')
+## AuthorText1('Matthew Boelkins')
+## EditionText1('2015')
+## Section1('0.2')
+## Problem1('1 1')
+## KEYWORDS('exponential growth', 'linear growth')
+
+DOCUMENT();
+loadMacros(
+"PGstandard.pl",
+"MathObjects.pl",
+"PGgraphmacros.pl",
+"niceTables.pl",
+);
+
+$Lineola = "2000+100*(x-2014)";
+$Exponentia = "2000*(1.02)**(x-2014)";
+
+$isect = 2097;
+
+# make sure we're in the context we want
+Context("Numeric");
+
+TEXT(beginproblem());
+Context()->texStrings;
+BEGIN_TEXT
+$PAR
+$BBOLD
+Please read section 0.2 from the Active Calculus textbook and watch the videos linked from that section.
+$EBOLD
+$PAR
+Suppose that the populations of two towns are both growing over time.  The town of Exponentia is growing at a rate of 2$PERCENT per year and the town of Lineola is growing at a rate of 100 people per year.  In 2014, both of the towns have 2000 people.
+$PAR
+(a) Complete the table for the population of each of these towns over the next several years (round down to the nearest whole number of people).
+\{
+    DataTable(
+    [
+     [' ' , '2014' , '2015' , '2016' , '2017' , '2018' , '2019' , '2020' , '2021' , '2022'],
+      ['Exponetia' , '2000' , ans_rule(5) , ans_rule(5) , ans_rule(5) , ans_rule(5) , ans_rule(5) , ans_rule(5) , ans_rule(5) , ans_rule(5)], 
+       ['Lineola' , '2000' , ans_rule(5) , ans_rule(5) , ans_rule(5) , ans_rule(5) , ans_rule(5) , ans_rule(5) , ans_rule(5) , ans_rule(5)],
+       ],
+       caption=>'Table of populations for each city.',
+       );
+    \}
+    $BR
+    (b) Write a linear function for the population of Lineola. Use \(x\) as the independent variable and make sure that \(P(2014) = 2000\).  $BR
+    \( L(x) = \) \{ ans_rule(15) \}
+    $BR
+    (c) The ratio of successive populations for Exponentia should be equal.  For example, dividing the population in 2015 by the population in 2014 should give the same ratio as when the population from 2016 is divided by the population of 2015.  Find this ratio: \{ ans_rule(5) \}.
+    $BR
+    (d) Based on your data from part (a) and your ratio in part (c), write a function for the population of Exponetia.  Use \(x\) as the independent variable and make sure that \(P(2014) = 2000\). $BR
+    \(E(x) = \) \{ans_rule(15)\}
+    $BR
+    (e) When will the population of Exponentia exceed that of Lineola? \{ ans_rule(10)\}
+
+
+
+    END_TEXT
+    Context()->normalStrings;
+
+    ANS(num_cmp(2040,tol=>1));
+    ANS(num_cmp(2080,tol=>1));
+    ANS(num_cmp(2121,tol=>1));
+    ANS(num_cmp(2163,tol=>1));
+    ANS(num_cmp(2206,tol=>2));
+    ANS(num_cmp(2250,tol=>2));
+    ANS(num_cmp(2295,tol=>3));
+    ANS(num_cmp(2340,tol=>4));
+
+    ANS(Compute("2100")->cmp());
+    ANS(Compute("2200")->cmp());
+    ANS(Compute("2300")->cmp());
+    ANS(Compute("2400")->cmp());
+    ANS(Compute("2500")->cmp());
+    ANS(Compute("2600")->cmp());
+    ANS(Compute("2700")->cmp());
+    ANS(Compute("2800")->cmp());
+
+    ANS(function_cmp($Lineola,"x",2014,2022));
+
+    ANS(Compute("1.02")->cmp());
+
+    ANS(function_cmp($Exponentia,"x",2014,2022));
+
+    ANS(num_cmp($isect,tol=>3));
+
+    Context()->texStrings;
+    SOLUTION(EV3(<<'END_SOLUTION'));
+    $PAR SOLUTION $PAR
+    The linear function is \(L(x) = 2000 + 100(x-2014)\) and the exponential function is \(E(x) = 2000 (1.02)^(x-2014)\).  Notice that both \(L(2014)\) and \(E(2014\) are \(2000\) as expected.  The linear function has a slope of 100 and the exponential function has a common ratio of 1.02.  
+
+    The easiest way to determine when the town of Exponentia exceeds that of Lineola is to plot the two functions on top of each other and look for the point of intersection.  This occurs roughly in year 2097.
+    END_SOLUTION
+    Context()->normalStrings;
+
+    ENDDOCUMENT();
+
+

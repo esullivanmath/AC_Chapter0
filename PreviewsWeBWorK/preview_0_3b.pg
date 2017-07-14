@@ -1,0 +1,102 @@
+# DESCRIPTION
+# Preview Activity from _Active Calculus_ by Matthew Boelkins
+# ENDDESCRIPTION
+
+## DBsubject(Calculus)
+## DBchapter(Exponential Functions)
+## DBsection(Applications and models)
+## Institution(Carroll College)
+## Author(Eric Sullivan)
+## Level(2)
+## MO(1)
+## TitleText1('Active Calculus')
+## AuthorText1('Matthew Boelkins')
+## EditionText1('2015')
+## Section1('0.3')
+## Problem1('1 1')
+## KEYWORDS('transformations', 'GeoGebra')
+
+DOCUMENT();
+loadMacros(
+"PGstandard.pl",
+"MathObjects.pl",
+"PGgraphmacros.pl",
+"niceTables.pl",
+"PGchoicemacros.pl",
+"parserPopUp.pl",
+"problemRandomize.pl"
+);
+
+#Allow the student to generate a new (re-randomized) problem 
+#AFTER they have submitted a correct answer.
+ProblemRandomize(onlyAfterDue=>0);
+
+
+$A = random(3,9,1);
+$rsa = random(0,1,1);
+if ($rsa == 1){$A = -$A;}
+$B = 1;
+$C = random(2,9,1);
+$rsc = random(0,1,1);
+if ($rsc == 1){$C = -$C;}
+$D = random(2,9,1);
+$rsd = random(0,1,1);
+if ($rsd == 1){$D = -$D;}
+
+$rf = random(0,2,1);
+if ($rf==0){$f = "abs(x)";}
+if ($rf==1){$f = Formula("sin(x)");}
+if ($rf==1){$f = Formula("1/x");}
+
+if($D>0){$ans1="Up";} else {$ans1="Down";};
+$popup1 = PopUp(
+["?","Up","Down"],$ans1
+);
+
+if($C>0){$ans2="Right";} else {$ans2="Left";};
+$popup2 = PopUp(
+["?","Right","Left"],$ans2
+);
+
+$popup3 = PopUp(
+["?","Vertically","Horizontally"],"Vertically"
+);
+
+# make sure we're in the context we want
+Context("Numeric");
+
+TEXT(beginproblem());
+Context()->texStrings;
+BEGIN_TEXT
+Let \( f(x) =  $f\) and consider the new function \( F(x) \) defined by $BR
+\( F(x) = $A \cdot f( x-$C) + $D \)
+$BR
+Use the applet \{ htmlLink( "https://www.geogebra.org/student/mjuXYTN6d", "https://www.geogebra.org/student/mjuXYTN6d" ) \} to answer the following: $BR
+The graph of \(F(x)\) is a transformation of \(f(x)\) found by: $BR
+* Shifting \(f(x)\) \{ $popup1->menu() \} by \{ ans_rule(10) \} $BR
+* Shifting \(f(x)\) \{ $popup2->menu() \} by \{ ans_rule(10) \} $BR
+* Stretching \(f(x)\) \{ $popup3->menu() \} by \{ ans_rule(10) \}
+
+END_TEXT
+Context()->normalStrings;
+ANS( $popup1->cmp() );
+ANS(num_cmp(abs($D),tol=>0.00001));
+ANS( $popup2->cmp() );
+ANS(num_cmp(abs($C),tol=>0.00001));
+ANS( $popup3->cmp() );
+ANS(num_cmp(abs($A),tol=>0.00001));
+
+Context()->texStrings;
+SOLUTION(EV3(<<'END_SOLUTION'));
+$PAR SOLUTION $PAR
+
+* The value of \(A\) stretches the graph of \(F(x)\) vertically.
+* The value of \(B\) stretches the graph of \(F(x)\) horizontally.
+* The value of \(C\) translates the graph of \(F(x)\) horizontally.
+* The value of \(D\) translates the graph of \(F(x)\) vertically.
+END_SOLUTION
+Context()->normalStrings;
+
+ENDDOCUMENT();
+
+

@@ -1,0 +1,96 @@
+# DESCRIPTION
+# Preview Activity from _Active Calculus_ by Matthew Boelkins
+# ENDDESCRIPTION
+
+## DBsubject(Calculus)
+## DBchapter(Exponential Functions)
+## DBsection(Applications and models)
+## Institution(Carroll College)
+## Author(Eric Sullivan)
+## Level(2)
+## MO(1)
+## TitleText1('Active Calculus')
+## AuthorText1('Matthew Boelkins')
+## EditionText1('2015')
+## Section1('0.1')
+## Problem1('1 1')
+## KEYWORDS('exponential growth', 'linear growth')
+
+DOCUMENT();
+loadMacros(
+"PGstandard.pl",
+"MathObjects.pl",
+"PGgraphmacros.pl",
+"niceTables.pl",
+"parserPopUp.pl",
+);
+
+$a = random(3,5,1);
+$b = random(-10,-6,1);
+$m = random(6,7,1);
+$f = "$b+$m*(x-$a)";
+$c = random(-10,-4,1);
+$d = random(3,10,1);
+$m2 = random(-6,-3);
+$gint = $d - $m2*$c;
+
+$popup = PopUp(["?","I have completed this task","I have not completed this task"],"I have completed this task");
+
+
+# make sure we're in the context we want
+Context("Numeric");
+
+TEXT(beginproblem());
+Context()->texStrings;
+BEGIN_TEXT
+This is the first of many "Preview" assignments.  These assignments will be completed BEFORE each class and are meant to get you ready for what we will cover during the class time.  
+$PAR
+Your first job is to complete the following tasks: $BR
+1) Find the full textbook linked from the Moodle page and save a copy to your computer. \{ $popup->menu() \}
+$BR
+2) Read the syllabus and complete all of the week 1 assignments on Moodle. \{ $popup->menu() \}
+$BR
+3) In every section of the full digital textbook there are videos linked to related materials.  Find the videos for the first section and brush up on the material presented.  When watching the videos be sure to work along with the instructor.  Use the play, pause, and rewind buttons to help control the pace of the videos.  
+\{ $popup->menu() \}
+$BR
+4) What are the differences between Preview Activities, Activities, Examples, Exercises, Voting Questions, and WeBWork? Which ones should you do before class, which ones will you likely do during class, and which ones should you be doing after class? 
+\{ $popup->menu() \}
+$BR
+
+$PAR
+Finally, to get us warmed up mathematically, read section 0.1 from the Active Calculus textbook, watch any videos linked from the book, and answer the following questions.
+$BR
+(a) Write the equation of the line passing through the point ($a,$b) with slope $m. $BR
+\( y = \) \{ans_rule(15)\}
+$BR
+(b) Find the y-intercept of the line that passes through the point ($c,$d) with slope $m2. $BR
+\( y = \) \{ans_rule(15) \}
+
+
+END_TEXT
+Context()->normalStrings;
+ANS($popup->cmp());
+ANS($popup->cmp());
+ANS($popup->cmp());
+ANS($popup->cmp());
+
+ANS(function_cmp($f,"x",-10,10));
+ANS(num_cmp($gint,tol=>0.01));
+
+
+Context()->texStrings;
+SOLUTION(EV3(<<'END_SOLUTION'));
+$PAR SOLUTION $PAR
+The textbook for this class is titled Active Calculus and can be found as a link through the class Moodle page.  $BR
+* Preview Activities will be mirrored here on WeBWorK and are to be done before class. $BR
+* Activities are exercises that will be done in small group during class time. $BR
+* Voting Questions are going to be done in class to generate classroom discussion. $BR
+* WeBWorK is the online homework system that we use.  The WeBWorK assignments for a section will be completed a few days after we cover material in class.
+$PAR
+Use the point-slope form of the line: \( y - y_1 = m(x-x_1)\) for each of these problems.  For the second part you will need to solve for \(y\) with \(x=0\).
+END_SOLUTION
+Context()->normalStrings;
+
+ENDDOCUMENT();
+
+

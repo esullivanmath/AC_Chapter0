@@ -1,0 +1,113 @@
+# DESCRIPTION
+# Preview Activity from _Active Calculus_ by Matthew Boelkins
+# ENDDESCRIPTION
+
+## DBsubject(Calculus)
+## DBchapter(Exponential Functions)
+## DBsection(Applications and models)
+## Institution(Carroll College)
+## Author(Eric Sullivan)
+## Level(2)
+## MO(1)
+## TitleText1('Active Calculus')
+## AuthorText1('Matthew Boelkins')
+## EditionText1('2015')
+## Section1('0.5')
+## Problem1('1 1')
+## KEYWORDS('polynomials','end behavior')
+
+DOCUMENT();
+loadMacros(
+"PG.pl",
+"PGbasicmacros.pl",
+"PGchoicemacros.pl",
+"PGanswermacros.pl",
+"PGauxiliaryFunctions.pl",
+"PGgraphmacros.pl",
+"PGasu.pl",
+"extraAnswerEvaluators.pl",
+"problemRandomize.pl",
+"niceTables.pl",
+"parserPopUp.pl"
+);
+#Allow the student to generate a new (re-randomized) problem 
+#AFTER they have submitted a correct answer.
+ProblemRandomize(onlyAfterDue=>0);
+install_problem_grader(~~&std_problem_grader);
+
+$showPartialCorrectAnswers = 0;
+
+
+$popupaf = PopUp(["?","Yes","No"],"No");
+$popupag = PopUp(["?","Yes","No"],"Yes");
+
+$popupb = PopUp(["?","Yes","No"],"No");
+
+$popupc = PopUp(["?","Yes","No"],"No");
+
+$popupdf = PopUp(["?","0","1","2","3","4","5","6","7"],"1");
+$popupdg = PopUp(["?","0","1","2","3","4","5","6","7"],"0");
+
+$popupef = PopUp(["?","0","1","2","3","4","5","6","7"],"7");
+$popupeg = PopUp(["?","0","1","2","3","4","5","6","7"],"6");
+
+$popupff = PopUp(["?","0","1","2","3","4","5","6","7"],"6");
+$popupfg = PopUp(["?","0","1","2","3","4","5","6","7"],"5");
+
+
+TEXT(beginproblem());
+# make sure we're in the context we want
+Context()->texStrings;
+BEGIN_TEXT
+$PAR
+$BBOLD
+Please read section 0.6 from the Active Calculus textbook and watch the videos linked from that section.
+$EBOLD
+$PAR
+
+The two figures below show the graphs of two different functions: \(f(x)\) is on the left in blue and \(g(x)\) is on the right in red.  Suppose that you were to graph a linear function anywhere along each of the two graphs.
+$BCENTER
+\{ image( "preview_0_6_f.png") \}
+\{ image( "preview_0_6_g.png") \}
+$BR(Click on graphs to enlarge them)
+$ECENTER
+
+$PAR
+(a) Is it possible to draw a line that does not intersect the graph of \(f(x)\)?  
+\{ $popupaf->menu() \} 
+$BR What about \(g(x)\)? \{ $popupag->menu() \}
+
+$BR
+(b) What is the smallest number of intersections that your line could have with the graph of \(f(x)\)?
+\{ $popupdf->menu() \}
+$BR What about with \(g(x)\)? \{ $popupdg->menu() \}
+$BR
+(c) What is the largest number of intersections that your line could have with the graph of \(f(x)\)?  
+\{ $popupef->menu() \}
+$BR What about with \(g(x)\)? \{ $popupeg->menu() \}
+$BR
+(d) How many times does the graph of \(f(x)\) change directions?  
+\{ $popupff->menu() \}
+$BR How many times does the graph of \(g(x)\) change directions? \{ $popupfg->menu() \}
+
+
+END_TEXT
+
+ANS($popupaf->cmp() );
+ANS($popupag->cmp() );
+ANS($popupdf->cmp() );
+ANS($popupdg->cmp() );
+ANS($popupef->cmp() );
+ANS($popupeg->cmp() );
+ANS($popupff->cmp() );
+ANS($popupfg->cmp() );
+
+SOLUTION(EV3(<<'END_SOLUTION'));
+$PAR SOLUTION $PAR
+
+END_SOLUTION
+Context()->normalStrings;
+
+ENDDOCUMENT();
+
+

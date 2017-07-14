@@ -1,0 +1,86 @@
+# DESCRIPTION
+# Preview Activity from _Active Calculus_ by Matthew Boelkins
+# ENDDESCRIPTION
+
+## DBsubject(Calculus)
+## DBchapter(Exponential Functions)
+## DBsection(Applications and models)
+## Institution(Carroll College)
+## Author(Eric Sullivan)
+## Level(2)
+## MO(1)
+## TitleText1('Active Calculus')
+## AuthorText1('Matthew Boelkins')
+## EditionText1('2015')
+## Section1('0.5')
+## Problem1('1 1')
+## KEYWORDS('trigonometry')
+
+DOCUMENT();
+loadMacros(
+"PGstandard.pl",
+"MathObjects.pl",
+"PGgraphmacros.pl",
+"niceTables.pl",
+);
+
+
+$ans1 = 32.3;
+$ans2 = 12.3;
+$ans3 = ($ans1 + $ans2) / 2;
+$ans4 = max($ans1-$ans3,$ans3-$ans2);
+$ans5 = 12;
+
+# make sure we're in the context we want
+Context("Numeric");
+
+TEXT(beginproblem());
+Context()->texStrings;
+BEGIN_TEXT
+$PAR
+$BBOLD
+Please read section 0.5 from the Active Calculus textbook and watch the videos linked from that section.
+$EBOLD
+$PAR
+
+A tall water tower is swaying back and forth in the wind. Using an ultrasonic ranging
+device, we measure the distance from our device to the tower (in centimeters) every two seconds with these measurements recorded below.
+\{
+    DataTable(
+    [
+    ['Time (sec)' , '0' , '2' , '4' , '6' , '8' , '10' , '12' , '14' , '16' , '18' , '20' ],
+    ['Distance (cm)' , '30.9' , '23.1' , '14.7' , '12.3' , '17.7' , '26.7' , '32.3' , '30.1' , '21.8' , '13.9' , '12.6' ]
+    ],
+    caption=>'Distance from ultrasonic range detector.'
+    );
+    \}
+    $BR
+    (a) Start by plotting the points on graph paper. $BR
+    (b) What is the water tower's maximum distance away from the device? \{ ans_rule(10) \}
+    $BR
+    (c) What is the smallest distance measured from the tower to the device? \{ ans_rule(10) \} $BR
+    (d) If the water tower was sitting still and no wind was blowing, what would be the distance from the tower to the device? We call this the tower’s equilibrium position.  \{ ans_rule(10) \}
+    $BR
+    (e) What is the maximum distance that the tower moves away from its equilibrium position? We call this the amplitude of the oscillations. \{ ans_rule(10) \}
+    $BR
+    (f) How much time does it take the water tower to sway back and forth in a complete cycle? We call this the period of oscillation. \{ ans_rule(10) \}
+
+    END_TEXT
+    Context()->normalStrings;
+
+    ANS(num_cmp($ans1,tol=>0.00001));
+    ANS(num_cmp($ans2,tol=>0.00001));
+    ANS(num_cmp($ans3,tol=>0.3));
+    ANS(num_cmp($ans4,tol=>0.1));
+    ANS(num_cmp($ans5,tol=>2));
+
+    Context()->texStrings;
+    SOLUTION(EV3(<<'END_SOLUTION'));
+    $PAR SOLUTION $PAR
+
+    END_SOLUTION
+    Context()->normalStrings;
+
+    ENDDOCUMENT();
+
+
