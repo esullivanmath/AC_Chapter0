@@ -1,0 +1,1725 @@
+
+<section xml:id="S_0_3_Transformations">
+  <title>Transformations of Functions</title>
+  <introduction>
+    <exploration xml:id="PA_0_3">
+      <p>
+        The goal of this activity is to explore and experiment with the function
+        <me>
+          F(x) = Af(B(x-C))+D.
+        </me>
+      </p>
+
+      <p>
+        The values of <m>A</m>, <m>B</m>, <m>C</m>, and <m>D</m> are constants and the function <m>f(x)</m> will be
+        henceforth called the <term>parent function</term>. To facilitate this exploration, use the
+        applet located at
+      </p>
+
+      <p>
+        <url href="http://www.geogebratube.org/student/m93018">http://www.geogebratube.org/student/m93018</url>.
+        <ol>
+          <li>
+            <p>
+              Let's start with a simple parent function: <m>f(x) = x^2</m>.
+              \begin{numlist2}
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Fix <m>B=1</m>, <m>C=0</m>, and <m>D=0</m>.  Write a sentence or two describing the
+              action of <m>A</m> on the function <m>F(x)</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Fix <m>A=1</m>, <m>B=1</m>, and <m>D=0</m>.  Write a sentence of two describing the
+              action of <m>C</m> on the function <m>F(x)</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Fix <m>A=1</m>, <m>B=1</m>, and <m>C=0</m>.  Write a sentence of two describing the
+              action of <m>D</m> on the function <m>F(x)</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Fix <m>A=1</m>, <m>C=0</m>, and <m>D=0</m>.  Write a sentence of two describing the
+              action of <m>B</m> on the function <m>F(x)</m>.
+              \end{numlist2}
+            </p>
+          </li>
+
+          <li>
+            <p>
+              In part (a) you have made conjectures about what <m>A</m>, <m>B</m>, <m>C</m>, and <m>D</m> do to a
+              parent function graphically.  Test your conjectures with the functions <m>f(x) =
+              |x|</m> (typed <c>abs(x)</c>), <m>f(x) = x^3</m>, <m>f(x) = \sin(x)</m>, <m>f(x) = e^x</m> (typed
+              <c>exp(x)</c>), and any other function you find interesting.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
+
+    <activity xml:id="A_0_3_1">
+      <p>
+        Consider the function <m>f(x)</m> displayed in <xref ref="F_0_3_Act1">Figure</xref>.
+        <ol>
+          <li>
+            <p>
+              Plot <m>g(x) = -f(x)</m> and <m>h(x) = f(x)-1</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Define the function <m>k(x) = -f(x)-1</m>.  Does it matter which order you
+              complete the tranformations from part (a) to result in <m>k(x)</m>?  Plot the
+              functions resulting from doing the two transformation in part (a) in opposite
+              orders.  Which of these functions is <m>k(x)</m>?
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      <figure xml:id="F_0_3_Act1" >
+        <caption>Function transformation for <xref ref="A_0_3_1">Activity</xref></caption>
+        <image width="65%" source="images/0-3-fig2" />
+      </figure>
+      <hint>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Think of the <q><m>-</m></q> in front of <m>f(x)</m> as a <m>-1</m>.  What is the difference
+                between multiplying by <m>-1</m> and adding <m>-1</m>?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Think about the order of mathematical operations.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </hint>
+      <solution>
+        <ol>
+          <li>
+            <p>
+              The function <m>g(x)</m> should change the sign on all of the <m>y</m> values of <m>f</m>.
+              The function <m>h(x)</m> will shift all of the <m>y</m> values of <m>f</m> down 1 unit.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The order in which you do the transformations does matter.  In this problem
+              the order of operations should be to change the sign on the <m>y</m> value and then
+              to shift 1 unit down.
+            </p>
+          </li>
+        </ol>
+        <p>
+          <image width="65%" source="images/0-3-fig2soln" />
+        </p>
+      </solution>
+    </activity>
+
+    <activity xml:id="A_0_3_2">
+      <ol>
+        <li>
+          <p>
+            Let <m>f(x) = x^2</m> and <m>g(x) = x+8</m>.  Find the following:
+            <me>
+              f(g(3)) = \underline{},  g(f(3)) =
+              \underline{},  f(g(x)) = \underline{},
+            </me>
+            <me>
+              g(f(x)) = \underline{},  f(x)g(x) = \underline{}
+            </me>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Now let <m>f(x)</m> and <m>g(x)</m> be defined as in the table below.  Use the data in
+            the table to find the following compositions.
+            <tabular>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell><m>x</m></cell>
+                <cell><m>-3</m></cell>
+                <cell><m>-2</m></cell>
+                <cell><m>-1</m></cell>
+                <cell><m>0</m></cell>
+                <cell><m>1</m></cell>
+                <cell><m>2</m></cell>
+                <cell><m>3</m></cell>
+              </row>
+              <row bottom="medium">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell  ><m>f(x)</m></cell>
+                <cell>3</cell>
+                <cell>1</cell>
+                <cell><m>-1</m></cell>
+                <cell><m>-3</m></cell>
+                <cell><m>-1</m></cell>
+                <cell>1</cell>
+                <cell>3</cell>
+              </row>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell><m>g(x)</m></cell>
+                <cell><m>-2</m></cell>
+                <cell><m>-1</m></cell>
+                <cell>0</cell>
+                <cell>1</cell>
+                <cell>0</cell>
+                <cell>1</cell>
+                <cell>2</cell>
+              </row>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+            </tabular>
+            <me>
+              f(-3) = \underline{}, 
+              g(3) = \underline{},
+            </me>
+            <me>
+              f(g(-3)) = \underline{}, 
+              f(g(f(-3))) = \underline{}
+            </me>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Now let <m>f(x)</m> and <m>g(x)</m> be defined as in the plots below.  Use the plots
+            to find the following compositions.
+
+            <sidebyside>
+              <image width="90%" source="images/0-3-fig3" />
+              <md>
+                <mrow>f(1) \amp = \underline{}</mrow>
+                <mrow>g(2) \amp = \underline{}</mrow>
+                <mrow>g(f(1)) \amp = \underline{}</mrow>
+                <mrow>f(g(1)) \amp = \underline{}</mrow>
+                <mrow>g(f(f(0))) \amp = \underline{}</mrow>
+              </md>
+            </sidebyside>
+          </p>
+        </li>
+      </ol>
+      <hint>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Start from the inside and work your way out.  The first two answers will be
+                numbers and the next three will be functions.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The numbers on the inside of the table are the <m>y</m> values for the functions
+                <m>f</m> and <m>g</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                You're looking for the <m>y</m> values that come out of these functions.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </hint>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                For <m>f(x) = x^2</m> and <m>g(x) = x+8</m>
+                <md>
+                  <mrow>f(g(3)) \amp = f(11) = 121</mrow>
+                  <mrow>g(f(3)) \amp = g(9) = 17</mrow>
+                  <mrow>f(g(x)) \amp = f(x+8) = (x+8)^2</mrow>
+                  <mrow>g(f(x)) \amp = g(x^2) = x^2 + 8</mrow>
+                  <mrow>f(x)g(x) \amp =(x^2)(x+8) = x^3 + 8x^2</mrow>
+                </md>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <md>
+                  <mrow>f(-3) \amp = 3</mrow>
+                  <mrow>g(3) \amp = 2</mrow>
+                  <mrow>f(g(-3)) \amp = f(-2) = 1</mrow>
+                  <mrow>f(g(f(-3))) \amp = f(g(3)) = f(2) = 1</mrow>
+                </md>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <md>
+                  <mrow>f(1) \amp = 1</mrow>
+                  <mrow>g(2) \amp = 1</mrow>
+                  <mrow>g(f(1)) \amp = g(1) = -1</mrow>
+                  <mrow>f(g(1)) \amp = f(-1) = -2</mrow>
+                  <mrow>g(f(f(0))) \amp = g(f(-2)) = g(1) = 1</mrow>
+                </md>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </activity>
+
+    <activity xml:id="A_0_3_3">
+      <ol>
+        <li>
+          <p>
+            Based on symmetry alone, is <m>f(x) = x^2</m> an even or an odd function?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Based on symmetry alone, is <m>g(x) = x^3</m> an even or an odd function?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Find <m>f(-x)</m> and <m>g(-x)</m> and make conjectures to complete these sentences:
+            <ul>
+              <li>
+                <p>
+                  If a function <m>f(x)</m> is <em>even</em> then <m>f(-x) =</m><fillin />.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  If a function <m>f(x)</m> is <em>odd</em> then <m>f(-x) =</m><fillin />.
+                </p>
+              </li>
+            </ul>
+          </p>
+
+          Explain why the composition <m>f(-x)</m> is a good test for symmetry of a function.</li>
+
+        <li>
+          <p>
+            Classify each of the following functions as even, odd, or neither.
+            <me>
+              h(x) = \frac{1}{x},  j(x) = e^x,  k(x) = x^2-x^4,  n(x) =
+              x^3+x^2.
+            </me>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Each figure below shows only half of the function.  Draw the left
+            half so <m>f(x)</m> is even.  Draw the left half so <m>g(x)</m> is odd. Draw the left
+            half so <m>h(x)</m> is neither even nor odd.
+            <image width="90%" source="images/0-3-fig4" />
+          </p>
+        </li>
+      </ol>
+      <hint>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Draw a plot of the function.  Is there reflective symmetry or rotational
+                symmetry?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Draw a plot of the function.  Is there reflective symmetry or rotational
+                symmetry?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Put <m>-x</m> into the function and see what results.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Use the test that you devised in part (c)
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Think about how to use to the test from part (c) graphically.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </hint>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <m>f(x)=x^2</m> is an even function.  If you reflect of the <m>y</m> axis you get a
+                perfect match.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>g(x) = x^3</m> is an odd fnction.  If you rotate about the origin you get a
+                perfect match.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                If <m>f(x)</m> is even then <m>f(-x) = f(x)</m>.  If <m>f(x)</m> is odd then <m>f(-x) =
+                -f(x)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <md>
+                  <mrow>h(-x) \amp = \frac{1}{(-x)} = -\frac{1}{x} = -h(x)  \implies 
+                  h(x) \text{ is odd }</mrow>
+                  <mrow>j(-x) \amp = e^{-x} = \frac{1}{e^x}  \implies 
+                  j(x) \text{ is neither even nor odd }</mrow>
+                  <mrow>k(-x) \amp = (-x)^2 - (-x)^4 = x^2 - x^4 = k(x)  \implies 
+                  k(x) \text{ is even }</mrow>
+                  <mrow>n(-x) \amp = (-x)^3 + (-x)^2 = -x^3 + x^2  \implies 
+                  n(x) \text{ is neither even nor odd }</mrow>
+                </md>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                See the plot below for the answers to the left and middle plots.  The
+                right-hand plot can be anything other than the first two.
+                <image width="90%" source="images/0-3-fig4soln" />
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </activity>
+
+    <activity xml:id="A_0_3_4">
+      <ol>
+        <li>
+          <p>
+            Find the inverse of each of the following functions by interchanging the <m>x</m> and <m>y</m>
+            and solving for <m>y</m>.  Be sure to state the domain for each of your answers.
+            <me>
+              y = \sqrt{x-1},  y = -\frac{1}{3} x + 1,  y = \frac{x+4}{2x-5}
+            </me>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Verify that the functions <m>f(x) = 3x-2</m> and <m>g(x) = \frac{x}{3} +
+            \frac{2}{3}</m> are inverses of each other by computing <m>f(g(x))</m> and <m>g(f(x))</m>.
+          </p>
+        </li>
+      </ol>
+      <hint>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Switch the <m>x</m> and <m>y</m> and solve for <m>y</m>.  It may also be helpful to draw a
+                picture.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                What should happen to <m>f(g(x))</m> and <m>g(f(x))</m> if <m>f</m> and <m>g</m> are inverses?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </hint>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <ul>
+                <li>
+                  <p>
+                    For <m>y=\sqrt{x-1}</m>: First switch the <m>x</m> and <m>y</m> to get <m>x = \sqrt{y-1}</m>.
+                    Then if we square both sides and add 1 we get <m>y = x^2 + 1</m>.  Notice
+                    graphically that the inverse function only makes sense for <m>x \ge 0</m>.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    For <m>y = -\frac{1}{3}x + 1</m>: First switch the <m>x</m> and <m>y</m> to get <m>x =
+                    -\frac{1}{3}y + 1</m>.  Then if we subtract <m>1</m> and multiply by <m>-3</m> we get <m>y =
+                    -3(x-1) = -3x+3</m>.  This linear function makes sense for all <m>x</m>.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    For <m>y=\frac{x+4}{2x-5}</m>: First switch the <m>x</m> and <m>y</m> to get <m>x =
+                    \frac{y+4}{2y-5}</m>.  Multiplying by the denominator gives <m>x(2y-5) = y+4</m>, and
+                    then if we distribute the <m>x</m> we get <m>2xy - 5x = y+4</m>.  Now we should gather
+                    all of the <m>y</m> terms on the same side to get <m>2xy - y = 5x + 4</m>.  Factoring
+                    the <m>y</m> out from the left and dividing gives <m>y = \frac{5x+4}{2x-1}</m>. This
+                    function makes sense for all <m>x</m> not equal to <m>1/2</m>.
+                  </p>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <p>
+                If we compose the two functions then
+                <me>
+                  f(g(x)) = 3\left( \frac{x}{3} + \frac{2}{3} \right) -2  = x + 2 -2 = x.
+                </me>
+                <me>
+                  g(f(x)) = \frac{1}{3} \left( 3x-2 \right) + \frac{2}{3} = x -
+                  \frac{2}{3} + \frac{2}{3} = x.
+                </me>
+                Since both <m>f(g(x)) = x</m> and <m>g(f(x)) = x</m> we know that <m>f</m> and <m>g</m> are
+                inverses of each other.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </activity>
+  </introduction>
+
+  <subsection>
+    <title>Voting Questions</title>
+    <ol>
+    <li>
+      <p>
+        The functions <m>f</m> and <m>g</m> have values given in the table below.  What is the value of <m>f(g(0))</m>?
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>x</m></cell>
+            <cell>-2</cell>
+            <cell>-1</cell>
+            <cell>0</cell>
+            <cell>1</cell>
+            <cell>2</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>f(x)</m></cell>
+            <cell>1</cell>
+            <cell>0</cell>
+            <cell>-2</cell>
+            <cell>2</cell>
+            <cell>-1</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>g(x)</m></cell>
+            <cell>-1</cell>
+            <cell>1</cell>
+            <cell>2</cell>
+            <cell>0</cell>
+            <cell>-2</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+        <ol>
+          <li>
+            <p>
+              -2
+            </p>
+          </li>
+
+          <li>
+            <p>
+              -1
+            </p>
+          </li>
+
+          <li>
+            <p>
+              0
+            </p>
+          </li>
+
+          <li>
+            <p>
+              1
+            </p>
+          </li>
+
+          <li>
+            <p>
+              2
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.03.010C.tex}}</li>
+
+    <li>
+      <p>
+        The functions <m>f</m> and <m>g</m> have values given in the table below.  If <m>f(g(x)) = 1</m>, then what is <m>x</m>?
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>x</m></cell>
+            <cell>-2</cell>
+            <cell>-1</cell>
+            <cell>0</cell>
+            <cell>1</cell>
+            <cell>2</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>f(x)</m></cell>
+            <cell>1</cell>
+            <cell>0</cell>
+            <cell>-2</cell>
+            <cell>2</cell>
+            <cell>-1</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>g(x)</m></cell>
+            <cell>-1</cell>
+            <cell>1</cell>
+            <cell>2</cell>
+            <cell>0</cell>
+            <cell>-2</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+        <ol>
+          <li>
+            <p>
+              -2
+            </p>
+          </li>
+
+          <li>
+            <p>
+              -1
+            </p>
+          </li>
+
+          <li>
+            <p>
+              0
+            </p>
+          </li>
+
+          <li>
+            <p>
+              1
+            </p>
+          </li>
+
+          <li>
+            <p>
+              2
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.03.020C.tex}}</li>
+
+    <li>
+      <p>
+        The graphs of <m>f</m> and <m>g</m> are shown in the figure below.  Estimate the value of <m>g(f(3))</m>.
+
+        <sidebyside>
+          <ol>
+            <li>
+              <p>
+                -1
+              </p>
+            </li>
+
+            <li>
+              <p>
+                0
+              </p>
+            </li>
+
+            <li>
+              <p>
+                1
+              </p>
+            </li>
+
+            <li>
+              <p>
+                2
+              </p>
+            </li>
+
+            <li>
+              <p>
+                3
+              </p>
+            </li>
+
+            <li>
+              <p>
+                5
+              </p>
+            </li>
+          </ol>
+        </p>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, grid, xmin=-8, xmax=8,
+            ymin=-8, ymax=8, xtick={-8,-6,-4,-2,2,4,6,8}, ytick={-8,-6,-4,-2,2,4,6,8}]
+            \addplot[blue,very thick, smooth, domain=-8:8] {(1/8)*x^2} node[pos=.1,pin={10:\(f(x)\)}, inner sep=0pt] ;
+            \addplot[red,very thick, smooth, domain=-8:8, samples=100]
+            {2*x/abs(x) * (abs(x))^(1/3)} node[pos=.1,pin={-10:\(g(x)\)}, inner sep=0pt] ;
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+      </sidebyside>
+      \teacher{\input{clicker/SVC.01.03.030C.tex}}</li>
+
+    <li>
+      <p>
+        The graphs of <m>f</m> and <m>g</m> are shown in the figure below.  Estimate the value of <m>f(g(2))</m>.
+
+        <sidebyside>
+          <ol>
+            <li>
+              <p>
+                -1
+              </p>
+            </li>
+
+            <li>
+              <p>
+                0
+              </p>
+            </li>
+
+            <li>
+              <p>
+                1
+              </p>
+            </li>
+
+            <li>
+              <p>
+                2
+              </p>
+            </li>
+
+            <li>
+              <p>
+                3
+              </p>
+            </li>
+
+            <li>
+              <p>
+                5
+              </p>
+            </li>
+          </ol>
+        </p>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, grid, xmin=-8, xmax=8,
+            ymin=-8, ymax=8, xtick={-8,-6,-4,-2,2,4,6,8}, ytick={-8,-6,-4,-2,2,4,6,8}]
+            \addplot[blue,very thick, smooth, domain=-8:8] {(1/8)*x^2} node[pos=.1,pin={10:\(f(x)\)}, inner sep=0pt] ;
+            \addplot[red,very thick, smooth, domain=-8:8, samples=100]
+            {2*x/abs(x) * (abs(x))^(1/3)} node[pos=.1,pin={-10:\(g(x)\)}, inner sep=0pt] ;
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+      </sidebyside>
+      \teacher{\input{clicker/SVC.01.03.040C.tex}}</li>
+
+    <li>
+      <p>
+        If <m>P = f(t) = 3 + 4t</m>, find <m>f^{-1}(P)</m>.
+        <ol>
+          <li>
+            <p>
+              <m>f^{-1}(P) = 3+4P</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>f^{-1}(P) = \frac{P-3}{4}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>f^{-1}(P) = \frac{P-4}{3}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>f^{-1}(P) = 4(P+3)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>f^{-1}(P) = \frac{P+3}{4}</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.03.050C.tex}}</li>
+
+    <li>
+      <p>
+        Which of these functions has an inverse?
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-3, xmax=3,
+            ymin=-3, ymax=3, xtick=, ytick=, yticklabels=,
+            xticklabels=, title={Plot (a)}]
+            \addplot[color=blue, very thick] {(1/3)*x^2};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-3, xmax=3,
+            ymin=-3, ymax=3, xtick=, ytick=, yticklabels=,
+            xticklabels=, title={Plot (b)}]
+            \addplot[color=blue, very thick,domain=0:3,samples=100] {sqrt(x)};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-3, xmax=3,
+            ymin=-3, ymax=3, xtick=, ytick=, yticklabels=,
+            xticklabels=, title={Plot (c)}]
+            \addplot[color=blue, very thick,domain=-3:3] {(1/9)*x^3};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-3, xmax=3,
+            ymin=-3, ymax=3, xtick=, ytick=, yticklabels=,
+            xticklabels=, title={Plot (d)}]
+            \addplot[color=blue, very thick,domain=-3:3] {abs(x)};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        <ol>
+          <li>
+            <p>
+              (a) only
+            </p>
+          </li>
+
+          <li>
+            <p>
+              (b) only
+            </p>
+          </li>
+
+          <li>
+            <p>
+              (c) only
+            </p>
+          </li>
+
+          <li>
+            <p>
+              (d) only
+            </p>
+          </li>
+
+          <li>
+            <p>
+              (a) and (b)
+            </p>
+          </li>
+
+          <li>
+            <p>
+              (b) and (c)
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.03.051C.tex}}</li>
+
+    <li>
+      <p>
+        The following is a graph of <m>f(x)</m>.  Which graph below is the inverse?
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-3, xmax=3,
+            ymin=-3, ymax=3, xtick=, ytick=, yticklabels=,
+            xticklabels=, title={\(f(x)\)}]
+            \addplot[color=blue, very thick,samples=100] {2^x};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-3, xmax=3,
+            ymin=-3, ymax=3, xtick=, ytick=, yticklabels=,
+            xticklabels=, title={Plot (a)}]
+            \addplot[color=blue, very thick,samples=100] {(1/2)^x};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-3, xmax=3,
+            ymin=-3, ymax=3, xtick=, ytick=, yticklabels=,
+            xticklabels=, title={Plot (b)}]
+            \addplot[color=blue, very thick,domain=-3:3,samples=100] {-1*2^x};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-3, xmax=3,
+            ymin=-3, ymax=3, xtick=, ytick=, yticklabels=,
+            xticklabels=, title={Plot (c)}]
+            \addplot[color=blue, very thick,domain=-3:3,samples=100] {ln(x)/ln(2)};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-3, xmax=3,
+            ymin=-3, ymax=3, xtick=, ytick=, yticklabels=,
+            xticklabels=, title={Plot (d)}]
+            \addplot[color=blue, very thick,domain=-3:3,samples=100] {-1*ln(x)/ln(2)};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        \teacher{\input{clicker/SVC.01.03.052C.tex}}
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Given that <m>\displaystyle f(x)=\sqrt[5]{\frac{x^3-72}{800}}</m>, find <m>f\circ f^{-1} (437)</m>.
+        <ol>
+          <li>
+            <p>
+              <m>104,316.73</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>1671.2</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>437</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>10.08</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.03.053C.tex}}</li>
+
+    <li>
+      <p>
+        If <m>\displaystyle f(x)=\frac{x}{x^2+1}</m>, what is <m>f^{-1}\circ f(-2)</m>?
+        <ol>
+          <li>
+            <p>
+              <m>-\frac{2}{5}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\frac{2}{3}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>-\frac{5}{2}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>-2</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.03.054C.tex}}</li>
+
+    <li>
+      <p>
+        If <m>(4,-2)</m> is a point on the graph of <m>y=f(x)</m>, which of the following points is on the graph of <m>y=f^{-1}(x)</m>?
+        <ol>
+          <li>
+            <p>
+              <m>(-2,4)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>(-4,2)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>(\frac{1}{4},-\frac{1}{2})</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>(-\frac{1}{4},\frac{1}{2})</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.03.055C.tex}}</li>
+
+    <li>
+      <p>
+        Find the inverse of <m>\displaystyle f(x)=\frac{1}{x}</m>.
+        <ol>
+          <li>
+            <p>
+              <m>\displaystyle f^{-1}(x)=\frac{x}{1}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>f^{-1}(x)=x</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\displaystyle f^{-1}(x)=\frac{1}{x}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>f^{-1}(x)=xy</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.03.056C.tex}}</li>
+
+    <li>
+      <p>
+        A function is given in Figure 1.10 below.  Which one of the other graphs could be a graph of <m>f(x+h)</m>?
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-2.5, xmax=2.5,
+            ymin=-2.5, ymax=2.5, title={\(f(x)\)}]
+            \addplot[color=blue, very thick,samples=100] {abs(cos(deg(x)))};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-2.5, xmax=2.5,
+            ymin=-2.5, ymax=2.5, title={Plot (a)}]
+            \addplot[color=blue, very thick,samples=100] {abs(cos(deg(x)))-1};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-2.5, xmax=2.5,
+            ymin=-2.5, ymax=2.5, title={Plot (b)}]
+            \addplot[color=blue, very thick,samples=100] {abs(cos(deg(x+1)))};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-2.5, xmax=2.5,
+            ymin=-2.5, ymax=2.5, title={Plot (c)}]
+            \addplot[color=blue, very thick,samples=100] {-0.5*abs(cos(deg(x)))};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-2.5, xmax=2.5,
+            ymin=-2.5, ymax=2.5, title={Plot (d)}]
+            \addplot[color=blue, very thick,samples=100] {2*abs(cos(deg(x)))};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        \teacher{\input{clicker/SVC.01.03.060C.tex}}
+      </p>
+    </li>
+
+    <li>
+      <p>
+        How is the graph of <m>y=2^{x-1}+3</m> obtained from the graph of <m>y=2^x</m>?
+        <ol>
+          <li>
+            <p>
+              Move 1 down and 3 right
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Move 1 left and 3 up
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Move 1 up and 3 right
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Move 1 right and 3 up
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.03.065C.tex}}</li>
+
+    <li>
+      <p>
+        The function <m>f(x)</m> goes through the point <m>A</m> with coordinates (2,3).  <m>g(x) = 2 f( \frac{1}{3} x - 2) + 4</m>.  What are the coordinates of point <m>A</m> in the function <m>g(x)</m>?
+        <ol>
+          <li>
+            <p>
+              <m>(4,10)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>(4,-\frac{5}{2})</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>(12,10)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>(-\frac{4}{3},10)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>(-\frac{4}{3},-\frac{5}{2})</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.03.070C.tex}}</li>
+
+    <li>
+      <p>
+        The point <m>(4,1)</m> is on the graph of a function <m>f</m>.  Find the corresponding point on the graph of <m>y = f(x-2)</m>.
+        <ol>
+          <li>
+            <p>
+              <m>(6,1)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>(2,1)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>(4,3)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>(4,-1)</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.03.071C.tex}}</li>
+
+    <li>
+      <p>
+        The point <m>(6,1)</m> is on the graph of a function <m>f</m>.  Find the corresponding point on the graph of <m>y = f(2x)</m>.
+        <ol>
+          <li>
+            <p>
+              <m>(12,1)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>(3,1)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>(6,2)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>(6,\dfrac{1}{2})</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.03.072C.tex}}</li>
+
+    <li>
+      <p>
+        Given the graph of a function <m>f(x)</m>, what sequence of activities best describes the process you might go through to graph <m>g(x) = 5f(-x)</m>?
+        <ol>
+          <li>
+            <p>
+              Expand the graph by a factor of 5, then reflect it across the <m>y</m>-axis.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Expand the graph by a factor of 5, then reflect it across the <m>x</m>-axis.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Reflect the graph across the <m>y</m>-axis, then expand it by a factor of 5.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Reflect the graph across the <m>x</m>-axis, then expand it by a factor of 5.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              More than 1 of the above.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              None of the above.
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.03.075C.tex}}</li>
+
+    <li>
+      <p>
+        Given the graph of a function <m>f(x)</m>, what sequence of activities best describes the process you might go through to graph <m>g(x) = -f(x)+2</m>?
+        <ol>
+          <li>
+            <p>
+              Move the graph up 2 units, then reflect it across the <m>x</m>-axis.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Move the graph up 2 units, then reflect it across the <m>y</m>-axis.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Reflect the graph across the <m>y</m>-axis, then move it up by 2 units.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Reflect the graph across the <m>x</m>-axis, then move it up 2 units.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              More than 1 of the above.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              None of the above.
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.03.076C.tex}}</li>
+
+    <li>
+      <p>
+        Take the function <m>f(x)</m> and ``Shift the function right <m>h</m> units.  Reflect the result across the <m>y</m>-axis, then reflect the result across the <m>x</m>-axis.  Finally shift the result up <m>k</m> units."  The end result is:
+        <ol>
+          <li>
+            <p>
+              <m>f(x+h) + k</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>f(x-h) + k</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>-f(-x-h) + k</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>-f(-x+h) + k</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.03.080C.tex}}</li>
+
+    <li>
+      <p>
+        Given <m>f(x) = x+1</m> and <m>g(x) = 3 x^2 - 2x</m>, what is the composition <m>g(f(x))</m>.
+        <ol>
+          <li>
+            <p>
+              <m>3 x^2 - 2x + 1</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>(3 x^2 - 2x)(x+1)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>3 x^2 + 4x + 1</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>3 (x+1)^2 - 2x</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.03.090C.tex}}</li>
+
+    <li>
+      <p>
+        Write <m>h(x) = e^{3x/2}</m> as a composition of functions: <m>f(g(x))</m>.  <m>f(x) =</m> <fillin />, <m>g(x) =</m> <fillin />.
+        <ol>
+          <li>
+            <p>
+              <m>e^x, 3x/2</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>3x/2, e^x</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>x, e^{3x/2}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>x/2, 3 e^x</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.03.100C.tex}}</li>
+
+    <li>
+      <p>
+        If <m>f(x)=x^2+6</m> and <m>g(x)=x-3</m>, what is <m>f\circ g(x)</m>?
+        <ol>
+          <li>
+            <p>
+              <m>x^2+3</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>x^2-6x+15</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>x^2-3</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>x^3-3x^2+6x-18</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.03.102C.tex}}</li>
+
+    <li>
+      <p>
+        Which of the following functions IS invertible?
+        <ol>
+          <li>
+            <p>
+              <m>f(x) = -x^4 + 7</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>g(x) = e^{3x/2}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>h(x) = \cos(x)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>k(x) = |x|</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.03.110C.tex}}</li>
+
+    <li>
+      <p>
+        Let <m>f(x)=x-2</m> and <m>g(x)=3-x^2</m>.  Find <m>g(f(2))</m>.
+        <ol>
+          <li>
+            <p>
+              -3
+            </p>
+          </li>
+
+          <li>
+            <p>
+              0
+            </p>
+          </li>
+
+          <li>
+            <p>
+              3
+            </p>
+          </li>
+
+          <li>
+            <p>
+              2
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.03.120C.tex}}</li>
+
+    <li>
+      <p>
+        If <m>P=f(t)=3+4t</m>, find <m>f^{-1}(7)</m>.
+        <ol>
+          <li>
+            <p>
+              31
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\frac{1}{7}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              0
+            </p>
+          </li>
+
+          <li>
+            <p>
+              1
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.03.130C.tex}}</li>
+
+    <li>
+      <p>
+        Let <m>f(x) = x^2</m> and <m>g(x) = x + 2</m>.  True or false?  The domain of the function <m>\dfrac{f}{g}</m> is <m>\mathbb{R}</m>, all real numbers.
+        <ol>
+          <li>
+            <p>
+              True, and I am very confident.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              True, but I am not very confident.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              False, but I am not very confident.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              False, and I am very confident.
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.03.140C.tex}}</li>
+
+    <li>
+      <p>
+        Let <m>f(x) = x^2 - 4</m> and <m>g(x) = \sqrt{x}</m>.  Find <m>(g \circ f)(x)</m> and the domain of <m>g \circ f</m>.
+        <ol>
+          <li>
+            <p>
+              <m>\sqrt{x^2 - 4}</m>; Domain: <m>(-\infty,-2] \cup [2,\infty)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>x - 4</m>; Domain: <m>\mathbb{R}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>x - 4</m>; Domain: <m>[0,\infty)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\sqrt{x^2 - 4}</m>; Domain: <m>[0,\infty)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\sqrt{x}(x^2 - 4)</m>; Domain: <m>[0,\infty)</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.03.150C.tex}}</li>
+    </ol>
+  </subsection>
+</section>

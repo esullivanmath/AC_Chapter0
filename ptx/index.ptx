@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mathbook xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+<docinfo>
+<macros>
+\def\TeacherEdition{0}
+\renewcommand{\labelenumi}{\thesection.\arabic{enumi}}
+\newcommand{\teacher}[1]{\ifnum\TeacherEdition=1 #1 \fi}
+\renewcommand{\labelenumi}{\arabic{enumi}}
+\def\titlecolor{#1}
+\renewcommand{\labelenumi}{\thesection.\arabic{enumi}}
+\def\titlebackground{#1}
+\renewcommand{\labelenumi}{\arabic{enumi}}
+\def\background{#1}
+\renewcommand{\labelenumi}{\thesection.\arabic{enumi}}
+\def\titleboxcolor{#1}
+\renewcommand{\labelenumi}{\arabic{enumi}}
+\def\boxcolor{#1}
+\renewcommand{\labelenumi}{\thesection.\arabic{enumi}}
+\def\thcounter{#1}
+\renewcommand{\labelenumi}{\arabic{enumi}}
+\def\size{#1}
+\renewcommand{\labelenumi}{\thesection.\arabic{enumi}}
+\renewcommand{\labelenumi}{\arabic{enumi}}
+\newcommand{\titre}{Titre}
+\def\scl{0.7}
+\renewcommand{\titre}{#2}
+\renewcommand{\labelenumi}{\thesection.\arabic{enumi}}
+\renewcommand{\labelenumi}{\arabic{enumi}}
+\renewcommand{\theacti}{\thechapter.\arabic{acti}}
+\newcommand{\saveCount}{\setcounter{lastenum}{\value{enumi}}}
+\newcommand{\restoreCount}{\setcounter{enumi}{\value{lastenum}}}
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+\newcommand{\bei}{\begin{numlist2}}
+\newcommand{\eei}{\end{numlist2}}
+\newcommand{\ba}{\begin{enumerate}}
+\newcommand{\ea}{\end{enumerate}}
+\newcommand{\bal}{\begin{alphalist2}}
+\newcommand{\eal}{\end{alphalist2}}
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\btl}{\begin{thmlist}}
+\newcommand{\etl}{\end{thmlist}}
+\newcommand{\bpm}{\begin{pmatrix}}
+\newcommand{\epm}{\end{pmatrix}}
+\newcommand{\bolda}{\boldsymbol{a}}
+\newcommand{\boldx}{\boldsymbol{x}}
+\newcommand{\boldy}{\boldsymbol{y}}
+\newcommand{\boldb}{\boldsymbol{b}}
+\newcommand{\boldv}{\boldsymbol{v}}
+\newcommand{\boldu}{\boldsymbol{u}}
+\newcommand{\bx}{\boldsymbol{x}}
+\newcommand{\by}{\boldsymbol{y}}
+\newcommand{\bu}{\boldsymbol{u}}
+\newcommand{\bv}{\boldsymbol{v}}
+\newcommand{\bd}{\boldsymbol{d}}
+\renewcommand{\thedefinition}{\thechapter.\arabic{definition}}
+\renewcommand{\thecorollary}{\thechapter.\arabic{corollary}}
+\renewcommand{\thetheorem}{\thechapter.\arabic{theorem}}
+\newcommand{\afterex}{\begin{center}\underline{}\end{center}}
+\newcommand{\afterexercises}{\nin \vfill \ }
+\newcommand{\nin}{}
+\newcommand{\tr}{\vspace{0.5in}}
+\newcommand{\lr}{\vspace{1.0in}}
+\newcommand{\mr}{\vspace{2.0in}}
+\newcommand{\br}{\vspace{3.0in}}
+\newcommand{\afterpa}{\hfill $\bowtie$}
+\newcommand{\aftera}{\hfill $\lhd$}
+\newcommand{\T}{}
+\newcommand{\B}{\rule[-1.2ex]{0pt}{0pt}}
+\newcommand{\vs}{\vspace{0.1in}}
+\newcommand{\solution}{\textbf{Solution.}}
+\newcommand{\myunit}{1 cm}
+</macros>
+
+<latex-image-preamble>
+\usepackage{tikz}
+\usepackage{tkz-graph}
+\usepackage{tkz-euclide}
+\usetikzlibrary{patterns}
+\usetikzlibrary{positioning}
+\usetikzlibrary{matrix,arrows}
+\usetikzlibrary{calc}
+\usetikzlibrary{shapes}
+\usetikzlibrary{through,intersections,decorations,shadows,fadings}
+
+\usepackage{pgfplots}
+
+</latex-image-preamble>
+
+<rename element="exploration" lang="en-US">Preview Activity</rename>
+
+</docinfo>
+
+
+<book>
+<title>Active Calculus \\ Activities Book \\  \scalebox{0.75}{\includegraphics{figures/CClicense.eps}}</title>
+<frontmatter>
+<titlepage>
+<author>
+<personname>Active Calculus: Matt Boelkins, Lead Author</personname>
+</author>
+<author>
+<personname>Editor</personname>
+</author>
+<author>
+<personname>Editor</personname>
+</author>
+</titlepage>
+</frontmatter>
+
+
+<xi:include href="./C_0.ptx" />
+
+<backmatter>
+
+<xi:include href="./bibliography.ptx" />
+
+</backmatter>
+</book>
+</mathbook>

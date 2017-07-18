@@ -1,0 +1,585 @@
+
+<section xml:id="S_0_2_Exponentials">
+  <title>Exponential Functions</title>
+  <introduction>
+    <exploration xml:id="PA_0_2">
+      <p>
+        Suppose that the populations of two towns are both growing over time. The town of
+        Exponentia is growing at a rate of 2<percent /> per year, and the town of Lineola is growing at a
+        rate of 100 people per year. In 2014, both of the towns have 2,000 people.
+        <ol>
+          <li>
+            <p>
+              Complete the table for the population of each of these towns over the next
+              several years.
+              <tabular>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell></cell>
+                  <cell>2014</cell>
+                  <cell>2015</cell>
+                  <cell>2016</cell>
+                  <cell>2017</cell>
+                  <cell>2018</cell>
+                  <cell>2019</cell>
+                  <cell>2020</cell>
+                  <cell>2021</cell>
+                  <cell>2022</cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell>Exponentia</cell>
+                  <cell>2000</cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell>Lineola</cell>
+                  <cell>2000</cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+              </tabular>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Write a linear function for the population of Lineola. Interpret the slope in
+              the context of this problem.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The ratio of successive populations for Exponentia should be equal.  For
+              example, dividing the population in 2015 by that of 2014 should give the same
+              ratio as when the population from 2016 is divided by the population of 2015.  Find
+              this ratio.  How is this ratio related to the 2<percent /> growth rate?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Based on your data from part (a) and your ratio in part (c), write a function
+              for the population of Exponentia.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              When will the population of Exponentia exceed that of Lineola?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
+
+    <activity xml:id="A_0_2_1">
+      <p>
+        Consider the exponential functions plotted in <xref ref="F_0_2_Act1">Figure</xref>
+        <ol>
+          <li>
+            <p>
+              Which of the functions have common ratio <m>r > 1</m>?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Which of the functions have common ratio <m>0\lt r\lt  1</m>?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Rank each of the functions in order from largest to smallest <m>r</m> value.
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      <figure xml:id="F_0_2_Act1" >
+        <caption>Exponential growth and decay functions</caption>
+        <image width="60%" source="images/0-2-figAct1" />
+      </figure>
+      <hint>
+        <p>
+          <ol>
+            <li>
+              <p>
+                If the common ratio is larger than 1 what will happen to the <m>y</m> values?
+                For example, if the common ratio were 2 and we start with 5 then what would
+                the next value be?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                If the comon ratio is less than 1 what will happen to the <m>y</m> values?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Do some experimentation to determine which ones will be steeper or less
+                steep.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </hint>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                blue, red, dark green
+              </p>
+            </li>
+
+            <li>
+              <p>
+                cyan and black
+              </p>
+            </li>
+
+            <li>
+              <p>
+                blue is <m>y = 2^x</m>, red is <m>y = 3^x</m>, dark green is <m>y=1.5^x</m>, cyan is
+                <m>y=0.9^x</m>, and black is <m>y=0.5^x</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </activity>
+
+    <activity xml:id="A_0_2_2">
+      <p>
+        A sample of <m>Ni^{56}</m> has a half-life of 6.4 days. Assume that there are 30 grams
+        present initially.
+        <ol>
+          <li>
+            <p>
+              Write a function describing the number of grams of <m>Ni^{56}</m> present as a
+              function of time.  Check your function based on the fact that in 6.4 days
+              there should be 50<percent /> remaining.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              What percent of the substance is present after 1 day?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              What percent of the substance is present after 10 days?
+            </p>
+          </li>
+        </ol>
+      </p>
+      <hint>
+        <p>
+          <ol>
+            <li>
+              <p>
+                The growth rate should be <m>1/2</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Figure out how much is there after 1 day and divide by the original amount.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Figure out how much is there after 10 days and divide by the original amount.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </hint>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <m>A(t) = 30 \left( \frac{1}{2}  \right)^{t/6.4}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>A(1) =  30 \left( \frac{1}{2}  \right)^{1/6.4} \approx 26.9206</m> so the
+                percent that remains is just shy of 90<percent />.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>A(10) =  30 \left( \frac{1}{2}  \right)^{10/6.4} \approx 10.1569</m> so the
+                percent that remains is about 33.9<percent />.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </activity>
+
+    <activity xml:id="A_0_2_3">
+      <p>
+        Uncontrolled geometric growth of the bacterium <em>Escherichia coli (E. Coli)</em> is the
+        theme of the following quote taken from the best-selling author Michael Crichton's
+        science fiction thriller, <em>The Andromeda Strain:</em>
+      </p>
+
+      <blockquote>
+      <q>The mathematics of uncontrolled growth are frightening.  A single cell of the
+      bacterium E. coli would, under ideal circumstances, divide every twenty minutes.
+      That is not particularly disturbing until you think about it, but the fact is that
+      that bacteria multiply geometrically: one becomes two, two become four, four
+      become eight, and so on.  In this way it can be shown that in a single day, one
+      cell of E. coli could produce a super-colony equal in size and weight to the
+      entire planet Earth.</q>
+      </blockquote>
+      <ol>
+        <li>
+          <p>
+            Write an equation for the number of E. coli cells present if a single cell
+            of E. coli divides every 20 minutes.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            How many E. coli would there be at the end of 24 hours?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            The mass of an E. coli bacterium is <m>1.7 \times 10^{-12}</m> grams, while the
+            mass of the Earth is <m>6.0 \times 10^{27}</m> grams.  Is Michael Crichton's claim
+            accurate?  Approximate the number of hours we should have allowed for this
+            statement to be correct?
+          </p>
+        </li>
+      </ol>
+      <hint>
+        <p>
+          <ol>
+            <li>
+              <p>
+                What is the common ratio?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Be sure to get your units correct.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                You might want to tackle this problem graphically.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </hint>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <m>P(t) = P_0 \cdot 2^{t/20}</m> where <m>t</m> is measured in minutes.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Assuming that <m>P_0 = 1</m>, <m>P(1440) = 2^{1440/20} \approx 4.72 \times 10^{21}</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <md>
+                  <mrow>6.0 \times 10^{27} \amp = 1.7 \times 10^{-12} \cdot 1 \cdot 2^{t/20}</mrow>
+                  <mrow>3.529 \times 10^{39} \amp = 2^{t/20}</mrow>
+                  <mrow>\log_2\left( 3.529 \times 10^{39} \right) \amp = \frac{t}{20}</mrow>
+                  <mrow>20 \log_2\left( 3.529 \times 10^{39} \right) \amp = t</mrow>
+                  <mrow>\amp \approx 2627.5 \text{ minutes }</mrow>
+                </md>
+                <++>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </activity>
+  </introduction>
+
+  <subsection>
+    <title>Voting Questions</title>
+    <ol>
+    <li>
+      <p>
+        The following table shows  the net sales at Amazon.com from 2003 to 2010 <em>(source:  Amazon.com quarterly reports)</em>:
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>Year</cell>
+            <cell>2003</cell>
+            <cell>2004</cell>
+            <cell>2005</cell>
+            <cell>2006</cell>
+            <cell>2007</cell>
+            <cell>2008</cell>
+            <cell>2009</cell>
+            <cell>2010</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>Billions of dollars</cell>
+            <cell>{<dollar />}5.26</cell>
+            <cell>{<dollar />}6.92</cell>
+            <cell>{<dollar />}8.49</cell>
+            <cell>{<dollar />}10.72</cell>
+            <cell>{<dollar />}14.84</cell>
+            <cell>{<dollar />}19.15</cell>
+            <cell>{<dollar />}24.51</cell>
+            <cell>{<dollar />}34.21</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+        If the net sales are modeled using an exponential function <m>S(t)=a\cdot b^t</m>, where <m>S</m> is the net sales in billions of dollars, and <m>t</m> is the number of years after <m>2003</m>, which of the following is an appropriate value for <m>a</m>?
+        <ol>
+          <li>
+            <p>
+              34.21
+            </p>
+          </li>
+
+          <li>
+            <p>
+              1
+            </p>
+          </li>
+
+          <li>
+            <p>
+              1.31
+            </p>
+          </li>
+
+          <li>
+            <p>
+              5.26
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.02.103C.tex}}</li>
+
+    <li>
+      <p>
+        Which is better at the end of one year:  An account that pays <m>8\%</m> annual interest compounded quarterly or an account that pays <m>7.95\%</m> interest compounded continuously?
+        <ol>
+          <li>
+            <p>
+              <m>8\%</m> quarterly
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>7.95\%</m> continuously
+            </p>
+          </li>
+
+          <li>
+            <p>
+              They are the same.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              There is no way to tell.
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.02.104C.tex}}</li>
+
+    <li>
+      <p>
+        Caffeine leaves the body at a continuous rate of <m>17\%</m> per hour.  How much caffeine is left in the body 8 hours after drinking a cup of coffee containing 100 mg of caffeine?
+        <ol>
+          <li>
+            <p>
+              389.62 mg
+            </p>
+          </li>
+
+          <li>
+            <p>
+              22.52 mg
+            </p>
+          </li>
+
+          <li>
+            <p>
+              25.67 mg
+            </p>
+          </li>
+
+          <li>
+            <p>
+              There is no way to tell.
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.02.105C.tex}}</li>
+
+    <li>
+      <p>
+        Caffeine leaves the body at a continuous rate of <m>17\%</m> per hour.  What is the hourly growth factor?
+        <ol>
+          <li>
+            <p>
+              .156
+            </p>
+          </li>
+
+          <li>
+            <p>
+              .17
+            </p>
+          </li>
+
+          <li>
+            <p>
+              .844
+            </p>
+          </li>
+
+          <li>
+            <p>
+              There is no way to tell.
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.02.106C.tex}}</li>
+    </ol>
+  </subsection>
+</section>
