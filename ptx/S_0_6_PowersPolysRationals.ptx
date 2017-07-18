@@ -1,0 +1,1028 @@
+
+<section xml:id="S_0_6_PowersPolysRationals">
+  <title>Powers, Polynomials, and Rational Functions</title>
+  <introduction>
+    <exploration xml:id="PA_0_6">
+      <p>
+        <xref ref="fig_0_6_PA">Figure</xref> shows the graphs of two different functions. Suppose that you were to graph a line anywhere along each of the two graphs.
+        <ol>
+          <li>
+            <p>
+              Is it possible to draw a line that does not intersect the graph of <m>f</m>? <m>g</m>?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Is it possible to draw a line that intersects the graph of <m>f</m> an even number of times?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Is it possible to draw a line that intersects the graph of <m>g</m> an odd number of times?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              What is the fewest number of intersections that your line could have with the graph of <m>f</m>? with <m>g</m>?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              What is the largest number of intersections that your line could have with the graph of <m>f</m>? with <m>g</m>?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              How many times does the graph of <m>f</m> change directions? How many times does the graph of <m>g</m> change directions?
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      <figure xml:id="fig_0_6_PA" >
+        <caption><m>f(x)</m> and <m>g(x)</m> for the preview activity.</caption>
+        <image width="90%" source="images/0-6-fig1" />
+      </figure>
+
+    </exploration>
+
+    <activity xml:id="A_0_6_1">
+      <p>
+        Power functions and exponential functions appear somewhat similar in their formulas, but behave differently in many ways.
+        <ol>
+          <li>
+            <p>
+              Compare the functions <m>f(x)=x^2</m> and <m>g(x)=2^x</m> by graphing both functions in several viewing windows.  Find the points of intersection of the graphs.  Which function grows more rapidly when <m>x</m> is large?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Compare the functions <m>f(x)=x^{10}</m> and <m>g(x)=2^x</m> by graphing both functions in several viewing windows.  Find the points of intersection of the graphs.  Which function grows more rapidly when <m>x</m> is large?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Make a conjecture: As <m>x\to\infty</m>, which dominates, <m>x^n</m> or <m>a^x</m> for <m>a>1</m>?
+            </p>
+          </li>
+        </ol>
+      </p>
+      <hint>
+        <p>
+          You may need to use a graphing tool for this activity.
+        </p>
+      </hint>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                The functions <m>f(x) = x^2</m> and <m>g(x) = 2^x</m> intersect at three points:
+                <m>(-0.77,0.59)</m>, <m>(2,4)</m>, and <m>(4,16)</m>.  After the point <m>(4,16)</m> the
+                exponential function <m>g(x) = 2^x</m> grows more rapidly.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The functions <m>f(x) = x^{10}</m> and <m>g(x) = 2^x</m> intersect at three points:
+                <m>(-0.94, 0.52)</m>, <m>(1.08, 2.11)</m>, and another point near <m>x \approx 60</m>.  The
+                <m>y</m> values on both functions at the third point are very very large, but at
+                this point the function <m>g(x) = 2^x</m> dominates the power function <m>f(x) =
+                x^{10}</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                For <m>a>1</m> the exponential function will always dominate the power function.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </activity>
+
+    <activity xml:id="A_0_6_2">
+      <p>
+        For each of the following graphs, find a possible formula for the polynomial of lowest degree that fits the graph.
+      </p>
+
+      <p>
+        <image width="99%" source="images/0-6-fig5" />
+      </p>
+      <hint>
+        <p>
+          How many roots are there and how do the ends behave?
+        </p>
+      </hint>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                This function clearly has two roots and the ends show the same behavior.
+                This indicates that this is likely a degree 2 polynomial (a quadratic).  Based
+                on the roots <m>x=-2</m> and <m>x=1</m> the factors are <m>(x+2)</m> and <m>(x-1)</m> so the
+                polynomial is of the form <m>a(x) = C(x+2)(x-1)</m>.  Finally, it appears that the
+                point <m>(-1,-4)</m> is on the curve so <m>C=2</m> and the polynomial is
+                <me>
+                  a(x) = 2(x+2)(x-1).
+                </me>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                This function clearly has three roots and the ends show the opposite
+                behavior.  Since the right-hand side of the function tends down we expect a
+                negative leading coefficient.  Based on the roots <m>x=-2</m>, <m>x=1</m>, and <m>x=3</m> the
+                factors are <m>(x+2)</m>, <m>(x-1)</m>, and <m>(x-3)</m> and the polynomial takes the form
+                <m>b(x) = C(x+2)(x-1)(x-3)</m>.  The point <m>(-1,-8)</m> appears to be on the graph so
+                <m>C = -1</m> and the polynomial is
+                <me>
+                  b(x) = -(x+2)(x-1)(x-3).
+                </me>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                This function clearly has three roots but the end behavior indicates an even
+                degree polynomial.  The root at <m>x=1</m> is special since we do not cross the <m>x</m>
+                axis.  Hence, the factors are <m>(x+1)</m>, <m>(x-1)</m>, <m>(x-1)</m>, and <m>(x-2)</m>.  Notice
+                that the <m>(x-1)</m> root is listed twice, and hence the polynomial takes the form
+                <m>c(x) = C(x+1)(x-1)^2(x-2)</m>.  The point <m>(0,-2)</m> appears to be on the graph so
+                <m>C = 1</m> and the polynomial is
+                <me>
+                  c(x) = (x+1)(x-1)^2(x-2).
+                </me>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </activity>
+
+    <activity xml:id="A_0_6_3">
+      <ol>
+      <li>
+        <p>
+          Suppose <m>f(x) = x^{2}+ 3x + 2</m> and <m>g(x) = x - 3</m>.
+          <ol>
+            <li>
+              <title>(i)</title>
+              <p>
+                What is the behavior of the function <m>h(x) = \displaystyle{\frac {f(x)}{g(x)}}</m> near <m>x = -1</m>? (i.e. what happens to <m>h(x)</m> as <m>x\to -1</m>?) near <m>x = -2</m>? near <m>x = 3</m>?
+              </p>
+            </li>
+
+            <li>
+              <title>(ii)</title>
+              <p>
+                What is the behavior of the function <m>k(x) = \displaystyle{\frac {g(x)}{f(x)}}</m> near <m>x = -1</m>? near <m>x = -2</m>? near <m>x = 3</m>?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+
+      <li>
+        <p>
+          Suppose <m>f(x) = x^{2} - 9</m> and <m>g(x) = x - 3</m>.
+          <ol>
+            <li>
+              <title>(i)</title>
+              <p>
+                What is the behavior of the function <m>h(x) = \displaystyle{\frac {f(x)}{g(x)}}</m> near <m>x = -3</m>? (i.e. what happens to <m>h(x)</m> as <m>x\to -3</m>?) near <m>x = 3</m>?
+              </p>
+            </li>
+
+            <li>
+              <title>(ii)</title>
+              <p>
+                What is the behavior of the function <m>k(x) = \displaystyle{\frac {g(x)}{f(x)}}</m> near <m>x = -3</m>? near <m>x = 3</m>?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+      </ol>
+      <hint>
+        <p>
+          Watch carefully for division by zero. That is where a vertical asymptote is possible.
+        </p>
+      </hint>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                For <m>f(x) = x^2+3x+2</m> and <m>g(x) = x-3</m> when we form the function <m>h(x) =
+                f(x)/g(x)</m> we get <m>h(x) = \frac{x^2+3x+2}{x-3}</m>.  Notice that <m>h(-1) = 0</m> and
+                <m>h(-2) = 0</m> since <m>f(-1) = f(-2) = 0</m> and <m>g(-2) \neq 0</m>.  At <m>x=3</m>, on the
+                other hand, <m>g(x) = 0</m> and there is a vertical asymptote on the function
+                <m>h(x)</m>.
+
+                For <m>k(x) = g(x) / f(x)</m>.  The vertical asymptotes occur at <m>x=-2</m> and <m>x=-1</m>
+                and a zero occurs at <m>x=3</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                For <m>f(x) = x^2-9</m> and <m>g(x) = x-3</m> we see immediately that <m>f(x)</m> can be
+                factored to <m>f(x) = (x-3)(x+3)</m> and hence the function <m>h(x) = f(x)/g(x)</m>
+                simplifies to <m>h(x) = x+3</m> when <m>x</m> is not <m>3</m>.  When <m>x=3</m> there is a
+                discontinuity in the graph but this is not a vertical asymptote since the
+                discontinuity can be removed algebraically.
+
+                For <m>k(x) = g(x)/f(x)</m> we simplify to <m>k(x) = 1/(x+3)</m> when <m>x</m> is not <m>3</m>.
+                Therefore there is a vertical asymptote at <m>x=-3</m> and a removable
+                discontinuity at <m>x=3</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </activity>
+
+    <activity xml:id="A_0_6_4">
+      <ol>
+      <li>
+        <p>
+          Suppose <m>f(x) = x^{3} + 2x^{2}-x + 7</m> and <m>g(x) = x^{2} + 4x + 2</m>.
+          <ol>
+            <li>
+              <title>(i)</title>
+              <p>
+                Which function dominates as <m>x \to \infty</m>?
+              </p>
+            </li>
+
+            <li>
+              <title>(ii)</title>
+              <p>
+                What is the behavior of the function <m>h(x) = \displaystyle{\frac {f(x)}{g(x)}}</m> as <m>x \to \infty</m>?
+              </p>
+            </li>
+
+            <li>
+              <title>(iii)</title>
+              <p>
+                What is the behavior of the function <m>k(x) = \displaystyle{\frac {g(x)}{f(x)}}</m> as <m>x \to \infty</m>?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+
+      <li>
+        <p>
+          Suppose <m>f(x) = 2x^{4} - 5x^{3} + 8x^{2} - 3x - 1</m> and <m>g(x) = 3x^{4} - 2x^{2} + 1</m>
+          <ol>
+            <li>
+              <title>(i)</title>
+              <p>
+                Which function dominates as <m>x \to \infty</m>?
+              </p>
+            </li>
+
+            <li>
+              <title>(ii)</title>
+              <p>
+                What is the behavior of the function <m>h(x) = \displaystyle{\frac {f(x)}{g(x)}}</m> as <m>x \to \infty</m>?
+              </p>
+            </li>
+
+            <li>
+              <title>(iii)</title>
+              <p>
+                What is the behavior of the function <m>k(x) = \displaystyle{\frac {g(x)}{f(x)}}</m> as <m>x \to \infty</m>?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+
+      <li>
+        <p>
+          Suppose <m>f(x) = e^{x}</m> and <m>g(x) = x^{10}</m>.
+          <ol>
+            <li>
+              <title>(i)</title>
+              <p>
+                Which function dominates as <m>x \to \infty</m> as <m>x \to \infty</m>?
+              </p>
+            </li>
+
+            <li>
+              <title>(ii)</title>
+              <p>
+                What is the behavior of the function <m>h(x) = \displaystyle{\frac {f(x)}{g(x)}}</m> as <m>x \to \infty</m>?
+              </p>
+            </li>
+
+            <li>
+              <title>(iii)</title>
+              <p>
+                What is the behavior of the function <m>k(x) = \displaystyle{\frac {g(x)}{f(x)}}</m> as <m>x \to \infty</m>?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+      </ol>
+      <hint>
+        <p>
+          The term <q>dominate</q> means that as <m>x</m> gets large the function that <q>dominates</q> is
+          much larger.
+        </p>
+      </hint>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                When considering the functions <m>f(x) = x^3 + 2x^2 - x + 7</m> and <m>g(x) =
+                x^2+4x+2</m>, the cubic function, <m>f(x)</m>, will dominate as <m>x \to \infty</m>.
+                Therefore, as <m>x \to \infty</m>, <m>h(x) = f(x)/g(x)</m> will go to infinity and <m>k(x)
+                = g(x)/f(x)</m> will go to zero.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                When considering the functions <m>f(x) = 2x^{4} - 5x^{3} + 8x^{2} - 3x - 1</m>
+                and <m>g(x) = 3x^{4} - 2x^{2} + 1</m> we see that the polynomials are the same
+                degree hence one does not dominate over the other.  As <m>x\to\infty</m> we see
+                that <m>h(x) \to \frac{2}{3}</m> and <m>k(x) \to \frac{3}{2}</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                When considering the functions <m>f(x) = e^x</m> and <m>g(x) = x^{10}</m> we know that
+                the exponential function will dominate over the power function based on our
+                work in prior activities.  Therefore, <m>h(x) = f(x)/g(x) \to \infty</m> as
+                <m>x\to\infty</m> and <m>k(x) = g(x)/f(x) \to 0</m> as <m>x \to \infty</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </activity>
+
+    <activity xml:id="A_0_6_5">
+      <p>
+        For each of the following functions, determine (1) whether the function has a horizontal asymptote, and (2) whether the function crosses its horizontal asymptote.
+        <ol>
+          <li>
+            <p>
+              <m>f(x)=\displaystyle{\frac {x+3}{5x-2}}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>g(x)=\displaystyle{\frac {x^{2}+2x-1}{x-1}}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>h(x)=\displaystyle{\frac {x+1}{x^{2}+2x-1}}</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+      <hint>
+        <p>
+          A horizontal asymptote occurs where the function approaches a value as <m>x\to\infty</m>.
+          It is possible for a function to cross a horizontal asymptote.
+        </p>
+      </hint>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                For <m>f(x) = \frac{x+3}{5x-2}</m> the degrees of the two polynomials are both <m>1</m>
+                so the numerator and denominator grow at the same rate.  The horizontal
+                asymptote will be the ratio of the coefficients: <m>f(x) \to
+                \frac{1}{5}</m> as <m>x \to \infty</m>.  The graph does not cross the horizontal
+                asymptote.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                In this case where <m>g(x) = \frac{x^2+2x-1}{x-1}</m> the degree of the numerator
+                is larger than the degree of the denominator so <m>g(x) \to \infty</m> as
+                <m>x\to\infty</m> and there is no horizontal asymptote.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                In this case where <m>h(x) = \frac{x+1}{x^2+2x-1}</m> the degree of the
+                denominator is larger than the degree of the numerator so <m>h(x) \to 0</m> as <m>x
+                \to \infty</m>.  Therefore, there is a horizontal asymptote at <m>y=0</m>.  Observe
+                that <m>h(-1) = 0</m> so the function's graph does indeed cross the horizontal
+                asymptote.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </activity>
+  </introduction>
+
+  <subsection>
+    <title>Voting Questions</title>
+    <ol>
+    <li>
+      <p>
+        Which of the following is not a power function?
+        <ol>
+          <li>
+            <p>
+              <m>f(x)=3x^2</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>f(x)=x^{1.5}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>f(x)=6\cdot2^x</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>f(x)=-3x^{-\pi}</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.06.005C.tex}}</li>
+
+    <li>
+      <p>
+        As <m>x \rightarrow \infty</m>, which function dominates?  That is, which function is larger in the long run?
+        <ol>
+          <li>
+            <p>
+              <m>0.1 x^2</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>10^{10} x</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.06.010C.tex}}</li>
+
+    <li>
+      <p>
+        As <m>x \rightarrow \infty</m>, which function dominates?
+        <ol>
+          <li>
+            <p>
+              <m>0.25 \sqrt{x}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>25,000 x^{-3}</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.06.020C.tex}}</li>
+
+    <li>
+      <p>
+        As <m>x \rightarrow \infty</m>, which function dominates?
+        <ol>
+          <li>
+            <p>
+              <m>3 - 0.9^x</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\log x</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.06.030C.tex}}</li>
+
+    <li>
+      <p>
+        Which function dominates as <m>x \rightarrow \infty</m>?
+        <ol>
+          <li>
+            <p>
+              <m>x^2</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>e^x</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.06.035C.tex}}</li>
+
+    <li>
+      <p>
+        As <m>x \rightarrow \infty</m>, which function dominates?
+        <ol>
+          <li>
+            <p>
+              <m>x^3</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>2^x</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.06.040C.tex}}</li>
+
+    <li>
+      <p>
+        As <m>x \rightarrow \infty</m>, which function dominates?
+        <ol>
+          <li>
+            <p>
+              <m>10(2^x)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>72,000 x^{12}</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.06.050C.tex}}</li>
+
+    <li>
+      <p>
+        Which of these functions dominates as <m>x \rightarrow \infty</m>?
+        <ol>
+          <li>
+            <p>
+              <m>f(x) = - 5x</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>g(x) = 10^x</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>h(x) = 0.9^x</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>k(x) = x^5</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>l(x) = \pi^x</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.06.060C.tex}}</li>
+
+    <li>
+      <p>
+        If <m>f(x) = ax^2 + bx + c</m> is a quadratic function, then the lowest point on the graph of <m>f(x)</m> occurs at <m>x = -b/2a</m>.
+        <ol>
+          <li>
+            <p>
+              True, and I am very confident.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              True, but I am not very confident.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              False, but I am not very confident.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              False, and I am very confident.
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.06.065C.tex}}</li>
+
+    <li>
+      <p>
+        Under what condition is the graph of the quadratic function described by <m>f(x) = ax^2 + bx + c</m> concave down?
+        <ol>
+          <li>
+            <p>
+              <m>a \lt  0</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>b \lt  0</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>c \lt  0</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              More than one of the above.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              None of the above.
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.06.066C.tex}}</li>
+
+    <li>
+      <p>
+        What is the degree of the graph of the polynomial in the figure below?
+
+        <sidebyside>
+          <ol>
+            <li>
+              <p>
+                3
+              </p>
+            </li>
+
+            <li>
+              <p>
+                5
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Either (a) or (b)
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Neither (a) nor (b)
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Any polynomial of degree greater than 2
+              </p>
+            </li>
+          </ol>
+        </p>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=0, xmax=5,
+            ymin=-5, ymax=10]
+            \addplot[color=blue, very thick,domain=0:5, samples=100]
+            {2*(x-2)^3-0.5*(x-2)^2-2*(x-2)+2};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+      </sidebyside>
+      \teacher{\input{clicker/SVC.01.06.070C.tex}}</li>
+
+    <li>
+      <p>
+        Which of the options below describes a function which is even?
+        <ol>
+          <li>
+            <p>
+              Any polynomial of even degree.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Any polynomial of odd degree.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>f(x) = 9x^6 - 3x^2 + 2</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>f(x) = 3x^4 - 2x^3 + x^2</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              More than 1 of the above.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              None of the above.
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.06.075C.tex}}</li>
+
+    <li>
+      <p>
+        The equation <m>y = x^3 + 2 x^2 - 5x - 6</m> is represented by which graph?
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-4, xmax=4,
+            ymin=-10, ymax=10, title={Plot (a)}]
+            \addplot[color=blue, very thick, domain=-4:4, smooth]
+            {(x-2.25)*(x+2.25)*(x^2+1)};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-4, xmax=4,
+            ymin=-10, ymax=10, title={Plot (b)}]
+            \addplot[color=blue, very thick, domain=-4:4, smooth]
+            {x^3+2*x^2-5*x-6};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-4, xmax=4,
+            ymin=-10, ymax=10, title={Plot (c)}]
+            \addplot[color=blue, very thick, domain=-4:4, smooth]
+            {0.5*(x+3)*(x+1)*(x-0.5)*(x-2)};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-5, xmax=4,
+            ymin=-10, ymax=10, title={Plot (d)}]
+            \addplot[color=blue, very thick, domain=-5:4, smooth]
+            {0.25*(x+4)*(x+3)*(x+1)*(x-0.5)*(x-2)};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        \teacher{\input{clicker/SVC.01.06.080C.tex}}
+      </p>
+    </li>
+
+    <li>
+      <p>
+        The graph below is a representation of which function?
+
+        <sidebyside>
+          <ol>
+            <li>
+              <p>
+                <m>y = 3x + 2</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>y = (x-2)(x+3)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>y = (x-6)(x-2)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>y = (x-3)(x+2)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                none of these
+              </p>
+            </li>
+          </ol>
+        </p>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-5, xmax=5,
+            ymin=-7, ymax=15]
+            \addplot[color=blue, very thick, domain=-5:4, smooth]
+            {(x+3)*(x-2)};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+      </sidebyside>
+      \teacher{\input{clicker/SVC.01.06.090C.tex}}</li>
+
+    <li>
+      <p>
+        Let <m>f(x) = \frac{x^2 -1}{x+1}</m> and <m>g(x) = x-1</m>, then <m>f(x) = g(x)</m>.
+        <ol>
+          <li>
+            <p>
+              True, and I am very confident
+            </p>
+          </li>
+
+          <li>
+            <p>
+              True, but I am not very confident
+            </p>
+          </li>
+
+          <li>
+            <p>
+              False, but I am not very confident
+            </p>
+          </li>
+
+          <li>
+            <p>
+              False, and I am very confident
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.06.100C.tex}}</li>
+
+    <li>
+      <p>
+        Which if the following is a graph for <m>y = \frac{1-x^2}{x-2}</m>.  (No calculators allowed.)
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-4, xmax=4,
+            ymin=-20, ymax=20, title={Plot (a)}]
+            \addplot[color=blue, very thick, domain=-4:1.9, samples=100] {-3*(x+1)*(x-2.25)/(x-2)};
+            \addplot[color=blue, very thick, domain=2.1:4, samples=100] {-3*(x+1)*(x-2.25)/(x-2)};
+            \draw[dashed] (axis cs:2,-20) -- (axis cs:2,20);
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-10, xmax=10,
+            ymin=-10, ymax=15, title={Plot (b)}]
+            \addplot[color=blue, very thick, domain=-10:1.9, samples=100] {x+1/(x-2)};
+            \addplot[color=blue, very thick, domain=2.1:10, samples=100] {x+1/(x-2)};
+            \draw[dashed] (axis cs:2,-10) -- (axis cs:2,15);
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-10, xmax=10,
+            ymin=-15, ymax=10, title={Plot (c)}]
+            \addplot[color=blue, very thick, domain=-10:1.9, samples=100] {(1-x^2)/(x-2)};
+            \addplot[color=blue, very thick, domain=2.1:10, samples=100] {(1-x^2)/(x-2)};
+            \draw[dashed] (axis cs:2,-15) -- (axis cs:2,10);
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-10, xmax=10,
+            ymin=-10, ymax=10, title={Plot (d)}]
+            \addplot[color=blue, very thick, domain=-10:-2.1, samples=100]
+            {(1-x^2)/((x+2)*(x-2))+3};
+            \addplot[color=blue, very thick, domain=-1.9:1.9, samples=100]
+            {(1-x^2)/((x+2)*(x-2))+3};
+            \addplot[color=blue, very thick, domain=2.1:10, samples=100]
+            {(1-x^2)/((x+2)*(x-2))+3};
+            \draw[dashed] (axis cs:2,-15) -- (axis cs:2,10);
+            \draw[dashed] (axis cs:-2,-15) -- (axis cs:-2,10);
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        \teacher{\input{clicker/SVC.01.06.110C.tex}}
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Which of the graphs represents <m>y = \frac{2x}{x-2}</m>?
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-4, xmax=4,
+            ymin=-8, ymax=8, title={Plot (a)}]
+            \addplot[color=blue, very thick, domain=-4:1.9, samples=100] {1/(x-2)};
+            \addplot[color=blue, very thick, domain=2.1:4, samples=100] {1/(x-2)};
+            \draw[dashed] (axis cs:2,-20) -- (axis cs:2,20);
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-4, xmax=4,
+            ymin=-8, ymax=8, title={Plot (b)}]
+            \addplot[color=blue, very thick, domain=-4:1.9, samples=100] {2*x/(x-2)};
+            \addplot[color=blue, very thick, domain=2.1:4, samples=100] {2*x/(x-2)};
+            \draw[dashed] (axis cs:2,-20) -- (axis cs:2,20);
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-4, xmax=4,
+            ymin=-8, ymax=8, title={Plot (c)}]
+            \addplot[color=blue, very thick, domain=-4:1.9, samples=100] {-2*x/(x-2)};
+            \addplot[color=blue, very thick, domain=2.1:4, samples=100] {-2*x/(x-2)};
+            \draw[dashed] (axis cs:2,-20) -- (axis cs:2,20);
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-4, xmax=4,
+            ymin=-8, ymax=8, title={Plot (d)}]
+            \addplot[color=blue, very thick, domain=-4:-0.1, samples=100] {1/x+2};
+            \addplot[color=blue, very thick, domain=0.1:4, samples=100] {1/x+2};
+            \draw[dashed] (axis cs:-4,2) -- (axis cs:4,2);
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        \teacher{\input{clicker/SVC.01.06.120C.tex}}
+      </p>
+    </li>
+    </ol>
+  </subsection>
+</section>

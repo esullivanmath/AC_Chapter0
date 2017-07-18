@@ -1,0 +1,1359 @@
+
+<section xml:id="S_0_4_Logarithms">
+  <title>Logarithmic Functions</title>
+  <introduction>
+    <exploration xml:id="PA_0_4">
+      <p>
+        Carbon-14 (<m>^{14}</m>C) is a radioactive isotope of carbon that occurs naturally in the Earth's atmosphere. During photosynthesis, plants take in <m>^{14}</m>C along with other carbon isotopes, and the levels of <m>^{14}</m>C in living plants are roughly the same as atmospheric levels. Once a plant dies, it no longer takes in any additional <m>^{14}</m>C. Since <m>^{14}</m>C in the dead plant decays at a predictable rate (the half-life of <m>^{14}</m>C is approximately 5,730 years), we can measure <m>^{14}</m>C levels in dead plant matter to get an estimate on how long ago the plant died.
+        Suppose that a plant has 0.02 milligrams of <m>^{14}</m>C when it dies.
+        <ol>
+          <li>
+            <p>
+              Write a function that represents the amount of <m>^{14}</m>C remaining in the plant after <m>t</m> years.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Complete the table for the amount of <m>^{14}</m>C remaining <m>t</m> years after the death of the plant.
+              <tabular>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell>t</cell>
+                  <cell>0</cell>
+                  <cell>1</cell>
+                  <cell>5</cell>
+                  <cell>10</cell>
+                  <cell>100</cell>
+                  <cell>1000</cell>
+                  <cell>2000</cell>
+                  <cell>5730</cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell><m>^{14}</m>C Level</cell>
+                  <cell>0.02</cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+              </tabular>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Suppose our plant died sometime in the past.  If we find that there are 0.014 milligrams of <m>^{14}</m>C present in the plant now, estimate the age of the plant to within 50 years.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
+
+    <activity xml:id="A_0_4_1">
+      <p>
+        Use the definition of a logarithm along with the properties of logarithms to answer
+        the following.
+        <ol>
+          <li>
+            <p>
+              Write the exponential expression <m>8^{1/3} = 2</m> as a logarithmic expression.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Write the logarithmic expression <m>\log_2 \frac{1}{32} = -5</m> as an exponential
+              expression.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              What value of <m>x</m> solves the equation <m>\log_2 x = 3</m>?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              What value of <m>x</m> solves the equation <m>\log_2 4 = x</m>?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Use the laws of logarithms to rewrite the expression <m>\log \left( x^3 y^5 \right)</m>
+              in a form with no logarithms of products, quotients, or powers.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Use the laws of logarithms to rewrite the expression <m>\log \left( \frac{x^{15}
+              y^{20}}{z^4} \right)</m>
+              in a form with no logarithms of products, quotients, or powers.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Rewrite the expression <m>\ln(8) + 5 \ln(x) + 15 \ln(x^2+8)</m> as a single logarithm.
+            </p>
+          </li>
+        </ol>
+      </p>
+      <hint>
+        <p>
+          Use the properties of logarithms.
+        </p>
+      </hint>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <m>8^{1/3} = 2</m> is equivalent to <m>\log_8 2 = \frac{1}{3}</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\log_2 \frac{1}{32} = -5</m> is equivalent to <m>2^{-5} = \frac{1}{32}</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\log_2 x = 3</m> is equivalent to <m>x = 2^3 = 8</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\log_2 4 = x</m> is equivalent to <m>2^x = 4</m> and we see that <m>x=2</m> since <m>2^2 = 4</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Using the product and power properties
+                <me>
+                  \log\left( x^3 y^5 \right) = 3\log(x) + 5\log(y).
+                </me>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Using the product, power, and quotient properties
+                <me>
+                  \log\left( \frac{x^{15} y^{20}}{z^4} \right) = 15\log(x) + 20\log(y) - 4\log(z).
+                </me>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Using the power and product properties
+                <me>
+                  \ln(8) + 5 \ln(x) + 15\ln(x^2+8) = \ln\left( 8 x^5 \left( x^2 + 8 \right)^{15}
+                  \right)
+                </me>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </activity>
+
+    <activity xml:id="A_0_4_2">
+      <p>
+        Solve each of the following equations for <m>t</m>, and verify your answers using a calculator.
+        <ol>
+          <li>
+            <p>
+              <m>\ln t=4</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\ln(t+3)=4</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\ln(t+3)=\ln4</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\ln(t+3)+\ln(t)=\ln4</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>e^{t}=4</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>e^{t+3}=4</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>2e^{t+3}=4</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>2e^{3t+2}=3e^{t-1}</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <m>t = e^4</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>t+3 = e^4</m> so <m>t = e^4 - 3</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>t+3 = 4</m> so <m>t=1</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Using the product property for logarithms, <m>\ln(t(t+3)) = \ln(4)</m> so <m>t^2 +
+                3t = 4</m>.  This is quadratic so we rearrange to get <m>t^2 + 3t - 4 = 0</m> which
+                factors to <m>(t+4)(t-1) = 0</m> so the solutions are <m>t=1</m> and <m>t=-4</m>.
+                Substituting back to the original equation we see that <m>\ln(-4+3)</m> and
+                <m>\ln(-4)</m> do not exist so the only solution is <m>t=1</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>t=\ln(4)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>t= \ln(4) = 3</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>t+3 = \ln(2)</m> so <m>t = \ln(2) = 3</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                For the final problem we first divide by <m>2</m> and take the natural logarithm
+                of both sides.
+                <me>
+                  e^{3t+1} = \frac{3}{2} e^{t-1} \implies 3t+1 = \ln(3/2) + t-1.
+                </me>
+                Therefore, <m>2t = \ln(3/2) - 2</m> so <m>t=\frac{1}{2} \left( \ln(3/2) - 2 \right)</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </activity>
+
+    <activity xml:id="A_0_4_3">
+      <p>
+        Consider the following equation:
+        <me>
+          7^{x} = 24
+        </me>
+        <ol>
+          <li>
+            <p>
+              How many solutions should we expect to find for this equation?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Solve the equation using the log base 7.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Solve the equation using the log base 10.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Solve the equation using the natural log.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Most calculators have buttons for <m>\log_{10}</m> and <m>\ln</m>, but none have a button for <m>\log_{7}</m>. Use your previous answers to write a formula for <m>\log_{7}x</m> in terms of           <m>\log x</m> or <m>\ln x</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+      <hint>
+        <p>
+          Use the properties of logarithms and exponential functions.
+        </p>
+      </hint>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                We expect 1 solution since the exponential function <m>7^x</m> is always increasing.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\log_7 (24) = x</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\log (7^x) = \log(24)</m> so <m>x\log(7) = \log(24)</m> and therefore <m>x =
+                \frac{\log(24)}{\log(7)}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\ln (7^x) = \ln(24)</m> so <m>x\ln(7) = \ln(24)</m> and therefore <m>x =
+                \frac{\ln(24)}{\ln(7)}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\log_7(x) = \frac{\ln(x)}{\ln(7)} = \frac{\log(x)}{\log(7)}</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </activity>
+
+    <activity xml:id="A_0_4_4">
+      <ol>
+        <li>
+          <p>
+            In the presence of sufficient resources the population of a colony of bacteria exhibits exponential growth, doubling once every three hours. What is the corresponding continuous (percentage) growth rate?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            A hot bowl of soup is served at a dinner party.  It starts to cool according to
+            Newton's Law of Cooling so its temperature, <m>T</m> (measured in degrees Fahrenheit) after
+            <m>t</m> minutes is given by
+            <me>
+              T(t) = 65 + 186 e^{-0.06t}.
+            </me>
+            How long will it take from the time the food is served until the temperature is
+            <m>120^\circ</m>F?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            The velocity (in ft/sec) of a sky diver <m>t</m> seconds after jumping is given by
+            <me>
+              v(t) = 80\left( 1-e^{-0.2t} \right).
+            </me>
+            After how many seconds is the velocity 75 ft/sec?
+          </p>
+        </li>
+      </ol>
+      <hint>
+        <p>
+          Use the properties of logarithms.
+        </p>
+      </hint>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                If the population doubles every three hours then the exponential function
+                describing the growth is <m>P(t) = P_0 2^{t/3}</m>.  We want to find the continuous
+                growth rate so we want to write the function as <m>P(t) = P_0 e^{kt}</m>.
+                Therefore we need to solve the equation <m>2^{t/3} = e^{kt}</m> for <m>k</m>.  Taking
+                the natural logarithm of both sides gives
+                <m>\ln \left( 2^{t/3} \right) = kt</m>, and using the rules of exponents we see
+                that <m>\frac{t}{3} \ln(2) = kt</m>.  Subtracting <m>kt</m> from both sides and
+                factoring the <m>t</m> gives <m>t\left( \frac{\ln(2)}{3} - k \right) = 0</m> so we
+                immediately see that <m>k = \ln(2)/3</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                We need to solve the equation <m>65+186e^{-0.06t} = 120</m>.  Subtracting 65 and
+                dividing by 186 gives <m>e^{-0.06t} = \frac{55}{186}</m>.  Taking the natural
+                logarithm of both sides and then dividing by -0.06 gives <m>t =
+                -\frac{1}{0.06} \ln \left( \frac{55}{186} \right)</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                We need to solve the equation <m>80\left( 1-e^{-0.2t} \right) = 75</m>.  Dividing
+                by 80 gives <m>1-e^{-0.2t} = \frac{15}{16}</m>.  Hence, <m>e^{-0.2t} =
+                \frac{1}{16}</m> and taking the natural logarithm of both sides gives <m>-0.2t =
+                \ln(1/16)</m>.  Therefore, <m>t = -\frac{1}{0.2} \ln\left( \frac{1}{16} \right)</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </activity>
+  </introduction>
+
+  <subsection>
+    <title>Voting Questions</title>
+    <ol>
+    <li>
+      <p>
+        A logarithmic function of the form <m>f(x)=\log_a x</m> will always pass through the point <m>(1,0)</m>.
+        <ol>
+          <li>
+            <p>
+              True, and I am very confident.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              True, but I am not very confident.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              False, but I am not very confident.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              False, and I am very confident.
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.04.005C.tex}}</li>
+
+    <li>
+      <p>
+        Which is a graph of <m>y = \ln x</m>?
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=0, xmax=10,
+            ymin=0, ymax=110, title={Plot (a)}]
+            \addplot[color=blue, very thick, domain=0:10] {x^2};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-3, xmax=3,
+            ymin=0, ymax=3, title={Plot (b)}]
+            \addplot[color=blue, very thick,domain=-3:3] {exp(x)};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=0, xmax=9,
+            ymin=-3, ymax=3, title={Plot (c)}]
+            \addplot[color=blue, very thick,domain=0:9,samples=100] {ln(x)};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=0, xmax=9,
+            ymin=-3, ymax=3, title={Plot (d)}]
+            \addplot[color=blue, very thick,domain=0:9, samples=100] {-1*ln(x)};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        \teacher{\input{clicker/SVC.01.04.010C.tex}}
+      </p>
+    </li>
+
+    <li>
+      <p>
+        The graph below could be that of
+
+        <sidebyside>
+          <ol>
+            <li>
+              <p>
+                <m>y = \ln x + \frac{1}{2}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>y = \ln x - \frac{1}{2}</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>y = \ln \left( x + \frac{1}{2} \right)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>y = \ln \left( x - \frac{1}{2} \right)</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-1, xmax=2,
+            ymin=-3, ymax=3]
+            \addplot[color=blue, very thick,domain=-1:2, samples=100] {ln(x + 0.5)};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+      </sidebyside>
+      \teacher{\input{clicker/SVC.01.04.020C.tex}}</li>
+
+    <li>
+      <p>
+        Which equation matches this graph?
+
+        <sidebyside>
+          <ol>
+            <li>
+              <p>
+                <m>y=b^x</m> with <m>b>1</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>y=b^x</m> with <m>0\lt b\lt 1</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>y=\log_b x</m> with <m>b>1</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>y=\log_b x</m> with <m>0\lt b\lt 1</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-1, xmax=5,
+            ymin=-3, ymax=3, xtick=, ytick=]
+            \addplot[color=blue, very thick,domain=-1:5, samples=100] {ln(x)};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+      </sidebyside>
+      \teacher{\input{clicker/SVC.01.04.024C.tex}}</li>
+
+    <li>
+      <p>
+        Which equation matches this graph?
+
+        <sidebyside>
+          <ol>
+            <li>
+              <p>
+                <m>y=b^x</m> with <m>b>1</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>y=b^x</m> with <m>0\lt b\lt 1</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>y=\log_b x</m> with <m>b>1</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>y=\log_b x</m> with <m>0\lt b\lt 1</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-1, xmax=5,
+            ymin=-3, ymax=3, xtick=, ytick=]
+            \addplot[color=blue, very thick,domain=-1:5, samples=100] {(1/2)^x};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+      </sidebyside>
+      \teacher{\input{clicker/SVC.01.04.025C.tex}}</li>
+
+    <li>
+      <p>
+        Which of the following is a graph of <m>y=\log_2 x</m>?
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-3, xmax=3,
+            ymin=-3, ymax=3, xtick=, ytick=, yticklabels=,
+            xticklabels=, title={Plot (a)}]
+            \addplot[color=blue, very thick,samples=100] {(1/2)^x};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-3, xmax=3,
+            ymin=-3, ymax=3, xtick=, ytick=, yticklabels=,
+            xticklabels=, title={Plot (b)}]
+            \addplot[color=blue, very thick,domain=-3:3,samples=100] {-1*2^x};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-3, xmax=3,
+            ymin=-3, ymax=3, xtick=, ytick=, yticklabels=,
+            xticklabels=, title={Plot (c)}]
+            \addplot[color=blue, very thick,domain=-3:3,samples=100] {ln(x)/ln(2)};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-3, xmax=3,
+            ymin=-3, ymax=3, xtick=, ytick=, yticklabels=,
+            xticklabels=, title={Plot (d)}]
+            \addplot[color=blue, very thick,domain=-3:3,samples=100] {-1*ln(x)/ln(2)};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        \teacher{\input{clicker/SVC.01.04.026C.tex}}
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Which of the following is a graph of <m>y=\log_{\frac{1}{2}} x</m>?
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-3, xmax=3,
+            ymin=-3, ymax=3, xtick=, ytick=, yticklabels=,
+            xticklabels=, title={Plot (a)}]
+            \addplot[color=blue, very thick,samples=100] {(1/2)^x};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-3, xmax=3,
+            ymin=-3, ymax=3, xtick=, ytick=, yticklabels=,
+            xticklabels=, title={Plot (b)}]
+            \addplot[color=blue, very thick,domain=-3:3,samples=100] {-1*2^x};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-3, xmax=3,
+            ymin=-3, ymax=3, xtick=, ytick=, yticklabels=,
+            xticklabels=, title={Plot (c)}]
+            \addplot[color=blue, very thick,domain=-3:3,samples=100] {ln(x)/ln(2)};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-3, xmax=3,
+            ymin=-3, ymax=3, xtick=, ytick=, yticklabels=,
+            xticklabels=, title={Plot (d)}]
+            \addplot[color=blue, very thick,domain=-3:3,samples=100] {-1*ln(x)/ln(2)};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        \teacher{\input{clicker/SVC.01.04.027C.tex}}
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Which of the following functions have vertical asymptotes of <m>x=3</m>?
+        <ol>
+          <li>
+            <p>
+              <m>y = \ln (x/3)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>y = \ln ( x - 3)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>y = \ln (x+3)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>y = 3 \ln x</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.04.030C.tex}}</li>
+
+    <li>
+      <p>
+        <m>\log \left( \frac{M-N}{M+N} \right) =</m>
+        <ol>
+          <li>
+            <p>
+              <m>2 \log M</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>2 \log N</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>-2 \log N</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\log(M-N) - \log(M+N)</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.04.040C.tex}}</li>
+
+    <li>
+      <p>
+        If <m>\log_{10} (x-a) = n</m>, then <m>x=</m>
+        <ol>
+          <li>
+            <p>
+              <m>10^{a+n}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>a + 10^n</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>n + 10^a</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>n + a^{10}</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.04.050C.tex}}</li>
+
+    <li>
+      <p>
+        What is the exponential form of <m>\log_r m =j</m>?
+        <ol>
+          <li>
+            <p>
+              <m>r^j=m</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>j^r=m</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>m^j=r</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>r^m=j</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.04.051C.tex}}</li>
+
+    <li>
+      <p>
+        What is the logarithmic form of <m>k^p=d</m>?
+        <ol>
+          <li>
+            <p>
+              <m>\log_d k=p</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\log_k d=p</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\log_p d=p</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\log_k p=d</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.04.052C.tex}}</li>
+
+    <li>
+      <p>
+        What is the value of <m>\log_{11} 86</m>?  (Calculators are allowed.)
+        <ol>
+          <li>
+            <p>
+              <m>.4049</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>.5383</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>1.8576</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>-2.0564</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.04.053C.tex}}</li>
+
+    <li>
+      <p>
+        What is <m>3=\log_2 8</m> in exponential form?
+        <ol>
+          <li>
+            <p>
+              <m>2^8=3</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>3^2=8</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>8^3=2</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>2^3=8</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.04.054C.tex}}</li>
+
+    <li>
+      <p>
+        What is <m>k=\log_m q</m> in exponential form?
+        <ol>
+          <li>
+            <p>
+              <m>m^k=q</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>k^q=m</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>m^q=k</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>q^m=k</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.04.055C.tex}}</li>
+
+    <li>
+      <p>
+        What is <m>4^2=16</m> in logarithmic form?
+        <ol>
+          <li>
+            <p>
+              <m>\log_2 4=16</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\log_4 16=2</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\log_4 2=16</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\log_{16} 4=2</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.04.056C.tex}}</li>
+
+    <li>
+      <p>
+        What is <m>\displaystyle 3^{-1}=\frac{1}{3}</m> in logarithmic form?
+        <ol>
+          <li>
+            <p>
+              <m>\displaystyle \log_3 (-1)=\frac{1}{3}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\displaystyle \log_{-1} \frac{1}{3}=3</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\displaystyle \log_{\frac{1}{3}} 3=-1</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\displaystyle \log_3 \frac{1}{3}=-1</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.04.057C.tex}}</li>
+
+    <li>
+      <p>
+        What is the inverse of the following function:
+        <me>
+          P = f(t) = 16 \ln(14 t)
+        </me>
+        <ol>
+          <li>
+            <p>
+              <m>f^{-1}(P) = \frac{1}{14} e^{16P}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>f^{-1}(P) = \frac{1}{14} e^{P/16}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>f^{-1}(P) = \frac{1}{14} \ln(P/16)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>f^{-1}(P) = \frac{\ln 16}{14} P</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.04.060C.tex}}</li>
+
+    <li>
+      <p>
+        Solve for <m>x</m> if <m>8y = 3e^x</m>.
+        <ol>
+          <li>
+            <p>
+              <m>x = \ln 8 + \ln 3 + \ln y</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>x = \ln 3 - \ln 8 + \ln y</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>x = \ln 8 + \ln y - \ln 3</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>x = \ln 3 - \ln 8 - \ln y</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.04.070C.tex}}</li>
+
+    <li>
+      <p>
+        Solve for <m>x</m> if <m>y = e + 2^x</m>
+        <ol>
+          <li>
+            <p>
+              <m>x = \frac{\ln y - 1}{\ln 2}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>x = \frac{\ln (y - 1)}{\ln 2}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>x = \frac{\ln y }{\ln 2} -1</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>x = \frac{\ln (y - e)}{\ln 2}</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.04.080C.tex}}</li>
+
+    <li>
+      <p>
+        Write the following expression using a single logarithmic function:
+
+        <m>\displaystyle \ln(2x^3+1)+5\ln(3-x)-\ln(6x^5+2x+1)</m>.
+        <ol>
+          <li>
+            <p>
+              <m>\displaystyle \ln(-6x^5+2x^3-7x+15)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\displaystyle \ln[(2x^3+1)(15-5x)(-6x^5-2x-1)]</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\displaystyle \ln\left(\frac{(2x^3+1)(3-x)^5}{6x^5+2x+1}\right)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\displaystyle \ln\left(\frac{(2x^3+1)(15-5x)}{6x^5+2x+1}\right)</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.04.085C.tex}}</li>
+
+    <li>
+      <p>
+        <m>\log \left( \frac{a^4 b^7}{c^5} \right) =</m>
+        <ol>
+          <li>
+            <p>
+              <m>\log (a^4) +  \log (b^7) + \log (c^5)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>4 \log a + 7 \log b - 5 \log c</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>28 \log ab - 5 \log c</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\frac{28}{5} \left( \log a+\log b -  \log c \right)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              None of the above
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.04.090C.tex}}</li>
+
+    <li>
+      <p>
+        Simplify the following expression: <m>\displaystyle \ln\left(\frac{\sqrt{x^2+1}(x^3-4)}{(3x-7)^2}\right)</m>.
+        <ol>
+          <li>
+            <p>
+              <m>\displaystyle \frac{1}{2}\ln(x^2+1)+\ln(x^3+4)-2\ln(3x-7)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\displaystyle \ln\left(\frac{1}{2}(x^2+1)\right)+\ln(x^3+4)-2\ln(3x-7)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\displaystyle \ln(x^2+1)\ln(x^3+4)\ln(3x-7)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\displaystyle \ln[(x^2+1)(x^3+4)(3x-7)]</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.04.095C.tex}}</li>
+
+    <li>
+      <p>
+        25 rabbits are introduced to an island, where they quickly reproduce and the rabbit population grows according to an exponential model <m>P(t) = P_0 e^{kt}</m> so that the population doubles every four months.  If <m>t</m> is in months, what is the value of the continuous growth rate <m>k</m>?
+        <ol>
+          <li>
+            <p>
+              <m>k = \frac{1}{2} \ln 4</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>k = \frac{1}{4} \ln 2</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>k = \frac{1}{50} \ln \frac{4}{25}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>k = \frac{4}{25} \ln \frac{1}{50}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              None of the above
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.04.100C.tex}}</li>
+
+    <li>
+      <p>
+        Simplify <m>\displaystyle (\log_{16}4)\left( \log_3 \frac{1}{9}\right)</m>.
+        <ol>
+          <li>
+            <p>
+              <m>\displaystyle \frac{16}{3}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\displaystyle \frac{4}{9}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              1
+            </p>
+          </li>
+
+          <li>
+            <p>
+              -1
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.04.110C.tex}}</li>
+    </ol>
+  </subsection>
+</section>

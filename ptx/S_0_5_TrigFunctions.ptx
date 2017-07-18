@@ -1,0 +1,1336 @@
+
+<section xml:id="S_0_5_TrigFunctions">
+  <title>Trigonometric Functions</title>
+  <introduction>
+    <exploration xml:id="PA_0_5">
+      <p>
+        A tall water tower is swaying back and forth in the wind. Using an ultrasonic ranging
+        device, we measure the distance from our device to the tower (in centimeters) every two
+        seconds with these measurements recorded below.
+      </p>
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Time (sec)</cell>
+          <cell>0</cell>
+          <cell>2</cell>
+          <cell>4</cell>
+          <cell>6</cell>
+          <cell>8</cell>
+          <cell>10</cell>
+          <cell>12</cell>
+          <cell>14</cell>
+          <cell>16</cell>
+          <cell>18</cell>
+          <cell>20</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Distance (cm)</cell>
+          <cell>30.9</cell>
+          <cell>23.1</cell>
+          <cell>14.7</cell>
+          <cell>12.3</cell>
+          <cell>17.7</cell>
+          <cell>26.7</cell>
+          <cell>32.3</cell>
+          <cell>30.1</cell>
+          <cell>21.8</cell>
+          <cell>13.9</cell>
+          <cell>12.6</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+      <ol>
+        <li>
+          <p>
+            Use the coordinate plane below to create a graph of these data points.
+            <image width="50%" source="images/0-5-fig1" />
+          </p>
+        </li>
+
+        <li>
+          <p>
+            What is the water tower's maximum distance away from the device?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            What is the smallest distance measured from the tower to the device?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            If the water tower was sitting still and no wind was blowing, what would be the distance from the tower to the device?  We call this the tower's equilibrium position.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            What is the maximum distance that the tower moves away from its equilibrium position?  We call this the amplitude of the oscillations.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            How much time does it take the water tower to sway back and forth in a complete cycle?  We call this the period of oscillation.
+          </p>
+        </li>
+      </ol>
+    </exploration>
+
+    <activity xml:id="A_0_5_1">
+      <p>
+        In this activity we will review the trigonometry of the special angles <m>0^\circ</m>,
+        <m>30^\circ</m>, <m>45^\circ</m>, and their multiples.
+        <ol>
+          <li>
+            <p>
+              Use the fact that <m>180^\circ</m> is the same as <m>\pi</m> radians, convert each of
+              the following angle measurements to radians.
+              <tabular>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell>Degrees</cell>
+                  <cell><m>0^\circ</m></cell>
+                  <cell><m>30^\circ</m></cell>
+                  <cell><m>45^\circ</m></cell>
+                  <cell><m>60^\circ</m></cell>
+                  <cell><m>90^\circ</m></cell>
+                  <cell><m>120^\circ</m></cell>
+                  <cell><m>135^\circ</m></cell>
+                  <cell><m>150^\circ</m></cell>
+                  <cell><m>180^\circ</m></cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell>Radians</cell>
+                  <cell>0</cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell><m>\pi</m></cell>
+                </row>
+                <row bottom="medium">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell  >Degrees</cell>
+                  <cell><m>210^\circ</m></cell>
+                  <cell><m>225^\circ</m></cell>
+                  <cell><m>240^\circ</m></cell>
+                  <cell><m>270^\circ</m></cell>
+                  <cell><m>300^\circ</m></cell>
+                  <cell><m>315^\circ</m></cell>
+                  <cell><m>330^\circ</m></cell>
+                  <cell><m>360^\circ</m></cell>
+                  <cell></cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell>Radians</cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+              </tabular>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              In part (a) of this problem there are several patterns that can help in
+              remembering the radian conversions for certain angles.  For example, you
+              should have found that <m>30^\circ</m> converts to <m>\frac{\pi}{6}</m> radians.
+              Therefore, <m>60^\circ</m> should be twice <m>\frac{\pi}{6}</m> which indeed it is:
+              <m>60^\circ = \frac{\pi}{3}</m> radians.  What other similar patterns can you find?
+              What is the minimum number of radian measures that you need to memorize?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The sides of a <m>30-60-90</m> triangle follow well-known ratios.  Consider the
+              equilateral triangle on the left of the figure below.  Fill in the rest of the
+              sides and angles on the figure and use them to determine the trigonometric values of <m>30^\circ</m> and
+              <m>60^\circ</m>.
+              <tabular>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell>Angle (degrees)</cell>
+                  <cell>Angle (radians)</cell>
+                  <cell>Sine</cell>
+                  <cell>Cosine</cell>
+                  <cell>Tangent</cell>
+                </row>
+                <row bottom="medium">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell  ><m>30^\circ</m></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell><m>60^\circ</m></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+              </tabular>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The sides of a <m>45-45-90</m> triangle also follow well-known ratios.  Consider
+              the isosceles triangle on the right of the figure below.  Fill in the rest of
+              the sides and angles on the figure and use them to determine the trigonometric
+              values of <m>45^\circ</m>.
+              <tabular>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell>Angle (degrees)</cell>
+                  <cell>Angle (radians)</cell>
+                  <cell>Sine</cell>
+                  <cell>Cosine</cell>
+                  <cell>Tangent</cell>
+                </row>
+                <row bottom="medium">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell  ><m>45^\circ</m></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+              </tabular>
+              <image width="50%" source="images/0-5-fig_specialright" />
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Finally, we can organize all of the information about the special right
+              triangles on a well-known organizational tool: the unit circle.  The <m>x</m>
+              coordinate of each point is the cosine of the angle and the <m>y</m> coordinate of
+              each point is the sine of the angle.
+              <image width="70%" source="images/0-5-UnitCircle" />
+            </p>
+          </li>
+        </ol>
+      </p>
+      <solution>
+        <p>
+          <image width="60%" source="images/0-5-UnitCircle_FilledIn" />
+        </p>
+      </solution>
+    </activity>
+
+    <activity xml:id="A_0_5_2">
+      <p>
+        <xref ref="fig_0_5_A1">Figure</xref> gives us the voltage produced by an electrical circuit as a function of time.
+      </p>
+
+      <figure xml:id="fig_0_5_A1" >
+        <caption>Voltage as a function of time.</caption>
+        <image width="90%" source="images/0-5-fig9" />
+      </figure>
+
+      <ol>
+        <li>
+          <p>
+            What is the amplitude of the oscillations?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            What is the period of the oscillations?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            What is the average value of the voltage?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            What is the shift along the <m>t</m> axis, <m>t_0</m>?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            What is a formula for this function?
+          </p>
+        </li>
+      </ol>
+      <hint>
+        <p>
+          <ol>
+            <li>
+              <p>
+                measure the amplitude at half the maximum minus the minimum.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                measure the period from peak to peak or from trough to trough.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                the average value comes from the <m>y</m> values.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                find the middle of the voltage values.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                be sure to get the shift correct.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                There are infinitely many answers to this
+                problem!
+              </p>
+            </li>
+          </ol>
+        </p>
+      </hint>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                The amplitude is <m>A = \frac{1}{2}(50-(-10)) = 30</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The period is the distance from peak to peak.  In this case there is a peak at
+                approximately <m>t=0.0125</m> seconds and <m>t = 0.0325</m> seconds.  Hence, the period is
+                <m>0.02</m> seconds.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The average value of the voltage is 20.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The simplest shift is probably to the first peak at <m>t = 0.0125</m> seconds.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>V(t) = 30 \cos\left( \frac{2\pi}{0.02} \left( t - 0.0125 \right) \right) + 20</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </activity>
+
+    <activity xml:id="A_0_5_3">
+      <p>
+        Suppose the following sinusoidal function models the water level on a pier in the ocean as
+        it changes due to the tides during a certain day.
+        <me>
+          w(t) = 4.3 \sin \left( 0.51 t + 0.82 \right) + 10.6
+        </me>
+        <ol>
+          <li>
+            <p>
+              Using the formula above, make a table showing the water level every two hours for a 24 hour period starting at midnight.
+              <tabular>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell>time (hours)</cell>
+                  <cell>0</cell>
+                  <cell>2</cell>
+                  <cell>4</cell>
+                  <cell>6</cell>
+                  <cell>8</cell>
+                  <cell>10</cell>
+                  <cell>12</cell>
+                  <cell>14</cell>
+                  <cell>16</cell>
+                  <cell>18</cell>
+                  <cell>20</cell>
+                  <cell>22</cell>
+                  <cell>24</cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell>water level (ft)</cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+              </tabular>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Sketch a graph of this function using the data from your table in part (a).
+              <image width="60%" source="images/0-5-fig10" />
+            </p>
+          </li>
+
+          <li>
+            <p>
+              What is the period of oscillation of this function?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              What time is high tide?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </activity>
+
+    <p>
+      $\lhd$
+    </p>
+  </introduction>
+
+  <subsection>
+    <title>Voting Questions</title>
+    <ol>
+    <li>
+      <p>
+        Which of the following is the approximate value for the sine and cosine of angles <m>A</m> and <m>B</m> in the figure below.
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[xmin=-1, xmax=1, ymin=-1, ymax=1, axis lines = center]
+            \addplot[smooth, very thick, color=blue, samples=100, domain=0:2*pi]
+            ({cos(deg(x))},{sin(deg(x))});
+            \draw (axis cs:0,0) node[anchor=south west]{\(A\)} -- (axis cs:0.5,0.85);
+            \draw (axis cs:0,0) node[anchor=north west]{\(B\)} -- (axis cs:0.7,-0.7);
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        <ol>
+          <li>
+            <p>
+              <m>\sin A \approx 0.5</m>, <m>\cos A \approx 0.85</m>, <m>\sin B \approx -0.7</m>, <m>\cos B \approx 0.7</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\sin A \approx 0.85</m>, <m>\cos A \approx 0.5</m>, <m>\sin B \approx -0.7</m>. <m>\cos B \approx 0.7</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\sin A \approx 0.5</m>, <m>\cos A \approx 0.85</m>, <m>\sin B \approx 0.7</m>, <m>\cos B \approx 0.7</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\sin A \approx 0.85</m>, <m>\cos A \approx 0.5</m>, <m>\sin B \approx 0.7</m>, <m>\cos B \approx 0.7</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.05.005C.tex}}</li>
+
+    <li>
+      <p>
+        The amplitude and period of the function below are
+
+        <sidebyside>
+          <ol>
+            <li>
+              <p>
+                Amplitude = 2, Period = 2
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Amplitude = 2, Period = 3
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Amplitude = 2, Period = 1/2
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Amplitude = 3, Period = 2
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Amplitude = 3, Period = 1/2
+              </p>
+            </li>
+          </ol>
+        </p>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-3.2, xmax=3.2,
+            ymin=-2, ymax=6]
+            \addplot[color=blue, very thick,domain=-3:3, samples=100]
+            {3*sin(pi*deg(x))+2};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+      </sidebyside>
+      \teacher{\input{clicker/SVC.01.05.010C.tex}}</li>
+
+    <li>
+      <p>
+        What is the equation of the function shown in the graph?
+
+        <sidebyside>
+          <ol>
+            <li>
+              <p>
+                <m>y = 3 \sin (2x)+2</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>y = 3\cos(2x)+2</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>y=3\sin(\pi x)+2</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>y = 3 \cos (\pi x) +2</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>y=3 \sin (\frac{1}{\pi} x) +2</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>y = 3 \cos((\frac{1}{\pi} x)+2)</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-3.2, xmax=3.2,
+            ymin=-2, ymax=6]
+            \addplot[color=blue, very thick,domain=-3:3, samples=100]
+            {3*sin(pi*deg(x))+2};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+      </sidebyside>
+      \teacher{\input{clicker/SVC.01.05.015C.tex}}</li>
+
+    <li>
+      <p>
+        The amplitude and period of the function below are
+
+        <sidebyside>
+          <ol>
+            <li>
+              <p>
+                Amplitude = 2, Period = 2
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Amplitude = 2, Period = 3
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Amplitude = 2, Period = 1/2
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Amplitude = 3, Period = 2
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Amplitude = 3, Period = 1/2
+              </p>
+            </li>
+          </ol>
+        </p>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-3.2, xmax=3.2,
+            ymin=-2, ymax=6]
+            \addplot[color=blue, very thick,domain=-3:3, samples=100]
+            {2*sin(pi*deg(x))+3};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+      </sidebyside>
+      \teacher{\input{clicker/SVC.01.05.020C.tex}}</li>
+
+    <li>
+      <p>
+        Which of the following could describe the graph below?
+
+        <sidebyside>
+          <ol>
+            <li>
+              <p>
+                <m>y = 3 \cos(2x)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>y = 3 \cos(x/2)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>y = 3 \sin(2x)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>y = 3 \sin(x/2)</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-6.3, xmax=6.3,
+            ymin=-4, ymax=4]
+            \addplot[color=blue, very thick,domain=-2*pi:2*pi, samples=100]
+            {3*cos(0.5*deg(x))+0};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+      </sidebyside>
+      \teacher{\input{clicker/SVC.01.05.030C.tex}}</li>
+
+    <li>
+      <p>
+        The function <m>f(x) = 3 \sin( 2x + 4)</m> is created when you take the function <m>g(x) = 3 \sin ( 2 x)</m> and you...
+        <ol>
+          <li>
+            <p>
+              shift it left by 4 units.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              shift it right by 4 units.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              shift it left by 2 units.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              shift it right by 2 units.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              shift it left by 8 units.
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.05.040C.tex}}</li>
+
+    <li>
+      <p>
+        Which of the following could describe the graph below?
+
+        <sidebyside>
+          <ol>
+            <li>
+              <p>
+                <m>y = 4 \sin\left( \pi x - \frac{\pi}{2}\right) - 2</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>y = -4 \sin\left( \pi x + \frac{\pi}{2}\right) - 2</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>y = -4 \cos( \pi x ) - 2</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>y = 4 \cos( \pi ( x+1) ) - 2</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                All of the above
+              </p>
+            </li>
+
+            <li>
+              <p>
+                More than one, but not all of the above
+              </p>
+            </li>
+          </ol>
+        </p>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[xlabel={\(x\)}, ylabel={\(y\)}, xmin=-2, xmax=2,
+            ymin=-7, ymax=3, grid]
+            \addplot[color=blue, very thick,domain=-2:2, samples=100]
+            {-4*cos(pi*deg(x))-2};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+      </sidebyside>
+      \teacher{\input{clicker/SVC.01.05.050C.tex}}</li>
+
+    <li>
+      <p>
+        What is an equation of the function whose graph is given below?
+
+        <sidebyside>
+          <ol>
+            <li>
+              <p>
+                <m>f(x) = \cot x</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(x) = \cot 2x</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(x) = \cot \left ( x - \dfrac{\pi}{2} \right )</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(x) = \cot \left ( 2x - \dfrac{\pi}{2} \right )</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-5.2, xmax=5.2,
+            ymin=-1, ymax=1]
+            \addplot[color=blue, very thick,unbounded coords=jump,domain=-4.7:-3.2,
+            samples=50] {1/tan(2*deg(x))};
+            \addplot[color=blue, very thick,domain=-3.1:-1.6, samples=50] {cos(2*deg(x))/sin(2*deg(x))};
+            \addplot[color=blue, very thick,domain=-1.5:-0.1, samples=50] {cos(2*deg(x))/sin(2*deg(x))};
+            \addplot[color=blue, very thick,domain=0.1:1.5, samples=50] {cos(2*deg(x))/sin(2*deg(x))};
+            \addplot[color=blue, very thick,domain=1.6:3.1, samples=50] {cos(2*deg(x))/sin(2*deg(x))};
+            \addplot[color=blue, very thick,domain=3.2:4.7, samples=50] {cos(2*deg(x))/sin(2*deg(x))};
+            \draw[dashed] (axis cs:-4.71,-1) -- (axis cs:-4.71,1);
+            \draw[dashed] (axis cs:-3.14,-1) -- (axis cs:-3.14,1);
+            \draw[dashed] (axis cs:-1.57,-1) -- (axis cs:-1.57,1);
+            \draw[dashed] (axis cs:0,-1) -- (axis cs:0,1);
+            \draw[dashed] (axis cs:1.57,-1) -- (axis cs:1.57,1);
+            \draw[dashed] (axis cs:3.14,-1) -- (axis cs:3.14,1);
+            \draw[dashed] (axis cs:4.71,-1) -- (axis cs:4.71,1);
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+      </sidebyside>
+      \teacher{\input{clicker/SVC.01.05.055C.tex}}</li>
+
+    <li>
+      <p>
+        Three different functions of the form <m>y = A \sin ( B x + C)</m> are plotted below.  Could these all have the same value of <m>B</m>?
+
+        <sidebyside>
+          <ol>
+            <li>
+              <p>
+                Yes
+              </p>
+            </li>
+
+            <li>
+              <p>
+                No
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Not enough information is given.
+              </p>
+            </li>
+          </ol>
+        </p>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=0, xmax=5,
+            ymin=-6, ymax=6, grid]
+            \addplot[color=blue, very thick,domain=-2*pi:2*pi, samples=100]
+            {sin(deg(x)*2)};
+            \addplot[color=red, very thick,domain=-2*pi:2*pi, samples=100]
+            {-2*cos(deg(x)*2)};
+            \addplot[color=black, very thick,domain=-2*pi:2*pi, samples=100]
+            {5*cos(deg(x)*2)};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+      </sidebyside>
+      \teacher{\input{clicker/SVC.01.05.060C.tex}}</li>
+
+    <li>
+      <p>
+        The functions plotted below are all of the form <m>y = A \sin(B x + C)</m>. Which function has the largest value of <m>B</m>?
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=0, xmax=10,
+            ymin=-4, ymax=4, domain=0:10, samples=100, title={Plot (a)}]
+            \addplot[color=blue, very thick] {2*cos(2*deg(x))};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=0, xmax=10,
+            ymin=-4, ymax=4, domain=0:10, samples=100, title={Plot (b)}]
+            \addplot[color=blue, very thick] {3*sin(deg(x))};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=0, xmax=10,
+            ymin=-4, ymax=4, domain=0:10, samples=100, title={Plot (c)}]
+            \addplot[color=blue, very thick] {0.5*cos(2*pi*deg(x))};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=0, xmax=10,
+            ymin=-4, ymax=4, domain=0:10, samples=100, title={Plot (d)}]
+            \addplot[color=blue, very thick] {2*sin(2*pi/20*deg(x))};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        \teacher{\input{clicker/SVC.01.05.070C.tex}}
+      </p>
+    </li>
+
+    <li>
+      <p>
+        What is the phase shift of <m>f(x) = \dfrac{1}{5} \tan \left (2x + \dfrac{\pi}{2} \right )</m>?
+        <ol>
+          <li>
+            <p>
+              <m>2\pi</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\pi</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\dfrac{\pi}{2}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\dfrac{\pi}{4}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>-2\pi</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>-\pi</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>-\dfrac{\pi}{2}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>-\dfrac{\pi}{4}</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.05.075C.tex}}</li>
+
+    <li>
+      <p>
+        What is the amplitude of <m>f(x)=-3\sin(2x)</m>?
+        <ol>
+          <li>
+            <p>
+              3
+            </p>
+          </li>
+
+          <li>
+            <p>
+              -3
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\pi</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>2\pi</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.05.080C.tex}}</li>
+
+    <li>
+      <p>
+        What is the amplitude of <m>f(x) = -2\sin x</m>?
+        <ol>
+          <li>
+            <p>
+              <m>1</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>2</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>-2</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.05.085C.tex}}</li>
+
+    <li>
+      <p>
+        What is the period of <m>f(x)=-3\sin(2x)</m>?
+        <ol>
+          <li>
+            <p>
+              3
+            </p>
+          </li>
+
+          <li>
+            <p>
+              -3
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\pi</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>2\pi</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.05.090C.tex}}</li>
+
+    <li>
+      <p>
+        What is the period of <m>f(x) = \dfrac{1}{5}\tan(2x)</m>?
+        <ol>
+          <li>
+            <p>
+              <m>\dfrac{1}{5}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>2\pi</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\pi</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\dfrac{\pi}{2}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\dfrac{\pi}{4}</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.05.095C.tex}}</li>
+
+    <li>
+      <p>
+        Which of the basic trig functions below are odd functions?
+        <ol>
+          <li>
+            <p>
+              <m>f(x) = \sin(x)</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>f(x) = \cos(x)</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>f(x) = \tan(x)</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              (a) and (b).
+            </p>
+          </li>
+
+          <li>
+            <p>
+              (a) and (c).
+            </p>
+          </li>
+
+          <li>
+            <p>
+              (b) and (c).
+            </p>
+          </li>
+
+          <li>
+            <p>
+              (a), (b), and (c).
+            </p>
+          </li>
+
+          <li>
+            <p>
+              None of the above.
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.05.100C.tex}}</li>
+    </ol>
+  </subsection>
+</section>

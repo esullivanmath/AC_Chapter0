@@ -1,0 +1,1958 @@
+
+<section xml:id="S_0_1_Functions">
+  <title>Functions, Slope, and Lines</title>
+  <introduction>
+    <exploration xml:id="PA_0_1">
+      <p>
+        This is the first Preview Activity in this text. Your job for this activity is to get
+        to know the textbook.
+        <ol>
+          <li>
+            <p>
+              Where can you find the full textbook?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              What chapters of this text are you going to cover this semester.  Have a look at
+              your syllabus!
+            </p>
+          </li>
+
+          <li>
+            <p>
+              What are the differences between Preview Activities, Activities, Examples,
+              Exercises, Voting Questions, and WeBWork?  Which ones should you do before class,
+              which ones will you likely do during class, and which ones should you be doing
+              after class?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              What materials in this text would you use to prepare for an exam and where do
+              you find them?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              What should you bring to class every day?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </exploration>
+
+    <activity xml:id="A_0_1_1">
+      <p>
+        The graph of a function <m>f(x)</m> is shown in the plot below.
+      </p>
+
+      <sidebyside>
+        <image width="90%" source="images/0-1-act1" />
+        <ol>
+          <li>
+            <p>
+              What is the domain of <m>f(x)</m>?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Approximate the range of <m>f(x)</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              What are  <m>f(0)</m>, <m>f(1)</m>, <m>f(3)</m>, <m>f(4)</m>, and <m>f(5)</m>?
+            </p>
+          </li>
+        </ol>
+      </sidebyside>
+      <hint>
+        <p>
+          <ol>
+            <li>
+              <p>
+                The domain is the collection of possible <m>x</m> values.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The range is the collection of possible <m>y</m> values.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Find the <m>y</m> values for each of the given <m>x</m> values.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </hint>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                The domain of <m>f(x)</m> is <m>0 \le x \le 4</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The approximate range of <m>f(x)</m> is <m>-7 \le y \le 3</m>.  Without the function
+                itself we cannot be sure of the actual heights of the function at the maximum
+                and the minimum.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>f(0) = 0</m>, <m>f(1) = 3</m>, <m>f(3) = -6</m>, <m>f(4) = 0</m>, and <m>f(5)</m> does not exist
+                since <m>5</m> is not in the domain of <m>f(x)</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </activity>
+
+    <activity xml:id="A_0_1_2">
+      <p>
+        Find the equation of the line with the given information.
+        <ol>
+          <li>
+            <p>
+              The line goes through the points <m>(-2,5)</m> and <m>(10,-1)</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The slope of the line is <m>3/5</m> and it goes through the point <m>(2,3)</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The <m>y</m>-intercept of the line is <m>(0,-1)</m> and the slope is <m>-2/3</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+      <hint>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Recall that <m>m = \frac{\Delta y}{\Delta x}</m> and use the point slope form of
+                the line.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                You are given a slope and a point.  Which form of the line should you use?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                You are given a slope and the <m>y</m> intercept.  Which form of the line should
+                you use?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </hint>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                The slope is <m>m = \frac{\Delta y}{\Delta x} = \frac{5-(-1)}{(-2)-10} =
+                \frac{6}{-12} = -\frac{1}{2}</m>.  Hence,
+                <me>
+                  y - 5 = -\frac{1}{2} \left( x-(-2) \right)
+                </me>
+                which can be rewritten as
+                <me>
+                  y = -\frac{1}{2} \left( x+2 \right) + 5.
+                </me>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Using the point-slope form of the line we get
+                <me>
+                  y - 3 = \frac{3}{5} \left( x-2 \right)
+                </me>
+                which can be rearranged to
+                <me>
+                  y = \frac{3}{5} \left( x-2 \right) + 3.
+                </me>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Using the slope-intercept form of the line we get
+                <me>
+                  y = -\frac{2}{3} x - 1.
+                </me>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </activity>
+
+    <activity xml:id="A_0_1_3">
+      <p>
+        An apartment manager keeps careful record of the rent that he charges as well as the
+        number of occupied apartments in his complex. The data that he has is shown in the table
+        below.
+      </p>
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Monthly Rent</cell>
+          <cell><dollar />650</cell>
+          <cell><dollar />700</cell>
+          <cell><dollar />750</cell>
+          <cell><dollar />800</cell>
+          <cell><dollar />850</cell>
+          <cell><dollar />900</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Occupied Apartments</cell>
+          <cell>203</cell>
+          <cell>196</cell>
+          <cell>189</cell>
+          <cell>182</cell>
+          <cell>175</cell>
+          <cell>168</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+      <ol>
+        <li>
+          <p>
+            Just by doing simple arithmetic justify that the function relating the number of occupied
+            apartments and the rent is linear.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Find the linear function relating the number of occupied apartments to the rent.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            If the rent were to be increased to <dollar />1000, how many occupied apartments would the
+            apartment manager expect to have?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            At a <dollar />1000 monthly rent what net revenue should the apartment manager expect?
+          </p>
+        </li>
+      </ol>
+      <hint>
+        <p>
+          <ol>
+            <li>
+              <p>
+                Recall what we know about slope on a linear function.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Use the point slope form of the line.  You should have found the slope in
+                part (a).
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Use your answer to part (b).
+              </p>
+            </li>
+
+            <li>
+              <p>
+                How do you get the accumulated payments from all of the tenants?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </hint>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                The slope is
+                <me>
+                  m = \frac{196-203}{700-650} = -\frac{7}{50}
+                </me>
+                and this slope is consistent no matter which pairs of points we choose.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Let <m>A</m> be the number of occupied apartments and let <m>R</m> be the rent.  The
+                linear function relating the number of occupied apartments and the rent is
+                <me>
+                  A - 203 = -\frac{7}{50} \left( R - 650 \right).
+                </me>
+                Solving for <m>A</m> we get
+                <me>
+                  A(R) = -\frac{7}{50} \left( R - 650 \right) + 203.
+                </me>
+                This is a perfectly acceptable algebraic form for the answer, but if you
+                insist on simplifying then
+                <me>
+                  A(R) = -\frac{7}{50} R + 294.
+                </me>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>A(1000) = -\frac{7}{50} \left( 1000 - 650 \right) + 203 = 252</m> units
+                occupied.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The net revenue is the product of the monthly rent and the number of units
+                occupied at that rent.  In this case the revenue is <m>\dollar1000 \cdot 252 =
+                \dollar252,000</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </activity>
+
+    <activity xml:id="A_0_1_4">
+      <p>
+        Write the equation of the line with the given information.
+        <ol>
+          <li>
+            <p>
+              Write the equation of a line parallel to the line <m>y=\frac{1}{2}x+3</m> passing through
+              the point <m>(3,4)</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Write the equation of a line perpendicular to the line <m>y=\frac{1}{2}x + 3</m> passing
+              through the point <m>(3,4)</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Write the equation of a line with <m>y</m>-intercept <m>(0,-3)</m> that is perpendicular to
+              the line <m>y=-3x-1</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+      <hint>
+        <p>
+          <ol>
+            <li>
+              <p>
+                What is the slope of the line that you're given and which form of a linear
+                function would be most convenient?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                What is the slope of the line that you're given and which form of a linear
+                function would be most convenient?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                You are given the <m>y</m>-intercept.  Why is that a special case?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </hint>
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                The slope is <m>m = \frac{1}{2}</m> and you have a point so use the point-slope
+                form of the line to get
+                <me>
+                  y - 4 = \frac{1}{2} \left( x-3 \right).
+                </me>
+                Solving for <m>y</m> we get
+                <me>
+                  y = \frac{1}{2} \left( x-3 \right) + 4.
+                </me>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The slope is <m>m = -2</m> and we have a point so use the point-slope form of the
+                line to get
+                <me>
+                  y - 4 = -2 (x-3).
+                </me>
+                Solving for <m>y</m> we get
+                <me>
+                  y = -2(x-3) + 4.
+                </me>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The slope is <m>m = \frac{1}{3}</m> and since we have the <m>y</m>-intercept we know
+                that the slope-intercept for the line is the proper choice.  Hence,
+                <me>
+                  y = \frac{1}{3} x - 3.
+                </me>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </activity>
+  </introduction>
+
+  <subsection>
+    <title>Voting Questions</title>
+    <ol>
+    <li>
+      <p>
+        In the given equation, is <m>y</m> a function of <m>x</m>?
+        <me>
+          y = x+ 2
+        </me>
+        <ol>
+          <li>
+            <p>
+              Yes, and I am very confident
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Yes, but I am not very confident
+            </p>
+          </li>
+
+          <li>
+            <p>
+              No, but I am not very confident
+            </p>
+          </li>
+
+          <li>
+            <p>
+              No, and I am very confident
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.01.001C.tex}}</li>
+
+    <li>
+      <p>
+        In the given equation, is <m>y</m> a function of <m>x</m>?
+        <me>
+          x + y = 5
+        </me>
+        <ol>
+          <li>
+            <p>
+              Yes, and I am very confident
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Yes, but I am not very confident
+            </p>
+          </li>
+
+          <li>
+            <p>
+              No, but I am not very confident
+            </p>
+          </li>
+
+          <li>
+            <p>
+              No, and I am very confident
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.01.002C.tex}}</li>
+
+    <li>
+      <p>
+        In the given equation, is <m>y</m> a function of <m>x</m>?
+        <me>
+          x^3 + y = 5
+        </me>
+        <ol>
+          <li>
+            <p>
+              Yes, and I am very confident
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Yes, but I am not very confident
+            </p>
+          </li>
+
+          <li>
+            <p>
+              No, but I am not very confident
+            </p>
+          </li>
+
+          <li>
+            <p>
+              No, and I am very confident
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.01.003C.tex}}</li>
+
+    <li>
+      <p>
+        In the given equation, is <m>y</m> a function of <m>x</m>?
+        <me>
+          x^2 + y^2 = 5
+        </me>
+        <ol>
+          <li>
+            <p>
+              Yes, and I am very confident
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Yes, but I am not very confident
+            </p>
+          </li>
+
+          <li>
+            <p>
+              No, but I am not very confident
+            </p>
+          </li>
+
+          <li>
+            <p>
+              No, and I am very confident
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.01.004C.tex}}</li>
+
+    <li>
+      <p>
+        The set of points <m>(x,y)</m> which satisfy the equation <m>(x-1)^2 + (y+3)^2 = 5^2</m> can be represented via a mathematical function relating the <m>x</m> and <m>y</m> variables.
+        <ol>
+          <li>
+            <p>
+              True, and I am very confident.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              True, but I am not very confident.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              False, but I am not very confident.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              False, and I am very confident.
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.01.005C.tex}}</li>
+
+    <li>
+      <p>
+        Does the table represent a function, <m>y = f (x)</m>?
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>x</m></cell>
+            <cell>1</cell>
+            <cell>2</cell>
+            <cell>3</cell>
+            <cell>4</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>f(x)</m></cell>
+            <cell>2</cell>
+            <cell>3</cell>
+            <cell>2</cell>
+            <cell>4</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+        <ol>
+          <li>
+            <p>
+              Yes, and I am very confident
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Yes, but I am not very confident
+            </p>
+          </li>
+
+          <li>
+            <p>
+              No, but I am not very confident
+            </p>
+          </li>
+
+          <li>
+            <p>
+              No, and I am very confident
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.01.010C.tex}}</li>
+
+    <li>
+      <p>
+        Does the table represent a function, <m>y = f (x)</m>?
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>x</m></cell>
+            <cell>1</cell>
+            <cell>2</cell>
+            <cell>2</cell>
+            <cell>4</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>f(x)</m></cell>
+            <cell>2</cell>
+            <cell>3</cell>
+            <cell>1</cell>
+            <cell>3</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+        <ol>
+          <li>
+            <p>
+              Yes, and I am very confident
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Yes, but I am not very confident
+            </p>
+          </li>
+
+          <li>
+            <p>
+              No, but I am not very confident
+            </p>
+          </li>
+
+          <li>
+            <p>
+              No, and I am very confident
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.01.011C.tex}}</li>
+
+    <li>
+      <p>
+        Does this sentence describe a function? Wanda is two years older than I am.
+        <ol>
+          <li>
+            <p>
+              Yes, and I am very confident
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Yes, but I am not very confident
+            </p>
+          </li>
+
+          <li>
+            <p>
+              No, but I am not very confident
+            </p>
+          </li>
+
+          <li>
+            <p>
+              No, and I am very confident
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.01.012C.tex}}</li>
+
+    <li>
+      <p>
+        The rule which assigns to each college student (at this exact point in time) a number equal to the number of college credits completed by that student is a function.
+        <ol>
+          <li>
+            <p>
+              True, and I am very confident.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              True, but I am not very confident.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              False, but I am not very confident.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              False, and I am very confident.
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.01.013C.tex}}</li>
+
+    <li>
+      <p>
+        The rule which assigns to each car (at this exact point in time) the names of every person that has driven that car is a function.
+        <ol>
+          <li>
+            <p>
+              True, and I am very confident.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              True, but I am not very confident.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              False, but I am not very confident.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              False, and I am very confident.
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.01.014C.tex}}</li>
+
+    <li>
+      <p>
+        Could this table represent a linear function?
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>x</m></cell>
+            <cell>1</cell>
+            <cell>2</cell>
+            <cell>3</cell>
+            <cell>4</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>f(x)</m></cell>
+            <cell>1</cell>
+            <cell>2</cell>
+            <cell>4</cell>
+            <cell>8</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+        <ol>
+          <li>
+            <p>
+              Yes, and I am very confident
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Yes, but I am not very confident
+            </p>
+          </li>
+
+          <li>
+            <p>
+              No, but I am not very confident
+            </p>
+          </li>
+
+          <li>
+            <p>
+              No, and I am very confident
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.01.015C.tex}}</li>
+
+    <li>
+      <p>
+        Could this table represent a linear function?
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>x</m></cell>
+            <cell>1</cell>
+            <cell>2</cell>
+            <cell>3</cell>
+            <cell>4</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>f(x)</m></cell>
+            <cell>-12</cell>
+            <cell>-9</cell>
+            <cell>-6</cell>
+            <cell>-3</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+        <ol>
+          <li>
+            <p>
+              Yes, and I am very confident
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Yes, but I am not very confident
+            </p>
+          </li>
+
+          <li>
+            <p>
+              No, but I am not very confident
+            </p>
+          </li>
+
+          <li>
+            <p>
+              No, and I am very confident
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.01.020C.tex}}</li>
+
+    <li>
+      <p>
+        Could this table represent a linear function?
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>x</m></cell>
+            <cell>1</cell>
+            <cell>2</cell>
+            <cell>4</cell>
+            <cell>8</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>f(x)</m></cell>
+            <cell>12</cell>
+            <cell>14</cell>
+            <cell>16</cell>
+            <cell>18</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+        <ol>
+          <li>
+            <p>
+              Yes, and I am very confident
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Yes, but I am not very confident
+            </p>
+          </li>
+
+          <li>
+            <p>
+              No, but I am not very confident
+            </p>
+          </li>
+
+          <li>
+            <p>
+              No, and I am very confident
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.01.030C.tex}}</li>
+
+    <li>
+      <p>
+        Could this table represent a linear function?
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>x</m></cell>
+            <cell>1</cell>
+            <cell>2</cell>
+            <cell>4</cell>
+            <cell>8</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>f(x)</m></cell>
+            <cell>10</cell>
+            <cell>9</cell>
+            <cell>7</cell>
+            <cell>3</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+        <ol>
+          <li>
+            <p>
+              Yes, and I am very confident
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Yes, but I am not very confident
+            </p>
+          </li>
+
+          <li>
+            <p>
+              No, but I am not very confident
+            </p>
+          </li>
+
+          <li>
+            <p>
+              No, and I am very confident
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.01.040C.tex}}</li>
+
+    <li>
+      <p>
+        True or False?  All linear functions are examples of direct proportionality.
+        <ol>
+          <li>
+            <p>
+              True, and I am very confident
+            </p>
+          </li>
+
+          <li>
+            <p>
+              True, but I am not very confident
+            </p>
+          </li>
+
+          <li>
+            <p>
+              False, but I am not very confident
+            </p>
+          </li>
+
+          <li>
+            <p>
+              False, and I am very confident
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.01.050C.tex}}</li>
+
+    <li>
+      <p>
+        Find the domain of the function <m>f(x)=\frac{1}{x-2}</m>.
+        <ol>
+          <li>
+            <p>
+              <m>x=2</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>x\neq 2</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>x\lt 2</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              all real numbers
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.01.051C.tex}}</li>
+
+    <li>
+      <p>
+        Find the domain of the function <m>g(t)=\frac{2+t}{\sqrt{t-7}}</m>.
+        <ol>
+          <li>
+            <p>
+              <m>t> 7</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>t\geq 7</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>t=7</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              all real numbers
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.01.052C.tex}}</li>
+
+    <li>
+      <p>
+        Which of the following functions has its domain identical with its range?
+        <ol>
+          <li>
+            <p>
+              <m>f(x) = x^2</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>g(x)  = \sqrt{x}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>h(x) = x^4</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>i(x) = |x|</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.01.060C.tex}}</li>
+
+    <li>
+      <p>
+        The slope of the line connecting the points (1,4) and (3,8) is
+        <ol>
+          <li>
+            <p>
+              <m>- \frac{1}{2}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>-2</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\frac{1}{2}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              2
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.01.070C.tex}}</li>
+
+    <li>
+      <p>
+        Which one of these lines has a different slope than the others?
+        <ol>
+          <li>
+            <p>
+              <m>y = 3x + 2</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>3y = 9x + 4</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>3y = 3x + 6</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>2y = 6x + 4</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.01.080C.tex}}</li>
+
+    <li>
+      <p>
+        The graph below represents which function?
+
+        <sidebyside>
+          <ol>
+            <li>
+              <p>
+                <m>y = 6x + 6</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>y = -3x + 6</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>y = -3x + 2</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>y = -x+ 6</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>y = 6x -2</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>y = x -2</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-2, xmax=3,
+            ymin=-3, ymax=13, ytick={-2,2,4,6,8,10,12}]
+            \addplot[color=blue, very thick] {6-3*x};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+      </sidebyside>
+      \teacher{\input{clicker/SVC.01.01.090C.tex}}</li>
+
+    <li>
+      <p>
+        Which of the following functions is not increasing?
+        <ol>
+          <li>
+            <p>
+              The elevation of a river as a function of distance from its mouth
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The length of a single strand of hair as a function of time
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The height of a person from age 0 to age 80
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The height of a redwood tree as a function of time
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.01.100C.tex}}</li>
+
+    <li>
+      <p>
+        Which of these graphs does not represent <m>y</m> as a function of <m>x</m>?
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-3, xmax=3,
+            ymin=-3, ymax=3, xtick=, ytick=, yticklabels=,
+            xticklabels=, title={Plot (a)}]
+            \addplot[color=blue, very thick] {-1*(1/9)*x^3};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-3, xmax=3,
+            ymin=-3, ymax=3, xtick=, ytick=, yticklabels=,
+            xticklabels=, title={Plot (b)}]
+            \addplot[color=blue, very thick,domain=-2:3] {x+2};
+            \addplot[color=blue, very thick,domain=-2:3] {-x-2};
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-3, xmax=3,
+            ymin=-3, ymax=3, xtick=, ytick=, yticklabels=,
+            xticklabels=, title={Plot (c)}]
+            \addplot[color=blue, very thick,domain=-3:1] {0*x+2};
+            \addplot[color=blue, very thick,domain=1:3] {0*x-1};
+            \draw[fill=white] (axis cs:1,2) circle(0.1cm);
+            \draw[fill=blue,color=blue] (axis cs:1,-1) circle(0.1cm);
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        <image>
+          <latex-image-code>
+            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-3, xmax=3,
+            ymin=-3, ymax=3, xtick=, ytick=, yticklabels=,
+            xticklabels=, title={Plot (d)}]
+            \addplot[color=blue, very thick,domain=-3:-1.1] {1/(x+1)};
+            \addplot[color=blue, very thick,domain=-0.9:3] {1/(x+1)};
+            \draw[dashed, color=blue] (axis cs:-1,-3) -- (axis cs: -1,3);
+            \end{axis}\end{tikzpicture}]]>
+          </latex-image-code>
+        </image>
+        \teacher{\input{clicker/SVC.01.01.110C.tex}}
+      </p>
+    </li>
+
+    <li>
+      <p>
+        Calculate the average rate of change of the function <m>f(x)=x^2</m> between <m>x=1</m> and <m>x=3</m>.
+        <ol>
+          <li>
+            <p>
+              8
+            </p>
+          </li>
+
+          <li>
+            <p>
+              4
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\frac{1}{4}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              0
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.01.120C.tex}}</li>
+
+    <li>
+      <p>
+        The EPA reports the total amount of Municipal Solid Waste (MSW), otherwise known as garbage, produced in the U.S. for the years 2005 through 2009:
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>Year</cell>
+            <cell>2005</cell>
+            <cell>2006</cell>
+            <cell>2007</cell>
+            <cell>2008</cell>
+            <cell>2009</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>Millions of tons</cell>
+            <cell>252.4</cell>
+            <cell>251.3</cell>
+            <cell>255</cell>
+            <cell>249.6</cell>
+            <cell>243</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+        <em>(source: http://www.epa.gov/osw/nonhaz/municipal/)</em>
+
+
+
+        What are the appropriate units for the average rate of change in the amount of garbage produced between any two given years?
+        <ol>
+          <li>
+            <p>
+              millions of tons
+            </p>
+          </li>
+
+          <li>
+            <p>
+              tons
+            </p>
+          </li>
+
+          <li>
+            <p>
+              millions of tons per year
+            </p>
+          </li>
+
+          <li>
+            <p>
+              tons per year
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.01.130C.tex}}</li>
+
+    <li>
+      <p>
+        The EPA reports the total amount of Municipal Solid Waste (MSW), otherwise known as garbage, produced in the U.S. for the years 2005 through 2009:
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>Year</cell>
+            <cell>2005</cell>
+            <cell>2006</cell>
+            <cell>2007</cell>
+            <cell>2008</cell>
+            <cell>2009</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>Millions of tons</cell>
+            <cell>252.4</cell>
+            <cell>251.3</cell>
+            <cell>255</cell>
+            <cell>249.6</cell>
+            <cell>243</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+        <em>(source: http://www.epa.gov/osw/nonhaz/municipal/)</em>
+
+
+
+        What is the average rate of change in the amount of MSW produced from 2005 to 2007?
+        <ol>
+          <li>
+            <p>
+              <m>2.6</m> million tons per year
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>2.6</m> million tons
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>1.3</m> million tons
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>1.3</m> million tons per year
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.01.140C.tex}}</li>
+
+    <li>
+      <p>
+        The EPA reports the total amount of Municipal Solid Waste (MSW), otherwise known as garbage, produced in the U.S. for the years 2005 through 2009:
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>Year</cell>
+            <cell>2005</cell>
+            <cell>2006</cell>
+            <cell>2007</cell>
+            <cell>2008</cell>
+            <cell>2009</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>Millions of tons</cell>
+            <cell>252.4</cell>
+            <cell>251.3</cell>
+            <cell>255</cell>
+            <cell>249.6</cell>
+            <cell>243</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+        <em>(source: http://www.epa.gov/osw/nonhaz/municipal/)</em>
+
+
+
+        What is the average rate of change in the amount of MSW produced from 2007 to 2009?
+        <ol>
+          <li>
+            <p>
+              <m>-6</m> million tons per year
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>6</m> million tons per year
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>-12</m> million tons per year
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>12</m> million tons per year
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.01.150C.tex}}</li>
+
+    <li>
+      <p>
+        Find the difference quotient <m>\frac{f(x+h)-f(x)}{h}</m> for the function <m>f(x)=2x^2-x+3</m>.  Simplify your answer.
+        <ol>
+          <li>
+            <p>
+              <m>\frac{2h^2-h+3}{h}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>2h-1</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\frac{4xh+2h^2-2x+h+6}{h}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>4x+2h-1</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.01.160C.tex}}</li>
+
+    <li>
+      <p>
+        When the temperature is <m>0^\circ C</m> it is <m>32^\circ F</m> and when it is <m>100^\circ C</m> it is <m>212 ^\circ F</m>.  Use these facts to write a linear function to convert any temperature from Celsius to Fahrenheit.
+        <ol>
+          <li>
+            <p>
+              <m>C(F)=\frac{5}{9}F-\frac{160}{9}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>F(C)=C+32</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>F(C)=\frac{5}{9}C-\frac{160}{9}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>F(C)=\frac{9}{5}C+32</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.01.170C.tex}}</li>
+
+    <li>
+      <p>
+        Let <m>f(x)=1+4x^2</m>.  True or False:  <m>f(\frac{1}{2})=\frac{f(1)}{f(2)}</m>.
+        <ol>
+          <li>
+            <p>
+              True, and I am very confident.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              True, but I am not very confident.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              False, but I am not very confident.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              False, and I am very confident.
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.01.180C.tex}}</li>
+
+    <li>
+      <p>
+        Let <m>f(x)=1+4x^2</m>.  True or False:  <m>f(a+b)=f(a)+f(b)</m>.
+        <ol>
+          <li>
+            <p>
+              True, and I am very confident.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              True, but I am not very confident.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              False, but I am not very confident.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              False, and I am very confident.
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.01.190C.tex}}</li>
+
+    <li>
+      <p>
+        Let <m>f(x)=\frac{1}{x+2}</m>.  Find a value of <m>x</m> so that <m>f(x)=6</m>
+        <ol>
+          <li>
+            <p>
+              <m>-\frac{11}{6}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\frac{13}{6}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\frac{1}{8}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              none of the above
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.01.200C.tex}}</li>
+
+    <li>
+      <p>
+        True or False:  <m>\sqrt{x^2}=x</m>.
+        <ol>
+          <li>
+            <p>
+              True, and I am very confident.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              True, but I am not very confident.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              False, but I am not very confident.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              False, and I am very confident.
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      \teacher{\input{clicker/SVC.01.01.210C.tex}}</li>
+    </ol>
+  </subsection>
+</section>
