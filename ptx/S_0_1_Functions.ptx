@@ -173,7 +173,7 @@
     <figure xml:id="f_0_1ex1" >
       <caption>Graphs of the function <m>f(x) = \sin(x)</m>, <m>g(x) = \sqrt{x}</m>, and <m>h(x) =
       \frac{1}{x}</m>.</caption>
-      <image width="95%" source="images/0-1-ex1" />
+      <image width="95%" source="images/0-1-ex1.pdf" />
     </figure>
 
     <p>
@@ -261,7 +261,7 @@
       </p>
 
       <sidebyside>
-        <image width="90%" source="images/0-1-act1" />
+        <image width="90%" source="images/0-1-act1.pdf" />
         <ol>
           <li>
             <p>
@@ -395,7 +395,7 @@
 
     <figure xml:id="f_0_1slope" >
       <caption>Characteristics of slope.</caption>
-      <image width="60%" source="images/0-1-fig3" />
+      <image width="60%" source="images/0-1-fig3.pdf" />
     </figure>
 
     <p>
@@ -457,7 +457,7 @@
 
     <figure xml:id="fig_0_1_linear_fn" >
       <caption>Anatomy of a linear function.</caption>
-      <image width="60%" source="images/0-1-fig4" />
+      <image width="60%" source="images/0-1-fig4.pdf" />
     </figure>
 
     <activity xml:id="A_0_1_2">
@@ -982,7 +982,7 @@
     <figure xml:id="fig_0_1_fam1" >
       <caption>Several members of the family of linear functions <m>f(x) = mx+2</m> (left) and
       the family <m>f(x) = 2x+b</m> (right).</caption>
-      <image width="90%" source="images/0-1-fig5" />
+      <image width="90%" source="images/0-1-fig5.pdf" />
     </figure>
 
     <activity xml:id="A_0_1_4">

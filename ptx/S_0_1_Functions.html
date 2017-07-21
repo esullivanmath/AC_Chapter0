@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--* Generated from MathBook XML source *-->
+<!--*    on 2017-07-21T14:01:32-05:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Lines, Slope, and Functions</title>
+<meta name="Keywords" content="Authored in MathBook XML">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        extensions: ["AMSmath.js", "AMSsymbols.js", "extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
+        equationNumbers: { autoNumber: "none",
+                           useLabelIds: true,
+                           // JS comment, XML CDATA protect XHTML quality of file
+                           // if removed in XSL, use entities
+                           //<![CDATA[
+                           formatID: function (n) {return String(n).replace(/[:'"<>&]/g,"")},
+                           //]]>
+                         },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    "HTML-CSS": {
+        scale: 88,
+    },
+});
+    </script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full"></script><script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/javascript" src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script>
+$(function () {
+    // Make *any* div with class 'sage-compute' an executable Sage cell
+    sagecell.makeSagecell({inputLocation: 'div.sage-compute',
+                           linked: true,
+                           evalButtonText: 'Evaluate'});
+});
+$(function () {
+    // Make *any* div with class 'sage-display' a visible, uneditable Sage cell
+    sagecell.makeSagecell({inputLocation: 'div.sage-display',
+                           editor: 'codemirror-readonly',
+                           hide: ['evalButton', 'editorToggle', 'language']});
+});
+    </script><script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script><link href="https://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic%7CSource+Code+Pro:400" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/mathbook-add-on.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<div style="display:none;">\(\def\titlecolor{#1}
+\def\scl{0.8}
+\def\titlebackground{#1}
+\def\scl{0.9}
+\def\background{#1}
+\def\scl{0.7}
+\def\titleboxcolor{#1}
+\def\boxcolor{#1}
+\def\thcounter{#1}
+\def\size{#1}
+\newcommand{\titre}{Titre}
+\renewcommand{\titre}{#2}
+\renewcommand{\theacti}{\thechapter.\arabic{acti}}
+\newcommand{\saveCount}{\setcounter{lastenum}{\value{enumi}}}
+\newcommand{\restoreCount}{\setcounter{enumi}{\value{lastenum}}}
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+\newcommand{\bei}{\begin{numlist2}}
+\newcommand{\eei}{\end{numlist2}}
+\newcommand{\ba}{\begin{enumerate}}
+\newcommand{\ea}{\end{enumerate}}
+\newcommand{\bal}{\begin{alphalist2}}
+\newcommand{\eal}{\end{alphalist2}}
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\btl}{\begin{thmlist}}
+\newcommand{\etl}{\end{thmlist}}
+\newcommand{\bpm}{\begin{pmatrix}}
+\newcommand{\epm}{\end{pmatrix}}
+\newcommand{\bolda}{\boldsymbol{a}}
+\newcommand{\boldx}{\boldsymbol{x}}
+\newcommand{\boldy}{\boldsymbol{y}}
+\newcommand{\boldb}{\boldsymbol{b}}
+\newcommand{\boldv}{\boldsymbol{v}}
+\newcommand{\boldu}{\boldsymbol{u}}
+\newcommand{\bx}{\boldsymbol{x}}
+\newcommand{\by}{\boldsymbol{y}}
+\newcommand{\bu}{\boldsymbol{u}}
+\newcommand{\bv}{\boldsymbol{v}}
+\newcommand{\bd}{\boldsymbol{d}}
+\renewcommand{\thedefinition}{\thechapter.\arabic{definition}}
+\renewcommand{\thecorollary}{\thechapter.\arabic{corollary}}
+\renewcommand{\thetheorem}{\thechapter.\arabic{theorem}}
+\newcommand{\afterex}{\begin{center}\underline{}\end{center}}
+\newcommand{\afterexercises}{\nin \vfill \ }
+\newcommand{\nin}{}
+\newcommand{\tr}{\vspace{0.5in}}
+\newcommand{\lr}{\vspace{1.0in}}
+\newcommand{\mr}{\vspace{2.0in}}
+\newcommand{\br}{\vspace{3.0in}}
+\newcommand{\afterpa}{\hfill $\bowtie$}
+\newcommand{\aftera}{\hfill $\lhd$}
+\newcommand{\T}{}
+\newcommand{\B}{\rule[-1.2ex]{0pt}{0pt}}
+\newcommand{\vs}{\vspace{0.1in}}
+\newcommand{\solution}{\textbf{Solution.}}
+\newcommand{\myunit}{1 cm}
+\newcommand{\lt}{ &lt; }
+\newcommand{\gt}{ &gt; }
+\newcommand{\amp}{ &amp; }
+\)</div>
+<header id="masthead"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><span class="title">Active Calculus \\ Carroll College \\  \scalebox{0.75}{\includegraphics{figures/CClicense.eps}}</span></h1>
+<p class="byline">Active Calculus: Matt Boelkins, Lead Author, Editor, Editor</p>
+</div>
+</div></div>
+<nav id="primary-navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="previous-button toolbar-item button" href="C_0.html">Previous</a><a class="up-button button toolbar-item" href="C_0.html">Up</a><a class="next-button button toolbar-item" href="backmatter-1.html">Next</a>
+</div>
+<button class="sidebar-right-toggle-button button active">Annotations</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="C_0.html">Previous</a><a class="up-button button toolbar-item" href="C_0.html">Up</a><a class="next-button button toolbar-item" href="backmatter-1.html">Next</a>
+</div>
+</div></nav></header><div class="page">
+<aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="frontmatter-1.html"><span class="title">Front Matter</span></a></h2>
+<ul></ul>
+<h2 class="link active"><a href="C_0.html"><span class="codenumber">1</span><span class="title">Preliminaries</span></a></h2>
+<ul>
+<li><a href="S_0_1_Functions.html" class="active">Lines, Slope, and Functions</a></li>
+<li><a href="S_0_3_Transformations.html">Transformations, Compositions, and Inverses</a></li>
+<li><a href="S_0_4_Logarithms.html">Logarithmic Functions</a></li>
+<li><a href="S_0_5_TrigFunctions.html">Trigonometric Functions</a></li>
+<li><a href="S_0_6_PowersPolysRationals.html">Powers, Polynomials, and Rational Functions</a></li>
+</ul>
+<h2 class="link"><a href="backmatter-1.html"><span class="title">Back Matter</span></a></h2>
+<ul>
+<li><a href="references-1.html">Bibliography</a></li>
+<li><a href="index-part-1.html">Index</a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in MathBook XML</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://cdn.mathjax.org/mathjax/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="S_0_1_Functions"><header><h1 class="heading hide-type">
+<span class="type">Section</span><span class="codenumber">1.1</span><span class="title">Lines, Slope, and Functions</span><a href="S_0_1_Functions.html" class="permalink">¶ permalink</a>
+</h1></header><article class="introduction" id="introduction-1"><h5 class="heading"><span></span></h5>
+        <ul style="list-style-type: disc;">
+<li id="li-1"><p id="p-1">
+              What is a function and what do we mean by its domain and range?
+            </p></li>
+<li id="li-2"><p id="p-2">
+              What is the slope of a line? What are linear functions and families of linear
+              functions?
+            </p></li>
+</ul>
+    <p id="p-3">
+      We begin our study of calculus by reminding the reader of several pre-requisite topics.
+      The study of calculus depends on a thorough understanding of these topics and it is
+      imperative that the reader become as familiar as possible with these topics. In the
+      present section we remind the reader about the concepts of functions, slope, and lines,
+      but first, there are a few things that you should do to get your self ready to use this
+      text.
+    </p>
+      <p id="p-4">
+        This is the first Preview Activity in this text. Your job for this activity is to get
+        to know the textbook.
+        <ol style="list-style-type: decimal;">
+<li id="li-3"><p id="p-5">
+              Where can you find the full textbook?
+            </p></li>
+<li id="li-4"><p id="p-6">
+              What chapters of this text are you going to cover this semester.  Have a look at
+              your syllabus!
+            </p></li>
+<li id="li-5"><p id="p-7">
+              What are the differences between Preview Activities, Activities, Examples,
+              Exercises, Voting Questions, and WeBWork?  Which ones should you do before class,
+              which ones will you likely do during class, and which ones should you be doing
+              after class?
+            </p></li>
+<li id="li-6"><p id="p-8">
+              What materials in this text would you use to prepare for an exam and where do
+              you find them?
+            </p></li>
+<li id="li-7"><p id="p-9">
+              What should you bring to class every day?
+            </p></li>
+</ol>
+      </p>
+    </article><section class="subsection" id="subsection-1"><header><h1 class="heading hide-type">
+<span class="type">Subsection</span><span class="codenumber">1.1.1</span><span class="title">Functions</span>
+</h1></header><p id="p-10">
+      Let's start with the fundamental mathematical idea of a function.
+    </p>
+<article class="definition-like" id="definition-1"><h5 class="heading">
+<span class="type">Definition</span><span class="codenumber">1.1.1</span><span class="title">Function</span>
+</h5>
+<p id="p-11">
+          A function is a mathematical rule that assigns exactly one output for every
+          input.
+        </p></article><p id="p-12">
+      It is easy to give many common examples of functions:
+      <ul style="list-style-type: disc;">
+<li id="li-8"><p id="p-13">
+            The area of a circle \(A\) is a function of the radius of the circle:  \(A(r)= \pi r^2\).
+          </p></li>
+<li id="li-9"><p id="p-14">
+            The amount \(M\) in your savings account is a function of the rate of interest the
+            bank pays.
+          </p></li>
+<li id="li-10"><p id="p-15">
+            The fuel efficiency in your car is a function of many things, e.g. the speed at
+            which you drive, the number of cylinders in your engine, the type of driving
+            conditions, etc.
+          </p></li>
+<li id="li-11"><p id="p-16">
+            The pressure on a diver is a function of the depth of the diver under water.
+          </p></li>
+</ul>
+    </p>
+<article class="definition-like" id="definition-2"><h5 class="heading">
+<span class="type">Definition</span><span class="codenumber">1.1.2</span><span class="title">Domain of a Function</span>
+</h5>
+<p id="p-17">
+          The domain is the set of all possible inputs for a function.
+        </p></article><article class="definition-like" id="definition-3"><h5 class="heading">
+<span class="type">Definition</span><span class="codenumber">1.1.3</span><span class="title">Range of a Function</span>
+</h5>
+<p id="p-18">
+          The range is the set of all possible outputs for a function.
+        </p></article><div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-1" id="example-1"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">1.1.4</span>
+</h5></article></a></div>
+<div id="hk-example-1" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-19">
+          Find the domain and range of the functions \(f(x) = \sin(x), g(x) = \sqrt{x},\) and \(h(x) =
+          \frac{1}{x}\).
+        </p></article></div>
+<p id="p-20">
+      For \(f(x)=\sin(x)\) we recall that the sine function is defined for every possible value of \(x\) but
+      the output is strictly between \(y=-1\) and \(y=1\). Therefore, the domain for \(f(x) =
+      \sin(x)\) is \(-\infty \lt  x \lt  \infty\) and the range is \(-1 \le y \le 1\). See the left plot
+      in <a knowl="./knowl/f_0_1ex1.html" knowl-id="xref-f_0_1ex1" alt="Figure 1.1.5 " title="Figure 1.1.5 ">Figure 1.1.5</a>.
+    </p>
+<p id="p-21">
+      For \(g(x) = \sqrt{x}\) we recall that the square root of a negative number results in an
+      imaginary number. In this text we are interested in real-valued output for functions so
+      we must omit all of the negative numbers from the domain and hence \(0 \le x \lt  \infty\).
+      For the range we recall that the square root of a number will always be a non-negative
+      number. As such, the range is \(0 \le y \lt  \infty\). See the middle plot
+      in <a knowl="./knowl/f_0_1ex1.html" knowl-id="xref-f_0_1ex1" alt="Figure 1.1.5 " title="Figure 1.1.5 ">Figure 1.1.5</a>.
+    </p>
+<p id="p-22">
+      For \(h(x) = \frac{1}{x}\) we recall that division by zero is mathematically impossible.
+      That is the only troublesome point in the domain so \(-\infty \lt  x \lt  0\) or \(0 \lt  x \lt  \infty\).
+      A moment's reflection also reveals that it is impossible to get zero out of the function
+      \(h(x)\) but it is possible to get any other number. Hence \(-\infty \lt  y \lt  0\) or \(0 \lt  y \lt 
+      \infty\). See the right plot in <a knowl="./knowl/f_0_1ex1.html" knowl-id="xref-f_0_1ex1" alt="Figure 1.1.5 " title="Figure 1.1.5 ">Figure 1.1.5</a>.
+    </p>
+<figure class="figure-like" id="f_0_1ex1"><img width="95%" src="images/0-1-ex1.pdf" alt=""><figcaption><span class="heading">Figure</span><span class="codenumber">1.1.5</span>Graphs of the function \(f(x) = \sin(x)\), \(g(x) = \sqrt{x}\), and \(h(x) =
+      \frac{1}{x}\).</figcaption></figure><p id="p-23">
+      It is also important to recall the notation for functions. When we write \(f(x) =
+      \sqrt{x}\) we are saying several things. First, the “\(f\)” is the name of the function
+      that we're defining. The naming convention gives us a convenient way to refer to
+      functions without having to explicitly state their algebraic form. Next, the “\((x)\)” is
+      an explicit statement to the reader that the variable “\(x\)” is the independent variable
+      for the function \(f\). Lastly, the right-hand side of the definition tells us exactly what
+      to do with the independent variable algebraically.
+    </p>
+<p id="p-24">
+      When we write \(f(25)\) we are referring to the already defined function \(f\) and explicitly
+      saying to replace the independent variable with the number \(25\). In this instance, \(f(25)
+      = \sqrt{25} = 5\). Similarly, if we write \(f(\sin(x))\) we mean to find the independent
+      variable \(x\) in the function \(f\) and replace it with the function \(\sin(x)\). In this
+      case, \(f(\sin(x)) = \sqrt{\sin(x)}\). This is simply a new function.
+    </p>
+<p id="p-25">
+      A function does not always need to be given algebraically. The three primary
+      representations of a function are the algebraic form, the graphical form, and the tabular
+      form. For example, for the function \(f(x) = \sqrt{x}\) we are explicitly giving the
+      algebraic form and the middle plot of <a knowl="./knowl/f_0_1ex1.html" knowl-id="xref-f_0_1ex1" alt="Figure 1.1.5 " title="Figure 1.1.5 ">Figure 1.1.5</a> shows the graphical form.
+      <a knowl="./knowl/t_0_1ex1.html" knowl-id="xref-t_0_1ex1" alt="Table 1.1.6 " title="Table 1.1.6 ">Table 1.1.6</a> shows a portion of the table of values. The distinct disadvantage
+      for a table of values on many functions is that there are infinitely many possible input
+      values and a table can naturally only show finitely many of them.
+    </p>
+<figure class="figure-like" id="t_0_1ex1"><table>
+<tr>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+</tr>
+<tr>
+<td class="l b0 r0 l0 t0">\(x\)</td>
+<td class="l b0 r0 l0 t0">0</td>
+<td class="l b0 r0 l0 t0">1</td>
+<td class="l b0 r0 l0 t0">2</td>
+<td class="l b0 r0 l0 t0">3</td>
+<td class="l b0 r0 l0 t0">4</td>
+<td class="l b0 r0 l0 t0">5</td>
+</tr>
+<tr>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+</tr>
+<tr>
+<td class="l b0 r0 l0 t0">\(f(x)\)</td>
+<td class="l b0 r0 l0 t0">0</td>
+<td class="l b0 r0 l0 t0">1</td>
+<td class="l b0 r0 l0 t0">1.414</td>
+<td class="l b0 r0 l0 t0">1.732</td>
+<td class="l b0 r0 l0 t0">2</td>
+<td class="l b0 r0 l0 t0">2.236</td>
+</tr>
+<tr>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+</tr>
+</table>
+<figcaption><span class="heading">Table</span><span class="codenumber">1.1.6</span>Tabular form of the function \(f(x) = \sqrt{x}\).</figcaption></figure>
+      <p id="p-26">
+        The graph of a function \(f(x)\) is shown in the plot below.
+      </p>
+
+      <div class="sidebyside" id="sidebyside-1">
+<img class="left" style="width:87%;vertical-align:bottom;text-align:center;" src="images/0-1-act1.eps" alt=""><ol style="list-style-type: decimal;">
+<li id="li-12"><p id="p-27">
+              What is the domain of \(f(x)\)?
+            </p></li>
+<li id="li-13"><p id="p-28">
+              Approximate the range of \(f(x)\).
+            </p></li>
+<li id="li-14"><p id="p-29">
+              What are  \(f(0)\), \(f(1)\), \(f(3)\), \(f(4)\), and \(f(5)\)?
+            </p></li>
+</ol>
+</div>
+      <span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-hint-1" id="hint-1"><span class="heading"><span class="type">Hint</span></span></a></span><span id="hk-hint-1" style="display: none;" class="tex2jax_ignore"><span class="solution"><p id="p-30">
+          <ol style="list-style-type: decimal;">
+<li id="li-15"><p id="p-31">
+                The domain is the collection of possible \(x\) values.
+              </p></li>
+<li id="li-16"><p id="p-32">
+                The range is the collection of possible \(y\) values.
+              </p></li>
+<li id="li-17"><p id="p-33">
+                Find the \(y\) values for each of the given \(x\) values.
+              </p></li>
+</ol>
+        </p></span></span>
+      <span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-solution-1" id="solution-1"><span class="heading"><span class="type">Solution</span></span></a></span><span id="hk-solution-1" style="display: none;" class="tex2jax_ignore"><span class="solution"><p id="p-34">
+          <ol style="list-style-type: decimal;">
+<li id="li-18"><p id="p-35">
+                The domain of \(f(x)\) is \(0 \le x \le 4\).
+              </p></li>
+<li id="li-19"><p id="p-36">
+                The approximate range of \(f(x)\) is \(-7 \le y \le 3\).  Without the function
+                itself we cannot be sure of the actual heights of the function at the maximum
+                and the minimum.
+              </p></li>
+<li id="li-20"><p id="p-37">
+                \(f(0) = 0\), \(f(1) = 3\), \(f(3) = -6\), \(f(4) = 0\), and \(f(5)\) does not exist
+                since \(5\) is not in the domain of \(f(x)\).
+              </p></li>
+</ol>
+        </p></span></span>
+    </section><section class="subsection" id="subsection-2"><header><h1 class="heading hide-type">
+<span class="type">Subsection</span><span class="codenumber">1.1.2</span><span class="title">Slope and Linear Functions</span>
+</h1></header><p id="p-38">
+      One of the basic graphical ideas of calculus is that if we zoom in close enough to a
+      curved function it will look approximately linear. The words “zoom” and “close
+      enough” will be made explicit later. We now review the features of linear functions so
+      that the idea of “zoomed in linearity” can flow naturally later in the course.
+    </p>
+<p id="p-39">
+      Every linear function is characterized by a constant rate of change; the slope. The slope
+      of a linear function is a measure of the “steepness” of the line. We use the symbols
+      \(\Delta x\) and \(\Delta y\) which mean respectively the “change in \(x\)” and the “change in
+      \(y\)”.
+    </p>
+<article class="definition-like" id="definition-4"><h5 class="heading">
+<span class="type">Definition</span><span class="codenumber">1.1.7</span><span class="title">slope</span>
+</h5>
+<p id="p-40">
+          The slope, \(m\) of a (non-vertical) linear function \(f\) which passes through any
+          two points \((x_1,y_1)\), \((x_2,y_2)\) can be found using the formula
+          <div class="displaymath" id="me-1">\begin{equation*}
+            m = \frac{\Delta y}{\Delta x} = \frac{y_2 - y_1}{x_2 - x_1} =
+            \frac{f(x_2)-f(x_1)}{x_2-x_1} = \frac{\text{ Rise } }{\text{ Run } }
+          \end{equation*}</div>
+        </p></article><p id="p-41">
+      As shown in <a knowl="./knowl/f_0_1slope.html" knowl-id="xref-f_0_1slope" alt="Figure 1.1.8 " title="Figure 1.1.8 ">Figure 1.1.8</a>, the slope of a linear function has the following characteristics:
+      <ul style="list-style-type: disc;">
+<li id="li-21"><p id="p-42">
+            if the line rises from left to right then the slope is positive,
+          </p></li>
+<li id="li-22"><p id="p-43">
+            if the line falls from left to right then the slope is negative,
+          </p></li>
+<li id="li-23"><p id="p-44">
+            if the line is horizontal then the slope is zero, and
+          </p></li>
+<li id="li-24"><p id="p-45">
+            if the line is vertical then the slope is undefined.
+          </p></li>
+</ul>
+    </p>
+<figure class="figure-like" id="f_0_1slope"><img width="60%" src="images/0-1-fig3.pdf" alt=""><figcaption><span class="heading">Figure</span><span class="codenumber">1.1.8</span>Characteristics of slope.</figcaption></figure><p id="p-46">
+      Depending on the information given there are several convenient forms of the equation of a
+      line. Given the definition of the slope
+      <div class="displaymath" id="me-2">\begin{equation*}
+        m = \frac{y_2 - y_1}{x_2 - x_1}
+      \end{equation*}</div>
+      and letting \((x,y) = (x_2,y_2)\) be any arbitrary point we get the point-slope form of a
+      linear function by observing that \(m = \frac{y - y_1}{x - x_1}\) which implies
+      that \(y - y_1 = m(x-x_1)\).
+    </p>
+<article class="definition-like" id="definition-5"><h5 class="heading">
+<span class="type">Definition</span><span class="codenumber">1.1.9</span><span class="title">point-slope form of a line</span>
+</h5>
+<p id="p-47">
+          If the linear function \(f\) has slope \(m\) and passes through the
+          point \((x_1,y_1)\), then the point-slope form of the equation of a line is given by:
+          <div class="displaymath" id="me-3">\begin{equation*}
+            y-y_1=m(x- x_1).
+          \end{equation*}</div>
+        </p></article><p id="p-48">
+      An alternate form of a linear function which is probably very familiar to most readers is
+      the slope-intercept form of a line.
+    </p>
+<article class="definition-like" id="definition-6"><h5 class="heading">
+<span class="type">Definition</span><span class="codenumber">1.1.10</span><span class="title">slope intercept form of a line</span>
+</h5>
+<p id="p-49">
+          If the linear function \(f\) has slope \(m\) and \(y\)-intercept \(b\), then the
+          slope-intercept form of the equation of a line is given by:
+          <div class="displaymath" id="me-4">\begin{equation*}
+            y=mx + b.
+          \end{equation*}</div>
+        </p></article><p id="p-50">
+      In a calculus class the point-slope form is often the most useful. If you have a linear
+      function written in the point-slope form you can always rearrange to get it into the
+      slope-intercept form
+      <div class="displaymath" id="me-5">\begin{equation*}
+        y - y_1 = m(x-x_1)  \implies  y = mx - m x_1 + y_1.
+      \end{equation*}</div>
+    </p>
+<p id="p-51">
+      Hence we see that the \(y\) intercept of a line can be given as \(b = -mx_1 + y_1\).
+      The
+      symbols and geometry used in each of the above definitions are shown in <a knowl="./knowl/fig_0_1_linear_fn.html" knowl-id="xref-fig_0_1_linear_fn" alt="Figure 1.1.11 " title="Figure 1.1.11 ">Figure 1.1.11</a>.
+    </p>
+<figure class="figure-like" id="fig_0_1_linear_fn"><img width="60%" src="images/0-1-fig4.pdf" alt=""><figcaption><span class="heading">Figure</span><span class="codenumber">1.1.11</span>Anatomy of a linear function.</figcaption></figure>
+      <p id="p-52">
+        Find the equation of the line with the given information.
+        <ol style="list-style-type: decimal;">
+<li id="li-25"><p id="p-53">
+              The line goes through the points \((-2,5)\) and \((10,-1)\).
+            </p></li>
+<li id="li-26"><p id="p-54">
+              The slope of the line is \(3/5\) and it goes through the point \((2,3)\).
+            </p></li>
+<li id="li-27"><p id="p-55">
+              The \(y\)-intercept of the line is \((0,-1)\) and the slope is \(-2/3\).
+            </p></li>
+</ol>
+      </p>
+      <span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-hint-2" id="hint-2"><span class="heading"><span class="type">Hint</span></span></a></span><span id="hk-hint-2" style="display: none;" class="tex2jax_ignore"><span class="solution"><p id="p-56">
+          <ol style="list-style-type: decimal;">
+<li id="li-28"><p id="p-57">
+                Recall that \(m = \frac{\Delta y}{\Delta x}\) and use the point slope form of
+                the line.
+              </p></li>
+<li id="li-29"><p id="p-58">
+                You are given a slope and a point.  Which form of the line should you use?
+              </p></li>
+<li id="li-30"><p id="p-59">
+                You are given a slope and the \(y\) intercept.  Which form of the line should
+                you use?
+              </p></li>
+</ol>
+        </p></span></span>
+      <span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-solution-2" id="solution-2"><span class="heading"><span class="type">Solution</span></span></a></span><span id="hk-solution-2" style="display: none;" class="tex2jax_ignore"><span class="solution"><p id="p-60">
+          <ol style="list-style-type: decimal;">
+<li id="li-31"><p id="p-61">
+                The slope is \(m = \frac{\Delta y}{\Delta x} = \frac{5-(-1)}{(-2)-10} =
+                \frac{6}{-12} = -\frac{1}{2}\).  Hence,
+                <div class="displaymath" id="me-6">\begin{equation*}
+                  y - 5 = -\frac{1}{2} \left( x-(-2) \right)
+                \end{equation*}</div>
+                which can be rewritten as
+                <div class="displaymath" id="me-7">\begin{equation*}
+                  y = -\frac{1}{2} \left( x+2 \right) + 5.
+                \end{equation*}</div>
+              </p></li>
+<li id="li-32"><p id="p-62">
+                Using the point-slope form of the line we get
+                <div class="displaymath" id="me-8">\begin{equation*}
+                  y - 3 = \frac{3}{5} \left( x-2 \right)
+                \end{equation*}</div>
+                which can be rearranged to
+                <div class="displaymath" id="me-9">\begin{equation*}
+                  y = \frac{3}{5} \left( x-2 \right) + 3.
+                \end{equation*}</div>
+              </p></li>
+<li id="li-33"><p id="p-63">
+                Using the slope-intercept form of the line we get
+                <div class="displaymath" id="me-10">\begin{equation*}
+                  y = -\frac{2}{3} x - 1.
+                \end{equation*}</div>
+              </p></li>
+</ol>
+        </p></span></span>
+    <div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-2" id="example-2"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">1.1.12</span>
+</h5></article></a></div>
+<div id="hk-example-2" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-64">
+          Write the equation of the line going through the points \((5,7)\) and \((-3,2)\).
+        </p></article></div>
+<p id="p-65">
+      First we calculate the slope
+      <div class="displaymath" id="me-11">\begin{equation*}
+        m = \frac{\Delta y}{\Delta x} = \frac{7 - 2}{5-(-3)} = \frac{5}{8}.
+      \end{equation*}</div>
+    </p>
+<p id="p-66">
+      Since we have two points and neither is the \(y\) intercept of the linear function we choose
+      to use the point-slope form of the line. Letting \((x_1,y_1) = (5,7)\) we see that
+      <div class="displaymath" id="me-12">\begin{equation*}
+        y - 7 = \frac{5}{8} \left( x-5 \right)
+      \end{equation*}</div>
+      is one form of the linear function.
+      It is often conventient to solve for \(y\) giving us
+      <div class="displaymath" id="me-13">\begin{equation*}
+        y = \frac{5}{8} \left( x-5 \right) + 7.
+      \end{equation*}</div>
+    </p>
+<p id="p-67">
+      Notice that we do not necessarily need to simplify all the way to the slope-intercept form
+      of the line.
+    </p></section><section class="subsection" id="subsection-3"><header><h1 class="heading hide-type">
+<span class="type">Subsection</span><span class="codenumber">1.1.3</span><span class="title">Linear Functions From Data</span>
+</h1></header><p id="p-68">
+      A feature of every linear function is that the slope is the same no matter where you are
+      on the line. When given a table of data that you suspect might represent a linear
+      function the slope manifests itself as a constant common difference between successive
+      \(y\)-values.
+    </p>
+<div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-3" id="example-3"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">1.1.13</span>
+</h5></article></a></div>
+<div id="hk-example-3" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-69">
+          Consider the data in the table below.
+        </p>
+<table>
+<tr>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+</tr>
+<tr>
+<td class="l b0 r0 l0 t0">\(x\)</td>
+<td class="l b0 r0 l0 t0">5</td>
+<td class="l b0 r0 l0 t0">6</td>
+<td class="l b0 r0 l0 t0">7</td>
+<td class="l b0 r0 l0 t0">8</td>
+<td class="l b0 r0 l0 t0">9</td>
+</tr>
+<tr>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+</tr>
+<tr>
+<td class="l b0 r0 l0 t0">\(y\)</td>
+<td class="l b0 r0 l0 t0">12.2</td>
+<td class="l b0 r0 l0 t0">17.5</td>
+<td class="l b0 r0 l0 t0">22.8</td>
+<td class="l b0 r0 l0 t0">28.1</td>
+<td class="l b0 r0 l0 t0">33.4</td>
+</tr>
+<tr>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+</tr>
+</table>
+<p id="p-70">
+          Demonstrate that this data is linear and write an equation that fits the data.
+        </p></article></div>
+<p id="p-71">
+      The common differences can be found for each successive \(y\)-values
+    </p>
+<table>
+<tr>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+</tr>
+<tr>
+<td class="l b0 r0 l0 t0">\(x\)</td>
+<td class="l b0 r0 l0 t0">5</td>
+<td class="l b0 r0 l0 t0">6</td>
+<td class="l b0 r0 l0 t0">7</td>
+<td class="l b0 r0 l0 t0">8</td>
+<td class="l b0 r0 l0 t0">9</td>
+</tr>
+<tr>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+</tr>
+<tr>
+<td class="l b0 r0 l0 t0">\(y\)</td>
+<td class="l b0 r0 l0 t0">12.2</td>
+<td class="l b0 r0 l0 t0">17.5</td>
+<td class="l b0 r0 l0 t0">22.8</td>
+<td class="l b0 r0 l0 t0">28.1</td>
+<td class="l b0 r0 l0 t0">33.4</td>
+</tr>
+<tr>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+</tr>
+<tr>
+<td class="l b0 r0 l0 t0">Common Difference</td>
+<td class="l b0 r0 l0 t0">\(\frac{17.5-12.2}{6-5} = 5.3\)</td>
+<td class="l b0 r0 l0 t0">\(\frac{22.8-17.5}{7-6} = 5.3\)</td>
+<td class="l b0 r0 l0 t0">\(\frac{28.1-22.8}{8-7} = 5.3\)</td>
+<td class="l b0 r0 l0 t0">\(\frac{33.4-28.1}{9-8}=5.3\)</td>
+<td class="l b0 r0 l0 t0">-</td>
+</tr>
+<tr>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+</tr>
+</table>
+<p id="p-72">
+      The successive differences are clearly the same throughout the data set and the slope for
+      this data set is \(m=5.3\). Picking any convenient point, say \((5,12.2)\), then allows us to write the
+      equation of the line as
+      <div class="displaymath" id="me-14">\begin{equation*}
+        y - 12.2 = 5.3(x-5).
+      \end{equation*}</div>
+    </p>
+<p id="p-73">
+      This could be simplified to point-slope form, but there is typically no need for this
+      algebraic simplification.
+    </p>
+      <p id="p-74">
+        An apartment manager keeps careful record of the rent that he charges as well as the
+        number of occupied apartments in his complex. The data that he has is shown in the table
+        below.
+      </p>
+      <table>
+<tr>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+</tr>
+<tr>
+<td class="l b0 r0 l0 t0">Monthly Rent</td>
+<td class="l b0 r0 l0 t0">$650</td>
+<td class="l b0 r0 l0 t0">$700</td>
+<td class="l b0 r0 l0 t0">$750</td>
+<td class="l b0 r0 l0 t0">$800</td>
+<td class="l b0 r0 l0 t0">$850</td>
+<td class="l b0 r0 l0 t0">$900</td>
+</tr>
+<tr>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+</tr>
+<tr>
+<td class="l b0 r0 l0 t0">Occupied Apartments</td>
+<td class="l b0 r0 l0 t0">203</td>
+<td class="l b0 r0 l0 t0">196</td>
+<td class="l b0 r0 l0 t0">189</td>
+<td class="l b0 r0 l0 t0">182</td>
+<td class="l b0 r0 l0 t0">175</td>
+<td class="l b0 r0 l0 t0">168</td>
+</tr>
+<tr>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+</tr>
+</table>
+      <ol style="list-style-type: decimal;">
+<li id="li-34"><p id="p-75">
+            Just by doing simple arithmetic justify that the function relating the number of occupied
+            apartments and the rent is linear.
+          </p></li>
+<li id="li-35"><p id="p-76">
+            Find the linear function relating the number of occupied apartments to the rent.
+          </p></li>
+<li id="li-36"><p id="p-77">
+            If the rent were to be increased to $1000, how many occupied apartments would the
+            apartment manager expect to have?
+          </p></li>
+<li id="li-37"><p id="p-78">
+            At a $1000 monthly rent what net revenue should the apartment manager expect?
+          </p></li>
+</ol>
+      <span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-hint-3" id="hint-3"><span class="heading"><span class="type">Hint</span></span></a></span><span id="hk-hint-3" style="display: none;" class="tex2jax_ignore"><span class="solution"><p id="p-79">
+          <ol style="list-style-type: decimal;">
+<li id="li-38"><p id="p-80">
+                Recall what we know about slope on a linear function.
+              </p></li>
+<li id="li-39"><p id="p-81">
+                Use the point slope form of the line.  You should have found the slope in
+                part (a).
+              </p></li>
+<li id="li-40"><p id="p-82">
+                Use your answer to part (b).
+              </p></li>
+<li id="li-41"><p id="p-83">
+                How do you get the accumulated payments from all of the tenants?
+              </p></li>
+</ol>
+        </p></span></span>
+      <span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-solution-3" id="solution-3"><span class="heading"><span class="type">Solution</span></span></a></span><span id="hk-solution-3" style="display: none;" class="tex2jax_ignore"><span class="solution"><p id="p-84">
+          <ol style="list-style-type: decimal;">
+<li id="li-42"><p id="p-85">
+                The slope is
+                <div class="displaymath" id="me-15">\begin{equation*}
+                  m = \frac{196-203}{700-650} = -\frac{7}{50}
+                \end{equation*}</div>
+                and this slope is consistent no matter which pairs of points we choose.
+              </p></li>
+<li id="li-43"><p id="p-86">
+                Let \(A\) be the number of occupied apartments and let \(R\) be the rent.  The
+                linear function relating the number of occupied apartments and the rent is
+                <div class="displaymath" id="me-16">\begin{equation*}
+                  A - 203 = -\frac{7}{50} \left( R - 650 \right).
+                \end{equation*}</div>
+                Solving for \(A\) we get
+                <div class="displaymath" id="me-17">\begin{equation*}
+                  A(R) = -\frac{7}{50} \left( R - 650 \right) + 203.
+                \end{equation*}</div>
+                This is a perfectly acceptable algebraic form for the answer, but if you
+                insist on simplifying then
+                <div class="displaymath" id="me-18">\begin{equation*}
+                  A(R) = -\frac{7}{50} R + 294.
+                \end{equation*}</div>
+              </p></li>
+<li id="li-44"><p id="p-87">
+                \(A(1000) = -\frac{7}{50} \left( 1000 - 650 \right) + 203 = 252\) units
+                occupied.
+              </p></li>
+<li id="li-45"><p id="p-88">
+                The net revenue is the product of the monthly rent and the number of units
+                occupied at that rent.  In this case the revenue is \(\dollar1000 \cdot 252 =
+                \dollar252,000\).
+              </p></li>
+</ol>
+        </p></span></span>
+    <div class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-example-4" id="example-4"><article class="example-like"><h5 class="heading">
+<span class="type">Example</span><span class="codenumber">1.1.14</span>
+</h5></article></a></div>
+<div id="hk-example-4" style="display: none;" class="tex2jax_ignore"><article class="example-like"><p id="p-89">
+          The Old Farmer's Almanac tells us that you can tell the temperature by counting the chirps
+          of a cricket. It is a linear function \(T=f(C)\) given by \(T\) (in degrees Fahrenheit)=# of
+          chirps in 15 seconds \(+40\). We can approximate this with the formula
+          <div class="displaymath" id="me-19">\begin{equation*}
+            T =  \frac{C}{4} + 40
+          \end{equation*}</div>
+          where \(C\) is the number of chirps/minute and \(T\) is in \(^\circ F\).
+          <ol style="list-style-type: decimal;">
+<li id="li-46"><p id="p-90">
+                If the chirp rate is 120 chirps/minute, what is the temperature?
+              </p></li>
+<li id="li-47"><p id="p-91">
+                Suppose that crickets will not chirp if the temperature is below \(56^\circ F\).
+                We can also suppose that crickets will not chirp above \(136^\circ F\) since that is
+                the highest temperature ever recorded at a weather station.  With these
+                parameters, what is the domain of this function?
+              </p></li>
+</ol>
+        </p></article></div>
+<ol style="list-style-type: decimal;">
+<li id="li-48"><p id="p-92">
+          If \(C = 120\) chirps/minute, substitute this into the function \(T(C)\) to obtain
+          <div class="displaymath" id="me-20">\begin{equation*}
+            T(120) = \frac{120}{4} + 40 = 30 + 40 = 70^\circ F.
+          \end{equation*}</div>
+        </p></li>
+<li id="li-49"><p id="p-93">
+          To find the domain we need to find the appropriate values of \(C\) for the \(T(C)\)
+          function.  Solve \(56=C/4+40\) and get \(C = 64\).  Solve \(136=C/4+40\) and get \(C =
+          384\).  So the domain of \(T(C)\) is \(64 \le \text{ chirps/minute }  \le 384\) or, in
+          interval notation, \([64, 136]\).
+        </p></li>
+</ol></section><section class="subsection" id="subsection-4"><header><h1 class="heading hide-type">
+<span class="type">Subsection</span><span class="codenumber">1.1.4</span><span class="title">Families of Linear Functions</span>
+</h1></header><p id="p-94">
+      We noted above that a linear function has the form \(f(x)=mx+b\), where \(m\) is the slope of
+      the line, and \(b\) is the \(y\)-intercept. Since \(m\) and \(b\) can take on various values, taken
+      together, they represent a family of functions. For example, we could fix \(b = 2\), and then
+      draw the graphs of \(f(x)=mx+2\) for various values of \(m\); for example, \(m = -1, -2, 2, 1\).
+      Doing so would give the functions in the family \(f(x)=mx+2\) shown in the left image of <a knowl="./knowl/fig_0_1_fam1.html" knowl-id="xref-fig_0_1_fam1" alt="Figure 1.1.16 " title="Figure 1.1.16 ">Figure 1.1.16</a>.
+    </p>
+<p id="p-95">
+      Similarly, we could set \(m\) to be \(2\) and let \(b\) take on the values \(b=-1, 1, 4, -6\) and
+      we would get
+      some examples from the family of functions for \(y=f(x)=2x+b\) shown in the right image of <a knowl="./knowl/fig_0_1_fam1.html" knowl-id="xref-fig_0_1_fam1" alt="Figure 1.1.16 " title="Figure 1.1.16 ">Figure 1.1.16</a>.
+    </p>
+<p id="p-96">
+      From the right image in <a knowl="./knowl/fig_0_1_fam1.html" knowl-id="xref-fig_0_1_fam1" alt="Figure 1.1.16 " title="Figure 1.1.16 ">Figure 1.1.16</a> it should be clear to the reader that
+      parallel lines have the same slope. What can you say about the slopes of perpendicular
+      lines? Here is the result that we state without proof.
+    </p>
+<article class="theorem-like" id="thm_test"><h5 class="heading">
+<span class="type">Theorem</span><span class="codenumber">1.1.15</span>
+</h5>
+<p id="p-97">
+          If line \(\ell_1\) has slope \(m_1\) and line \(\ell_2\) has slope \(m_2\), then
+          <ul style="list-style-type: disc;">
+<li id="li-50"><p id="p-98">
+                lines \(\ell_1\) and \(\ell_2\) are parallel if the slopes are the same: \(m_1 = m_2\),
+                and
+              </p></li>
+<li id="li-51"><p id="p-99">
+                lines \(\ell_1\) and \(\ell_2\) are perpendicular if the slopes are opposite
+                reciprocals: \(m_2 = -\frac{1}{m_1}\).
+              </p></li>
+</ul>
+        </p></article><figure class="figure-like" id="fig_0_1_fam1"><img width="90%" src="images/0-1-fig5.pdf" alt=""><figcaption><span class="heading">Figure</span><span class="codenumber">1.1.16</span>Several members of the family of linear functions \(f(x) = mx+2\) (left) and
+      the family \(f(x) = 2x+b\) (right).</figcaption></figure>
+      <p id="p-100">
+        Write the equation of the line with the given information.
+        <ol style="list-style-type: decimal;">
+<li id="li-52"><p id="p-101">
+              Write the equation of a line parallel to the line \(y=\frac{1}{2}x+3\) passing through
+              the point \((3,4)\).
+            </p></li>
+<li id="li-53"><p id="p-102">
+              Write the equation of a line perpendicular to the line \(y=\frac{1}{2}x + 3\) passing
+              through the point \((3,4)\).
+            </p></li>
+<li id="li-54"><p id="p-103">
+              Write the equation of a line with \(y\)-intercept \((0,-3)\) that is perpendicular to
+              the line \(y=-3x-1\).
+            </p></li>
+</ol>
+      </p>
+      <span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-hint-4" id="hint-4"><span class="heading"><span class="type">Hint</span></span></a></span><span id="hk-hint-4" style="display: none;" class="tex2jax_ignore"><span class="solution"><p id="p-104">
+          <ol style="list-style-type: decimal;">
+<li id="li-55"><p id="p-105">
+                What is the slope of the line that you're given and which form of a linear
+                function would be most convenient?
+              </p></li>
+<li id="li-56"><p id="p-106">
+                What is the slope of the line that you're given and which form of a linear
+                function would be most convenient?
+              </p></li>
+<li id="li-57"><p id="p-107">
+                You are given the \(y\)-intercept.  Why is that a special case?
+              </p></li>
+</ol>
+        </p></span></span>
+      <span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-solution-4" id="solution-4"><span class="heading"><span class="type">Solution</span></span></a></span><span id="hk-solution-4" style="display: none;" class="tex2jax_ignore"><span class="solution"><p id="p-108">
+          <ol style="list-style-type: decimal;">
+<li id="li-58"><p id="p-109">
+                The slope is \(m = \frac{1}{2}\) and you have a point so use the point-slope
+                form of the line to get
+                <div class="displaymath" id="me-21">\begin{equation*}
+                  y - 4 = \frac{1}{2} \left( x-3 \right).
+                \end{equation*}</div>
+                Solving for \(y\) we get
+                <div class="displaymath" id="me-22">\begin{equation*}
+                  y = \frac{1}{2} \left( x-3 \right) + 4.
+                \end{equation*}</div>
+              </p></li>
+<li id="li-59"><p id="p-110">
+                The slope is \(m = -2\) and we have a point so use the point-slope form of the
+                line to get
+                <div class="displaymath" id="me-23">\begin{equation*}
+                  y - 4 = -2 (x-3).
+                \end{equation*}</div>
+                Solving for \(y\) we get
+                <div class="displaymath" id="me-24">\begin{equation*}
+                  y = -2(x-3) + 4.
+                \end{equation*}</div>
+              </p></li>
+<li id="li-60"><p id="p-111">
+                The slope is \(m = \frac{1}{3}\) and since we have the \(y\)-intercept we know
+                that the slope-intercept for the line is the proper choice.  Hence,
+                <div class="displaymath" id="me-25">\begin{equation*}
+                  y = \frac{1}{3} x - 3.
+                \end{equation*}</div>
+              </p></li>
+</ol>
+        </p></span></span>
+    </section><section class="subsection" id="subsection-5"><header><h1 class="heading hide-type">
+<span class="type">Subsection</span><span class="codenumber">1.1.5</span><span class="title">Summary</span>
+</h1></header><ul style="list-style-type: disc;">
+<li id="li-61"><p id="p-112">
+          A function assigns one \(y\) value to each \(x\) value.
+        </p></li>
+<li id="li-62"><p id="p-113">
+          The slope of a linear function can be written as
+          <div class="displaymath" id="me-26">\begin{equation*}
+            m = \frac{\text{ Rise } }{\text{ Run } } = \frac{y_2 - y_1}{x_2 - x_2}
+          \end{equation*}</div>
+        </p></li>
+<li id="li-63"><p id="p-114">
+          A linear function can be written in the forms
+          <div class="displaymath" id="me-27">\begin{equation*}
+            y = mx + b  \text{ or }   y-y_1 = m(x-x_1)
+          \end{equation*}</div>
+        </p></li>
+<li id="li-64"><p id="p-115">
+          When examining linear data, the differences between successive \(y\)-values reveals
+          the slope.
+        </p></li>
+</ul>
+<section class="exercises" id="exercises-1"><header><h1 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="codenumber">1.1.5.1</span><span class="title">Exercises</span>
+</h1></header><article class="exercise-like" id="exercise-1"><h5 class="heading"><span class="codenumber">1</span></h5>
+<p id="p-116">
+            (modified from NCTM Illuminations) The table below displays data that relate the number of oil changes per year and the
+            cost of engine repairs. To predict the cost of repairs from the number of oil
+            changes, use the number of oil changes as the \(x\) variable and the engine repair cost
+            as the \(y\) variable.
+          </p>
+<table>
+<tr>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+</tr>
+<tr>
+<td class="l b0 r0 l0 t0">Oil Changes Per Year</td>
+<td class="l b0 r0 l0 t0">Cost of Repairs ($)</td>
+</tr>
+<tr>
+<td class="l b2 r0 l0 t0"></td>
+<td class="l b2 r0 l0 t0"></td>
+</tr>
+<tr>
+<td class="l b0 r0 l0 t0">3</td>
+<td class="l b0 r0 l0 t0">300</td>
+</tr>
+<tr>
+<td class="l b0 r0 l0 t0">5</td>
+<td class="l b0 r0 l0 t0">300</td>
+</tr>
+<tr>
+<td class="l b0 r0 l0 t0">2</td>
+<td class="l b0 r0 l0 t0">500</td>
+</tr>
+<tr>
+<td class="l b0 r0 l0 t0">3</td>
+<td class="l b0 r0 l0 t0">400</td>
+</tr>
+<tr>
+<td class="l b0 r0 l0 t0">1</td>
+<td class="l b0 r0 l0 t0">700</td>
+</tr>
+<tr>
+<td class="l b0 r0 l0 t0">4</td>
+<td class="l b0 r0 l0 t0">400</td>
+</tr>
+<tr>
+<td class="l b0 r0 l0 t0">6</td>
+<td class="l b0 r0 l0 t0">100</td>
+</tr>
+<tr>
+<td class="l b0 r0 l0 t0">4</td>
+<td class="l b0 r0 l0 t0">250</td>
+</tr>
+<tr>
+<td class="l b0 r0 l0 t0">3</td>
+<td class="l b0 r0 l0 t0">450</td>
+</tr>
+<tr>
+<td class="l b0 r0 l0 t0">2</td>
+<td class="l b0 r0 l0 t0">650</td>
+</tr>
+<tr>
+<td class="l b0 r0 l0 t0">0</td>
+<td class="l b0 r0 l0 t0">600</td>
+</tr>
+<tr>
+<td class="l b0 r0 l0 t0">10</td>
+<td class="l b0 r0 l0 t0">0</td>
+</tr>
+<tr>
+<td class="l b0 r0 l0 t0">7</td>
+<td class="l b0 r0 l0 t0">150</td>
+</tr>
+<tr>
+<td class="l b1 r0 l0 t0"></td>
+<td class="l b1 r0 l0 t0"></td>
+</tr>
+</table>
+<ol style="list-style-type: lower-alpha;">
+<li id="li-65"><p id="p-117">
+                Using graph paper make a plot of the data on appropriate axes.
+              </p></li>
+<li id="li-66"><p id="p-118">
+                Do the data appear linear?  Why or why not?
+              </p></li>
+<li id="li-67"><p id="p-119">
+                Pick two representative points from the data and use them to write the
+                equation of a line that <!--Style me with CSS--><em>fits</em> the data.  Plot your line on top of your data
+                and discuss how well your line fits the
+                data.   (This may take a few attempts.)
+              </p></li>
+<li id="li-68"><p id="p-120">
+                Despite how well your data fit a linear model, it is not entirely sensible to
+                use a linear model for this data.  Why?
+              </p></li>
+</ol></article><div class="hidden-knowl-wrapper"></div>
+<article class="exercise-like" id="exercise-2"><h5 class="heading"><span class="codenumber">2</span></h5>
+<p id="p-121">
+            The population of a city, \(P\), in millions, is a function of \(t\), the number of
+            years since 1960, so \(P = f(t)\). Which of the following statements explains the
+            meaning of \(f(38) = 8\) in terms of the population of this city?
+            <ol style="list-style-type: lower-alpha;">
+<li id="li-69"><p id="p-122">
+                  The population of this city in the year 38 is 8 million people.
+                </p></li>
+<li id="li-70"><p id="p-123">
+                  The population of this city in the year 8 is 38 million people.
+                </p></li>
+<li id="li-71"><p id="p-124">
+                  The population of this city in the year 1968 is 38 million people.
+                </p></li>
+<li id="li-72"><p id="p-125">
+                  The population of this city in the year 1998 is 8 million people.
+                </p></li>
+</ol>
+          </p></article><div class="hidden-knowl-wrapper">
+<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-solution-5" id="solution-5"><span class="heading"><span class="type">Solution</span></span></a></span><span id="hk-solution-5" style="display: none;" class="tex2jax_ignore"><span class="solution"><p id="p-126">
+            The independent variable is the number of years after 1960 so the “38” represents
+            the year 1998. Hence, the phrase “The population of this city in the year 1998 is 8
+            million people” is the correct phrase.
+          </p></span></span>
+</div>
+<article class="exercise-like" id="exercise-3"><h5 class="heading"><span class="codenumber">3</span></h5>
+<p id="p-127">
+            Determine the slope and \(y\)-intercept of the line whose equation is \(-4y + 6x + 8 =
+            0\).
+          </p></article><div class="hidden-knowl-wrapper">
+<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-solution-6" id="solution-6"><span class="heading"><span class="type">Solution</span></span></a></span><span id="hk-solution-6" style="display: none;" class="tex2jax_ignore"><span class="solution"><p id="p-128">
+            Solving for \(y\) we see that
+            <div class="displaymath" id="me-28">\begin{equation*}
+              4y = 6x + 8  \implies  y = \frac{6}{4} x + 2.
+            \end{equation*}</div>
+          </p>
+<p id="p-129">
+            Therefore the slope is \(m=\frac{6}{4} = \frac{3}{2}\) and the \(y\)-intercept is \(2\).
+          </p></span></span>
+</div>
+<article class="exercise-like" id="exercise-4"><h5 class="heading"><span class="codenumber">4</span></h5>
+<p id="p-130">
+            The value of a car in 1990 is $13,100 and the value is expected to go down by $80
+            per year for the next 7 years. Write a linear function for the value, \(V\), of the
+            1990 car as a function of the number of years from 1990, \(x\).
+          </p></article><div class="hidden-knowl-wrapper">
+<span class="hidden-knowl-wrapper"><a knowl="" class="id-ref" refid="hk-solution-7" id="solution-7"><span class="heading"><span class="type">Solution</span></span></a></span><span id="hk-solution-7" style="display: none;" class="tex2jax_ignore"><span class="solution"><div class="displaymath" id="me-29">\begin{equation*}
+            V(x) = -80x + 13100
+          \end{equation*}</div></span></span>
+</div></section></section></section></div></main>
+</div>
+</body>
+</html>
