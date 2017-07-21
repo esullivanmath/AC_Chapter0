@@ -2,6 +2,35 @@
 <section xml:id="S_0_4_Logarithms">
   <title>Logarithmic Functions</title>
   <introduction>
+    <objectives>
+        <ul>
+          <li>
+            <p>
+              How can we <q>undo</q> the effects of exponentiation?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              How can we solve equations involving exponential and logarithmic expressions?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              What are the properties of logarithmic functions?
+            </p>
+          </li>
+        </ul>
+    </objectives>
+    <p>
+      In <xref ref="S_0_2_Exponentials">section</xref> we studied exponential functions to model a
+      variety of different settings. It is straightforward to verify that the graph of an
+      exponential function passes the <q>horizontal line test</q> described in <xref ref="S_0_3_Transformations">section</xref>, and so we should expect exponential functions to have
+      corresponding inverse functions. In this section we will define the <em>logarithm</em> to
+      be the inverse function for an exponential.
+    </p>
+
     <exploration xml:id="PA_0_4">
       <p>
         Carbon-14 (<m>^{14}</m>C) is a radioactive isotope of carbon that occurs naturally in the Earth's atmosphere. During photosynthesis, plants take in <m>^{14}</m>C along with other carbon isotopes, and the levels of <m>^{14}</m>C in living plants are roughly the same as atmospheric levels. Once a plant dies, it no longer takes in any additional <m>^{14}</m>C. Since <m>^{14}</m>C in the dead plant decays at a predictable rate (the half-life of <m>^{14}</m>C is approximately 5,730 years), we can measure <m>^{14}</m>C levels in dead plant matter to get an estimate on how long ago the plant died.
@@ -84,6 +113,134 @@
         </ol>
       </p>
     </exploration>
+  </introduction>
+
+  <subsection>
+    <title>Logarithms</title>
+    <definition>
+      <title>logarithm</title>
+      <statement>
+        <p>
+          Let <m>b>0</m> with <m>b\neq1</m>. The logarithm of <m>x</m> with base <m>b</m> is defined by
+          <me>
+            \log_{b}x=y\qquad\mbox{if and only if} \qquad x=b^{y}.
+          </me>
+        </p>
+
+        <p>
+          The expression <m>\log_{b}x</m> represents the power to which <m>b</m> needs to be raised in order to get <m>x</m>.
+        </p>
+
+        <p>
+          Two frequently used logarithmic functions are <m>\log_{10}x</m> (frequently written <m>\log x</m>) and the natural logarithm <m>\log_{e}x</m> (frequently written <m>\ln x</m>).
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      Note that we have specifically defined logarithms to be inverse functions for
+      exponentials. For instance, <m>\log_{10}{1000} = 3</m>, since <m>10^{3} = 1000</m>. Logarithmic
+      functions give us a way to re-write exponential expressions and, more importantly, solve
+      equations involving variables in an exponent.
+    </p>
+  </subsection>
+
+  <subsection>
+    <title>Properties of Logarithms</title>
+    <p>
+      Since logarithms and exponentials are inverse functions, many of the properties of
+      logarithmic functions can be deduced directly from the properties of exponential
+      functions. For example, the domain of all logarithmic functions is <m>(0,\infty)</m> and the
+      range of all logarithmic functions is <m>(-\infty,\infty)</m> because those are the range and
+      domain, respectively, of exponential functions. Similarly, logarithmic functions have a
+      vertical asymptote at <m>x = 0</m> because exponential functions have a horizontal asymptote at
+      <m>y = 0</m>. These features can be seen in <xref ref="F_0_4_Ex1">Figure</xref>.
+    </p>
+
+    <figure xml:id="F_0_4_Ex1" >
+      <caption>Graphs of the functions <m>y=e^{x}</m> and <m>y=\ln{x}</m>.</caption>
+      <image width="50%" source="images/0-4-fig1" />
+    </figure>
+
+    <p>
+      The following properties of logarithms can be deduced from the properties of exponential functions and the definition of the logarithm. These properties are especially useful in simplifying or solving logarithmic and exponential equations.
+    </p>
+
+    <theorem>
+      <title>Properties of Logarithms</title>
+      <statement>
+        <p>
+          For <m>b>0</m>, <m>b \ne 1</m>, and <m>x,y>0</m>:
+          <ol>
+            <li>
+              <p>
+                <m>\log_{b}1=0</m>   (which is the same as the exponent rule <m>b^0 = 1</m>)
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\log_{b}b=1</m>   (which is the same as the exponent rule <m>b^1 = b</m>)
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\log_{b}\left(xy\right)=\log_{b}x+\log_{b}y</m>   (which is the same as the
+                exponent rule <m>b^{m+n} = b^mb^n</m>)
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\log_{b}\left(\dfrac{x}{y}\right)=\log_{b}x-\log_{b}y</m>   (which is the same as the
+                exponent rule <m>b^{m-n} = \frac{b^m}{b^n}</m>)
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\log_{b}x^{r}=r\,\log_{b}x</m>   (which is the same as the exponent rule <m>(b^m)^n
+                = b^{mn}</m>)
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\log_{b}b^{x}=x</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>b^{\log_{b}x}=x</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\log_{b}x=\log_{b}y</m> if and only if <m>x=y</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>\log_a b = \frac{\log_c a}{\log_c b}</m>   (this is called the change of base formula)
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </theorem>
+
+    <p>
+      Euler's number, <m>e</m>, shows up so often that we give a special name to the associated
+      logarithm. The logarithm <m>\log_e (x)</m> is called the natural logarithm and is written as
+      <m>\ln(x)</m>. We will see later in this course that the exponential function <m>f(x) = e^x</m> has
+      very special calculus properties and as such the natural logarithm has very special
+      properties as well. With this in mind, most mathematicians and scientists use <m>e^x</m> and
+      <m>\ln(x)</m> as their preferred exponential and logarithmic functions.
+    </p>
 
     <activity xml:id="A_0_4_1">
       <p>
@@ -200,6 +357,95 @@
         </p>
       </solution>
     </activity>
+
+    <example>
+      <statement>
+        <p>
+          Find a value of <m>x</m> for which <m>3^{x}=13</m>.
+        </p>
+      </statement>
+    </example>
+
+    <p>
+      To isolate the variable <m>x</m>, we should take the logarithm of both sides. For convenience,
+      let's choose to use the natural logarithm.
+      <me>
+        \ln(3^{x})=\ln(13).
+      </me>
+    </p>
+
+    <p>
+      Applying logarithm property (5), we find
+      <me>
+        x\,\ln 3=\ln 13.
+      </me>
+    </p>
+
+    <p>
+      Solving algebraically for <m>x</m> yields
+      <me>
+        x=\frac{\ln 13}{\ln 3}\approx2.3347.
+      </me>
+    </p>
+
+    <p>
+      NOTE: Our choice to use the natural logarithm was arbitrary. We could have chosen any base
+      for our logarithm to solve this equation.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          In 1970, the population of the United States was approximately 205.1 million people. Since
+          that time, the population has grown at a continuous growth rate of approximately 1.05<percent />. Assuming that this growth rate continues, when would we expect the population of the United States to reach 350 million?
+        </p>
+      </statement>
+    </example>
+
+    <p>
+      Since the rate of growth of the population is proportional to the size of the population, we should use an exponential model for this problem. That is, we want
+      <me>
+        P(t)=P_{0}e^{rt}
+      </me>
+      where <m>t</m> is the number of years after 1970, <m>P(t)</m> is the population (in millions) of the
+      United States at time <m>t</m>, <m>P_{0}</m> is the population (in millions) of the United States in
+      1970 (i.e. <m>t=0</m>) and <m>r</m> is the continuous rate of growth of the population. To determine when the population will reach 350 million, we must solve the equation
+      <me>
+        350=205.1e^{0.0105t}.
+      </me>
+    </p>
+
+    <p>
+      To solve for <m>t</m>, we need to first solve for the exponential expression by itself and then use logarithms. Dividing both sides of the equation by 205.1 gives
+      <me>
+        \frac{350}{205.1}=e^{0.0105t}.
+      </me>
+    </p>
+
+    <p>
+      Taking the natural logarithm of both sides gives
+      <me>
+        \ln\left(\frac{350}{205.1}\right)=\ln\left(e^{0.0105t}\right).
+      </me>
+    </p>
+
+    <p>
+      Applying logarithm property (6), we find
+      <me>
+        \ln\left(\frac{350}{205.1}\right)=0.0105t.
+      </me>
+    </p>
+
+    <p>
+      Finally, solving algebraically for <m>t</m> gives
+      <me>
+        t=\frac{1}{0.0105}\ln\left(\frac{350}{205.1}\right)\approx50.9\,\mbox{years} .
+      </me>
+    </p>
+
+    <p>
+      Thus, we expect the population of the United States to reach 350 million in 2021 (approximately 51 years after 1970).
+    </p>
 
     <activity xml:id="A_0_4_2">
       <p>
@@ -474,886 +720,61 @@
         </p>
       </solution>
     </activity>
-  </introduction>
+  </subsection>
 
   <subsection>
-    <title>Voting Questions</title>
-    <ol>
-    <li>
-      <p>
-        A logarithmic function of the form <m>f(x)=\log_a x</m> will always pass through the point <m>(1,0)</m>.
-        <ol>
-          <li>
-            <p>
-              True, and I am very confident.
-            </p>
-          </li>
-
-          <li>
-            <p>
-              True, but I am not very confident.
-            </p>
-          </li>
-
-          <li>
-            <p>
-              False, but I am not very confident.
-            </p>
-          </li>
-
-          <li>
-            <p>
-              False, and I am very confident.
-            </p>
-          </li>
-        </ol>
-      </p>
-
-      \teacher{\input{clicker/SVC.01.04.005C.tex}}</li>
-
-    <li>
-      <p>
-        Which is a graph of <m>y = \ln x</m>?
-        <image>
-          <latex-image-code>
-            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=0, xmax=10,
-            ymin=0, ymax=110, title={Plot (a)}]
-            \addplot[color=blue, very thick, domain=0:10] {x^2};
-            \end{axis}\end{tikzpicture}]]>
-          </latex-image-code>
-        </image>
-        <image>
-          <latex-image-code>
-            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-3, xmax=3,
-            ymin=0, ymax=3, title={Plot (b)}]
-            \addplot[color=blue, very thick,domain=-3:3] {exp(x)};
-            \end{axis}\end{tikzpicture}]]>
-          </latex-image-code>
-        </image>
-        <image>
-          <latex-image-code>
-            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=0, xmax=9,
-            ymin=-3, ymax=3, title={Plot (c)}]
-            \addplot[color=blue, very thick,domain=0:9,samples=100] {ln(x)};
-            \end{axis}\end{tikzpicture}]]>
-          </latex-image-code>
-        </image>
-        <image>
-          <latex-image-code>
-            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=0, xmax=9,
-            ymin=-3, ymax=3, title={Plot (d)}]
-            \addplot[color=blue, very thick,domain=0:9, samples=100] {-1*ln(x)};
-            \end{axis}\end{tikzpicture}]]>
-          </latex-image-code>
-        </image>
-        \teacher{\input{clicker/SVC.01.04.010C.tex}}
-      </p>
-    </li>
-
-    <li>
-      <p>
-        The graph below could be that of
-
-        <sidebyside>
-          <ol>
-            <li>
-              <p>
-                <m>y = \ln x + \frac{1}{2}</m>
-              </p>
-            </li>
-
-            <li>
-              <p>
-                <m>y = \ln x - \frac{1}{2}</m>
-              </p>
-            </li>
-
-            <li>
-              <p>
-                <m>y = \ln \left( x + \frac{1}{2} \right)</m>
-              </p>
-            </li>
-
-            <li>
-              <p>
-                <m>y = \ln \left( x - \frac{1}{2} \right)</m>
-              </p>
-            </li>
-          </ol>
+    <title>Summary</title>
+    <ul>
+      <li>
+        <p>
+          A logarithmic function can be written in the form <m>f(x)=\log_{b}x</m> where <m>b>0</m>, <m>b\ne1</m>, and <m>x>0</m>.
         </p>
-        <image>
-          <latex-image-code>
-            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-1, xmax=2,
-            ymin=-3, ymax=3]
-            \addplot[color=blue, very thick,domain=-1:2, samples=100] {ln(x + 0.5)};
-            \end{axis}\end{tikzpicture}]]>
-          </latex-image-code>
-        </image>
-      </sidebyside>
-      \teacher{\input{clicker/SVC.01.04.020C.tex}}</li>
+      </li>
 
-    <li>
-      <p>
-        Which equation matches this graph?
-
-        <sidebyside>
-          <ol>
-            <li>
-              <p>
-                <m>y=b^x</m> with <m>b>1</m>
-              </p>
-            </li>
-
-            <li>
-              <p>
-                <m>y=b^x</m> with <m>0\lt b\lt 1</m>
-              </p>
-            </li>
-
-            <li>
-              <p>
-                <m>y=\log_b x</m> with <m>b>1</m>
-              </p>
-            </li>
-
-            <li>
-              <p>
-                <m>y=\log_b x</m> with <m>0\lt b\lt 1</m>
-              </p>
-            </li>
-          </ol>
+      <li>
+        <p>
+          Logarithmic functions are defined to be inverse functions for exponentials.  That is
+          <me>
+            \log_{b}x=y\qquad\mbox{if and only if} \qquad x=b^{y}.
+          </me>
         </p>
-        <image>
-          <latex-image-code>
-            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-1, xmax=5,
-            ymin=-3, ymax=3, xtick=, ytick=]
-            \addplot[color=blue, very thick,domain=-1:5, samples=100] {ln(x)};
-            \end{axis}\end{tikzpicture}]]>
-          </latex-image-code>
-        </image>
-      </sidebyside>
-      \teacher{\input{clicker/SVC.01.04.024C.tex}}</li>
+      </li>
 
-    <li>
-      <p>
-        Which equation matches this graph?
-
-        <sidebyside>
-          <ol>
-            <li>
-              <p>
-                <m>y=b^x</m> with <m>b>1</m>
-              </p>
-            </li>
-
-            <li>
-              <p>
-                <m>y=b^x</m> with <m>0\lt b\lt 1</m>
-              </p>
-            </li>
-
-            <li>
-              <p>
-                <m>y=\log_b x</m> with <m>b>1</m>
-              </p>
-            </li>
-
-            <li>
-              <p>
-                <m>y=\log_b x</m> with <m>0\lt b\lt 1</m>
-              </p>
-            </li>
-          </ol>
+      <li>
+        <p>
+          Solving equations that contain exponential expressions frequently requires the use of logarithms; solving equations that contain logarithmic expressions frequently requires the use of exponentials.
         </p>
-        <image>
-          <latex-image-code>
-            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-1, xmax=5,
-            ymin=-3, ymax=3, xtick=, ytick=]
-            \addplot[color=blue, very thick,domain=-1:5, samples=100] {(1/2)^x};
-            \end{axis}\end{tikzpicture}]]>
-          </latex-image-code>
-        </image>
-      </sidebyside>
-      \teacher{\input{clicker/SVC.01.04.025C.tex}}</li>
-
-    <li>
-      <p>
-        Which of the following is a graph of <m>y=\log_2 x</m>?
-        <image>
-          <latex-image-code>
-            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-3, xmax=3,
-            ymin=-3, ymax=3, xtick=, ytick=, yticklabels=,
-            xticklabels=, title={Plot (a)}]
-            \addplot[color=blue, very thick,samples=100] {(1/2)^x};
-            \end{axis}\end{tikzpicture}]]>
-          </latex-image-code>
-        </image>
-        <image>
-          <latex-image-code>
-            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-3, xmax=3,
-            ymin=-3, ymax=3, xtick=, ytick=, yticklabels=,
-            xticklabels=, title={Plot (b)}]
-            \addplot[color=blue, very thick,domain=-3:3,samples=100] {-1*2^x};
-            \end{axis}\end{tikzpicture}]]>
-          </latex-image-code>
-        </image>
-        <image>
-          <latex-image-code>
-            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-3, xmax=3,
-            ymin=-3, ymax=3, xtick=, ytick=, yticklabels=,
-            xticklabels=, title={Plot (c)}]
-            \addplot[color=blue, very thick,domain=-3:3,samples=100] {ln(x)/ln(2)};
-            \end{axis}\end{tikzpicture}]]>
-          </latex-image-code>
-        </image>
-        <image>
-          <latex-image-code>
-            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-3, xmax=3,
-            ymin=-3, ymax=3, xtick=, ytick=, yticklabels=,
-            xticklabels=, title={Plot (d)}]
-            \addplot[color=blue, very thick,domain=-3:3,samples=100] {-1*ln(x)/ln(2)};
-            \end{axis}\end{tikzpicture}]]>
-          </latex-image-code>
-        </image>
-        \teacher{\input{clicker/SVC.01.04.026C.tex}}
-      </p>
-    </li>
-
-    <li>
-      <p>
-        Which of the following is a graph of <m>y=\log_{\frac{1}{2}} x</m>?
-        <image>
-          <latex-image-code>
-            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-3, xmax=3,
-            ymin=-3, ymax=3, xtick=, ytick=, yticklabels=,
-            xticklabels=, title={Plot (a)}]
-            \addplot[color=blue, very thick,samples=100] {(1/2)^x};
-            \end{axis}\end{tikzpicture}]]>
-          </latex-image-code>
-        </image>
-        <image>
-          <latex-image-code>
-            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-3, xmax=3,
-            ymin=-3, ymax=3, xtick=, ytick=, yticklabels=,
-            xticklabels=, title={Plot (b)}]
-            \addplot[color=blue, very thick,domain=-3:3,samples=100] {-1*2^x};
-            \end{axis}\end{tikzpicture}]]>
-          </latex-image-code>
-        </image>
-        <image>
-          <latex-image-code>
-            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-3, xmax=3,
-            ymin=-3, ymax=3, xtick=, ytick=, yticklabels=,
-            xticklabels=, title={Plot (c)}]
-            \addplot[color=blue, very thick,domain=-3:3,samples=100] {ln(x)/ln(2)};
-            \end{axis}\end{tikzpicture}]]>
-          </latex-image-code>
-        </image>
-        <image>
-          <latex-image-code>
-            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-3, xmax=3,
-            ymin=-3, ymax=3, xtick=, ytick=, yticklabels=,
-            xticklabels=, title={Plot (d)}]
-            \addplot[color=blue, very thick,domain=-3:3,samples=100] {-1*ln(x)/ln(2)};
-            \end{axis}\end{tikzpicture}]]>
-          </latex-image-code>
-        </image>
-        \teacher{\input{clicker/SVC.01.04.027C.tex}}
-      </p>
-    </li>
-
-    <li>
-      <p>
-        Which of the following functions have vertical asymptotes of <m>x=3</m>?
-        <ol>
-          <li>
-            <p>
-              <m>y = \ln (x/3)</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>y = \ln ( x - 3)</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>y = \ln (x+3)</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>y = 3 \ln x</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-
-      \teacher{\input{clicker/SVC.01.04.030C.tex}}</li>
-
-    <li>
-      <p>
-        <m>\log \left( \frac{M-N}{M+N} \right) =</m>
-        <ol>
-          <li>
-            <p>
-              <m>2 \log M</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>2 \log N</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>-2 \log N</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>\log(M-N) - \log(M+N)</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-
-      \teacher{\input{clicker/SVC.01.04.040C.tex}}</li>
-
-    <li>
-      <p>
-        If <m>\log_{10} (x-a) = n</m>, then <m>x=</m>
-        <ol>
-          <li>
-            <p>
-              <m>10^{a+n}</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>a + 10^n</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>n + 10^a</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>n + a^{10}</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-
-      \teacher{\input{clicker/SVC.01.04.050C.tex}}</li>
-
-    <li>
-      <p>
-        What is the exponential form of <m>\log_r m =j</m>?
-        <ol>
-          <li>
-            <p>
-              <m>r^j=m</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>j^r=m</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>m^j=r</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>r^m=j</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-
-      \teacher{\input{clicker/SVC.01.04.051C.tex}}</li>
-
-    <li>
-      <p>
-        What is the logarithmic form of <m>k^p=d</m>?
-        <ol>
-          <li>
-            <p>
-              <m>\log_d k=p</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>\log_k d=p</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>\log_p d=p</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>\log_k p=d</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-
-      \teacher{\input{clicker/SVC.01.04.052C.tex}}</li>
-
-    <li>
-      <p>
-        What is the value of <m>\log_{11} 86</m>?  (Calculators are allowed.)
-        <ol>
-          <li>
-            <p>
-              <m>.4049</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>.5383</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>1.8576</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>-2.0564</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-
-      \teacher{\input{clicker/SVC.01.04.053C.tex}}</li>
-
-    <li>
-      <p>
-        What is <m>3=\log_2 8</m> in exponential form?
-        <ol>
-          <li>
-            <p>
-              <m>2^8=3</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>3^2=8</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>8^3=2</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>2^3=8</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-
-      \teacher{\input{clicker/SVC.01.04.054C.tex}}</li>
-
-    <li>
-      <p>
-        What is <m>k=\log_m q</m> in exponential form?
-        <ol>
-          <li>
-            <p>
-              <m>m^k=q</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>k^q=m</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>m^q=k</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>q^m=k</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-
-      \teacher{\input{clicker/SVC.01.04.055C.tex}}</li>
-
-    <li>
-      <p>
-        What is <m>4^2=16</m> in logarithmic form?
-        <ol>
-          <li>
-            <p>
-              <m>\log_2 4=16</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>\log_4 16=2</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>\log_4 2=16</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>\log_{16} 4=2</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-
-      \teacher{\input{clicker/SVC.01.04.056C.tex}}</li>
-
-    <li>
-      <p>
-        What is <m>\displaystyle 3^{-1}=\frac{1}{3}</m> in logarithmic form?
-        <ol>
-          <li>
-            <p>
-              <m>\displaystyle \log_3 (-1)=\frac{1}{3}</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>\displaystyle \log_{-1} \frac{1}{3}=3</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>\displaystyle \log_{\frac{1}{3}} 3=-1</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>\displaystyle \log_3 \frac{1}{3}=-1</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-
-      \teacher{\input{clicker/SVC.01.04.057C.tex}}</li>
-
-    <li>
-      <p>
-        What is the inverse of the following function:
-        <me>
-          P = f(t) = 16 \ln(14 t)
-        </me>
-        <ol>
-          <li>
-            <p>
-              <m>f^{-1}(P) = \frac{1}{14} e^{16P}</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>f^{-1}(P) = \frac{1}{14} e^{P/16}</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>f^{-1}(P) = \frac{1}{14} \ln(P/16)</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>f^{-1}(P) = \frac{\ln 16}{14} P</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-
-      \teacher{\input{clicker/SVC.01.04.060C.tex}}</li>
-
-    <li>
-      <p>
-        Solve for <m>x</m> if <m>8y = 3e^x</m>.
-        <ol>
-          <li>
-            <p>
-              <m>x = \ln 8 + \ln 3 + \ln y</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>x = \ln 3 - \ln 8 + \ln y</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>x = \ln 8 + \ln y - \ln 3</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>x = \ln 3 - \ln 8 - \ln y</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-
-      \teacher{\input{clicker/SVC.01.04.070C.tex}}</li>
-
-    <li>
-      <p>
-        Solve for <m>x</m> if <m>y = e + 2^x</m>
-        <ol>
-          <li>
-            <p>
-              <m>x = \frac{\ln y - 1}{\ln 2}</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>x = \frac{\ln (y - 1)}{\ln 2}</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>x = \frac{\ln y }{\ln 2} -1</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>x = \frac{\ln (y - e)}{\ln 2}</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-
-      \teacher{\input{clicker/SVC.01.04.080C.tex}}</li>
-
-    <li>
-      <p>
-        Write the following expression using a single logarithmic function:
-
-        <m>\displaystyle \ln(2x^3+1)+5\ln(3-x)-\ln(6x^5+2x+1)</m>.
-        <ol>
-          <li>
-            <p>
-              <m>\displaystyle \ln(-6x^5+2x^3-7x+15)</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>\displaystyle \ln[(2x^3+1)(15-5x)(-6x^5-2x-1)]</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>\displaystyle \ln\left(\frac{(2x^3+1)(3-x)^5}{6x^5+2x+1}\right)</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>\displaystyle \ln\left(\frac{(2x^3+1)(15-5x)}{6x^5+2x+1}\right)</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-
-      \teacher{\input{clicker/SVC.01.04.085C.tex}}</li>
-
-    <li>
-      <p>
-        <m>\log \left( \frac{a^4 b^7}{c^5} \right) =</m>
-        <ol>
-          <li>
-            <p>
-              <m>\log (a^4) +  \log (b^7) + \log (c^5)</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>4 \log a + 7 \log b - 5 \log c</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>28 \log ab - 5 \log c</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>\frac{28}{5} \left( \log a+\log b -  \log c \right)</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              None of the above
-            </p>
-          </li>
-        </ol>
-      </p>
-
-      \teacher{\input{clicker/SVC.01.04.090C.tex}}</li>
-
-    <li>
-      <p>
-        Simplify the following expression: <m>\displaystyle \ln\left(\frac{\sqrt{x^2+1}(x^3-4)}{(3x-7)^2}\right)</m>.
-        <ol>
-          <li>
-            <p>
-              <m>\displaystyle \frac{1}{2}\ln(x^2+1)+\ln(x^3+4)-2\ln(3x-7)</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>\displaystyle \ln\left(\frac{1}{2}(x^2+1)\right)+\ln(x^3+4)-2\ln(3x-7)</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>\displaystyle \ln(x^2+1)\ln(x^3+4)\ln(3x-7)</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>\displaystyle \ln[(x^2+1)(x^3+4)(3x-7)]</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-
-      \teacher{\input{clicker/SVC.01.04.095C.tex}}</li>
-
-    <li>
-      <p>
-        25 rabbits are introduced to an island, where they quickly reproduce and the rabbit population grows according to an exponential model <m>P(t) = P_0 e^{kt}</m> so that the population doubles every four months.  If <m>t</m> is in months, what is the value of the continuous growth rate <m>k</m>?
-        <ol>
-          <li>
-            <p>
-              <m>k = \frac{1}{2} \ln 4</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>k = \frac{1}{4} \ln 2</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>k = \frac{1}{50} \ln \frac{4}{25}</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>k = \frac{4}{25} \ln \frac{1}{50}</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              None of the above
-            </p>
-          </li>
-        </ol>
-      </p>
-
-      \teacher{\input{clicker/SVC.01.04.100C.tex}}</li>
-
-    <li>
-      <p>
-        Simplify <m>\displaystyle (\log_{16}4)\left( \log_3 \frac{1}{9}\right)</m>.
-        <ol>
-          <li>
-            <p>
-              <m>\displaystyle \frac{16}{3}</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>\displaystyle \frac{4}{9}</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              1
-            </p>
-          </li>
-
-          <li>
-            <p>
-              -1
-            </p>
-          </li>
-        </ol>
-      </p>
-
-      \teacher{\input{clicker/SVC.01.04.110C.tex}}</li>
-    </ol>
+      </li>
+    </ul>
+    <exercises>
+      <exercise>
+        <statement>
+          <p>
+            Use the laws of logarithms to rewrite the expression
+            <me>
+              \ln \left( x^{13} \sqrt{\frac{y^9}{z^2} } \right)
+            </me>
+            in a form with no logarithm of a power, product, or quotient.
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Solve <m>\ln(5x^2+2) = 4</m> for <m>x</m>. Give only an exact answer (no decimal
+            approximations).
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            A wooden artifact from an ancient tomb consists of 20<percent /> of the carbon-14 that is
+            present in living trees. How long ago was the artifact made assuming that the
+            half-life of carbon-14 is 5,730 years?
+          </p>
+        </statement>
+      </exercise>
+    </exercises>
   </subsection>
 </section>

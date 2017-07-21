@@ -2,6 +2,34 @@
 <section xml:id="S_0_2_Exponentials">
   <title>Exponential Functions</title>
   <introduction>
+    <objectives>
+        <ul>
+          <li>
+            <p>
+              How can exponential functions be used to model growth and decay of populations,
+              investments, radioactive isotopes, and many other physical phenomena?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              How can we build exponential functions from data?
+            </p>
+          </li>
+        </ul>
+    </objectives>
+    <p>
+      The exponential function is a powerful tool in the mathematician's arsenal for modeling
+      growth and decay phenomena. The common applications of the exponential funciton range
+      from population modeling, to tracking drug levels in the blood stream, to using carbon
+      dating to estimate the age of an artifact. The common mathematical fact about all of
+      these situations is that the growth (or decay) rate is a constant multiple. For example,
+      if we are measuring exponential population growth then the ratio of two successive
+      populations must be constant. Linear functions have a similar behavior, except that in
+      linear functions the difference (not the ratio) between two successive values is constant
+      (the slope).
+    </p>
+
     <exploration xml:id="PA_0_2">
       <p>
         Suppose that the populations of two towns are both growing over time. The town of
@@ -140,6 +168,116 @@
         </ol>
       </p>
     </exploration>
+  </introduction>
+
+  <subsection>
+    <title>Exponential Functions</title>
+    <p>
+      Consider the example where the population of a bacteria colony is doubling every week. If
+      in the first week there are 100 bacteria, then there are 200 bacteria by the end of the
+      second week, 400 by the end of the third and so on. In <xref ref="tab_0_2_bacteria">Table</xref> and
+      Equation <xref ref="eqn_0_2_bacteria" /> we can see a simple way to model this type of growth.
+    </p>
+
+    <table xml:id="tab_0_2_bacteria" >
+      <caption>Bacteria population doubling</caption>
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Week</cell>
+          <cell>Bacteria</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>0</cell>
+          <cell><m>100</m></cell>
+        </row>
+        <row>
+          <cell>1</cell>
+          <cell><m>100 \cdot 2=200</m></cell>
+        </row>
+        <row>
+          <cell>2</cell>
+          <cell><m>200 \cdot 2 = 100 \cdot 2^2=400</m></cell>
+        </row>
+        <row>
+          <cell>3</cell>
+          <cell><m>400 \cdot 2 = 100 \cdot 2^3=800</m></cell>
+        </row>
+        <row>
+          <cell>\vdots</cell>
+          <cell>\vdots</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+    </table>
+
+    <md>
+      <mrow>P(t) = 100 \cdot 2^t  \text{ (\(t=\) number of weeks) }</mrow>
+    </md>
+    <p>
+      The time, <m>t</m> in equation <xref ref="eqn_0_2_bacteria" /> is measured in weeks. It is easy to see that
+      the ratio of the populations for each successive week is constant at <m>P(t+1)/P(t) = 2</m>.
+      This is indicative of exponential growth. Of course, this population growth could have
+      been modeled using time measured in days instead. The population still doubles every week
+      so for this new model the value at <m>t=7</m> should be double the value at <m>t=0</m>. Equation
+      <xref ref="eqn_0_2_bacteria_days" /> shows this new model with only a slight modification
+      adjusting for the new time measurement.
+      <md>
+        <mrow>P(t) = 100 \cdot 2^{t/7}  \text{ (\(t=\) number of days) }</mrow>
+      </md>
+    </p>
+
+    <p>
+      This type of modeling and thought process can be used to describe most exponential growth
+      and decay situations. One
+      general formula for an exponential function is
+      <md>
+        <mrow>f(x) = A \cdot r^{kx}.</mrow>
+      </md>
+      where <m>A</m> is some given initial value, <m>r</m> is the common ratio, and <m>k</m> is a constant
+      given by the frequency in which the common ratio is applied. In the previous population
+      doubling example, <m>A=100</m>, <m>r=2</m>, and <m>k=1/7</m>.
+    </p>
+
+    <p>
+      A few simple guidelines should make it clear when an exponential function is modeling
+      growth or decay.
+      <ul>
+        <li>
+          <p>
+            If <m>r > 1</m> then the function exhibits exponential growth.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            If <m>0 \lt  r \lt  1</m> then the function exhibits exponential decay.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            If a population is growing by <m>p\%</m> per unit time, then <m>r = 1+p/100</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            If a population is decreasing by <m>p\%</m> per unit time, then <m>r = 1-p/100</m>.
+          </p>
+        </li>
+      </ul>
+    </p>
 
     <activity xml:id="A_0_2_1">
       <p>
@@ -220,6 +358,36 @@
         </p>
       </solution>
     </activity>
+
+    <example>
+      <statement>
+        <p>
+          One application to exponential decay is to calculate the intensity of radiation from
+          radioactive isotopes. Most isotopes emit particles and decay into stable forms. We
+          measure the rate of decay from the particles by the isotope's half-life, which is
+          how long it takes half of the isotope to decay. The half-life for Sodium-25 (<m>Na^{25}</m>)
+          is almost exactly one minute. Write a function that models that amount of <m>Na^{25}</m> over
+          time if you start with exactly 36 grams.
+        </p>
+      </statement>
+    </example>
+
+    <p>
+      If you begin with 36 grams of <m>Na^{25}</m> then the number of
+      grams remaining after <m>t</m> minutes, <m>S(t)</m>, can be represented by the function
+      <me>
+        S(t) = 36 \left( \frac{1}{2} \right)^{t},
+      </me>
+      where <m>t</m> is measured in minutes. <xref ref="F_0_2_Ex1">Figure</xref> shows this exponential decay
+      function with an initial value of 36 and a value of 18 after 1 day.
+    </p>
+
+    <figure xml:id="F_0_2_Ex1" >
+      <caption>The grams of Sodium-25 remaining as a function of time. The blue point
+      represents the initial value <m>(0,36)</m> and the red point represents the value after 1
+      minute <m>(1,18)</m>.</caption>
+      <image width="50%" source="images/0-2-fig2" />
+    </figure>
 
     <activity xml:id="A_0_2_2">
       <p>
@@ -390,196 +558,580 @@
         </p>
       </solution>
     </activity>
-  </introduction>
+  </subsection>
 
   <subsection>
-    <title>Voting Questions</title>
-    <ol>
+    <title>Investments</title>
+    <p>
+      Interest bearing bank accounts and investments follow exponential growth and decay models.
+      In the case of a savings account the interest is typically compounded several times per
+      year. This means that the investor is getting interest on their interest every time the
+      bank computes the interest.
+    </p>
+
+    <p>
+      If the money is gaining <m>p\%</m> interest compounded <m>n</m> times per year then the common ratio
+      for the exponential function is <m>1 + p/n</m>. The exponent needs to reflect the fact that
+      the interest occurs at monthly intervals. This means that the exponential function is
+      <md>
+        <mrow>A(t) = A_0 \left( 1+\frac{p}{n} \right)^{nt}  \text{ (\(t=\) number of years) } .</mrow>
+      </md>
+    </p>
+
+    <p>
+      In Equation <xref ref="eqn_0_2_compound_interest" />, <m>A_0</m> is the initial investment, <m>A(t)</m> is
+      the value of the investment over time, <m>p</m> is the interest rate, and <m>n</m> is the number of
+      times the interest is compounded per year.
+    </p>
+
+    <example xml:id="x0_2_Ex2">
+      <statement>
+        <p>
+          If <dollar />100 are invested into a bank account earning 2<percent /> interest compounded 12 times per
+          year, how much does the investor have at the end of 1 year? 5 years? at retirement age?
+          How does this change is we compound quarterly or daily instead of monthly?
+        </p>
+      </statement>
+    </example>
+
+    <p>
+      In the present situation the function modeling the value of the investment is
+      <me>
+        A(t) = 100 \left( 1 + \frac{0.02}{12} \right)^{12t}.
+      </me>
+    </p>
+
+    <p>
+      <xref ref="tab_0_2_ex2">Table</xref> shows the value of the investment over the first 5 years. It is
+      clear that this is very slow growth, but it is exponential none the less. The common
+      ratio in this case is <m>r = (1+0.02/12) \approx 1.0017</m>, and this means that you are really
+      gaining 0.17<percent /> interest per month.
+    </p>
+
+    <table xml:id="tab_0_2_ex2" >
+      <caption>Value of <dollar />100 investment for the first 5 years</caption>
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Year</cell>
+          <cell>0</cell>
+          <cell>1</cell>
+          <cell>2</cell>
+          <cell>3</cell>
+          <cell>4</cell>
+          <cell>5</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Value</cell>
+          <cell><dollar />100</cell>
+          <cell><dollar />102.02</cell>
+          <cell><dollar />104.08</cell>
+          <cell><dollar />106.18</cell>
+          <cell><dollar /> 108.32</cell>
+          <cell><dollar /> 110.51</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      Assume that our investor was an 18 year old and extrapolate this to retirement age,
+      let's say 65 years old. That is 47 years worth of interest, and the initial <dollar />100
+      investment becomes
+      <me>
+        A(47) = 100 \left( 1 + \frac{0.02}{12} \right)^{12\cdot 47} \approx \dollar256.
+      </me>
+    </p>
+
+    <p>
+      If the number of times the bank compounds the interest changes the function will still
+      have essentially the same form: <m>A(t) = 100 (1+\frac{0.02}{n})^{nt}</m>. In <xref ref="tab_0_2_ex2_n">Table</xref> the same investment is considered for several values of <m>n</m>. While
+      more compoundings per year generally gives a higher rate of return on the investment, the
+      impact is small for larger values of <m>n</m>.
+    </p>
+
+    <table xml:id="tab_0_2_ex2_n" >
+      <caption>Value of <dollar />100 investment for various values of <m>n</m>.</caption>
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Year</cell>
+          <cell>0</cell>
+          <cell>1</cell>
+          <cell>2</cell>
+          <cell>3</cell>
+          <cell>4</cell>
+          <cell>5</cell>
+          <cell><m>\cdots</m></cell>
+          <cell>47</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Value (<m>n=1</m>)</cell>
+          <cell><dollar />100</cell>
+          <cell><dollar />102.00</cell>
+          <cell><dollar />104.04</cell>
+          <cell><dollar />106.12</cell>
+          <cell><dollar /> 108.24</cell>
+          <cell><dollar /> 110.41</cell>
+          <cell><m>\cdots</m></cell>
+          <cell><dollar />253.63</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Value (<m>n=4</m>)</cell>
+          <cell><dollar />100</cell>
+          <cell><dollar />102.02</cell>
+          <cell><dollar />104.07</cell>
+          <cell><dollar />106.17</cell>
+          <cell><dollar /> 108.31</cell>
+          <cell><dollar /> 110.49</cell>
+          <cell><m>\cdots</m></cell>
+          <cell><dollar />255.40</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Value (<m>n=12</m>)</cell>
+          <cell><dollar />100</cell>
+          <cell><dollar />102.02</cell>
+          <cell><dollar />104.08</cell>
+          <cell><dollar />106.18</cell>
+          <cell><dollar /> 108.32</cell>
+          <cell><dollar /> 110.51</cell>
+          <cell><m>\cdots</m></cell>
+          <cell><dollar />255.80</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Value (<m>n=365</m>)</cell>
+          <cell><dollar />100</cell>
+          <cell><dollar />102.02</cell>
+          <cell><dollar />104.08</cell>
+          <cell><dollar />106.18</cell>
+          <cell><dollar /> 108.33</cell>
+          <cell><dollar /> 110.52</cell>
+          <cell><m>\cdots</m></cell>
+          <cell><dollar />255.99</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+    </table>
+  </subsection>
+
+  <subsection>
+    <title>Exponential Functions with Base <m>e</m></title>
+    <p>
+      Exponential functions are commonly written with a base of <m>e \approx 2.718281828459045\dots</m>.
+      This may seem like an arbitrary and bizarre choice at first glance, but we will see that this famous
+      number (called Euler's Number<fn>Euler's number is named after the famous <m>17^{th}</m>
+      century mathematician Leonhard Euler. Euler was the first mathematician to introduce the
+      notion of a function, and he is responsible for a large amount of the development of
+      Calculus.</fn>) plays a central role in Calculus.
+    </p>
+
+    <p>
+      Euler's number can be derived from Equation <xref ref="eqn_0_2_compound_interest" /> if we assume
+      that a fictitious bank gives <m>100\%</m> interest compounded infinitely many times per year on
+      a one dollar investment. Mathematically this is written as
+      <md>
+        <mrow>e = 1 \cdot \left( 1 + \frac{1}{n} \right)^n \text{ as }  n \to \infty.</mrow>
+      </md>
+    </p>
+
+    <table xml:id="tab_0_2_euler" >
+      <caption>Approximations of Euler's number, <m>e</m>, using equation <xref ref="eqn_0_2_euler" /> with various values of <m>n</m></caption>
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>n</m></cell>
+          <cell><m>1</m></cell>
+          <cell><m>10</m></cell>
+          <cell><m>100</m></cell>
+          <cell><m>1000</m></cell>
+          <cell><m>\cdots</m></cell>
+          <cell><m>10^{10}</m></cell>
+          <cell><m>\cdots</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>(1+\frac{1}{n})^n</m></cell>
+          <cell><m>2</m></cell>
+          <cell><m>2.5935</m></cell>
+          <cell><m>2.7048</m></cell>
+          <cell><m>2.7169</m></cell>
+          <cell><m>\cdots</m></cell>
+          <cell><m>2.71828</m></cell>
+          <cell><m>\cdots</m></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      Any exponential function can be rewritten in terms of Euler's number in the form
+      <md>
+        <mrow>f(x) = A e^{kx}.</mrow>
+      </md>
+    </p>
+
+    <p>
+      In Equation <xref ref="eqn_0_2_exponential_e" />, <m>k</m> is called the continuous
+      rate<index><main>continuous rate</main></index>.
+      <ul>
+        <li>
+          <p>
+            If <m>k>0</m> then <m>f(x) = Ae^{kx}</m> models exponential growth.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            If <m>k\lt 0</m> then <m>f(x) = Ae^{kx}</m> models exponential decay.
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          A population of a city is 5000 people and is doubling in size every 5 years. Use
+          equations <xref ref="eqn_0_2_exponential" /> and <xref ref="eqn_0_2_exponential_e" /> to write two
+          different functions modeling this population; one with base 2 and one with base <m>e</m>.
+        </p>
+      </statement>
+    </example>
+
+    <p>
+      If the population is doubling every 5 years we can use equation
+      <xref ref="eqn_0_2_exponential" /> to write
+      <me>
+        P(t) = 5000 \cdot 2^{t/5}.
+      </me>
+    </p>
+
+    <p>
+      In order to use equation <xref ref="eqn_0_2_exponential_e" /> we need to find the value of
+      <q><m>k</m></q>. This is done by using the fact that at year 5 the population will be 10000 and
+      solving the equation
+      <me>
+        10000 = 5000 \cdot e^{5k}.
+      </me>
+    </p>
+
+    <p>
+      Rearranging we see that <m>e^{5k} = 2</m>. In order to solve this algebraic equation we need
+      to use logarithms. These important functions will be discussed in more detail in the
+      logarithms section
+      In this case we see that <m>k = \ln(2) / 5 \approx 0.139.</m>
+      Therefore,
+      <me>
+        P(t) = 5000 \cdot e^{0.139 t}.
+      </me>
+    </p>
+
+    <p>
+      Since these two equations model the same population they must be identical. Indeed,
+      <me>
+        5000 \cdot 2^{t/5} = 5000 \cdot \left( 2^{1/5} \right)^t \approx 5000 \cdot (1.149)^t,
+      </me>
+      and
+      <me>
+        5000 \cdot e^{kt} = 5000 \cdot \left( e^k \right)^t \approx 5000 \cdot (1.149)^t.
+      </me>
+    </p>
+  </subsection>
+
+  <subsection>
+    <title>Summary</title>
+    <ul>
     <li>
       <p>
-        The following table shows  the net sales at Amazon.com from 2003 to 2010 <em>(source:  Amazon.com quarterly reports)</em>:
-        <tabular>
-          <row bottom="minor">
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-          </row>
-          <row>
-            <cell>Year</cell>
-            <cell>2003</cell>
-            <cell>2004</cell>
-            <cell>2005</cell>
-            <cell>2006</cell>
-            <cell>2007</cell>
-            <cell>2008</cell>
-            <cell>2009</cell>
-            <cell>2010</cell>
-          </row>
-          <row bottom="minor">
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-          </row>
-          <row>
-            <cell>Billions of dollars</cell>
-            <cell>{<dollar />}5.26</cell>
-            <cell>{<dollar />}6.92</cell>
-            <cell>{<dollar />}8.49</cell>
-            <cell>{<dollar />}10.72</cell>
-            <cell>{<dollar />}14.84</cell>
-            <cell>{<dollar />}19.15</cell>
-            <cell>{<dollar />}24.51</cell>
-            <cell>{<dollar />}34.21</cell>
-          </row>
-          <row bottom="minor">
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-            <cell></cell>
-          </row>
-        </tabular>
-        If the net sales are modeled using an exponential function <m>S(t)=a\cdot b^t</m>, where <m>S</m> is the net sales in billions of dollars, and <m>t</m> is the number of years after <m>2003</m>, which of the following is an appropriate value for <m>a</m>?
-        <ol>
+        An exponential function can be written in the form <m>f(x) = A r^{kx}</m> or <m>g(x) = A
+        e^{kx}</m>.
+        <ul>
           <li>
             <p>
-              34.21
+              In <m>f(x)</m>, if <m>k>0</m> and <m>r>1</m> then <m>f(x)</m> models exponential growth.
             </p>
           </li>
 
           <li>
             <p>
-              1
+              In <m>f(x)</m>, if <m>k>0</m> and <m>0\lt r\lt 1</m> then <m>f(x)</m> models exponential decay.
             </p>
           </li>
 
           <li>
             <p>
-              1.31
+              In <m>g(x)</m>, if <m>k>0</m> then <m>g(x)</m> models exponential growth.
             </p>
           </li>
 
           <li>
             <p>
-              5.26
+              In <m>g(x)</m>, if <m>k\lt 0</m> then <m>g(x)</m> models exponential decay.
             </p>
           </li>
-        </ol>
+        </ul>
       </p>
-
-      \teacher{\input{clicker/SVC.01.02.103C.tex}}</li>
+    </li>
 
     <li>
       <p>
-        Which is better at the end of one year:  An account that pays <m>8\%</m> annual interest compounded quarterly or an account that pays <m>7.95\%</m> interest compounded continuously?
-        <ol>
-          <li>
-            <p>
-              <m>8\%</m> quarterly
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>7.95\%</m> continuously
-            </p>
-          </li>
-
-          <li>
-            <p>
-              They are the same.
-            </p>
-          </li>
-
-          <li>
-            <p>
-              There is no way to tell.
-            </p>
-          </li>
-        </ol>
+        Exponential functions have a constant common ratio for successive time values.
       </p>
+    </li>
+    </ul>
+    <exercises>
+      <exercise>
+        <statement>
+          <p>
+            Suppose that <m>h(t) = A \cdot r^t</m>. If <m>h(3)=4</m> and <m>h(5)=40</m>,
+            <ol>
+              <li>
+                <p>
+                  find <m>r</m>.
+                </p>
+              </li>
 
-      \teacher{\input{clicker/SVC.01.02.104C.tex}}</li>
+              <li>
+                <p>
+                  find <m>A</m>.
+                </p>
+              </li>
 
-    <li>
-      <p>
-        Caffeine leaves the body at a continuous rate of <m>17\%</m> per hour.  How much caffeine is left in the body 8 hours after drinking a cup of coffee containing 100 mg of caffeine?
-        <ol>
-          <li>
-            <p>
-              389.62 mg
-            </p>
-          </li>
+              <li>
+                <p>
+                  Does this function model exponential growth or decay? How can you tell?
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The half-life of <m>Br^{77}</m> is 57 hours.
+            <ol>
+              <li>
+                <p>
+                  If the initial amount is <m>150</m> grams, find the amount remaining after 171
+                  hours.
+                </p>
+              </li>
 
-          <li>
-            <p>
-              22.52 mg
-            </p>
-          </li>
+              <li>
+                <p>
+                  Write an equation to predict the amount remaining after <m>t</m> hours.
+                </p>
+              </li>
 
-          <li>
-            <p>
-              25.67 mg
-            </p>
-          </li>
+              <li>
+                <p>
+                  Estimate within one hour how long it will take the amount to decrease to 10
+                  grams.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Consider the data in <xref ref="tab_0_2_exercise3">Table</xref>
+            <ol>
+              <li>
+                <p>
+                  Which (if any) of the functions could be linear? Explain how you know that
+                  these functions are linear, and find formulas for these functions.
+                </p>
+              </li>
 
-          <li>
-            <p>
-              There is no way to tell.
-            </p>
-          </li>
-        </ol>
-      </p>
+              <li>
+                <p>
+                  Which (if any) of the functions could be exponential? Explain how you know
+                  that these functions are linear, and find formulas for these functions.
+                </p>
+              </li>
+            </ol>
+          </p>
 
-      \teacher{\input{clicker/SVC.01.02.105C.tex}}</li>
-
-    <li>
-      <p>
-        Caffeine leaves the body at a continuous rate of <m>17\%</m> per hour.  What is the hourly growth factor?
-        <ol>
-          <li>
-            <p>
-              .156
-            </p>
-          </li>
-
-          <li>
-            <p>
-              .17
-            </p>
-          </li>
-
-          <li>
-            <p>
-              .844
-            </p>
-          </li>
-
-          <li>
-            <p>
-              There is no way to tell.
-            </p>
-          </li>
-        </ol>
-      </p>
-
-      \teacher{\input{clicker/SVC.01.02.106C.tex}}</li>
-    </ol>
+          <table xml:id="tab_0_2_exercise3" >
+            <caption>Data tables for <m>f(x)</m>, <m>g(x)</m>, and <m>h(x)</m></caption>
+            <tabular>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell><m>x</m></cell>
+                <cell><m>f(x)</m></cell>
+                <cell><m>g(x)</m></cell>
+                <cell><m>h(x)</m></cell>
+              </row>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+              <row>
+                <cell><m>-2</m></cell>
+                <cell><m>12</m></cell>
+                <cell><m>16</m></cell>
+                <cell><m>37</m></cell>
+              </row>
+              <row>
+                <cell><m>-1</m></cell>
+                <cell><m>17</m></cell>
+                <cell><m>24</m></cell>
+                <cell><m>34</m></cell>
+              </row>
+              <row>
+                <cell><m>0</m></cell>
+                <cell><m>20</m></cell>
+                <cell><m>36</m></cell>
+                <cell><m>31</m></cell>
+              </row>
+              <row>
+                <cell><m>1</m></cell>
+                <cell><m>21</m></cell>
+                <cell><m>54</m></cell>
+                <cell><m>28</m></cell>
+              </row>
+              <row>
+                <cell><m>2</m></cell>
+                <cell><m>18</m></cell>
+                <cell><m>81</m></cell>
+                <cell><m>25</m></cell>
+              </row>
+              <row bottom="minor">
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+                <cell></cell>
+              </row>
+            </tabular>
+          </table>
+        </statement>
+      </exercise>
+    </exercises>
   </subsection>
 </section>

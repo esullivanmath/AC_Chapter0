@@ -2,6 +2,35 @@
 <section xml:id="S_0_6_PowersPolysRationals">
   <title>Powers, Polynomials, and Rational Functions</title>
   <introduction>
+    <objectives>
+        <ul>
+          <li>
+            <p>
+              What are power, polynomial, and rational functions?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              How can be build polynomial functions from data?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              What microscopic/macroscopic behavior can we expect from polynomial and rational functions?
+            </p>
+          </li>
+        </ul>
+    </objectives>
+    <p>
+      Polynomial functions play an important role in mathematics. They are generally simple to compute (requiring only computations that can be done by hand) and can be used to model many real-world phenomena. In fact, scientists and mathematicians frequently simplify complex mathematical models by substituting a polynomial model that is "close enough" for their purposes.
+    </p>
+
+    <p>
+      In this section, we will study the graphs of select polynomial and rational functions to identify their important features. The goal of this section is to build a mathematical intuition about how a small class of 'convenient' functions behave so that later we can see how calculus can be used to determine the behavior of arbitrary functions.
+    </p>
+
     <exploration xml:id="PA_0_6">
       <p>
         <xref ref="fig_0_6_PA">Figure</xref> shows the graphs of two different functions. Suppose that you were to graph a line anywhere along each of the two graphs.
@@ -50,6 +79,40 @@
       </figure>
 
     </exploration>
+  </introduction>
+
+  <subsection>
+    <title>Power Functions</title>
+    <p>
+      Power functions are fundamental building blocks for many very useful functions. In their simplest form, power functions describe situations when the dependent variable is directly proportional to a power of the independent variable.
+    </p>
+
+    <definition>
+      <title>power functions</title>
+      <statement>
+        <p>
+          A power function has the form
+          <me>
+            f(x) = kx^{n}, \qquad \mbox{where }  k \mbox{ and }  n \mbox{ are constant.}
+          </me>
+        </p>
+      </statement>
+    </definition>
+
+    <figure xml:id="F_0_6_Ex1" >
+      <caption>Positive odd powers of <m>x</m> (left) and positive even powers of <m>x</m> (right)</caption>
+      <image width="90%" source="images/0-6-fig2" />
+    </figure>
+
+    <p>
+      For odd values of <m>n</m>, the graphs of <m>x^{n}</m> are always increasing. For even values of
+      <m>n</m>, the graphs of <m>x^{n}</m> decrease until <m>x=0</m> and then increase afterwards. See <xref ref="F_0_6_Ex1">Figure</xref> for several examples of power functions. We can classify the <em>end
+      behavior</em> of the graphs by describing what happens as <m>x\to\infty</m> and as <m>x\to-\infty</m>.
+      For odd <m>n</m>, <m>x^{n}\to -\infty</m> as <m>x\to-\infty</m> and <m>x^{n}\to\infty</m> as <m>x\to\infty</m>.
+      Graphs of odd power functions go in opposite directions on the left and right. For even
+      <m>n</m>, <m>x^{n}\to \infty</m> as <m>x\to-\infty</m> and <m>x^{n}\to\infty</m> as <m>x\to\infty</m>. Graphs of
+      even power functions go in the same direction on the left and right.
+    </p>
 
     <activity xml:id="A_0_6_1">
       <p>
@@ -109,6 +172,86 @@
         </p>
       </solution>
     </activity>
+  </subsection>
+
+  <subsection>
+    <title>Polynomial Functions</title>
+    <definition>
+      <title>polynomial functions</title>
+      <statement>
+        <p>
+          A polynomial function is a function of the form
+          <me>
+            p(x)=a_{n}x^{n} + a_{n-1}x^{n-1}+\cdots + a_{1}x + a_{0}
+          </me>
+          where <m>n</m> is a nonnegative integer and <m>a_{n}\ne 0</m>. Here <m>n</m> is the <term>degree</term> of the
+          polynomial, and <m>a_{n}</m>, <m>a_{n-1}</m>, <ellipsis />, <m>a_{1}</m>, <m>a_{0}</m> are the <term>coefficients</term>.
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      When we study the graphs of functions, there are several common features we're interested in.
+      <ul>
+        <li>
+          <p>
+            How does the graph behave as <m>x\to\infty</m> and as <m>x\to-\infty</m>? (Does it grow without bound? Does it level off? Does it oscillate?)
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Where does the graph cross the <m>x</m>-axis? How many times?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Where does the graph change directions? How many times?
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      For many functions, these questions can be difficult to answer and require specialized
+      mathematics (like Calculus for example). For polynomials, though, there are some
+      relatively simple results. First, the end behavior of a polynomial is determined by its
+      degree and the sign of the lead coefficient. Polynomials with even degree behave like
+      power functions with even degree, and polynomials with odd degree behave like power
+      functions like odd degree. <xref ref="F_0_6_PolyEndBehavior">Figures</xref> and <xref ref="F_0_6_PolyEndBehavior2"></xref> demonstrate this for two different fourth degree polynomials.
+    </p>
+
+    <figure xml:id="F_0_6_PolyEndBehavior" >
+      <caption>Local behavior of two fourth-degree polynomials.  At this level, we can clearly see the differences between these two functions.</caption>
+      <image width="80%" source="images/0-6-fig3" />
+    </figure>
+
+    <figure xml:id="F_0_6_PolyEndBehavior2" >
+      <caption>Long-term behavior of two fourth-degree polynomials.  At this scale, the two functions are nearly indistinguishable.</caption>
+      <image width="80%" source="images/0-6-fig4" />
+    </figure>
+
+    <theorem xml:id="T_0_6_1">
+      <statement>
+        <p>
+          A polynomial of degree <m>n</m> has at most <m>n</m> real zeros and at most <m>n-1</m> turning points.
+        </p>
+      </statement>
+    </theorem>
+
+    <theorem xml:id="T_0_6_2">
+      <statement>
+        <p>
+          Let <m>p(x)</m> be a polynomial. If <m>x = a</m> is a zero of <m>p</m> (i.e. <m>p(a)=0</m>), then <m>(x-a)</m> is a factor of <m>p</m>.
+        </p>
+      </statement>
+    </theorem>
+
+    <p>
+      <xref ref="T_0_6_1">Theorems</xref> and <xref ref="T_0_6_2"></xref> are each fairly simple to state but very powerful. <xref ref="T_0_6_1">Theorem</xref> gives us a quick way to determine the degree of a polynomial from its graph and is frequently used to determine how many solutions to expect from certain types of equations.
+      <xref ref="T_0_6_2">Theorem</xref> provides us with a way to construct polynomials that pass through specific points.
+    </p>
 
     <activity xml:id="A_0_6_2">
       <p>
@@ -170,6 +313,45 @@
         </p>
       </solution>
     </activity>
+  </subsection>
+
+  <subsection>
+    <title>Rational Functions</title>
+    <definition>
+      <title>rational functions</title>
+      <statement>
+        <p>
+          A rational function is a ratio of two polynomial functions
+          <me>
+            f(x) = P(x)/Q(x)
+          </me>
+          where <m>P</m> and <m>Q</m> are polynomials. The domain is the set of all real numbers for which <m>Q(x)\ne 0</m>
+        </p>
+      </statement>
+    </definition>
+
+    <definition>
+      <title>horizontal asymptotes</title>
+      <statement>
+        <p>
+          A function <m>f</m> has a horizontal asymptote <m>y = a</m> if the distance between the <m>f</m> and the line <m>y=a</m> becomes arbitrarily small when <m>x</m> becomes sufficiently large.
+          Alternatively, a horizontal asymptote is a line that a function approaches as <m>x \to \infty</m> or as <m>x \to -\infty</m>.
+        </p>
+      </statement>
+    </definition>
+
+    <definition>
+      <title>vertical asymptotes</title>
+      <statement>
+        <p>
+          A function <m>f</m> has a vertical asymptote at a point <m>x = b</m> if the function becomes arbitrarily large as <m>x \to b</m>.
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      The graphs of rational functions may have vertical asymptotes only where the denominator is zero. However, there are many examples of rational functions that do not have a vertical asymptote even at a point where the denominator is zero. (For instance, try graphing the function <m>f(x)=\displaystyle{\frac{x^{2}-1}{x-1}}</m>).
+    </p>
 
     <activity xml:id="A_0_6_3">
       <ol>
@@ -443,586 +625,167 @@
         </p>
       </solution>
     </activity>
-  </introduction>
+  </subsection>
 
   <subsection>
-    <title>Voting Questions</title>
-    <ol>
-    <li>
-      <p>
-        Which of the following is not a power function?
-        <ol>
-          <li>
-            <p>
-              <m>f(x)=3x^2</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>f(x)=x^{1.5}</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>f(x)=6\cdot2^x</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>f(x)=-3x^{-\pi}</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-
-      \teacher{\input{clicker/SVC.01.06.005C.tex}}</li>
-
-    <li>
-      <p>
-        As <m>x \rightarrow \infty</m>, which function dominates?  That is, which function is larger in the long run?
-        <ol>
-          <li>
-            <p>
-              <m>0.1 x^2</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>10^{10} x</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-
-      \teacher{\input{clicker/SVC.01.06.010C.tex}}</li>
-
-    <li>
-      <p>
-        As <m>x \rightarrow \infty</m>, which function dominates?
-        <ol>
-          <li>
-            <p>
-              <m>0.25 \sqrt{x}</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>25,000 x^{-3}</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-
-      \teacher{\input{clicker/SVC.01.06.020C.tex}}</li>
-
-    <li>
-      <p>
-        As <m>x \rightarrow \infty</m>, which function dominates?
-        <ol>
-          <li>
-            <p>
-              <m>3 - 0.9^x</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>\log x</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-
-      \teacher{\input{clicker/SVC.01.06.030C.tex}}</li>
-
-    <li>
-      <p>
-        Which function dominates as <m>x \rightarrow \infty</m>?
-        <ol>
-          <li>
-            <p>
-              <m>x^2</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>e^x</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-
-      \teacher{\input{clicker/SVC.01.06.035C.tex}}</li>
-
-    <li>
-      <p>
-        As <m>x \rightarrow \infty</m>, which function dominates?
-        <ol>
-          <li>
-            <p>
-              <m>x^3</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>2^x</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-
-      \teacher{\input{clicker/SVC.01.06.040C.tex}}</li>
-
-    <li>
-      <p>
-        As <m>x \rightarrow \infty</m>, which function dominates?
-        <ol>
-          <li>
-            <p>
-              <m>10(2^x)</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>72,000 x^{12}</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-
-      \teacher{\input{clicker/SVC.01.06.050C.tex}}</li>
-
-    <li>
-      <p>
-        Which of these functions dominates as <m>x \rightarrow \infty</m>?
-        <ol>
-          <li>
-            <p>
-              <m>f(x) = - 5x</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>g(x) = 10^x</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>h(x) = 0.9^x</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>k(x) = x^5</m>
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>l(x) = \pi^x</m>
-            </p>
-          </li>
-        </ol>
-      </p>
-
-      \teacher{\input{clicker/SVC.01.06.060C.tex}}</li>
-
-    <li>
-      <p>
-        If <m>f(x) = ax^2 + bx + c</m> is a quadratic function, then the lowest point on the graph of <m>f(x)</m> occurs at <m>x = -b/2a</m>.
-        <ol>
-          <li>
-            <p>
-              True, and I am very confident.
-            </p>
-          </li>
-
-          <li>
-            <p>
-              True, but I am not very confident.
-            </p>
-          </li>
-
-          <li>
-            <p>
-              False, but I am not very confident.
-            </p>
-          </li>
-
-          <li>
-            <p>
-              False, and I am very confident.
-            </p>
-          </li>
-        </ol>
-      </p>
-
-      \teacher{\input{clicker/SVC.01.06.065C.tex}}</li>
-
-    <li>
-      <p>
-        Under what condition is the graph of the quadratic function described by <m>f(x) = ax^2 + bx + c</m> concave down?
-        <ol>
-          <li>
-            <p>
-              <m>a \lt  0</m>.
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>b \lt  0</m>.
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>c \lt  0</m>.
-            </p>
-          </li>
-
-          <li>
-            <p>
-              More than one of the above.
-            </p>
-          </li>
-
-          <li>
-            <p>
-              None of the above.
-            </p>
-          </li>
-        </ol>
-      </p>
-
-      \teacher{\input{clicker/SVC.01.06.066C.tex}}</li>
-
-    <li>
-      <p>
-        What is the degree of the graph of the polynomial in the figure below?
-
-        <sidebyside>
-          <ol>
-            <li>
-              <p>
-                3
-              </p>
-            </li>
-
-            <li>
-              <p>
-                5
-              </p>
-            </li>
-
-            <li>
-              <p>
-                Either (a) or (b)
-              </p>
-            </li>
-
-            <li>
-              <p>
-                Neither (a) nor (b)
-              </p>
-            </li>
-
-            <li>
-              <p>
-                Any polynomial of degree greater than 2
-              </p>
-            </li>
-          </ol>
+    <title>Summary</title>
+    <ul>
+      <li>
+        <p>
+          A polynomial of degree <m>n</m> has at most <m>n</m> real zeros and <m>n-1</m> turning points.
         </p>
-        <image>
-          <latex-image-code>
-            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=0, xmax=5,
-            ymin=-5, ymax=10]
-            \addplot[color=blue, very thick,domain=0:5, samples=100]
-            {2*(x-2)^3-0.5*(x-2)^2-2*(x-2)+2};
-            \end{axis}\end{tikzpicture}]]>
-          </latex-image-code>
-        </image>
-      </sidebyside>
-      \teacher{\input{clicker/SVC.01.06.070C.tex}}</li>
+      </li>
 
-    <li>
-      <p>
-        Which of the options below describes a function which is even?
-        <ol>
-          <li>
-            <p>
-              Any polynomial of even degree.
-            </p>
-          </li>
-
-          <li>
-            <p>
-              Any polynomial of odd degree.
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>f(x) = 9x^6 - 3x^2 + 2</m>.
-            </p>
-          </li>
-
-          <li>
-            <p>
-              <m>f(x) = 3x^4 - 2x^3 + x^2</m>.
-            </p>
-          </li>
-
-          <li>
-            <p>
-              More than 1 of the above.
-            </p>
-          </li>
-
-          <li>
-            <p>
-              None of the above.
-            </p>
-          </li>
-        </ol>
-      </p>
-
-      \teacher{\input{clicker/SVC.01.06.075C.tex}}</li>
-
-    <li>
-      <p>
-        The equation <m>y = x^3 + 2 x^2 - 5x - 6</m> is represented by which graph?
-        <image>
-          <latex-image-code>
-            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-4, xmax=4,
-            ymin=-10, ymax=10, title={Plot (a)}]
-            \addplot[color=blue, very thick, domain=-4:4, smooth]
-            {(x-2.25)*(x+2.25)*(x^2+1)};
-            \end{axis}\end{tikzpicture}]]>
-          </latex-image-code>
-        </image>
-        <image>
-          <latex-image-code>
-            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-4, xmax=4,
-            ymin=-10, ymax=10, title={Plot (b)}]
-            \addplot[color=blue, very thick, domain=-4:4, smooth]
-            {x^3+2*x^2-5*x-6};
-            \end{axis}\end{tikzpicture}]]>
-          </latex-image-code>
-        </image>
-        <image>
-          <latex-image-code>
-            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-4, xmax=4,
-            ymin=-10, ymax=10, title={Plot (c)}]
-            \addplot[color=blue, very thick, domain=-4:4, smooth]
-            {0.5*(x+3)*(x+1)*(x-0.5)*(x-2)};
-            \end{axis}\end{tikzpicture}]]>
-          </latex-image-code>
-        </image>
-        <image>
-          <latex-image-code>
-            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-5, xmax=4,
-            ymin=-10, ymax=10, title={Plot (d)}]
-            \addplot[color=blue, very thick, domain=-5:4, smooth]
-            {0.25*(x+4)*(x+3)*(x+1)*(x-0.5)*(x-2)};
-            \end{axis}\end{tikzpicture}]]>
-          </latex-image-code>
-        </image>
-        \teacher{\input{clicker/SVC.01.06.080C.tex}}
-      </p>
-    </li>
-
-    <li>
-      <p>
-        The graph below is a representation of which function?
-
-        <sidebyside>
-          <ol>
-            <li>
-              <p>
-                <m>y = 3x + 2</m>
-              </p>
-            </li>
-
-            <li>
-              <p>
-                <m>y = (x-2)(x+3)</m>
-              </p>
-            </li>
-
-            <li>
-              <p>
-                <m>y = (x-6)(x-2)</m>
-              </p>
-            </li>
-
-            <li>
-              <p>
-                <m>y = (x-3)(x+2)</m>
-              </p>
-            </li>
-
-            <li>
-              <p>
-                none of these
-              </p>
-            </li>
-          </ol>
+      <li>
+        <p>
+          The degree of a polynomial function determines the end behavior of its graph.  If the degree of a polynomial is even, then the end behavior is the same in both directions.  If the degree of a polynomial is odd, then the end behavior on the left is the opposite of the behavior on the right.
         </p>
-        <image>
-          <latex-image-code>
-            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-5, xmax=5,
-            ymin=-7, ymax=15]
-            \addplot[color=blue, very thick, domain=-5:4, smooth]
-            {(x+3)*(x-2)};
-            \end{axis}\end{tikzpicture}]]>
-          </latex-image-code>
-        </image>
-      </sidebyside>
-      \teacher{\input{clicker/SVC.01.06.090C.tex}}</li>
+      </li>
 
-    <li>
-      <p>
-        Let <m>f(x) = \frac{x^2 -1}{x+1}</m> and <m>g(x) = x-1</m>, then <m>f(x) = g(x)</m>.
-        <ol>
-          <li>
-            <p>
-              True, and I am very confident
-            </p>
-          </li>
+      <li>
+        <p>
+          A rational function is a function of the form <m>f(x)=\frac{P(x)}{Q(x)}</m>, where <m>P(x)</m> and <m>Q(x)</m> are both polynomials.
+        </p>
+      </li>
 
-          <li>
-            <p>
-              True, but I am not very confident
-            </p>
-          </li>
+      <li>
+        <p>
+          A rational function <m>f(x)=\frac{P(x)}{Q(x)}</m> may have a vertical asymptote whenever <m>Q(x)=0</m>.
+        </p>
+      </li>
 
-          <li>
-            <p>
-              False, but I am not very confident
-            </p>
-          </li>
+      <li>
+        <p>
+          The end behavior of the graph of a rational function is determined by the degrees of the polynomials in the numerator and denominator. (See <xref ref="A_0_6_4">Activity</xref>).
+        </p>
+      </li>
+    </ul>
+    <exercises>
+      <exercise>
+        <statement>
+          <p>
+            Without the aid of a graphing tool match the polynomials to its corresponding graph.
+            <md>
+              <mrow>f(x) \amp = x^3 + 3x^2 - 4x - 12</mrow>
+              <mrow>g(x) \amp = -\frac{1}{4}(x-1)^3(x+3)</mrow>
+              <mrow>h(x) \amp = \frac{1}{3}x^3(x+2)(x-3)^2</mrow>
+              <mrow>k(x) \amp = -2x^3-x^2+x</mrow>
+            </md>
+          </p>
 
-          <li>
-            <p>
-              False, and I am very confident
-            </p>
-          </li>
-        </ol>
-      </p>
+          <p>
+            <image width="99%" source="images/0-6-fig6" />
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            The cost in dollars for removing <m>p</m> percent of pollutants from a river is
+            <me>
+              C(p) = \frac{61700p}{100-p}.
+            </me>
+            <ol>
+              <li>
+                <p>
+                  Find the cost for removing 20<percent />.
+                </p>
+              </li>
 
-      \teacher{\input{clicker/SVC.01.06.100C.tex}}</li>
+              <li>
+                <p>
+                  Find the cost for removing half of the pollutants.
+                </p>
+              </li>
 
-    <li>
-      <p>
-        Which if the following is a graph for <m>y = \frac{1-x^2}{x-2}</m>.  (No calculators allowed.)
-        <image>
-          <latex-image-code>
-            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-4, xmax=4,
-            ymin=-20, ymax=20, title={Plot (a)}]
-            \addplot[color=blue, very thick, domain=-4:1.9, samples=100] {-3*(x+1)*(x-2.25)/(x-2)};
-            \addplot[color=blue, very thick, domain=2.1:4, samples=100] {-3*(x+1)*(x-2.25)/(x-2)};
-            \draw[dashed] (axis cs:2,-20) -- (axis cs:2,20);
-            \end{axis}\end{tikzpicture}]]>
-          </latex-image-code>
-        </image>
-        <image>
-          <latex-image-code>
-            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-10, xmax=10,
-            ymin=-10, ymax=15, title={Plot (b)}]
-            \addplot[color=blue, very thick, domain=-10:1.9, samples=100] {x+1/(x-2)};
-            \addplot[color=blue, very thick, domain=2.1:10, samples=100] {x+1/(x-2)};
-            \draw[dashed] (axis cs:2,-10) -- (axis cs:2,15);
-            \end{axis}\end{tikzpicture}]]>
-          </latex-image-code>
-        </image>
-        <image>
-          <latex-image-code>
-            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-10, xmax=10,
-            ymin=-15, ymax=10, title={Plot (c)}]
-            \addplot[color=blue, very thick, domain=-10:1.9, samples=100] {(1-x^2)/(x-2)};
-            \addplot[color=blue, very thick, domain=2.1:10, samples=100] {(1-x^2)/(x-2)};
-            \draw[dashed] (axis cs:2,-15) -- (axis cs:2,10);
-            \end{axis}\end{tikzpicture}]]>
-          </latex-image-code>
-        </image>
-        <image>
-          <latex-image-code>
-            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-10, xmax=10,
-            ymin=-10, ymax=10, title={Plot (d)}]
-            \addplot[color=blue, very thick, domain=-10:-2.1, samples=100]
-            {(1-x^2)/((x+2)*(x-2))+3};
-            \addplot[color=blue, very thick, domain=-1.9:1.9, samples=100]
-            {(1-x^2)/((x+2)*(x-2))+3};
-            \addplot[color=blue, very thick, domain=2.1:10, samples=100]
-            {(1-x^2)/((x+2)*(x-2))+3};
-            \draw[dashed] (axis cs:2,-15) -- (axis cs:2,10);
-            \draw[dashed] (axis cs:-2,-15) -- (axis cs:-2,10);
-            \end{axis}\end{tikzpicture}]]>
-          </latex-image-code>
-        </image>
-        \teacher{\input{clicker/SVC.01.06.110C.tex}}
-      </p>
-    </li>
+              <li>
+                <p>
+                  What is the smallest value <m>p</m> can be?
+                </p>
+              </li>
 
-    <li>
-      <p>
-        Which of the graphs represents <m>y = \frac{2x}{x-2}</m>?
-        <image>
-          <latex-image-code>
-            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-4, xmax=4,
-            ymin=-8, ymax=8, title={Plot (a)}]
-            \addplot[color=blue, very thick, domain=-4:1.9, samples=100] {1/(x-2)};
-            \addplot[color=blue, very thick, domain=2.1:4, samples=100] {1/(x-2)};
-            \draw[dashed] (axis cs:2,-20) -- (axis cs:2,20);
-            \end{axis}\end{tikzpicture}]]>
-          </latex-image-code>
-        </image>
-        <image>
-          <latex-image-code>
-            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-4, xmax=4,
-            ymin=-8, ymax=8, title={Plot (b)}]
-            \addplot[color=blue, very thick, domain=-4:1.9, samples=100] {2*x/(x-2)};
-            \addplot[color=blue, very thick, domain=2.1:4, samples=100] {2*x/(x-2)};
-            \draw[dashed] (axis cs:2,-20) -- (axis cs:2,20);
-            \end{axis}\end{tikzpicture}]]>
-          </latex-image-code>
-        </image>
-        <image>
-          <latex-image-code>
-            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-4, xmax=4,
-            ymin=-8, ymax=8, title={Plot (c)}]
-            \addplot[color=blue, very thick, domain=-4:1.9, samples=100] {-2*x/(x-2)};
-            \addplot[color=blue, very thick, domain=2.1:4, samples=100] {-2*x/(x-2)};
-            \draw[dashed] (axis cs:2,-20) -- (axis cs:2,20);
-            \end{axis}\end{tikzpicture}]]>
-          </latex-image-code>
-        </image>
-        <image>
-          <latex-image-code>
-            <![CDATA[\begin{tikzpicture}\begin{axis}[axis lines=center, xlabel={\(x\)}, ylabel={\(y\)}, xmin=-4, xmax=4,
-            ymin=-8, ymax=8, title={Plot (d)}]
-            \addplot[color=blue, very thick, domain=-4:-0.1, samples=100] {1/x+2};
-            \addplot[color=blue, very thick, domain=0.1:4, samples=100] {1/x+2};
-            \draw[dashed] (axis cs:-4,2) -- (axis cs:4,2);
-            \end{axis}\end{tikzpicture}]]>
-          </latex-image-code>
-        </image>
-        \teacher{\input{clicker/SVC.01.06.120C.tex}}
-      </p>
-    </li>
-    </ol>
+              <li>
+                <p>
+                  What is the largest value <m>p</m> can be?
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  What is the value of <m>C(p)</m> as <m>p \to 100</m>?  What is the meaning of this in
+                  the context of the problem?
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            For the function
+            <me>
+              f(x) = \frac{2x-6}{(-6x-1)(6x-6)},
+            </me>
+            <ol>
+              <li>
+                <p>
+                  what are the vertical asymptotes?
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  what are the horizontal asymptotes?
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  what are the coordinates of the <m>x</m> intercepts?
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <statement>
+          <p>
+            Square cuts of the same size are cut from a flat rectangular piece of cardboard. The
+            remaining cardboard is folded into a lidless box. Assume that the cardboard originally
+            measures 20 inches by 12 inches. Let <m>x</m> be the length of one side of the square cut (at
+            this point you should stop and draw a picture).
+            <ol>
+              <li>
+                <p>
+                  Write a function describing the volume of the resulting box in terms of <m>x</m>.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  What is an appropriate domain for the volume function?  Plot the volume function
+                  over the domain.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Write a function describing the surface area of the box in terms of <m>x</m>.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Is the domain different for the surface area function?  Why / why not?  Plot
+                  the surface area function over its appropriate domain.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+      </exercise>
+    </exercises>
   </subsection>
 </section>

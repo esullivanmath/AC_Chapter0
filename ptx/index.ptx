@@ -2,30 +2,18 @@
 <mathbook xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
 <docinfo>
 <macros>
-\def\TeacherEdition{0}
-\renewcommand{\labelenumi}{\thesection.\arabic{enumi}}
-\newcommand{\teacher}[1]{\ifnum\TeacherEdition=1 #1 \fi}
-\renewcommand{\labelenumi}{\arabic{enumi}}
 \def\titlecolor{#1}
-\renewcommand{\labelenumi}{\thesection.\arabic{enumi}}
+\def\scl{0.8}
 \def\titlebackground{#1}
-\renewcommand{\labelenumi}{\arabic{enumi}}
+\def\scl{0.9}
 \def\background{#1}
-\renewcommand{\labelenumi}{\thesection.\arabic{enumi}}
-\def\titleboxcolor{#1}
-\renewcommand{\labelenumi}{\arabic{enumi}}
-\def\boxcolor{#1}
-\renewcommand{\labelenumi}{\thesection.\arabic{enumi}}
-\def\thcounter{#1}
-\renewcommand{\labelenumi}{\arabic{enumi}}
-\def\size{#1}
-\renewcommand{\labelenumi}{\thesection.\arabic{enumi}}
-\renewcommand{\labelenumi}{\arabic{enumi}}
-\newcommand{\titre}{Titre}
 \def\scl{0.7}
+\def\titleboxcolor{#1}
+\def\boxcolor{#1}
+\def\thcounter{#1}
+\def\size{#1}
+\newcommand{\titre}{Titre}
 \renewcommand{\titre}{#2}
-\renewcommand{\labelenumi}{\thesection.\arabic{enumi}}
-\renewcommand{\labelenumi}{\arabic{enumi}}
 \renewcommand{\theacti}{\thechapter.\arabic{acti}}
 \newcommand{\saveCount}{\setcounter{lastenum}{\value{enumi}}}
 \newcommand{\restoreCount}{\setcounter{enumi}{\value{lastenum}}}
@@ -94,7 +82,7 @@
 
 
 <book>
-<title>Active Calculus \\ Activities Book \\  \scalebox{0.75}{\includegraphics{figures/CClicense.eps}}</title>
+<title>Active Calculus \\ Carroll College \\  \scalebox{0.75}{\includegraphics{figures/CClicense.eps}}</title>
 <frontmatter>
 <titlepage>
 <author>
@@ -115,6 +103,10 @@
 <backmatter>
 
 <xi:include href="./bibliography.ptx" />
+<index-part>
+<title>Index</title>
+<index-list />
+</index-part>
 
 </backmatter>
 </book>
