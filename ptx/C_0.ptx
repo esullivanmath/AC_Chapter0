@@ -2,10 +2,10 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="C_0">
   <title>Preliminaries</title>
   <xi:include  href="S_0_1_Functions.ptx" />
- <!-- <xi:include  href="S_0_2_Exponentials.ptx" />
+  <xi:include  href="S_0_2_Exponentials.ptx" />
   <xi:include  href="S_0_3_Transformations.ptx" />
   <xi:include  href="S_0_4_Logarithms.ptx" />
   <xi:include  href="S_0_5_TrigFunctions.ptx" />
   <xi:include  href="S_0_6_PowersPolysRationals.ptx" />
--->
+
 </chapter>
